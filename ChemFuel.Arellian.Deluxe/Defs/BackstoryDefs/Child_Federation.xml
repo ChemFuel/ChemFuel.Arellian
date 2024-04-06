@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<BackstoryDef Name="Arellian_FederationChildBase" Abstract="True">
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Arellian_Federation</li>
+			<li>Arellian_FederationTrooper</li>
+			<li>Arellian_FederationMechanic</li>
+			<li>Arellian_FederationEngineer</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="Arellian_FederationChildBase">
+		<defName>Arellian_CoreChild1</defName>
+		<title>Arellia Core child</title>
+		<titleShort>Core kid</titleShort>
+		<description>[PAWN_nameDef] was born in Arellia Core, the motherland of all Arellians.</description>
+		<spawnCategories>
+			<li>Arellian_Core</li>
+		</spawnCategories>
+	</BackstoryDef>
+</Defs>

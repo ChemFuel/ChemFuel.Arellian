@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<TraitDef>
+		<defName>Arellian_WarHawk</defName>
+		<commonality>0.4</commonality>
+		<degreeDatas>
+			<li>
+				<label>war hawk</label>
+				<description>{PAWN_nameDef} likes war and weaponry. While {PAWN_pronoun} prefers fighting {PAWN_possessive} enemies from a distance with a ranged weapon, {PAWN_pronoun} doesn't mind wielding a melee weapon. {PAWN_nameDef} will be unhappy when {PAWN_pronoun} is unarmed.</description>
+				<skillGains>
+					<Melee>4</Melee>
+					<Shooting>4</Shooting>
+				</skillGains>
+			</li>
+		</degreeDatas>
+		<conflictingTraits>
+			<li>Wimp</li>
+			<li>Brawler</li>
+		</conflictingTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+	</TraitDef>
+</Defs>

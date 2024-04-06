@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModMetaData>
+	<name>[CF] Arellian - Total War</name>
+	<packageId>ChemFuel.Arellian.Deluxe</packageId>
+	<author>ChemFuel</author>
+	<supportedVersions>
+		<li>1.4</li>
+		<li>1.5</li>
+	</supportedVersions>
+	<description>Version: B0.00
+
+[ Mod Order ]
+Core
+Biotech
+This mod
+
+[ Incompatible With ]
+[CF] Arellian - Lite
+Combat Extended
+
+== === Mod Description === ==
+
+[ Arellian - ]
+
+== === Special Thanks === ==
+WIP
+	</description>
+	<modDependencies>
+		<li><packageId>Ludeon.RimWorld.Biotech</packageId></li>
+	</modDependencies>
+	<forceLoadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Ideology</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+		<li>erdelf.HumanoidAlienRaces</li>
+	</forceLoadAfter>
+	<incompatibleWith>
+	</incompatibleWith>
+</ModMetaData>

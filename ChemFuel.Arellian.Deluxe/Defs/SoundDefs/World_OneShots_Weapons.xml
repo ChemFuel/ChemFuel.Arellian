@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<SoundDef>
+		<defName>Arellian_Shot_Blaster</defName>  
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Weapon/AR_Blaster</clipPath>
+					</li>
+				</grains>
+				<pitchRange>0.98~1.02</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+</Defs>

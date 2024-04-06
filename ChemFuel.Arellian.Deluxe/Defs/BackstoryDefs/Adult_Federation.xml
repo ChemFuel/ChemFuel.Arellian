@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<BackstoryDef Name="Arellian_FederationAdultBase" Abstract="True">
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>Arellian_Federation</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="Arellian_FederationAdultBase">
+		<defName>Arellian_Trooper1</defName>
+		<title>Arellian Federation trooper</title>
+		<titleShort>Federation trooper</titleShort>
+		<description>[PAWN_nameDef] was a trooper of the Arellian Federation. [PAWN_pronoun] was trained in basic hand-to-hand combat and firearm handling at the bootcamp.</description>
+		<skillGains>
+			<Shooting>8</Shooting>
+			<Melee>8</Melee>
+		</skillGains>
+		<spawnCategories>
+			<li>Arellian_FederationTrooper</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="Arellian_FederationAdultBase">
+		<defName>Arellian_Trooper1a</defName>
+		<title>Arellian Federation trooper</title>
+		<titleShort>Federation trooper</titleShort>
+		<description>[PAWN_nameDef] was a trooper of the Arellian Federation. [PAWN_pronoun] was trained in basic hand-to-hand combat and firearm handling at the bootcamp. [PAWN_pronoun] was also taught to dig trenches and build barricades.</description>
+		<skillGains>
+			<Shooting>6</Shooting>
+			<Melee>6</Melee>
+			<Construction>2</Construction>
+			<Mining>2</Mining>
+		</skillGains>
+		<spawnCategories>
+			<li>Arellian_FederationTrooper</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>Constructing</li>
+			<li>Mining</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="Arellian_FederationAdultBase">
+		<defName>Arellian_Trooper2</defName>
+		<title>Arellian Federation trooper</title>
+		<titleShort>Federation mechanic</titleShort>
+		<description>[PAWN_nameDef] was a trooper of the Arellian Federation. [PAWN_pronoun] worked at the armory for equipment maintenance.</description>
+		<skillGains>
+			<Shooting>5</Shooting>
+			<Melee>6</Melee>
+			<Crafting>5</Crafting>
+		</skillGains>
+		<spawnCategories>
+			<li>Arellian_FederationTrooper</li>
+			<li>Arellian_FederationMechanic</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>Crafting</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="Arellian_FederationAdultBase">
+		<defName>Arellian_Trooper3</defName>
+		<title>Arellian Federation trooper</title>
+		<titleShort>Federation engineer</titleShort>
+		<description>[PAWN_nameDef] was a field engineer of the Arellian Federation. [PAWN_pronoun] was trained in .</description>
+		<skillGains>
+			<Shooting>5</Shooting>
+			<Melee>6</Melee>
+			<Construction>5</Construction>
+		</skillGains>
+		<spawnCategories>
+			<li>Arellian_FederationTrooper</li>
+			<li>Arellian_FederationEngineer</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>Constructing</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+</Defs>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThoughtDef>
+		<defName>WarHawkUnhappy</defName>
+		<workerClass>ThoughtWorker_IsCarryingRangedWeapon</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<requiredTraits>
+			<li>Arellian_WarHawk</li>
+		</requiredTraits>
+		<stages>
+			<li>
+				<label>war hawk without weapon</label>
+				<description>I hate fighting with my bare fists. I want a weapon!</description>
+				<baseMoodEffect>-10</baseMoodEffect>
+			</li>
+			<li>
+				<label>war hawk has ranged weapon</label>
+				<description>You mess with the meow meow, you get the pew pew.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

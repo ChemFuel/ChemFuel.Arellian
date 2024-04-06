@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--Normal-->
+	<HeadTypeDef Name="ArellianBase" ParentName="AverageBase" Abstract="True">
+		<gender>None</gender>
+		<requiredGenes>
+			<li>Physique_Arellian</li>
+		</requiredGenes>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="ArellianBase">
+		<defName>Arellian_NormalA</defName>
+		<graphicPath>Things/Pawn/Arellianlike/Heads/NormalA</graphicPath>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="ArellianBase">
+		<defName>Arellian_NormalB</defName>
+		<graphicPath>Things/Pawn/Arellianlike/Heads/NormalB</graphicPath>
+	</HeadTypeDef>
+
+<!--HeavyJaw-
+	<HeadTypeDef Name="ArellianHeavyBase" ParentName="HeavyJawBase">
+		<gender>None</gender>
+		<requiredGenes>
+			<li>Physique_Arellian</li>
+			<li>Jaw_Heavy</li>
+		</requiredGenes>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="ArellianHeavyBase">
+		<defName>Arellian_HeavyA</defName>
+		<graphicPath>Things/Pawn/Arellianlike/Heads/HeavyA</graphicPath>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="ArellianHeavyBase">
+		<defName>Arellian_HeavyB</defName>
+		<graphicPath>Things/Pawn/Arellianlike/Heads/HeavyB</graphicPath>
+	</HeadTypeDef>-->
+</Defs>
