@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<PawnKindDef Name="ArellianPawnBase" Abstract="True">
+		<race>Human</race>
+		<chemicalAddictionChance>0</chemicalAddictionChance>
+		<invNutrition>2.55</invNutrition>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+			<li>IndustrialAdvanced</li>
+		</apparelTags>
+		<xenotypeSet><xenotypeChances>
+			<Arellian>999</Arellian>
+		</xenotypeChances></xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef Name="ArellianFederationBase" ParentName="ArellianPawnBase" Abstract="True">
+		<defaultFactionType>ArellianFederation</defaultFactionType>
+		<weaponMoney>9999~9999</weaponMoney>
+		<apparelMoney>9999~9999</apparelMoney>
+		<techHediffsMoney>0~750</techHediffsMoney>
+		<initialWillRange>2.5~3.5</initialWillRange>
+		<initialResistanceRange>25~35</initialResistanceRange>
+	</PawnKindDef>
+
+<!--== Army ==-->
+	<PawnKindDef Name="ArellianFederationArmyBase" ParentName="ArellianFederationBase" Abstract="True">
+		<combatPower>250</combatPower>
+		<itemQuality>Normal</itemQuality>
+		<apparelRequired>
+			<li>Apparel_ArmorRecon</li>
+			<li>Apparel_AR_FederationTrooperHelmet</li>
+		</apparelRequired>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Arellian_FederationTrooper</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ArellianFederationArmyBase">
+		<defName>Federation_AssaultTrooper</defName>
+		<label>assault trooper</label>
+		<weaponTags>
+			<li>Arellian_Federation_AR</li>
+		</weaponTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ArellianFederationArmyBase">
+		<defName>Federation_HeavySergeant</defName>
+		<label>heavy trooper</label>
+		<aiAvoidCover>true</aiAvoidCover>
+		<weaponTags>
+			<li>Arellian_Federation_LMG</li>
+		</weaponTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ArellianFederationArmyBase">
+		<defName>Federation_SpecialistSergeant</defName>
+		<label>specialist trooper</label>
+		<weaponTags>
+			<li>Arellian_Federation_Launcher</li>
+		</weaponTags>
+	</PawnKindDef>
+<!--== Army ==-->
+
+<!--== Shocktroop ==-->
+	<PawnKindDef Name="ArellianFederationShocktroopBase" ParentName="ArellianFederationBase" Abstract="True">
+		<combatPower>300</combatPower>
+		<itemQuality>Good</itemQuality>
+		<aiAvoidCover>true</aiAvoidCover>
+		<apparelRequired>
+			<li>Apparel_ArmorRecon</li>
+			<li>Apparel_AR_FederationShockTrooperHelmet</li>
+		</apparelRequired>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Arellian_FederationShocktrooper</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ArellianFederationShocktroopBase">
+		<defName>Federation_ShockTrooper</defName>
+		<label>shocktrooper</label>
+		<weaponTags>
+			<li>Arellian_Federation_SMG</li>
+		</weaponTags>
+	</PawnKindDef>
+<!--== Shocktroop ==-->
+</Defs>

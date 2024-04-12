@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<RulePackDef><!--Do not translate yet-->
+		<defName>Arellian_PawnNamer</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[Firstname_M] [Surname]</li>
+				<li>r_name->[Firstname_N] [Surname]</li>
+
+				<li>Surname->[SurnamePrefix][SurnameSuffix]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>Firstname_M->Names/Arellian/Firstname_M</li>
+				<li>Firstname_N->Names/Arellian/Firstname_N</li>
+				<li>Middlename_N->Names/Arellian/Middlename_N</li>
+				<li>SurnamePrefix->Names/Arellian/SurnamePrefix</li>
+				<li>SurnameSuffix->Names/Arellian/SurnameSuffix</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef><!--Do not translate yet-->
+
+	<RulePackDef><!--Do not translate yet-->
+		<defName>Arellian_PawnNamerFemale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[Firstname_F] [Surname]</li>
+				<li>r_name(p=0.5)->[Firstname_F] '[Middlename_F]' [Surname]</li>
+				<li>r_name->[Firstname_N] [Surname]</li>
+				<li>r_name(p=0.5)->[Firstname_N] '[Middlename_N]' [Surname]</li>
+
+				<li>Surname->[SurnamePrefix][SurnameSuffix]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>Firstname_F->Names/Arellian/Firstname_F</li>
+				<li>Firstname_N->Names/Arellian/Firstname_N</li>
+				<li>Middlename_F->Names/Arellian/Middlename_F</li>
+				<li>Middlename_N->Names/Arellian/Middlename_N</li>
+				<li>SurnamePrefix->Names/Arellian/SurnamePrefix</li>
+				<li>SurnameSuffix->Names/Arellian/SurnameSuffix</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef><!--Do not translate yet-->
+
+<!--== Federation ==-->
+
+	<RulePackDef>
+		<defName>Arellian_FactionNamerFederation</defName>
+		<rulePack><rulesStrings>
+			<li>r_name->The Arellian Federation</li>
+		</rulesStrings></rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>Arellian_SettlementNamerFederation</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->Outpost [Name]-[A][N]</li>
+				<li>r_name->Outpost [A][A]-[N][N][A]</li>
+
+				<li>N(p=0.25)->0</li>
+				<li>N->1</li>
+				<li>N->2</li>
+				<li>N->3</li>
+				<li>N->4</li>
+				<li>N->5</li>
+				<li>N->6</li>
+				<li>N->7</li>
+				<li>N->8</li>
+				<li>N->9</li>
+				<li>N->9</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>Name->Names/Celestial</li>
+				<li>A->WordParts/CapitalLetters</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>Arellian_IdeoNamerFederation</defName>
+		<rulePack><rulesStrings>
+			<li>r_ideoName->Arellian Directive</li>
+			<li>r_ideoName->Arellian Doctrine</li>
+			<li>r_ideoName(p=0.5)->Arellian Field Manual</li>
+			<li>r_ideoAdjective->Arellian</li>
+			<li>r_memberName->soldier</li>
+		</rulesStrings></rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>Arellian_DeityNamerFederation</defName>
+		<rulePack><rulesStrings>
+			<li>r_name->President of Aurelia</li><!--아우렐리아 총통-->
+		</rulesStrings></rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>Arellian_DeityTypeMakerFederation</defName>
+		<rulePack><rulesStrings>
+			<li>r_deityType->supreme leader</li>
+		</rulesStrings></rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>Arellian_LeaderNamerFederation</defName>
+		<rulePack><rulesStrings>
+			<li>r_leaderTitle->grand marshal</li>
+		</rulesStrings></rulePack>
+	</RulePackDef>
+</Defs>

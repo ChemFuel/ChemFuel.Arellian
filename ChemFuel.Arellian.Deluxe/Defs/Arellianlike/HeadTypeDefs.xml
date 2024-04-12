@@ -2,20 +2,33 @@
 <Defs>
 <!--Normal-->
 	<HeadTypeDef Name="ArellianBase" ParentName="AverageBase" Abstract="True">
-		<gender>None</gender>
 		<requiredGenes>
 			<li>Physique_Arellian</li>
 		</requiredGenes>
 	</HeadTypeDef>
 
 	<HeadTypeDef ParentName="ArellianBase">
-		<defName>Arellian_NormalA</defName>
-		<graphicPath>Things/Pawn/Arellianlike/Heads/NormalA</graphicPath>
+		<defName>ArellianFemale_NormalA</defName>
+		<gender>Female</gender>
+		<graphicPath>ArellianThings/Pawn/Arellian/Heads/Female_NormalA</graphicPath>
 	</HeadTypeDef>
 
 	<HeadTypeDef ParentName="ArellianBase">
-		<defName>Arellian_NormalB</defName>
-		<graphicPath>Things/Pawn/Arellianlike/Heads/NormalB</graphicPath>
+		<defName>ArellianFemale_NormalB</defName>
+		<gender>Female</gender>
+		<graphicPath>ArellianThings/Pawn/Arellian/Heads/Female_NormalB</graphicPath>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="ArellianBase">
+		<defName>ArellianMale_NormalA</defName>
+		<gender>Male</gender>
+		<graphicPath>ArellianThings/Pawn/Arellian/Heads/Male_NormalA</graphicPath>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="ArellianBase">
+		<defName>ArellianMale_NormalB</defName>
+		<gender>Male</gender>
+		<graphicPath>ArellianThings/Pawn/Arellian/Heads/Male_NormalB</graphicPath>
 	</HeadTypeDef>
 
 <!--HeavyJaw-
@@ -29,11 +42,11 @@
 
 	<HeadTypeDef ParentName="ArellianHeavyBase">
 		<defName>Arellian_HeavyA</defName>
-		<graphicPath>Things/Pawn/Arellianlike/Heads/HeavyA</graphicPath>
+		<graphicPath>ArellianThings/Pawn/Arellian/Heads/HeavyA</graphicPath>
 	</HeadTypeDef>
 
 	<HeadTypeDef ParentName="ArellianHeavyBase">
 		<defName>Arellian_HeavyB</defName>
-		<graphicPath>Things/Pawn/Arellianlike/Heads/HeavyB</graphicPath>
+		<graphicPath>ArellianThings/Pawn/Arellian/Heads/HeavyB</graphicPath>
 	</HeadTypeDef>-->
 </Defs>

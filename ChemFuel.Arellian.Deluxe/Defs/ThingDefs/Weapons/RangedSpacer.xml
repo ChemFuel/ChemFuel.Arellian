@@ -23,18 +23,19 @@
 	<ThingDef Name="AR_PlasmaBulletBase" ParentName="BaseBullet" Abstract="True">
 		<label>plasma bolt</label>
 		<graphicData>
-			<texPath>Things/Projectile/AR_PlasmaBolt</texPath>
+			<texPath>ArellianThings/Projectile/PlasmaBolt</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
 		</graphicData>
-		<projectile>
-			<damageDef>Arellian_Plasma</damageDef>
-		</projectile>
 	</ThingDef>
 
 	<ThingDef ParentName="AR_PlasmaBulletBase">
 		<defName>Arellian_LightBolt</defName>
+		<graphicData>
+			<color>(0,255,0)</color>
+		</graphicData>
 		<projectile>
+			<damageDef>Arellian_Plasma</damageDef>
 			<damageAmountBase>11</damageAmountBase>
 			<armorPenetrationBase>0.50</armorPenetrationBase>
 			<speed>200</speed>
@@ -44,21 +45,15 @@
 
 	<ThingDef ParentName="AR_PlasmaBulletBase">
 		<defName>Arellian_MediumBolt</defName>
+		<graphicData>
+			<color>(0,255,0)</color>
+		</graphicData>
 		<projectile>
+			<damageDef>Arellian_Plasma</damageDef>
 			<damageAmountBase>16</damageAmountBase>
 			<armorPenetrationBase>0.75</armorPenetrationBase>
 			<speed>200</speed>
 			<stoppingPower>1.00</stoppingPower>
-		</projectile>
-	</ThingDef>
-
-	<ThingDef ParentName="AR_PlasmaBulletBase">
-		<defName>Arellian_HeavyBolt</defName>
-		<projectile>
-			<damageAmountBase>28</damageAmountBase>
-			<armorPenetrationBase>1.00</armorPenetrationBase>
-			<speed>200</speed>
-			<stoppingPower>1.50</stoppingPower>
 		</projectile>
 	</ThingDef>
 
@@ -81,12 +76,12 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseArellianMakeableGun"><!--HG-->
-		<defName>Arellian_Gun_BlasterPistol</defName>
+		<defName>Gun_AR_FederationHG</defName>
 		<label>Arellian blaster pistol</label>
-		<description>Small and easy to handle, the M-08 blaster pistol is an excellent semi-automatic sidearm of Enclave officers.
+		<description>Small and easy to handle, the PLAS-08 blaster pistol is an excellent semi-automatic sidearm of Enclave officers.
 The superheated plasma shots can burn through almost every armor, and leaves a nasty burn upon impact.</description>
 		<graphicData>
-			<texPath>Things/Item/Equipment/WeaponRanged/Arellian_HG</texPath>
+			<texPath>ArellianThings/Item/Equipment/WeaponRanged/PLAS_08</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.75</drawSize>
 		</graphicData>
@@ -113,7 +108,9 @@ The superheated plasma shots can burn through almost every armor, and leaves a n
 			<ComponentSpacer>1</ComponentSpacer>
 		</costList>
 		<weaponTags>
-			<li>Arellian_Enclave_HG</li>
+			<li>Arellian_Federation_HG</li>
+			<li>Arellian_HG</li>
+			<li>Arellian_Secondary</li>
 		</weaponTags>
 		<weaponClasses>
 			<li>RangedLight</li>
@@ -126,8 +123,8 @@ The superheated plasma shots can burn through almost every armor, and leaves a n
 				<warmupTime>0.2</warmupTime>
 				<range>25.9</range>
 				<soundCast>Arellian_Shot_Blaster</soundCast>
-				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>9</muzzleFlashScale>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>15</muzzleFlashScale>
 			</li>
 		</verbs>
 		<tools>
@@ -152,12 +149,12 @@ The superheated plasma shots can burn through almost every armor, and leaves a n
 	</ThingDef><!--HG-->
 
 	<ThingDef ParentName="BaseArellianMakeableGun"><!--SMG-->
-		<defName>Arellian_Gun_LightBlaster</defName>
+		<defName>Gun_AR_FederationSMG</defName>
 		<label>Arellian light blaster</label>
-		<description>The M-11 light blaster is a compact weapon designed for rapid deployment and high-intensity combat situations.
+		<description>The PLAS-11 light blaster is a compact weapon designed for rapid deployment and high-intensity combat situations.
 The superheated plasma shots can burn through almost every armor, and leaves a nasty burn upon impact.</description>
 		<graphicData>
-			<texPath>Things/Item/Equipment/WeaponRanged/Arellian_SMG</texPath>
+			<texPath>ArellianThings/Item/Equipment/WeaponRanged/PLAS_18</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.5</drawSize>
 		</graphicData>
@@ -169,7 +166,7 @@ The superheated plasma shots can burn through almost every armor, and leaves a n
 			<AccuracyShort>0.70</AccuracyShort>
 			<AccuracyMedium>0.55</AccuracyMedium>
 			<AccuracyLong>0.40</AccuracyLong>
-			<RangedWeapon_Cooldown>1.40</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>1.35</RangedWeapon_Cooldown>
 		</statBases>
 		<recipeMaker>
 			<skillRequirements>
@@ -183,7 +180,9 @@ The superheated plasma shots can burn through almost every armor, and leaves a n
 			<ComponentSpacer>2</ComponentSpacer>
 		</costList>
 		<weaponTags>
-			<li>Arellian_Enclave_SMG</li>
+			<li>Arellian_Federation_SMG</li>
+			<li>Arellian_SMG</li>
+			<li>Arellian_Primary</li>
 		</weaponTags>
 		<weaponClasses>
 			<li>RangedLight</li>
@@ -193,13 +192,13 @@ The superheated plasma shots can burn through almost every armor, and leaves a n
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Arellian_LightBolt</defaultProjectile>
-				<warmupTime>0.6</warmupTime>
+				<warmupTime>0.55</warmupTime>
 				<ticksBetweenBurstShots>9</ticksBetweenBurstShots>
 				<burstShotCount>3</burstShotCount>
 				<range>30.9</range>
 				<soundCast>Arellian_Shot_Blaster</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>9</muzzleFlashScale>
+				<muzzleFlashScale>15</muzzleFlashScale>
 			</li>
 		</verbs>
 		<tools>
@@ -224,12 +223,12 @@ The superheated plasma shots can burn through almost every armor, and leaves a n
 	</ThingDef><!--SMG-->
 
 	<ThingDef ParentName="BaseArellianMakeableGun"><!--AR-->
-		<defName>Arellian_Gun_AssaultBlaster</defName>
+		<defName>Gun_AR_FederationAR</defName>
 		<label>Arellian assault blaster</label>
-		<description>Light, durable, and extremely versatile, the M-12 assault blaster is a prime example of the Enclave war technology.
+		<description>Light, durable, and extremely versatile, the PLAS-12 assault blaster is a prime example of the Enclave war technology.
 The superheated plasma shots can burn through almost every armor, and leaves a nasty burn upon impact.</description>
 		<graphicData>
-			<texPath>Things/Item/Equipment/WeaponRanged/Arellian_AR</texPath>
+			<texPath>ArellianThings/Item/Equipment/WeaponRanged/PLAS_12</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.5</drawSize>
 		</graphicData>
@@ -241,7 +240,7 @@ The superheated plasma shots can burn through almost every armor, and leaves a n
 			<AccuracyShort>0.85</AccuracyShort>
 			<AccuracyMedium>0.75</AccuracyMedium>
 			<AccuracyLong>0.65</AccuracyLong>
-			<RangedWeapon_Cooldown>1.60</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>1.67</RangedWeapon_Cooldown>
 		</statBases>
 		<recipeMaker>
 			<skillRequirements>
@@ -255,7 +254,9 @@ The superheated plasma shots can burn through almost every armor, and leaves a n
 			<ComponentSpacer>3</ComponentSpacer>
 		</costList>
 		<weaponTags>
-			<li>Arellian_Enclave_AR</li>
+			<li>Arellian_Federation_AR</li>
+			<li>Arellian_AR</li>
+			<li>Arellian_Primary</li>
 		</weaponTags>
 		<weaponClasses>
 			<li>RangedHeavy</li>
@@ -271,7 +272,7 @@ The superheated plasma shots can burn through almost every armor, and leaves a n
 				<range>30.9</range>
 				<soundCast>Arellian_Shot_Blaster</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>9</muzzleFlashScale>
+				<muzzleFlashScale>20</muzzleFlashScale>
 			</li>
 		</verbs>
 		<tools>
@@ -296,12 +297,12 @@ The superheated plasma shots can burn through almost every armor, and leaves a n
 	</ThingDef><!--AR-->
 
 	<ThingDef ParentName="BaseArellianMakeableGun"><!--LMG-->
-		<defName>Arellian_Gun_HeavyBlaster</defName>
+		<defName>Gun_AR_FederationLMG</defName>
 		<label>Arellian heavy blaster</label>
-		<description>The M-22 heavy blaster is a general-purpose squad automatic weapon of the Enclave military.
+		<description>The PLAS-22 heavy blaster is a general-purpose squad automatic weapon of the Enclave military.
 The superheated plasma shots can burn through almost every armor, and leaves a nasty burn upon impact.</description>
 		<graphicData>
-			<texPath>Things/Item/Equipment/WeaponRanged/Arellian_LMG</texPath>
+			<texPath>ArellianThings/Item/Equipment/WeaponRanged/PLAS_22</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.5</drawSize>
 		</graphicData>
@@ -313,7 +314,7 @@ The superheated plasma shots can burn through almost every armor, and leaves a n
 			<AccuracyShort>0.70</AccuracyShort>
 			<AccuracyMedium>0.65</AccuracyMedium>
 			<AccuracyLong>0.55</AccuracyLong>
-			<RangedWeapon_Cooldown>1.80</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>2.15</RangedWeapon_Cooldown>
 		</statBases>
 		<recipeMaker>
 			<skillRequirements>
@@ -327,7 +328,9 @@ The superheated plasma shots can burn through almost every armor, and leaves a n
 			<ComponentSpacer>3</ComponentSpacer>
 		</costList>
 		<weaponTags>
-			<li>Arellian_Enclave_LMG</li>
+			<li>Arellian_Federation_LMG</li>
+			<li>Arellian_LMG</li>
+			<li>Arellian_Primary</li>
 		</weaponTags>
 		<weaponClasses>
 			<li>RangedHeavy</li>
@@ -343,7 +346,7 @@ The superheated plasma shots can burn through almost every armor, and leaves a n
 				<range>30.9</range>
 				<soundCast>Arellian_Shot_Blaster</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>9</muzzleFlashScale>
+				<muzzleFlashScale>20</muzzleFlashScale>
 			</li>
 		</verbs>
 		<tools>
@@ -367,25 +370,26 @@ The superheated plasma shots can burn through almost every armor, and leaves a n
 		</tools>
 	</ThingDef><!--LMG-->
 
-	<ThingDef ParentName="BaseArellianMakeableGun"><!--RF-->
-		<defName>Arellian_Gun_BlasterRifle</defName>
-		<label>Arellian blaster rifle</label>
-		<description>The M-12R blaster rifle, unlike the other varients of M-12, is a designated marksman rifle modifed to provide fire support with deadly precision.
+	<ThingDef ParentName="BaseArellianMakeableGun"><!--HEAVY-->
+		<defName>Gun_AR_FederationLauncher</defName>
+		<label>Arellian plasma launcher</label>
+		<description>The PLAS-12R blaster rifle, unlike the other varients of PLAS-12, is a designated marksman rifle modifed to provide fire support with deadly precision.
 The superheated plasma shots can burn through almost every armor, and leaves a nasty burn upon impact.</description>
+		<tickerType>Normal</tickerType>
 		<graphicData>
-			<texPath>Things/Item/Equipment/WeaponRanged/Arellian_RF</texPath>
+			<texPath>Things/Item/Equipment/WeaponRanged/RocketLauncher</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1.5</drawSize>
+			<!--<drawSize>1.5</drawSize>-->
 		</graphicData>
 		<statBases>
-			<MarketValue>2930</MarketValue>
-			<WorkToMake>67500</WorkToMake>
+			<MarketValue>3650</MarketValue>
+			<WorkToMake>65000</WorkToMake>
 			<Mass>3.84</Mass>
 			<AccuracyTouch>0.53</AccuracyTouch>
 			<AccuracyShort>0.71</AccuracyShort>
 			<AccuracyMedium>0.89</AccuracyMedium>
 			<AccuracyLong>0.92</AccuracyLong>
-			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
 		</statBases>
 		<recipeMaker>
 			<skillRequirements>
@@ -394,12 +398,14 @@ The superheated plasma shots can burn through almost every armor, and leaves a n
 			<displayPriority>510</displayPriority>
 		</recipeMaker>
 		<costList>
-			<Plasteel>60</Plasteel>
-			<ComponentIndustrial>3</ComponentIndustrial>
-			<ComponentSpacer>4</ComponentSpacer>
+			<Plasteel>55</Plasteel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<ComponentSpacer>6</ComponentSpacer>
 		</costList>
 		<weaponTags>
-			<li>Arellian_Enclave_RF</li>
+			<li>Arellian_Federation_Launcher</li>
+			<li>Arellian_Launcher</li>
+			<li>Arellian_Special</li>
 		</weaponTags>
 		<weaponClasses>
 			<li>RangedHeavy</li>
@@ -408,12 +414,16 @@ The superheated plasma shots can burn through almost every armor, and leaves a n
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Arellian_HeavyBolt</defaultProjectile>
-				<warmupTime>1.8</warmupTime>
+				<defaultProjectile>Bullet_UnstablePlasma</defaultProjectile>
+				<forcedMissRadius>0.1</forcedMissRadius>
+				<ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
+				<ai_ProjectileLaunchingIgnoresMeleeThreats>true</ai_ProjectileLaunchingIgnoresMeleeThreats>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<warmupTime>2.8</warmupTime>
 				<range>44.9</range>
-				<soundCast>Arellian_Shot_Blaster</soundCast>
-				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>9</muzzleFlashScale>
+				<soundCast>InfernoCannon_Fire</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>30</muzzleFlashScale>
 			</li>
 		</verbs>
 		<tools>
@@ -435,5 +445,29 @@ The superheated plasma shots can burn through almost every armor, and leaves a n
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
-	</ThingDef><!--RF-->
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>3.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_UnstablePlasma</defName>
+		<label>unstable plasma</label>
+		<graphicData>
+			<texPath>ArellianThings/Projectile/PlasmaBolt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<damageDef>Bomb</damageDef>
+			<armorPenetrationBase>0.50</armorPenetrationBase>
+			<explosionRadius>1.9</explosionRadius>
+			<speed>100</speed>
+			<screenShakeFactor>0.5</screenShakeFactor>
+		</projectile>
+	</ThingDef><!--HEAVY-->
 </Defs>

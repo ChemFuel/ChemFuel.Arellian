@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<RaidStrategyDef>
+		<defName>Arellian_ShockRaid</defName>
+		<workerClass>RaidStrategyWorker_ImmediateAttackSmart</workerClass>
+		<minPawns>4</minPawns>
+		<selectionWeightPerPointsCurve><points>
+			<li>(0,0)</li>
+		</points></selectionWeightPerPointsCurve>
+		<selectionWeightCurvesPerFaction>
+			<li>
+				<faction>ArellianFederation</faction>
+				<selectionWeightPerPointsCurve><points>
+					<li>(0,1)</li>
+				</points></selectionWeightPerPointsCurve>
+			</li>
+		</selectionWeightCurvesPerFaction>
+		<pointsFactorCurve><points>
+			<li>0,0.8</li>
+		</points></pointsFactorCurve>
+		<arriveModes>
+			<li>CenterDrop</li>
+		</arriveModes>
+		<letterLabelEnemy>Shock Raid</letterLabelEnemy>
+		<arrivalTextEnemy>They are landing to attack you immediately.</arrivalTextEnemy>
+		<letterLabelFriendly>Shocktroopers</letterLabelFriendly>
+		<arrivalTextFriendly>They are landing in to help you immediately.</arrivalTextFriendly>
+	</RaidStrategyDef>
+</Defs>

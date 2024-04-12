@@ -10,7 +10,14 @@
 		</requiredWorkTags>
 	</BackstoryDef>
 
-	<BackstoryDef ParentName="Arellian_FederationAdultBase">
+<!--== Army ==-->
+	<BackstoryDef Name="Arellian_FederationArmyBase" ParentName="Arellian_FederationAdultBase" Abstract="True">
+		<spawnCategories>
+			<li>Arellian_FederationTrooper</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="Arellian_FederationArmyBase">
 		<defName>Arellian_Trooper1</defName>
 		<title>Arellian Federation trooper</title>
 		<titleShort>Federation trooper</titleShort>
@@ -19,12 +26,9 @@
 			<Shooting>8</Shooting>
 			<Melee>8</Melee>
 		</skillGains>
-		<spawnCategories>
-			<li>Arellian_FederationTrooper</li>
-		</spawnCategories>
 	</BackstoryDef>
 
-	<BackstoryDef ParentName="Arellian_FederationAdultBase">
+	<BackstoryDef ParentName="Arellian_FederationArmyBase">
 		<defName>Arellian_Trooper1a</defName>
 		<title>Arellian Federation trooper</title>
 		<titleShort>Federation trooper</titleShort>
@@ -35,16 +39,13 @@
 			<Construction>2</Construction>
 			<Mining>2</Mining>
 		</skillGains>
-		<spawnCategories>
-			<li>Arellian_FederationTrooper</li>
-		</spawnCategories>
 		<requiredWorkTags>
 			<li>Constructing</li>
 			<li>Mining</li>
 		</requiredWorkTags>
 	</BackstoryDef>
 
-	<BackstoryDef ParentName="Arellian_FederationAdultBase">
+	<BackstoryDef ParentName="Arellian_FederationArmyBase">
 		<defName>Arellian_Trooper2</defName>
 		<title>Arellian Federation trooper</title>
 		<titleShort>Federation mechanic</titleShort>
@@ -55,7 +56,6 @@
 			<Crafting>5</Crafting>
 		</skillGains>
 		<spawnCategories>
-			<li>Arellian_FederationTrooper</li>
 			<li>Arellian_FederationMechanic</li>
 		</spawnCategories>
 		<requiredWorkTags>
@@ -63,22 +63,41 @@
 		</requiredWorkTags>
 	</BackstoryDef>
 
-	<BackstoryDef ParentName="Arellian_FederationAdultBase">
+	<BackstoryDef ParentName="Arellian_FederationArmyBase">
 		<defName>Arellian_Trooper3</defName>
 		<title>Arellian Federation trooper</title>
 		<titleShort>Federation engineer</titleShort>
-		<description>[PAWN_nameDef] was a field engineer of the Arellian Federation. [PAWN_pronoun] was trained in .</description>
+		<description>[PAWN_nameDef] was a field engineer of the Arellian Federation. [PAWN_pronoun] was trained in siege tactics in the bootcamp.</description>
 		<skillGains>
 			<Shooting>5</Shooting>
 			<Melee>6</Melee>
 			<Construction>5</Construction>
 		</skillGains>
 		<spawnCategories>
-			<li>Arellian_FederationTrooper</li>
 			<li>Arellian_FederationEngineer</li>
 		</spawnCategories>
 		<requiredWorkTags>
 			<li>Constructing</li>
 		</requiredWorkTags>
 	</BackstoryDef>
+<!--== Army ==-->
+
+<!--== Shocktroop ==-->
+	<BackstoryDef Name="Arellian_FederationShocktroopBase" ParentName="Arellian_FederationAdultBase" Abstract="True">
+		<spawnCategories>
+			<li>Arellian_FederationShocktrooper</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="Arellian_FederationShocktroopBase">
+		<defName>Arellian_Shocktrooper1</defName>
+		<title>Arellian Federation shocktrooper</title>
+		<titleShort>Federation shocktrooper</titleShort>
+		<description>[PAWN_nameDef] was a shocktrooper of the Arellian Federation. As a shocktrooper, [PAWN_pronoun] is used to deploying feet first to enemy grounds...or hideouts of traitors of the Federation.</description>
+		<skillGains>
+			<Shooting>12</Shooting>
+			<Melee>12</Melee>
+		</skillGains>
+	</BackstoryDef>
+<!--== Shocktroop ==-->
 </Defs>

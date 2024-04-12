@@ -7,6 +7,7 @@
 			<li>Arellian_FederationTrooper</li>
 			<li>Arellian_FederationMechanic</li>
 			<li>Arellian_FederationEngineer</li>
+			<li>Arellian_FederationShocktrooper</li>
 		</spawnCategories>
 		<requiredWorkTags>
 			<li>Violent</li>

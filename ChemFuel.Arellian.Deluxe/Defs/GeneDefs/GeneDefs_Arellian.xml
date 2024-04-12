@@ -7,18 +7,18 @@
 		<descriptionShort>TEST</descriptionShort>
 		<iconPath>UI/Icons/Xenotypes/Custom/CustomXenotypeIcon4</iconPath>
 		<inheritable>true</inheritable>
-		<nameMaker>NamerPersonDirtmole_Male</nameMaker>
-		<nameMakerFemale>NamerPersonDirtmole_Female</nameMakerFemale>
+		<nameMaker>Arellian_PawnNamer</nameMaker>
+		<nameMakerFemale>Arellian_PawnNamerFemale</nameMakerFemale>
 		<chanceToUseNameMaker>1</chanceToUseNameMaker>
 		<genes>
 			<li>Temper_Arellian</li>
 			<li>CombatInstinct_Arellian</li>
 			<li>Physique_Arellian</li>
-			<li>WarHawkGene_Arellian</li>
 			<li>Hair_Arellian</li>
 			<li>Skin_Arellian</li>
 			<li>Eyes_Arellian</li>
 			<li>Ears_Arellian</li>
+			<li>VoiceArellian</li>
 
 			<li>Libido_High</li>
 			<li>Fertile</li>
@@ -34,7 +34,7 @@
 	</XenotypeDef>
 
 <!--== GENE ==-->
-<!--Almost all Arellian genes are unextractable. Fuck you.-->
+<!--This is not balanced, I know. But do I care? No.-->
 
 	<GeneCategoryDef>
 		<defName>Arellian</defName>
@@ -44,7 +44,6 @@
 
 	<GeneDef Name="GeneArellianBase" Abstract="True">
 		<displayCategory>Arellian</displayCategory>
-		<canGenerateInGeneSet>false</canGenerateInGeneSet>
 		<symbolPack><wholeNameSymbols>
 			<li><symbol>Arellian</symbol></li>
 		</wholeNameSymbols></symbolPack>
@@ -61,6 +60,9 @@
 		<aggroMentalBreakSelectionChanceFactor>999</aggroMentalBreakSelectionChanceFactor>
 		<prisonBreakMTBFactor>2</prisonBreakMTBFactor>
 		<displayOrderInCategory>0</displayOrderInCategory>
+		<forcedTraits>
+			<li><def>Arellian_WarHawk</def></li>
+		</forcedTraits>
 		<statFactors>
 			<CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0.25</CertaintyLossFactor>
 		</statFactors>
@@ -78,14 +80,7 @@
 		<iconPath>UI/Icons/Genes/Gene_StrongMeleeDamage</iconPath>
 		<displayOrderInCategory>1</displayOrderInCategory>
 		<statFactors>
-			<ShootingAccuracyFactor_Long>1.05</ShootingAccuracyFactor_Long>
-			<ShootingAccuracyFactor_Medium>1.20</ShootingAccuracyFactor_Medium>
-			<ShootingAccuracyFactor_Short>1.40</ShootingAccuracyFactor_Short>
-			<ShootingAccuracyFactor_Touch>1.55</ShootingAccuracyFactor_Touch>
-			<AimingDelayFactor>0.90</AimingDelayFactor>
-			<RangedCooldownFactor>0.95</RangedCooldownFactor>
-
-			<MeleeDamageFactor>1.25</MeleeDamageFactor>
+			<ShootingAccuracyPawn>1.5</ShootingAccuracyPawn>
 			<MeleeCooldownFactor>0.90</MeleeCooldownFactor>
 			<StaggerDurationFactor>0.80</StaggerDurationFactor>
 		</statFactors>
@@ -103,8 +98,10 @@
 		<iconPath>UI/Icons/Genes/Gene_BodyStandard</iconPath>
 		<displayOrderInCategory>2</displayOrderInCategory>
 		<forcedHeadTypes>
-			<li>Arellian_NormalA</li>
-			<li>Arellian_NormalB</li>
+			<li>ArellianMale_NormalA</li>
+			<li>ArellianMale_NormalB</li>
+			<li>ArellianFemale_NormalA</li>
+			<li>ArellianFemale_NormalB</li>
 		</forcedHeadTypes>
 		<statFactors><!--Intended behavior-->
 			<InjuryHealingFactor>1.25</InjuryHealingFactor>
@@ -118,20 +115,6 @@
 		<exclusionTags>
 			<li>Fur</li>
 		</exclusionTags>
-	</GeneDef>
-
-	<GeneDef ParentName="GeneArellianBase">
-		<defName>WarHawkGene_Arellian</defName>
-		<label>war hawk</label>
-		<biostatCpx>3</biostatCpx>
-		<biostatMet>-1</biostatMet>
-		<description>Carriers of this gene prefer to wield a weapon, especially ranged weaponry.</description>
-		<iconPath>UI/Icons/Genes/Gene_BodyHulk</iconPath>
-		<displayOrderInCategory>3</displayOrderInCategory>
-		<minAgeActive>13</minAgeActive>
-		<forcedTraits>
-			<li><def>Arellian_WarHawk</def></li>
-		</forcedTraits>
 	</GeneDef>
 
 	<GeneDef ParentName="GeneHairColorBase">
@@ -158,6 +141,7 @@
 		<label>amber eyes</label>
 		<labelShortAdj>amber-eyed</labelShortAdj>
 		<biostatCpx>3</biostatCpx>
+		<biostatMet>-1</biostatMet>
 		<description>Carriers of this gene have a rich yellow-pigmented eyes.</description>
 		<iconPath>UI/Icons/Genes/Gene_RedEyes</iconPath>
 		<displayOrderInCategory>6</displayOrderInCategory>
@@ -171,50 +155,21 @@
 			<li>
 				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
 				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-				<texPath>Things/Pawn/Arellianlike/Heads/Eyes/Male/Eye</texPath>
-				<texPathFemale>Things/Pawn/Arellianlike/Heads/Eyes/Female/Eye</texPathFemale>
-				<anchorTag>RightEye</anchorTag>
+				<texPath>ArellianThings/Pawn/Arellian/Heads/Eyes/Eye</texPath>
 				<rotDrawMode>Fresh, Rotting</rotDrawMode>
 				<parentTagDef>Head</parentTagDef>
-				<drawSize>0.175</drawSize>
-				<side>Right</side>
 				<visibleFacing>
 					<li>East</li>
+					<li>West</li>
 					<li>South</li>
 				</visibleFacing>
 				<drawData>
 					<defaultData>
 						<layer>54</layer>
-						<offset>(-0.095,0,-0.065)</offset>
 					</defaultData>
 					<dataWest>
-						<offset>(-0.1,0,-0.065)</offset>
-					</dataWest>
-				</drawData>
-			</li>
-			<li>
-				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
-				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-				<texPath>Things/Pawn/Arellianlike/Heads/Eyes/Male/Eye</texPath>
-				<texPathFemale>Things/Pawn/Arellianlike/Heads/Eyes/Female/Eye</texPathFemale>
-				<anchorTag>LeftEye</anchorTag>
-				<rotDrawMode>Fresh, Rotting</rotDrawMode>
-				<parentTagDef>Head</parentTagDef>
-				<drawSize>0.175</drawSize>
-				<side>Left</side>
-				<visibleFacing>
-					<li>South</li>
-					<li>West</li>
-				</visibleFacing>
-				<drawData>
-					<defaultData>
-						<layer>54</layer>
-						<offset>(0.095,0,-0.065)</offset>
 						<flip>true</flip>
-					</defaultData>
-					<dataEast>
-						<offset>(0.1,0,-0.065)</offset>
-					</dataEast>
+					</dataWest>
 				</drawData>
 			</li>
 		</renderNodeProperties>
@@ -223,10 +178,11 @@
 	<GeneDef ParentName="GeneEarsBase">
 		<displayCategory>Arellian</displayCategory>
 		<defName>Ears_Arellian</defName>
-		<label>Arellian ears</label>
+		<label>feline ears</label>
 		<biostatCpx>3</biostatCpx>
-		<description>Carriers of this gene have cat ears.</description>
-		<iconPath>UI/Icons/Genes/Gene_EarCat</iconPath>
+		<biostatMet>-1</biostatMet>
+		<description>Carriers of this gene have long, feline ears.</description>
+		<iconPath>ArellianUI/Icons/Genes/Gene_Ear</iconPath>
 		<displayOrderInCategory>7</displayOrderInCategory>
 		<capMods>
 			<li>
@@ -238,9 +194,10 @@
 			<li>
 				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
 				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-				<texPath>Things/Pawn/Humanlike/HeadAttachments/CatEars/CatEars</texPath>
+				<texPath>ArellianThings/Pawn/Arellian/Heads/Ears/Ear</texPath>
 				<colorType>Hair</colorType>
 				<parentTagDef>Head</parentTagDef>
+				<useRottenColor>true</useRottenColor>
 				<rotDrawMode>Fresh, Rotting</rotDrawMode>
 				<drawData>
 					<defaultData>
@@ -249,5 +206,25 @@
 				</drawData>
 			</li>
 		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef ParentName="GeneVoiceBase">
+		<displayCategory>Arellian</displayCategory>
+		<defName>VoiceArellian</defName>
+		<label>feline voice</label>
+		<biostatCpx>3</biostatCpx>
+		<biostatMet>1</biostatMet>
+		<description>Carriers have a meowing voice like that of a feline. It can be hard to understand sometimes.</description>
+		<iconPath>UI/Icons/Genes/Gene_VoicePig</iconPath>
+		<displayOrderInCategory>125</displayOrderInCategory>
+		<capMods>
+			<li>
+				<capacity>Talking</capacity>
+				<postFactor>0.9</postFactor>
+			</li>
+		</capMods>
+		<soundCall>Pawn_Cat_Call</soundCall>
+		<soundDeath>Pawn_Cat_Death</soundDeath>
+		<soundWounded>Pawn_Cat_Injured</soundWounded>
 	</GeneDef>
 </Defs>
