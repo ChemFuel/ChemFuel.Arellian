@@ -11,14 +11,9 @@
 				They are extremely stubborn and confident of their beliefs, and will try to pester others to join them more often.</description>
 				<statFactors>
 					<AimingDelayFactor>0.90</AimingDelayFactor>
-					<RangedCooldownFactor>0.95</RangedCooldownFactor>
 					<CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0.25</CertaintyLossFactor>
 					<SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">2</SocialIdeoSpreadFrequencyFactor>
 				</statFactors>
-				<skillGains>
-					<Melee>4</Melee>
-					<Shooting>4</Shooting>
-				</skillGains>
 			</li>
 		</degreeDatas>
 		<conflictingTraits>

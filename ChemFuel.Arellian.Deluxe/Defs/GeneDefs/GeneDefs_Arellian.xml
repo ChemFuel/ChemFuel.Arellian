@@ -20,6 +20,11 @@
 			<li>Voice_Arellian</li>
 
 			<li>Stalwart_Arellian</li>
+			<li>MeleeDamage_Arellian</li>
+			<li>Aggression_Arellian</li>
+
+			<li>Greedy_Arellian</li>
+			<li>WarHawk_Arellian</li>
 
 			<li>Libido_High</li>
 			<li>Fertile</li>
@@ -28,7 +33,6 @@
 
 			<li>DarkVision</li>
 			<li>StrongStomach</li>
-			<li>Mood_Sanguine</li>
 			<li>PsychicAbility_Deaf</li>
 			<li>AptitudeTerrible_Artistic</li>
 			<li>AptitudeTerrible_Animals</li>
@@ -54,9 +58,9 @@
 			<li>PerfectImmunity</li>
 			<li>ArchiteMetabolism</li>
 
-			<li>Superclotting</li>
 			<li>Hair_Grayless</li>
-			<li>MeleeDamage_Strong</li>
+			<li>Beauty_Beautiful</li>
+			<li>Mood_Sanguine</li>
 			<li>Robust</li>
 		</genes>
 	</XenotypeDef>
@@ -177,50 +181,72 @@
 	</GeneDef>
 
 <!--== ==-->
-  <GeneDef>
-    <defName>PLACEHOLDER</defName>
-    <label>nearsighted</label>
-    <iconPath>UI/Icons/Genes/Gene_Nearsighted</iconPath>
-    <description>Carriers of this gene have difficulty seeing at a distance. Their shooting accuracy at long ranges is reduced.</description>
-    <displayCategory>Miscellaneous</displayCategory>
-    <displayOrderInCategory>51</displayOrderInCategory>
-    <statFactors>
-      <ShootingAccuracyFactor_Long>0.25</ShootingAccuracyFactor_Long>
-      <ShootingAccuracyFactor_Medium>0.5</ShootingAccuracyFactor_Medium>
-    </statFactors>
-    <biostatMet>2</biostatMet>
-    <exclusionTags>
-      <li>ShootingAccuracy</li>
-    </exclusionTags>
-    <symbolPack>
-      <prefixSymbols>
-        <li><symbol>blind</symbol></li>
-        <li><symbol>blur</symbol></li>
-        <li><symbol>squint</symbol></li>
-        <li><symbol>peek</symbol></li>
-        <li><symbol>cross</symbol></li>
-      </prefixSymbols>
-      <suffixSymbols>
-        <li><symbol>sighter</symbol></li>
-        <li><symbol>peeker</symbol></li>
-      </suffixSymbols>
-    </symbolPack>
-  </GeneDef>
-
 	<GeneDef><!--This is a lesser version of Unstoppable gene-->
 		<defName>Stalwart_Arellian</defName>
 		<label>stalwart</label>
-		<biostatCpx>1</biostatCpx>
 		<biostatMet>-1</biostatMet>
 		<description>Carriers of this gene regain their pace much faster after taking damage.</description>
 		<iconPath>UI/Icons/Genes/Gene_Unstoppable</iconPath>
-		<displayCategory>Miscellaneous</displayCategory>
-		<displayOrderInCategory>551</displayOrderInCategory>
+		<displayCategory>ArellianGene</displayCategory>
+		<displayOrderInCategory>5</displayOrderInCategory>
 		<statFactors>
 			<StaggerDurationFactor>0.50</StaggerDurationFactor>
 		</statFactors>
 		<exclusionTags>
 			<li>StaggerFactor</li>
 		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef ParentName="GeneMeleeDamageBase">
+		<defName>MeleeDamage_Arellian</defName>
+		<label>agile melee fighter</label>
+		<biostatMet>-1</biostatMet>
+		<description>Carriers of this gene do less damage in close-quarters combat, but extra-flexible fast-twitch muscle fibers make their strikes accurate and faster.</description>
+		<iconPath>UI/Icons/Genes/Gene_StrongMeleeDamage</iconPath>
+		<displayCategory>ArellianGene</displayCategory>
+		<displayOrderInCategory>6</displayOrderInCategory>
+		<statFactors>
+			<MeleeDamageFactor>0.9</MeleeDamageFactor>
+			<MeleeCooldownFactor>0.8</MeleeCooldownFactor>
+		</statFactors>
+	</GeneDef>
+
+	<GeneDef ParentName="GeneAggressionBase">
+		<defName>Aggression_Arellian</defName>
+		<label>disciplined aggression</label>
+		<biostatMet>-1</biostatMet>
+		<description>Carriers of this gene are normally calm, and are less likely to start social fights or attempt to escape from prison. However, any mental break they have will be of an aggressive type.</description>
+		<iconPath>UI/Icons/Genes/Gene_HyperAggressive</iconPath>
+		<socialFightChanceFactor>0.5</socialFightChanceFactor>
+		<aggroMentalBreakSelectionChanceFactor>999</aggroMentalBreakSelectionChanceFactor>
+		<prisonBreakMTBFactor>2</prisonBreakMTBFactor>
+		<displayCategory>ArellianGene</displayCategory>
+		<displayOrderInCategory>7</displayOrderInCategory>
+  </GeneDef>
+
+	<GeneDef>
+		<defName>Greedy_Arellian</defName>
+		<label>greedy</label>
+		<biostatMet>1</biostatMet>
+		<description>Carriers of this gene are inherently more greedier than others.</description>
+		<iconPath>UI/Icons/Genes/Gene_Pessimist</iconPath>
+		<displayCategory>ArellianGene</displayCategory>
+		<displayOrderInCategory>8</displayOrderInCategory>
+		<forcedTraits>
+			<li><def>Greedy</def></li>
+		</forcedTraits>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>WarHawk_Arellian</defName>
+		<label>war hawk</label>
+		<biostatMet>-2</biostatMet>
+		<description>Carriers of this gene are known for their zealous loyalty to the cause and combat prowess.</description>
+		<iconPath>UI/Icons/Genes/Beauty_Ugly</iconPath>
+		<displayCategory>ArellianGene</displayCategory>
+		<displayOrderInCategory>9</displayOrderInCategory>
+		<forcedTraits>
+			<li><def>Arellian_WarHawk</def></li>
+		</forcedTraits>
 	</GeneDef>
 </Defs>
