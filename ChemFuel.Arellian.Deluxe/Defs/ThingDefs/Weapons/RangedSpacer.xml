@@ -14,9 +14,38 @@
 		<isRanged>true</isRanged>
 		<impactSoundType>Bullet</impactSoundType>
 		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
-		<armorCategory>Sharp</armorCategory>
+		<armorCategory>Heat</armorCategory>
 		<overkillPctToDestroyPart>0.25~1</overkillPctToDestroyPart>
 		<makesAnimalsFlee>true</makesAnimalsFlee>
+	</DamageDef>
+
+	<DamageDef>
+		<defName>Arellian_PlasmaBomb</defName>
+		<label>plasma</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<isExplosive>true</isExplosive>
+		<externalViolence>true</externalViolence>
+		<canUseDeflectMetalEffect>true</canUseDeflectMetalEffect>
+		<deathMessage>{0} has been shot to death.</deathMessage>
+		<hediff>Shredded</hediff>
+		<hediffSkin>Burn</hediffSkin>
+		<hediffSolid>Crack</hediffSolid>
+		<isRanged>true</isRanged>
+		<impactSoundType>Bullet</impactSoundType>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<armorCategory>Heat</armorCategory>
+		<overkillPctToDestroyPart>0.25~1</overkillPctToDestroyPart>
+		<makesAnimalsFlee>true</makesAnimalsFlee>
+		<buildingDamageFactorImpassable>15</buildingDamageFactorImpassable>
+		<buildingDamageFactorPassable>7.5</buildingDamageFactorPassable>
+		<plantDamageFactor>4</plantDamageFactor>
+		<explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+		<explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>
+		<explosionCellFleck>BlastDry</explosionCellFleck>
+		<explosionColorCenter>(255,75,75)</explosionColorCenter>
+		<explosionColorEdge>(150,75,75)</explosionColorEdge>
+		<soundExplosion>Explosion_Bomb</soundExplosion>
+		<combatLogRules>Damage_Bomb</combatLogRules>
 	</DamageDef>
 
 <!--Plasma Bullet-->
@@ -26,43 +55,57 @@
 			<texPath>ArellianThings/Projectile/PlasmaBolt</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
+			<color>(0,255,0)</color>
 		</graphicData>
 	</ThingDef>
 
 	<ThingDef ParentName="AR_PlasmaBulletBase">
 		<defName>Arellian_LightBolt</defName>
-		<graphicData>
-			<color>(0,255,0)</color>
-		</graphicData>
 		<projectile>
 			<damageDef>Arellian_Plasma</damageDef>
 			<damageAmountBase>11</damageAmountBase>
-			<armorPenetrationBase>0.50</armorPenetrationBase>
+			<armorPenetrationBase>0.75</armorPenetrationBase>
 			<speed>200</speed>
-			<stoppingPower>0.75</stoppingPower>
+			<stoppingPower>1.0</stoppingPower>
 		</projectile>
 	</ThingDef>
 
 	<ThingDef ParentName="AR_PlasmaBulletBase">
 		<defName>Arellian_MediumBolt</defName>
-		<graphicData>
-			<color>(0,255,0)</color>
-		</graphicData>
 		<projectile>
 			<damageDef>Arellian_Plasma</damageDef>
 			<damageAmountBase>16</damageAmountBase>
-			<armorPenetrationBase>0.75</armorPenetrationBase>
+			<armorPenetrationBase>1.00</armorPenetrationBase>
 			<speed>200</speed>
-			<stoppingPower>1.00</stoppingPower>
+			<stoppingPower>1.5</stoppingPower>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="AR_PlasmaBulletBase">
+		<defName>Arellian_LauncherBolt</defName>
+		<label>plasma blast</label>
+		<graphicData>
+			<color>(255,0,0)</color>
+			<drawSize>3.0</drawSize>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<damageDef>Arellian_PlasmaBomb</damageDef>
+			<damageAmountBase>80</damageAmountBase>
+			<armorPenetrationBase>1.50</armorPenetrationBase>
+			<explosionRadius>2.9</explosionRadius>
+			<speed>150</speed>
+			<screenShakeFactor>2.0</screenShakeFactor>
 		</projectile>
 	</ThingDef>
 
 <!--Regular Weapons-->
 	<ThingDef Name="BaseArellianMakeableGun" ParentName="BaseMakeableGun" Abstract="True">
+		<tickerType>Normal</tickerType>
 		<techLevel>Spacer</techLevel>
 		<soundInteract>Interact_ChargeRifle</soundInteract>
 		<recipeMaker>
-			<researchPrerequisite>ChargedShot</researchPrerequisite>
+			<researchPrerequisite>Arellian_PlasmaPulse</researchPrerequisite>
 			<recipeUsers Inherit="False">
 				<li>FabricationBench</li>
 			</recipeUsers>
@@ -87,7 +130,6 @@ The superheated plasma shots can burn through almost every armor, and leaves a n
 		</graphicData>
 		<uiIconScale>1.0</uiIconScale>
 		<statBases>
-			<MarketValue>1250</MarketValue>
 			<WorkToMake>45000</WorkToMake>
 			<Mass>1.74</Mass>
 			<AccuracyTouch>0.80</AccuracyTouch>
@@ -105,7 +147,7 @@ The superheated plasma shots can burn through almost every armor, and leaves a n
 		<costList>
 			<Plasteel>30</Plasteel>
 			<ComponentIndustrial>1</ComponentIndustrial>
-			<ComponentSpacer>1</ComponentSpacer>
+			<ArellianPlasmaCore>1</ArellianPlasmaCore>
 		</costList>
 		<weaponTags>
 			<li>Arellian_Federation_HG</li>
@@ -146,6 +188,17 @@ The superheated plasma shots can burn through almost every armor, and leaves a n
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>1.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+				<chanceToStartFire>0.75</chanceToStartFire>
+				<damageFalloff>true</damageFalloff>
+				<explosionSound>Explosion_GiantBomb</explosionSound>
+				<wickTicks>60~120</wickTicks>
+			</li>
+		</comps>
 	</ThingDef><!--HG-->
 
 	<ThingDef ParentName="BaseArellianMakeableGun"><!--SMG-->
@@ -159,7 +212,6 @@ The superheated plasma shots can burn through almost every armor, and leaves a n
 			<drawSize>1.5</drawSize>
 		</graphicData>
 		<statBases>
-			<MarketValue>1820</MarketValue>
 			<WorkToMake>55000</WorkToMake>
 			<Mass>2.48</Mass>
 			<AccuracyTouch>0.80</AccuracyTouch>
@@ -177,7 +229,7 @@ The superheated plasma shots can burn through almost every armor, and leaves a n
 		<costList>
 			<Plasteel>40</Plasteel>
 			<ComponentIndustrial>2</ComponentIndustrial>
-			<ComponentSpacer>2</ComponentSpacer>
+			<ArellianPlasmaCore>1</ArellianPlasmaCore>
 		</costList>
 		<weaponTags>
 			<li>Arellian_Federation_SMG</li>
@@ -220,6 +272,17 @@ The superheated plasma shots can burn through almost every armor, and leaves a n
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>1.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+				<chanceToStartFire>0.75</chanceToStartFire>
+				<damageFalloff>true</damageFalloff>
+				<explosionSound>Explosion_GiantBomb</explosionSound>
+				<wickTicks>60~120</wickTicks>
+			</li>
+		</comps>
 	</ThingDef><!--SMG-->
 
 	<ThingDef ParentName="BaseArellianMakeableGun"><!--AR-->
@@ -233,7 +296,6 @@ The superheated plasma shots can burn through almost every armor, and leaves a n
 			<drawSize>1.5</drawSize>
 		</graphicData>
 		<statBases>
-			<MarketValue>2400</MarketValue>
 			<WorkToMake>65000</WorkToMake>
 			<Mass>3.35</Mass>
 			<AccuracyTouch>0.70</AccuracyTouch>
@@ -250,8 +312,8 @@ The superheated plasma shots can burn through almost every armor, and leaves a n
 		</recipeMaker>
 		<costList>
 			<Plasteel>55</Plasteel>
-			<ComponentIndustrial>2</ComponentIndustrial>
-			<ComponentSpacer>3</ComponentSpacer>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<ArellianPlasmaCore>2</ArellianPlasmaCore>
 		</costList>
 		<weaponTags>
 			<li>Arellian_Federation_AR</li>
@@ -294,6 +356,17 @@ The superheated plasma shots can burn through almost every armor, and leaves a n
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>2.3</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+				<chanceToStartFire>0.75</chanceToStartFire>
+				<damageFalloff>true</damageFalloff>
+				<explosionSound>Explosion_GiantBomb</explosionSound>
+				<wickTicks>60~120</wickTicks>
+			</li>
+		</comps>
 	</ThingDef><!--AR-->
 
 	<ThingDef ParentName="BaseArellianMakeableGun"><!--LMG-->
@@ -325,7 +398,7 @@ The superheated plasma shots can burn through almost every armor, and leaves a n
 		<costList>
 			<Plasteel>80</Plasteel>
 			<ComponentIndustrial>5</ComponentIndustrial>
-			<ComponentSpacer>3</ComponentSpacer>
+			<ArellianPlasmaCore>3</ArellianPlasmaCore>
 		</costList>
 		<weaponTags>
 			<li>Arellian_Federation_LMG</li>
@@ -368,13 +441,23 @@ The superheated plasma shots can burn through almost every armor, and leaves a n
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>2.7</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+				<chanceToStartFire>0.75</chanceToStartFire>
+				<damageFalloff>true</damageFalloff>
+				<explosionSound>Explosion_GiantBomb</explosionSound>
+				<wickTicks>60~120</wickTicks>
+			</li>
+		</comps>
 	</ThingDef><!--LMG-->
 
 	<ThingDef ParentName="BaseArellianMakeableGun"><!--HEAVY-->
 		<defName>Gun_AR_FederationLauncher</defName>
 		<label>Arellian plasma launcher</label>
-		<description>The PLAS-12R blaster rifle, unlike the other varients of PLAS-12, is a designated marksman rifle modifed to provide fire support with deadly precision.
-The superheated plasma shots can burn through almost every armor, and leaves a nasty burn upon impact.</description>
+		<description>The PLAS-999 launcher .</description>
 		<tickerType>Normal</tickerType>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/RocketLauncher</texPath>
@@ -382,14 +465,13 @@ The superheated plasma shots can burn through almost every armor, and leaves a n
 			<!--<drawSize>1.5</drawSize>-->
 		</graphicData>
 		<statBases>
-			<MarketValue>3650</MarketValue>
-			<WorkToMake>65000</WorkToMake>
-			<Mass>3.84</Mass>
+			<WorkToMake>80000</WorkToMake>
+			<Mass>10.35</Mass>
 			<AccuracyTouch>0.53</AccuracyTouch>
 			<AccuracyShort>0.71</AccuracyShort>
 			<AccuracyMedium>0.89</AccuracyMedium>
 			<AccuracyLong>0.92</AccuracyLong>
-			<RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>5.5</RangedWeapon_Cooldown>
 		</statBases>
 		<recipeMaker>
 			<skillRequirements>
@@ -398,9 +480,9 @@ The superheated plasma shots can burn through almost every armor, and leaves a n
 			<displayPriority>510</displayPriority>
 		</recipeMaker>
 		<costList>
-			<Plasteel>55</Plasteel>
-			<ComponentIndustrial>2</ComponentIndustrial>
-			<ComponentSpacer>6</ComponentSpacer>
+			<Plasteel>60</Plasteel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<ArellianPlasmaCore>5</ArellianPlasmaCore>
 		</costList>
 		<weaponTags>
 			<li>Arellian_Federation_Launcher</li>
@@ -414,15 +496,21 @@ The superheated plasma shots can burn through almost every armor, and leaves a n
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_UnstablePlasma</defaultProjectile>
+				<defaultProjectile>Arellian_LauncherBolt</defaultProjectile>
 				<forcedMissRadius>0.1</forcedMissRadius>
-				<ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
+				<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
 				<ai_ProjectileLaunchingIgnoresMeleeThreats>true</ai_ProjectileLaunchingIgnoresMeleeThreats>
 				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
 				<warmupTime>2.8</warmupTime>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+					<canTargetPawns>true</canTargetPawns>
+				</targetParams>
 				<range>44.9</range>
-				<soundCast>InfernoCannon_Fire</soundCast>
+				<minRange>3.9</minRange>
+				<soundCast>Shot_HellsphereCannonGun</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<soundAiming>HellsphereCannon_Aiming</soundAiming>
 				<muzzleFlashScale>30</muzzleFlashScale>
 			</li>
 		</verbs>
@@ -447,27 +535,14 @@ The superheated plasma shots can burn through almost every armor, and leaves a n
 		</tools>
 		<comps>
 			<li Class="CompProperties_Explosive">
-				<explosiveRadius>3.9</explosiveRadius>
+				<explosiveRadius>3.5</explosiveRadius>
 				<explosiveDamageType>Bomb</explosiveDamageType>
-				<requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+				<startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+				<chanceToStartFire>0.75</chanceToStartFire>
+				<damageFalloff>true</damageFalloff>
+				<explosionSound>Explosion_GiantBomb</explosionSound>
+				<wickTicks>60~120</wickTicks>
 			</li>
 		</comps>
-	</ThingDef>
-	<ThingDef ParentName="BaseBullet">
-		<defName>Bullet_UnstablePlasma</defName>
-		<label>unstable plasma</label>
-		<graphicData>
-			<texPath>ArellianThings/Projectile/PlasmaBolt</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>TransparentPostLight</shaderType>
-		</graphicData>
-		<thingClass>Projectile_Explosive</thingClass>
-		<projectile>
-			<damageDef>Bomb</damageDef>
-			<armorPenetrationBase>0.50</armorPenetrationBase>
-			<explosionRadius>1.9</explosionRadius>
-			<speed>100</speed>
-			<screenShakeFactor>0.5</screenShakeFactor>
-		</projectile>
 	</ThingDef><!--HEAVY-->
 </Defs>

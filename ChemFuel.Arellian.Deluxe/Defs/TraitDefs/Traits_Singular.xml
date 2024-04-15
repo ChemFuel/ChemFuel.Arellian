@@ -6,10 +6,14 @@
 		<degreeDatas>
 			<li>
 				<label>war hawk</label>
-				<description>{PAWN_nameDef} likes war and weaponry. While {PAWN_pronoun} prefers fighting {PAWN_possessive} enemies from a distance with a ranged weapon, {PAWN_pronoun} doesn't mind wielding a melee weapon. {PAWN_nameDef} will be unhappy when {PAWN_pronoun} is unarmed.</description>
+				<description>{PAWN_nameDef} likes war and weaponry. While {PAWN_pronoun} prefers fighting {PAWN_possessive} enemies from a distance with a ranged weapon, {PAWN_pronoun} doesn't mind wielding a melee weapon. {PAWN_nameDef} will be unhappy when {PAWN_pronoun} is unarmed.
+				
+				They are extremely stubborn and confident of their beliefs, and will try to pester others to join them more often.</description>
 				<statFactors>
 					<AimingDelayFactor>0.90</AimingDelayFactor>
 					<RangedCooldownFactor>0.95</RangedCooldownFactor>
+					<CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0.25</CertaintyLossFactor>
+					<SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">2</SocialIdeoSpreadFrequencyFactor>
 				</statFactors>
 				<skillGains>
 					<Melee>4</Melee>

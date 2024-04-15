@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="DropPodIncoming">
+		<defName>DropPodIncoming_ArellianFederation</defName>
+		<graphicData>
+			<texPath>Things/Special/DropPodMechanoid</texPath>
+			<color>(80,80,80)</color>
+		</graphicData>
+		<skyfaller>
+			<anticipationSound>DropPod_Fall_Mechanoid</anticipationSound>
+			<impactSound>DropPod_Impact</impactSound>
+			<explosionRadius>0.5</explosionRadius>
+			<explosionDamage>BombSuper</explosionDamage>
+		</skyfaller>
+	</ThingDef>
+
+	<ThingDef ParentName="ActiveDropPod">
+		<defName>ActiveDropPod_ArellianFederation</defName>
+		<label>federation drop pod</label>
+		<soundOpen>DropPod_Open_Mechanoid</soundOpen>
+		<graphicData>
+			<texPath>Things/Special/DropPodMechanoid</texPath>
+			<color>(80,80,80)</color>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>750</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+	</ThingDef>
+</Defs>

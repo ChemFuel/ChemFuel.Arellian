@@ -107,6 +107,8 @@
 				<li>(2001, 10000)</li>
 			</points>
 		</maxPawnCostPerTotalPointsCurve>
+		<dropPodActive>ActiveDropPod_ArellianFederation</dropPodActive>
+		<dropPodIncoming>DropPodIncoming_ArellianFederation</dropPodIncoming>
 		<pawnGroupMakers>
 			<!--=== Traders ===-->
 			<li>
@@ -130,10 +132,10 @@
 				</disallowedStrategies>
 				<options>
 					<!--T 50, S 30, O 15, C 4, G 1-->
-					<Federation_AssaultTrooper>50</Federation_AssaultTrooper>
+					<Federation_AssaultTrooper>45</Federation_AssaultTrooper>
 
 					<Federation_HeavySergeant>25</Federation_HeavySergeant>
-					<Federation_SpecialistSergeant>7.5</Federation_SpecialistSergeant>
+					<Federation_SpecialistSergeant>15</Federation_SpecialistSergeant>
 
 					<!--<Arellian_Army_Officer>10</Arellian_Army_Officer>
 					<Arellian_Army_OfficerSpecialist>7.5</Arellian_Army_OfficerSpecialist>

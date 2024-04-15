@@ -3,99 +3,96 @@
 	<XenotypeDef>
 		<defName>Arellian</defName>
 		<label>Arellian</label>
-		<description>TEST</description>
-		<descriptionShort>TEST</descriptionShort>
+		<description>(WIP) Arellians.</description>
+		<descriptionShort>Meow meow meow meow :3</descriptionShort>
 		<iconPath>UI/Icons/Xenotypes/Custom/CustomXenotypeIcon4</iconPath>
 		<inheritable>true</inheritable>
 		<nameMaker>Arellian_PawnNamer</nameMaker>
 		<nameMakerFemale>Arellian_PawnNamerFemale</nameMakerFemale>
 		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<factionlessGenerationWeight>0.25</factionlessGenerationWeight>
 		<genes>
-			<li>Temper_Arellian</li>
-			<li>CombatInstinct_Arellian</li>
-			<li>Physique_Arellian</li>
 			<li>Hair_Arellian</li>
 			<li>Skin_Arellian</li>
+			<li>Head_Arellian</li>
 			<li>Eyes_Arellian</li>
 			<li>Ears_Arellian</li>
-			<li>VoiceArellian</li>
+			<li>Voice_Arellian</li>
+
+			<li>Stalwart_Arellian</li>
 
 			<li>Libido_High</li>
 			<li>Fertile</li>
 			<li>Beard_NoBeardOnly</li>
 			<li>Body_Standard</li>
 
+			<li>DarkVision</li>
 			<li>StrongStomach</li>
-			<li>Superclotting</li>
-			<li>AptitudePoor_Artistic</li>
+			<li>Mood_Sanguine</li>
+			<li>PsychicAbility_Deaf</li>
+			<li>AptitudeTerrible_Artistic</li>
 			<li>AptitudeTerrible_Animals</li>
 		</genes>
+	</XenotypeDef>
+
+	<XenotypeDef>
+		<defName>HighArellian</defName>
+		<label>High Arellian</label>
+		<description>(WIP) High Arellians are .</description>
+		<descriptionShort>Meow?</descriptionShort>
+		<iconPath>UI/Icons/Xenotypes/Custom/CustomXenotypeIcon4</iconPath>
+		<nameMaker>Arellian_PawnNamer</nameMaker>
+		<nameMakerFemale>Arellian_PawnNamerFemale</nameMakerFemale>
+		<chanceToUseNameMaker>1</chanceToUseNameMaker>
 		<factionlessGenerationWeight>0</factionlessGenerationWeight>
+		<doubleXenotypeChances>
+			<Arellian>1</Arellian>
+		</doubleXenotypeChances>
+		<genes>
+			<li>Ageless</li>
+			<li>TotalHealing</li>
+			<li>PerfectImmunity</li>
+			<li>ArchiteMetabolism</li>
+
+			<li>Superclotting</li>
+			<li>Hair_Grayless</li>
+			<li>MeleeDamage_Strong</li>
+			<li>Robust</li>
+		</genes>
 	</XenotypeDef>
 
 <!--== GENE ==-->
-<!--This is not balanced, I know. But do I care? No.-->
 
 	<GeneCategoryDef>
-		<defName>Arellian</defName>
+		<defName>ArellianGene</defName>
 		<label>arellian</label>
-		<displayPriorityInXenotype>117</displayPriorityInXenotype>
+		<displayPriorityInXenotype>1170</displayPriorityInXenotype>
 	</GeneCategoryDef>
 
-	<GeneDef Name="GeneArellianBase" Abstract="True">
-		<displayCategory>Arellian</displayCategory>
-		<symbolPack><wholeNameSymbols>
-			<li><symbol>Arellian</symbol></li>
-		</wholeNameSymbols></symbolPack>
-	</GeneDef>
-
-	<GeneDef ParentName="GeneArellianBase">
-		<defName>Temper_Arellian</defName>
-		<label>Arellian temper</label>
-		<biostatCpx>6</biostatCpx>
-		<biostatMet>3</biostatMet>
-		<description>Carriers of this gene are disciplined and calm. They are half as likely to start social fights or break out of prison, but any mental break they have will be an aggressive type.</description>
-		<iconPath>UI/Icons/Genes/Gene_Aggressive</iconPath>
-		<socialFightChanceFactor>0.5</socialFightChanceFactor>
-		<aggroMentalBreakSelectionChanceFactor>999</aggroMentalBreakSelectionChanceFactor>
-		<prisonBreakMTBFactor>2</prisonBreakMTBFactor>
+	<GeneDef ParentName="GeneHairColorBase">
+		<defName>Hair_Arellian</defName>
+		<label>honey-blonde hair</label>
+		<hairColorOverride>(255,212,85)</hairColorOverride>
+		<selectionWeight>0.75</selectionWeight>
+		<selectionWeightFactorDarkSkin>0.75</selectionWeightFactorDarkSkin>
+		<displayCategory>ArellianGene</displayCategory>
 		<displayOrderInCategory>0</displayOrderInCategory>
-		<forcedTraits>
-			<li><def>Arellian_WarHawk</def></li>
-		</forcedTraits>
-		<statFactors>
-			<CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0.25</CertaintyLossFactor>
-		</statFactors>
-		<exclusionTags>
-			<li>Aggressive</li>
-		</exclusionTags>
 	</GeneDef>
 
-	<GeneDef ParentName="GeneArellianBase">
-		<defName>CombatInstinct_Arellian</defName>
-		<label>Arellian combat instinct</label>
-		<biostatCpx>12</biostatCpx>
-		<biostatMet>-2</biostatMet>
-		<description>Carriers of this gene are instinctively better in combat. They .</description>
-		<iconPath>UI/Icons/Genes/Gene_StrongMeleeDamage</iconPath>
+	<GeneDef ParentName="GeneSkinColorMelanin">
+		<defName>Skin_Arellian</defName>
+		<skinColorBase>(130, 91, 48)</skinColorBase>
+		<minMelanin>0.83</minMelanin>
+		<displayCategory>ArellianGene</displayCategory>
 		<displayOrderInCategory>1</displayOrderInCategory>
-		<statFactors>
-			<ShootingAccuracyPawn>1.5</ShootingAccuracyPawn>
-			<MeleeCooldownFactor>0.90</MeleeCooldownFactor>
-			<StaggerDurationFactor>0.80</StaggerDurationFactor>
-		</statFactors>
-		<statOffsets>
-			<MeleeHitChance>2</MeleeHitChance>
-		</statOffsets>
 	</GeneDef>
 
-	<GeneDef ParentName="GeneArellianBase">
-		<defName>Physique_Arellian</defName>
-		<label>Arellian physique</label>
-		<biostatCpx>12</biostatCpx>
-		<biostatMet>-1</biostatMet>
-		<description>Carriers of this gene are known to be healthy and appealing to look.</description>
+	<GeneDef>
+		<defName>Head_Arellian</defName>
+		<label>Arellian head</label>
+		<description>Carriers of this gene are known to have round, smooth heads.</description>
 		<iconPath>UI/Icons/Genes/Gene_BodyStandard</iconPath>
+		<displayCategory>ArellianGene</displayCategory>
 		<displayOrderInCategory>2</displayOrderInCategory>
 		<forcedHeadTypes>
 			<li>ArellianMale_NormalA</li>
@@ -103,60 +100,23 @@
 			<li>ArellianFemale_NormalA</li>
 			<li>ArellianFemale_NormalB</li>
 		</forcedHeadTypes>
-		<statFactors><!--Intended behavior-->
-			<InjuryHealingFactor>1.25</InjuryHealingFactor>
-			<ImmunityGainSpeed>1.05</ImmunityGainSpeed>
-		</statFactors>
-		<statOffsets>
-			<Beauty>1</Beauty>
-			<ComfyTemperatureMax>5</ComfyTemperatureMax>
-			<ComfyTemperatureMin>-2.5</ComfyTemperatureMin>
-		</statOffsets>
-		<exclusionTags>
-			<li>Fur</li>
-		</exclusionTags>
-	</GeneDef>
-
-	<GeneDef ParentName="GeneHairColorBase">
-		<displayCategory>Arellian</displayCategory>
-		<defName>Hair_Arellian</defName>
-		<label>honey-blonde hair</label>
-		<hairColorOverride>(255,212,85)</hairColorOverride>
-		<selectionWeight>0.50</selectionWeight>
-		<selectionWeightFactorDarkSkin>0.75</selectionWeightFactorDarkSkin>
-		<displayOrderInCategory>4</displayOrderInCategory>
-	</GeneDef>
-
-	<GeneDef ParentName="GeneSkinColorMelanin">
-		<displayCategory>Arellian</displayCategory>
-		<defName>Skin_Arellian</defName>
-		<skinColorBase>(130, 91, 48)</skinColorBase>
-		<minMelanin>0.83</minMelanin>
-		<displayOrderInCategory>5</displayOrderInCategory>
 	</GeneDef>
 
 	<GeneDef ParentName="GeneEyeColor">
-		<displayCategory>Arellian</displayCategory>
 		<defName>Eyes_Arellian</defName>
 		<label>amber eyes</label>
 		<labelShortAdj>amber-eyed</labelShortAdj>
-		<biostatCpx>3</biostatCpx>
-		<biostatMet>-1</biostatMet>
-		<description>Carriers of this gene have a rich yellow-pigmented eyes.</description>
-		<iconPath>UI/Icons/Genes/Gene_RedEyes</iconPath>
-		<displayOrderInCategory>6</displayOrderInCategory>
-		<capMods>
-			<li>
-				<capacity>Sight</capacity>
-				<postFactor>1.1</postFactor>
-			</li>
-		</capMods>
+		<description>Carriers of this gene have rich amber eyes.</description>
+		<iconPath>UI/Icons/Genes/Gene_GrayEyes</iconPath>
+		<displayCategory>ArellianGene</displayCategory>
+		<displayOrderInCategory>3</displayOrderInCategory>
 		<renderNodeProperties>
 			<li>
 				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
 				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
 				<texPath>ArellianThings/Pawn/Arellian/Heads/Eyes/Eye</texPath>
-				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<rotDrawMode>Fresh,Rotting</rotDrawMode>
+				<useRottenColor>true</useRottenColor>
 				<parentTagDef>Head</parentTagDef>
 				<visibleFacing>
 					<li>East</li>
@@ -176,20 +136,12 @@
 	</GeneDef>
 
 	<GeneDef ParentName="GeneEarsBase">
-		<displayCategory>Arellian</displayCategory>
 		<defName>Ears_Arellian</defName>
 		<label>feline ears</label>
-		<biostatCpx>3</biostatCpx>
-		<biostatMet>-1</biostatMet>
-		<description>Carriers of this gene have long, feline ears.</description>
+		<description>Carriers of this gene have long, cat-like ears.</description>
 		<iconPath>ArellianUI/Icons/Genes/Gene_Ear</iconPath>
-		<displayOrderInCategory>7</displayOrderInCategory>
-		<capMods>
-			<li>
-				<capacity>Hearing</capacity>
-				<postFactor>1.1</postFactor>
-			</li>
-		</capMods>
+		<displayCategory>ArellianGene</displayCategory>
+		<displayOrderInCategory>4</displayOrderInCategory>
 		<renderNodeProperties>
 			<li>
 				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
@@ -209,22 +161,66 @@
 	</GeneDef>
 
 	<GeneDef ParentName="GeneVoiceBase">
-		<displayCategory>Arellian</displayCategory>
-		<defName>VoiceArellian</defName>
+		<defName>Voice_Arellian</defName>
 		<label>feline voice</label>
 		<biostatCpx>3</biostatCpx>
-		<biostatMet>1</biostatMet>
-		<description>Carriers have a meowing voice like that of a feline. It can be hard to understand sometimes.</description>
+		<description>Carriers have a meowing voice like that of a feline that can be hard to understand sometimes. However, it is somewhat endearing to hear, and people are slightly more likely to swayed to the speaker's whims.</description>
 		<iconPath>UI/Icons/Genes/Gene_VoicePig</iconPath>
-		<displayOrderInCategory>125</displayOrderInCategory>
-		<capMods>
-			<li>
-				<capacity>Talking</capacity>
-				<postFactor>0.9</postFactor>
-			</li>
-		</capMods>
+		<displayCategory>ArellianGene</displayCategory>
+		<displayOrderInCategory>5</displayOrderInCategory>
+		<statFactors><!--Intended behavior-->
+			<ConversionPower MayRequire="Ludeon.RimWorld.Ideology">1.10</ConversionPower>
+		</statFactors>
 		<soundCall>Pawn_Cat_Call</soundCall>
 		<soundDeath>Pawn_Cat_Death</soundDeath>
 		<soundWounded>Pawn_Cat_Injured</soundWounded>
+	</GeneDef>
+
+<!--== ==-->
+  <GeneDef>
+    <defName>PLACEHOLDER</defName>
+    <label>nearsighted</label>
+    <iconPath>UI/Icons/Genes/Gene_Nearsighted</iconPath>
+    <description>Carriers of this gene have difficulty seeing at a distance. Their shooting accuracy at long ranges is reduced.</description>
+    <displayCategory>Miscellaneous</displayCategory>
+    <displayOrderInCategory>51</displayOrderInCategory>
+    <statFactors>
+      <ShootingAccuracyFactor_Long>0.25</ShootingAccuracyFactor_Long>
+      <ShootingAccuracyFactor_Medium>0.5</ShootingAccuracyFactor_Medium>
+    </statFactors>
+    <biostatMet>2</biostatMet>
+    <exclusionTags>
+      <li>ShootingAccuracy</li>
+    </exclusionTags>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>blind</symbol></li>
+        <li><symbol>blur</symbol></li>
+        <li><symbol>squint</symbol></li>
+        <li><symbol>peek</symbol></li>
+        <li><symbol>cross</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>sighter</symbol></li>
+        <li><symbol>peeker</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+	<GeneDef><!--This is a lesser version of Unstoppable gene-->
+		<defName>Stalwart_Arellian</defName>
+		<label>stalwart</label>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<description>Carriers of this gene regain their pace much faster after taking damage.</description>
+		<iconPath>UI/Icons/Genes/Gene_Unstoppable</iconPath>
+		<displayCategory>Miscellaneous</displayCategory>
+		<displayOrderInCategory>551</displayOrderInCategory>
+		<statFactors>
+			<StaggerDurationFactor>0.50</StaggerDurationFactor>
+		</statFactors>
+		<exclusionTags>
+			<li>StaggerFactor</li>
+		</exclusionTags>
 	</GeneDef>
 </Defs>

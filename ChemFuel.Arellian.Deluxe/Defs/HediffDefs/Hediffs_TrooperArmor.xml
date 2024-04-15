@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef>
+		<defName>ArellianBuiltInHUD</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>Head-Up Display (HUD)</label>
+		<descriptionHyperlinks>
+			<ThingDef>Apparel_AR_FederationTrooperHelmet</ThingDef>
+			<ThingDef>Apparel_AR_FederationShockTrooperHelmet</ThingDef>
+			<HediffDef>ToxGasExposure</HediffDef>
+			<HediffDef>LungRotExposure</HediffDef>
+		</descriptionHyperlinks>
+		<description>The built-in HUD will greatly assist the wearer in both combat and non-combat situations. They will not get toxic buildup from tox gas, polluted terrain, and toxic fallout. On top of that, they are also immune to rot stink exposure and "REDACTED" as well.</description>
+		<isBad>false</isBad>
+		<defaultInstallPart>Head</defaultInstallPart>
+		<addedPartProps>
+			<solid>true</solid>
+		</addedPartProps>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>0.05</offset>
+					</li>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>0.05</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+					<ShootingAccuracyPawn>2.5</ShootingAccuracyPawn>
+					<MeleeHitChance>2</MeleeHitChance>
+					<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_RemoveIfApparelDropped" />
+		</comps>
+	</HediffDef>
+</Defs>

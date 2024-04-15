@@ -3,7 +3,7 @@
 <!--Normal-->
 	<HeadTypeDef Name="ArellianBase" ParentName="AverageBase" Abstract="True">
 		<requiredGenes>
-			<li>Physique_Arellian</li>
+			<li>Head_Arellian</li>
 		</requiredGenes>
 	</HeadTypeDef>
 
@@ -35,7 +35,7 @@
 	<HeadTypeDef Name="ArellianHeavyBase" ParentName="HeavyJawBase">
 		<gender>None</gender>
 		<requiredGenes>
-			<li>Physique_Arellian</li>
+			<li>Head_Arellian</li>	
 			<li>Jaw_Heavy</li>
 		</requiredGenes>
 	</HeadTypeDef>

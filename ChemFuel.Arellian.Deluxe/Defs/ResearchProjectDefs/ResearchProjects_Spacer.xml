@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ResearchTabDef>
+    <defName>ArellianMain</defName>
+    <label>Arellian Tech</label>
+    <generalTitle>Arellian research projects</generalTitle>
+    <generalDescription>Unlock new technologies by researching at a research bench. You can only have one active project at a time.</generalDescription>
+  </ResearchTabDef>
+
+	<ResearchProjectDef Name="Arellian_MainResearch" Abstract="True">
+		<tab>ArellianMain</tab>
+	</ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="Arellian_MainResearch">
+    <defName>Arellian_PlasmaPulse</defName>
+    <label>plasma-pulse technology</label>
+    <description>Build weapons using advanced plasma-pulse manipulation technology.</description>
+    <baseCost>4500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>ChargedShot</li>
+    </prerequisites>
+    <hiddenPrerequisites>
+      <li>PrecisionRifling</li>
+    </hiddenPrerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>0.0</researchViewY>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->plasma-pulse technology</li>
+
+        <li>subject_story->reverse-engineered Arellian Federation equipments</li>
+
+        <li>subject_story->acquired a pulse-blade</li>
+        <li>subject_story->acquired a blaster pistol</li>
+        <li>subject_story->acquired a light blaster</li>
+        <li>subject_story->acquired an assault blaster</li>
+        <li>subject_story->acquired an heavy blaster</li>
+        <li>subject_story->acquired a blaster rifle</li>
+
+        <li>subject_gerund->constructing plasma cycling chambers</li>
+
+        <li>subject_gerund->designing plasma-pulse weaponry</li>
+      </rulesStrings>
+    </generalRules>
+  </ResearchProjectDef>
+</Defs>

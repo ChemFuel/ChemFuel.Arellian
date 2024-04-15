@@ -17,6 +17,8 @@
 		</selectionWeightCurvesPerFaction>
 		<pointsFactorCurve><points>
 			<li>0,0.8</li>
+			<li>5000,1.0</li>
+			<li>10000,1.2</li>
 		</points></pointsFactorCurve>
 		<arriveModes>
 			<li>CenterDrop</li>
