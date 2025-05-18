@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<RulePackDef>
+		<defName>Arellian_NamerUtility</defName>
+		<rulePack>
+			<rulesFiles>
+				<li>Name_M->Names/CFAR_Name_M</li>
+				<li>Name_F->Names/CFAR_Name_F</li>
+
+				<li>Surname_C->Names/CFAR_Surname_C</li>
+				<li>Surname_N->Names/CFAR_Surname_N</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>Arellian_PawnNamer_C</defName>
+		<include>
+			<li>Arellian_NamerUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[Name_M] [Surname_C]</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>Arellian_PawnNamerFemale_C</defName>
+		<include>
+			<li>Arellian_NamerUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[Name_F] [Surname_C]</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>Arellian_PawnNamer_N</defName>
+		<include>
+			<li>Arellian_NamerUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[Name_M] [Surname_N]</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>Arellian_PawnNamerFemale_N</defName>
+		<include>
+			<li>Arellian_NamerUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[Name_F] [Surname_N]</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+<!--=====Federation =====-->
+
+	<RulePackDef>
+		<defName>AR_Fed_FactionNamer</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[Federation]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>Federation->Names/Arellian/Federation/FactionNamer</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>LeaderNamer_AR_Fed</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_leaderTitle->[Leader]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>Leader->Names/Arellian/Federation/LeaderNamer</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>IdeoNamer_AR_Fed</defName>
+		<rulePack><rulesStrings>
+			<li>r_ideoName->Absolute Militocracy</li><!--절대 군국주의-->
+
+			<li>r_ideoAdjective->militaristic</li><!--군사적-->
+
+			<li>r_memberName->soldier</li><!--군인-->
+
+			<li>creed(priority=1)->[memeCreed]</li>
+
+			<li>hyphenPrefix->[memeHyphenPrefix]</li>
+		</rulesStrings></rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>DeityNamer_AR_Fed</defName>
+		<include>
+			<li>Arellian_NamerUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[Name_M] [Surname_N]</li>
+				<li>r_name->[Name_F] [Surname_N]</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>DeityTypeMaker_AR_Fed</defName>
+		<include>
+			<li>GlobalUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_deityType->[Deity]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>Deity->Names/Arellian/Federation/DeityTypeNamer</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+<!--================ Enclave ================-->
+
+	<RulePackDef>
+		<defName>AR_Enc_FactionNamer</defName>
+		<rulePack><rulesStrings>
+			<li>r_name->Arellian Enclave</li>
+		</rulesStrings></rulePack>
+	</RulePackDef>
+
+<!--================ Pirate ================-->
+
+	<RulePackDef>
+		<defName>AR_Pir_FactionNamer</defName>
+		<include>
+			<li>Arellian_NamerUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[Cat] [Pirates]</li>
+				<li>r_name(p=0.5)->[Surname] [Pirates]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>Cat->Names/Arellian/Pirate/FactionNamer_F</li>
+				<li>Pirates->Names/Arellian/Pirate/FactionNamer_L</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>LeaderNamer_AR_Pir</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_leaderTitle->[Leader]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>Leader->Names/Arellian/Pirate/LeaderNamer</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>IdeoNamer_AR_Pir</defName>
+		<rulePack><rulesStrings>
+			<li>r_ideoName->warlord's orders</li>
+
+			<li>r_ideoAdjective->criminal</li>
+
+			<li>r_memberName->marauder</li>
+			<li>r_memberName->raider</li>
+
+			<li>creed(priority=1)->[memeCreed]</li>
+
+			<li>hyphenPrefix->[memeHyphenPrefix]</li>
+		</rulesStrings></rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>DeityTypeMaker_AR_Pir</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_deityType->[Deity]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>Deity->Names/Arellian/Pirate/DeityTypeNamer</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>
