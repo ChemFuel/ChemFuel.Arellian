@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<PawnKindDef Name="CFAR_ImperialPawnBase" Abstract="True">
+		<race>Human</race>
+		<defaultFactionType>CFAR_Empire</defaultFactionType>
+		<chemicalAddictionChance>0</chemicalAddictionChance>
+		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>0~0</combatEnhancingDrugsCount>
+		<backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<xenotypeSet><xenotypeChances>
+			<CFAR_Arellian>999</CFAR_Arellian>
+		</xenotypeChances></xenotypeSet>
+	</PawnKindDef>
+
+<!--======== Soldiers ========-->
+
+	<PawnKindDef Name="CFAR_SoldierBase" ParentName="CFAR_ImperialPawnBase" Abstract="True">
+		<minTitleRequired>CFAR_ACAFTrooper</minTitleRequired>
+		<minGenerationAge>20</minGenerationAge>
+		<maxGenerationAge>25</maxGenerationAge>
+		<itemQuality>Normal</itemQuality>
+		<apparelMoney>5000~5000</apparelMoney>
+		<weaponMoney>9999~9999</weaponMoney>
+		<apparelRequired>
+		</apparelRequired>
+		<techHediffsRequired>
+			<li>CFAR_CombatChip</li>
+		</techHediffsRequired>
+		<inventoryOptions>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>CFAR_Stimpack</thingDef>
+					<countRange>-1~1</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+
+	<PawnKindDef Name="CFAR_InfantryBase" ParentName="CFAR_SoldierBase">
+		<combatPower>125</combatPower>
+		<defName>CFAR_IGC_Trooper</defName>
+		<label>Infantry</label>
+		<apparelTags>
+			<li>CFAR_Soldier</li>
+			<li>CFAR_IndustrialArmor</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>Apparel_CFAR_TrooperHelmet</li>
+			<li>Apparel_CFAR_TrooperArmor</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>CFAR_TestGun</li>
+			<li>CFAR_Rifle</li>
+		</weaponTags>
+		<techHediffsTags>
+			<li>Simple</li>
+			<li>ImplantEmpireCommon</li>
+		</techHediffsTags>
+		<techHediffsMoney>50~500</techHediffsMoney>
+		<techHediffsChance>0.06</techHediffsChance>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>CFAR_Child_Core</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>CFAR_Infantry</li>
+				</categoriesAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+		<initialResistanceRange>10~20</initialResistanceRange>
+		<initialWillRange>1~2</initialWillRange>
+		<specificApparelRequirements>
+			<!--<li>
+				<apparelLayer>Middle</apparelLayer>
+				<stuff>Plasteel</stuff>
+			</li>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<stuff>Plasteel</stuff>
+			</li>
+			<li>
+				<bodyPartGroup>UpperHead</bodyPartGroup>
+				<styleDef MayRequire="Ludeon.RimWorld.Ideology">CFAR_Fed_FlakHelmet</styleDef>
+			</li>-->
+		</specificApparelRequirements>
+	</PawnKindDef>
+
+	<PawnKindDef Name="CFAR_NCOInfantryBase" ParentName="CFAR_InfantryBase">
+		<minTitleRequired>CFAR_ACAFSergeant</minTitleRequired>
+		<combatPower>125</combatPower>
+		<defName>CFAR_NCOInfantry</defName>
+		<label>Sergeant</label>
+		<apparelTags>
+			<li>CFAR_Soldier</li>
+			<li>CFAR_IndustrialArmor</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>Apparel_CFAR_TrooperHelmet</li>
+			<li>Apparel_CFAR_TrooperArmor</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>CFAR_Carbine</li>
+		</weaponTags>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categoriesChildhood>
+					<li>CFAR_Child_Core</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>CFAR_NCOInfantry</li>
+				</categoriesAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+		<initialResistanceRange>20~30</initialResistanceRange>
+		<initialWillRange>2~4</initialWillRange>
+	</PawnKindDef>
+</Defs>
