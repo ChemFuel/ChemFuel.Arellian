@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--================ Normal ================-->
+
+	<HeadTypeDef Name="ArellianBase" ParentName="AverageBase" Abstract="True">
+		<requiredGenes>
+			<li>Eyes_Arellian</li>
+		</requiredGenes>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="ArellianBase">
+		<defName>Arellian_Normal</defName>
+		<gender>None</gender>
+		<graphicPath>Things/Pawn/Arellian/Heads/Normal</graphicPath>
+	</HeadTypeDef>
+
+<!--================ Gaunt ================-->
+
+	<HeadTypeDef Name="ArellianGauntBase" ParentName="AverageBase" Abstract="True">
+		<requiredGenes>
+			<li>Eyes_Arellian</li>
+			<li>Head_Gaunt</li>
+		</requiredGenes>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="ArellianGauntBase">
+		<defName>Arellian_Gaunt</defName>
+		<graphicPath>Things/Pawn/Arellian/Heads/Gaunt</graphicPath>
+		<gender>None</gender>
+	</HeadTypeDef>
+
+<!--HeavyJaw-
+	<HeadTypeDef Name="ArellianHeavyBase" ParentName="HeavyJawBase">
+		<gender>None</gender>
+		<requiredGenes>
+			<li>Body_Arellian</li>	
+			<li>Jaw_Heavy</li>
+		</requiredGenes>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="ArellianHeavyBase">
+		<defName>Arellian_HeavyA</defName>
+		<graphicPath>Things/Pawn/Arellian/Heads/HeavyA</graphicPath>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="ArellianHeavyBase">
+		<defName>Arellian_HeavyB</defName>
+		<graphicPath>Things/Pawn/Arellian/Heads/HeavyB</graphicPath>
+	</HeadTypeDef>-->
+</Defs>
