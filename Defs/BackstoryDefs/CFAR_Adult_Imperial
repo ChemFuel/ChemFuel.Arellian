@@ -22,7 +22,7 @@ GEN: General
 			<Melee>3</Melee>
 		</skillGains>
 		<spawnCategories>
-			<li>CFAR_IGC_SOL</li>
+			<li>CFAR_Infantry</li>
 		</spawnCategories>
 	</BackstoryDef>
 
@@ -102,24 +102,50 @@ GEN: General
 
 <!--======== Soldier - Cook ========-->
 
-	<BackstoryDef Name="CFAR_ArmyCook" ParentName="CFAR_Adult">
-		<defName>CFAR_ArmyCook1</defName>
-		<title>Army cook</title>
+	<BackstoryDef Name="CFAR_Cook" ParentName="CFAR_Adult">
+		<defName>CFAR_Cook1</defName>
+		<title>Culinary specialist</title>
 		<titleShort>cook</titleShort>
-		<description>[PAWN_nameDef] kept the Imperial Army running, one hot meal at a time. [PAWN_pronoun] wasn’t much of a shot, but [PAWN_pronoun] was famous for bonking knuckleheads with [PAWN_possessive] ladle.</description>
+		<description>[PAWN_nameDef] can’t measure to save a life. One pinch becomes three, and sauces turn into chemical experiments. Still, [PAWN_pronoun] keeps the kitchen clean and the food moving — mostly forward.</description>
 		<skillGains>
 			<Shooting>2</Shooting>
 			<Melee>4</Melee>
-			<Cooking>5</Cooking>
+			<Cooking>6</Cooking>
 		</skillGains>
 		<spawnCategories>
-			<li>CFAR_IGC_Cook</li>
+			<li>CFAR_Cook</li>
 		</spawnCategories>
 	</BackstoryDef>
 
-	<BackstoryDef ParentName="CFAR_ArmyCook">
-		<defName>CFAR_ArmyCook2</defName>
-		<description>[PAWN_nameDef] served meals with the same discipline others served bullets. [PAWN_pronoun] fed the Empire’s war machine one ladle at a time — and occasionally added extra spice to the officers' stew.</description>
+	<BackstoryDef ParentName="CFAR_Cook">
+		<defName>CFAR_Cook2</defName>
+		<description>[PAWN_nameDef] thinks recipes are suggestions and seasoning is a contest. [PAWN_pronoun] once added stim-powder instead of salt. The squad didn’t sleep for 30 hours, but morale was excellent.</description>
+		<skillGains>
+			<Cooking>4</Cooking>
+			<Medicine>2</Medicine>
+		</skillGains>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_Cook">
+		<defName>CFAR_Cook3</defName>
+		<description>[PAWN_nameDef] kept the Imperial Army running, one hot meal at a time. [PAWN_pronoun] wasn’t much of a shot, but [PAWN_pronoun] was famous for bonking knuckleheads with [PAWN_possessive] ladle.</description>
+		<skillGains>
+			<Shooting>-1</Shooting>
+			<Melee>6</Melee>
+		</skillGains>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_Cook">
+		<defName>CFAR_Cook4</defName>
+		<description>[PAWN_nameDef] tried to replicate field rations with local fauna and too much vinegar. The result was... unique, but no one got sick. [PAWN_pronoun] claims it’s flavor innovation. The squad just shrugs and eats.</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_Cook">
+		<defName>CFAR_Cook6</defName>
+		<description>[PAWN_nameDef] joined as a cook and stayed near the front line for “quality control.” [PAWN_pronoun] samples everything — twice — and adjusts seasoning to personal taste, which leans heavy and rich. Despite this, [PAWN_pronoun] keeps the meals balanced, clean, and oddly popular.</description>
+		<skillGains>
+			<Cooking>8</Cooking>
+		</skillGains>
 	</BackstoryDef>
 
 <!--======== Sergeant - Infantry ========-->
@@ -128,23 +154,184 @@ GEN: General
 		<defName>CFAR_NCOInfantry1</defName>
 		<title>Infantry sergeant</title>
 		<titleShort>Sergeant</titleShort>
-		<description>Sergeant [PAWN_nameDef] marched with the Imperial Army's finest. [PAWN_pronoun] didn’t shout, didn’t brag — [PAWN_pronoun] just made sure [PAWN_possessive] squad stayed alive long enough to stomp the enemy flat.</description>
+		<description>Sergeant [PAWN_nameDef] fought in every dust-covered trench and heat-scoured canyon the Imperial Army forgot to name. [PAWN_pronoun] trusts old instincts more than fresh orders and keeps the squad alive through habit and spite.</description>
+		<forcedTraits>
+			<Nerves>2</Nerves>
+		</forcedTraits>
+		<disallowedTraits>
+			<Kind>0</Kind>
+			<Wimp>0</Wimp>
+		</disallowedTraits>
 		<skillGains>
 			<Shooting>6</Shooting>
 			<Melee>6</Melee>
 			<Social>2</Social>
 		</skillGains>
 		<spawnCategories>
-			<li>CFAR_IGC_SGT</li>
+			<li>CFAR_NCOInfantry</li>
 		</spawnCategories>
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_NCOInfantry">
 		<defName>CFAR_NCOInfantry2</defName>
-		<description>The front line was messy, but Sergeant [PAWN_nameDef] was messier. [PAWN_pronoun] fought with grit, barked orders like cannon fire, and dragged victories out of battlefields that should’ve been lost.</description>
+		<description>The front line was messy, but sergeant [PAWN_nameDef] was messier. [PAWN_pronoun] fought with grit, barked orders like cannon fire, and dragged victories out of battlefields that should’ve been lost.</description>
 		<skillGains>
 			<Melee>8</Melee>
 			<Social>2</Social>
 		</skillGains>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_NCOInfantry">
+		<defName>CFAR_NCOInfantry3</defName>
+		<description>Sergeant [PAWN_nameDef] doesn’t bother with formalities. [PAWN_pronoun] trains rookies by shoving them into drills until they stop bleeding. When [PAWN_pronoun] says “cover,” it means now — or never again.</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_NCOInfantry">
+		<defName>CFAR_NCOInfantry4</defName>
+		<description>Sergeant [PAWN_nameDef] keeps a spare battery, a spare plan, and a spare boot for throwing. [PAWN_pronoun] doesn’t believe in luck — just loaded rifles and covered flanks.</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_NCOInfantry">
+		<defName>CFAR_NCOInfantry5</defName>
+		<description>Sergeant [PAWN_nameDef] once held a breach with a broken carbine and bad attitude. Now [PAWN_pronoun] drills discipline through repetition and glare. The squad listens, or they run laps until sunrise.</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_NCOInfantry">
+		<defName>CFAR_NCOInfantry6</defName>
+		<description>Sergeant [PAWN_nameDef] lost count of deployments but remembers every trooper buried. [PAWN_pronoun] keeps the squad tight, the gear tighter, and emotions buried deeper. Orders are short, meals are hot, and mistakes are paid in sweat.</description>
+	</BackstoryDef>
+
+<!--======== Company Officer - Infantry ========-->
+
+	<BackstoryDef Name="CFAR_COfficerInfantry" ParentName="CFAR_Adult">
+		<defName>CFAR_COfficerInfantry1</defName>
+		<title>Infantry officer</title>
+		<titleShort>Officer</titleShort>
+		<description>[PAWN_nameDef] studied logistics, formations, and battlefield tempo. [PAWN_pronoun] now spends most days redirecting soldiers who “creatively interpret” orders. Somehow, they succeed — and [PAWN_pronoun] gets the headache.</description>
+		<skillGains>
+			<Shooting>6</Shooting>
+			<Melee>3</Melee>
+			<Social>4</Social>
+			<Intellectual>4</Intellectual>
+		</skillGains>
+		<spawnCategories>
+			<li>CFAR_COfficerInfantry</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_COfficerInfantry">
+		<defName>CFAR_COfficerInfantry2</defName>
+		<description>[PAWN_nameDef] memorized doctrine to the letter. [PAWN_pronoun] now leads troops who ignore it in favor of improvised trench charges and spontaneous flanking. [PAWN_possessive] migraine is permanent, like their loyalty.</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_COfficerInfantry">
+		<defName>CFAR_COfficerInfantry3</defName>
+		<description>[PAWN_nameDef] graduated with top marks in tactical doctrine, then deployed to a unit that communicates via shouting and gestures. [PAWN_pronoun] now plans operations with one hand and rubs [PAWN_possessive] temple with the other.</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_COfficerInfantry">
+		<defName>CFAR_COfficerInfantry4</defName>
+		<description>[PAWN_nameDef] writes clear orders, delivers them calmly, and watches them get executed in the wrong order — with success. [PAWN_pronoun] no longer questions it. [PAWN_pronoun] just drinks water, breathes deep, and adjusts the plan.</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_COfficerInfantry">
+		<defName>CFAR_COfficerInfantry5</defName>
+		<description>[PAWN_nameDef] was promised structured deployments. Instead, [PAWN_pronoun] herds loud, impulsive soldiers through broken radios, ammo shortages, and miracle victories. [PAWN_pronoun] calls it leadership. Others call it survival.</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_COfficerInfantry">
+		<defName>CFAR_COfficerInfantry6</defName>
+		<description>[PAWN_nameDef] trained for textbook engagements. Instead, [PAWN_pronoun] commands a squad that weaponizes chaos and survives by accident. [PAWN_pronoun] updates the mission board, deletes it, then updates it again.</description>
+	</BackstoryDef>
+
+	<BackstoryDef Name="CFAR_COfficerInfantry_N" ParentName="CFAR_COfficerInfantry">
+		<defName>CFAR_COfficerInfantry_N1</defName>
+		<description>[PAWN_nameDef] was raised on etiquette, ceremony, and battlefield theory. [PAWN_pronoun] now commands troopers who burp during briefings and tape knives to pulse rifles. [PAWN_pronoun] leads with forced grace and suppressed disbelief.</description>
+		<skillGains>
+			<Shooting>7</Shooting>
+			<Melee>4</Melee>
+			<Social>6</Social>
+			<Intellectual>4</Intellectual>
+		</skillGains>
+		<spawnCategories Inherit="False">
+			<li>CFAR_COfficerInfantry_N</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_COfficerInfantry_N">
+		<defName>CFAR_COfficerInfantry_N2</defName>
+		<description>[PAWN_nameDef] assumed authority came with silence and obedience. [PAWN_pronoun] found that orders need shouting, repetition, and sometimes interpretive threats. [PAWN_pronoun] adapts — awkwardly, but effectively.</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_COfficerInfantry_N">
+		<defName>CFAR_COfficerInfantry_N3</defName>
+		<description>[PAWN_nameDef] believed battle was a chessboard. Then [PAWN_pronoun] met soldiers who use pulse rifles as shovels and eat rations raw. [PAWN_pronoun] now plans around behavior, not strategy.</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_COfficerInfantry_N">
+		<defName>CFAR_COfficerInfantry_N4</defName>
+		<description>[PAWN_nameDef] once practiced speeches in front of mirrors. Now [PAWN_pronoun] gives orders while dodging friendly fire and yelling over loud music. The uniform stays pressed; the patience does not.</description>
+	</BackstoryDef>
+
+<!--======== Field Officer - Infantry ========-->
+
+	<BackstoryDef Name="CFAR_FOfficerInfantry" ParentName="CFAR_Adult">
+		<defName>CFAR_FOfficerInfantry1</defName>
+		<title>Infantry officer</title>
+		<titleShort>Officer</titleShort>
+		<description>[PAWN_nameDef] earned every stripe managing troops who turned drills into brawls and patrols into bar fights. Now [PAWN_pronoun] delegates with precision, watches the chaos from above, and files reports with the door locked.</description>
+		<skillGains>
+			<Shooting>4</Shooting>
+			<Melee>-2</Melee>
+			<Social>8</Social>
+			<Intellectual>6</Intellectual>
+		</skillGains>
+		<spawnCategories>
+			<li>CFAR_FOfficerInfantry</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_FOfficerInfantry">
+		<defName>CFAR_FOfficerInfantry2</defName>
+		<description>[PAWN_nameDef] used to shout orders across trenches. Now [PAWN_pronoun] signs requisitions, issues strategic commands, and fends off migraines caused by junior officers making familiar mistakes.</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_FOfficerInfantry">
+		<defName>CFAR_FOfficerInfantry3</defName>
+		<description>[PAWN_nameDef] once chased disobedient soldiers through crossfire. Now [PAWN_pronoun] chases funding allocations, writes doctrine, and occasionally reminds field units to stop “tactically improvising.”</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_FOfficerInfantry">
+		<defName>CFAR_FOfficerInfantry4</defName>
+		<description>[PAWN_nameDef] once led disorganized squads through smoke and shouting. Now [PAWN_pronoun] leads through paperwork, planning, and caffeine. The field taught [PAWN_pronoun] one thing: always double-check the comms team.</description>
+	</BackstoryDef>
+
+	<BackstoryDef Name="CFAR_FOfficerInfantry_N" ParentName="CFAR_FOfficerInfantry">
+		<defName>CFAR_COfficerInfantry_N1</defName>
+		<description>[PAWN_nameDef] once believed war was honor and procession. Reality replaced that with triage reports and logistics failures. Now [PAWN_pronoun] commands firmly, speaks carefully, and respects the unpredictable loyalty of the common ranks.</description>
+		<skillGains>
+			<Shooting>5</Shooting>
+			<Melee>3</Melee>
+			<Social>7</Social>
+			<Intellectual>6</Intellectual>
+		</skillGains>
+		<spawnCategories Inherit="False">
+			<li>CFAR_FOfficerInfantry_N</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_FOfficerInfantry_N">
+		<defName>CFAR_FOfficerInfantry_N2</defName>
+		<description>[PAWN_nameDef] entered war with lineage and theory. Years of commanding unpredictable troopers taught [PAWN_pronoun] the value of redundancy — in plans and aspirin. Now [PAWN_pronoun] rules from a polished desk with a locked liquor drawer.</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_FOfficerInfantry_N">
+		<defName>CFAR_FOfficerInfantry_N3</defName>
+		<description>[PAWN_nameDef] grew into command by surviving command. The noble accent remains, but the patience has thinned. [PAWN_pronoun] leads with elegance, tolerates madness, and signs orders that always come with a margin for chaos.</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_FOfficerInfantry_N">
+		<defName>CFAR_FOfficerInfantry_N4</defName>
+		<description>[PAWN_nameDef] was raised to command and humbled by experience. [PAWN_pronoun] now coordinates offensives with poise — and drafts contingency plans in triplicate. [PAWN_pronoun] trusts instinct, but always confirms with intel.</description>
 	</BackstoryDef>
 </Defs>
