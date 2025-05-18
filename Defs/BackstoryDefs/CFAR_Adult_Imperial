@@ -210,7 +210,7 @@ GEN: General
 		<description>[PAWN_nameDef] studied logistics, formations, and battlefield tempo. [PAWN_pronoun] now spends most days redirecting soldiers who “creatively interpret” orders. Somehow, they succeed — and [PAWN_pronoun] gets the headache.</description>
 		<skillGains>
 			<Shooting>6</Shooting>
-			<Melee>3</Melee>
+			<Melee>2</Melee>
 			<Social>4</Social>
 			<Intellectual>4</Intellectual>
 		</skillGains>
@@ -282,7 +282,6 @@ GEN: General
 		<description>[PAWN_nameDef] earned every stripe managing troops who turned drills into brawls and patrols into bar fights. Now [PAWN_pronoun] delegates with precision, watches the chaos from above, and files reports with the door locked.</description>
 		<skillGains>
 			<Shooting>4</Shooting>
-			<Melee>-2</Melee>
 			<Social>8</Social>
 			<Intellectual>6</Intellectual>
 		</skillGains>
@@ -310,9 +309,8 @@ GEN: General
 		<defName>CFAR_COfficerInfantry_N1</defName>
 		<description>[PAWN_nameDef] once believed war was honor and procession. Reality replaced that with triage reports and logistics failures. Now [PAWN_pronoun] commands firmly, speaks carefully, and respects the unpredictable loyalty of the common ranks.</description>
 		<skillGains>
-			<Shooting>5</Shooting>
-			<Melee>3</Melee>
-			<Social>7</Social>
+			<Shooting>6</Shooting>
+			<Social>10</Social>
 			<Intellectual>6</Intellectual>
 		</skillGains>
 		<spawnCategories Inherit="False">
