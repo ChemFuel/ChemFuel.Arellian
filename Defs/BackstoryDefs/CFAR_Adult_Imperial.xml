@@ -7,12 +7,35 @@
 		<bodyTypeFemale>Female</bodyTypeFemale>
 	</BackstoryDef>
 	
+<!--================ White Collar ================-->
+
+<!--======== Business ========-->
+
+	<BackstoryDef Name="CFAR_OfficeWorker" ParentName="CFAR_Adult">
+		<defName>CFAR_OfficeWorker1</defName>
+		<title>Office worker</title>
+		<titleShort>Office worker</titleShort>
+		<description>WIP</description>
+		<skillGains>
+			<Social>5</Social>
+			<Intellectual>3</Intellectual>
+		</skillGains>
+		<spawnCategories>
+			<li>CFAR_OfficeWorker</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_OfficeWorker">
+		<defName>CFAR_OfficeWorker2</defName>
+		<description>WIP</description>
+	</BackstoryDef>
+	
 <!--================ Imperial Ground Command ================-->
 
 <!--======== Soldier - Infantry ========-->
 
 	<BackstoryDef Name="CFAR_Infantry" ParentName="CFAR_Adult">
-		<defName>CFAR_CFAR_Infantry1</defName>
+		<defName>CFAR_Infantry1</defName>
 		<title>Infantry</title>
 		<titleShort>Infantry</titleShort>
 		<description>[PAWN_nameDef] survived [PAWN_possessive] first deployment when an artillery barrage buried the trench and the squad dug out by hand. [PAWN_pronoun] doesn’t talk much now — just watches the skies and checks cover twice.</description>
@@ -91,12 +114,18 @@
 
 	<BackstoryDef ParentName="CFAR_Infantry">
 		<defName>CFAR_Infantry11</defName>
-		<description>[PAWN_nameDef] lost a week’s rations in a poker game — then won it back bluffing with a torn card set and a straight face. [PAWN_pronoun] still plays, but now keeps backup snacks.</description>
+		<description>[PAWN_nameDef] refuses shortcuts, refuses excuses. [PAWN_pronoun] cleans [PAWN_possessive] kit by regulation and holds the line with quiet resolve. For [PAWN_pronoun], honor isn’t pride — it’s the standard.</description>
+		<forcedTraits>
+			<Nerves>1</Nerves>
+		</forcedTraits>
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_Infantry">
 		<defName>CFAR_Infantry12</defName>
-		<description>[PAWN_nameDef] perfected the art of moving just fast enough to avoid notice. [PAWN_pronoun] cleans [PAWN_possessive] rifle only when it starts to hum funny and volunteers last for everything. Somehow, [PAWN_pronoun] always ends up in the right place — and walks out alive.</description>
+		<description>[PAWN_nameDef] doesn’t brag, doesn’t cut corners, and checks in on rookies without making a show of it. [PAWN_pronoun] sees honor in consistency, not medals.</description>
+		<forcedTraits>
+			<Industriousness>1</Industriousness>
+		</forcedTraits>
 	</BackstoryDef>
 
 <!--======== Soldier - Cook ========-->
@@ -245,7 +274,7 @@
 
 	<BackstoryDef Name="CFAR_COfficerInfantry_N" ParentName="CFAR_COfficerInfantry">
 		<defName>CFAR_COfficerInfantry_N1</defName>
-		<description>[PAWN_nameDef] was raised on etiquette, ceremony, and battlefield theory. [PAWN_pronoun] now commands troopers who burp during briefings and tape knives to pulse rifles. [PAWN_pronoun] leads with forced grace and suppressed disbelief.</description>
+		<description>[PAWN_nameDef] was groomed for command with formality and theory — polished speeches, precise tactics, flawless posture. [PAWN_pronoun] now leads soldiers who skip polish for duct tape and volume. [PAWN_pronoun] maintains composure, but the sighs are getting longer.</description>
 		<skillGains>
 			<Shooting>7</Shooting>
 			<Melee>4</Melee>

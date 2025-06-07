@@ -16,7 +16,7 @@
 <!--======== Soldier - Infantry ========-->
 
 	<BackstoryDef Name="CFAR_Infantry_Traitor" ParentName="CFAR_Adult_Traitor">
-		<defName>CFAR_CFAR_Infantry1_Traitor</defName>
+		<defName>CFAR_Infantry1_Traitor</defName>
 		<title>Traitor trooper</title>
 		<titleShort>Traitor</titleShort>
 		<description>[PAWN_nameDef] didn’t defect for ideology. [PAWN_pronoun] liked the killing, hated the discipline. The enclave lets [PAWN_pronoun] indulge both without consequence.</description>
