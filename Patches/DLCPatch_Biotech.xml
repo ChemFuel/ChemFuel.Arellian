@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/GeneDef[defName="Head_Gaunt"]/forcedHeadTypes</xpath>
+		<value>
+			<li>CFAR_Normal_Plain</li>
+			<li>CFAR_Normal_Freckles</li>
+			<li>CFAR_Gaunt_Normal</li>
+		</value>
+	</Operation>
+</Patch>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--================ Base ================-->
+	<ResearchTabDef>
+		<defName>CFAR_ResearchTab</defName>
+		<label>Arellian Tech</label>
+		<generalTitle>Arellian research projects</generalTitle>
+		<generalDescription>Unlock new technologies by researching at a research bench. You can only have one active project at a time.</generalDescription>
+	</ResearchTabDef>
+
+<!--================ Industrial ================-->
+
+<!--======== Research Table ========-->
+
+	<ResearchProjectDef>
+		<techLevel>Industrial</techLevel>
+		<tab>CFAR_ResearchTab</tab>
+		<defName>CFAR_Apparel</defName>
+		<label>Arellian apparel</label>
+		<description>WIP</description>
+		<baseCost>600</baseCost>
+		<prerequisites>
+			<li>ComplexClothing</li>
+		</prerequisites>
+		<hiddenPrerequisites>
+			<li>Electricity</li>
+		</hiddenPrerequisites>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->WIP</li>
+
+				<li>subject_story->WIP</li>
+
+				<li>subject_gerund->WIP</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+
+<!--======== Hi-Tech Research Table ========-->
+
+	<ResearchProjectDef>
+		<techLevel>Industrial</techLevel>
+		<tab>CFAR_ResearchTab</tab>
+		<defName>CFAR_DrugSynthesis</defName>
+		<label>Arellian pharmaceutics</label>
+		<description>Produce Arellian drugs like stim packs and vaccines.</description>
+		<baseCost>1000</baseCost>
+		<prerequisites>
+			<li>DrugProduction</li>
+		</prerequisites>
+		<hiddenPrerequisites>
+			<li>MicroelectronicsBasics</li>
+		</hiddenPrerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>1.00</researchViewY>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->Arellian pharmaceutics</li>
+				<li>subject->stim pack production</li>
+				<li>subject->vaccine production</li>
+
+				<li>subject_story->researched pharmaceutical applications for frontline deployment</li>
+				<li>subject_story->worked on refining non-addictive combat drugs for mass production</li>
+
+				<li>subject_gerund->formulating advanced military stimulants</li>
+				<li>subject_gerund->refining and repurposing Go-juice compounds</li>
+				<li>subject_gerund->processing stabilized derivatives of Go-juice</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+
+<!--======== Hi-Tech Research Table + MultiAnalyzer ========-->
+
+	<ResearchProjectDef>
+		<techLevel>Industrial</techLevel>
+		<tab>CFAR_ResearchTab</tab>
+		<defName>CFAR_ArmorIndustrial</defName>
+		<label>Arellian armor</label>
+		<description>WIP</description>
+		<baseCost>3000</baseCost>
+		<prerequisites>
+			<li>CFAR_Apparel</li>
+		</prerequisites>
+		<hiddenPrerequisites>
+			<li>FlakArmor</li>
+			<li>MicroelectronicsBasics</li>
+		</hiddenPrerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>2.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->WIP</li>
+
+				<li>subject_story->WIP</li>
+
+				<li>subject_gerund->WIP</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<techLevel>Industrial</techLevel>
+		<tab>CFAR_ResearchTab</tab>
+		<defName>CFAR_Cybernetics</defName>
+		<label>Arellian cybernetics</label>
+		<description>Build high-tech cybernetic implants to enhance your colonists.</description>
+		<baseCost>1000</baseCost>
+		<prerequisites>
+			<li>Prosthetics</li>
+		</prerequisites>
+		<hiddenPrerequisites>
+			<li>MicroelectronicsBasics</li>
+		</hiddenPrerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>2.00</researchViewX>
+		<researchViewY>1.50</researchViewY>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->Arellian cybernetic implants</li>
+
+				<li>subject_story->worked at an underground cybernetic clinic</li>
+				<li>subject_story->studied the bodies of dead Arellians</li>
+
+				<li>subject_gerund->crafting Arellian cybernetic implants</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+
+<!--================ Spacer ================-->
+
+<!--======== Hi-Tech Research Table + MultiAnalyzer ========-->
+
+	<ResearchProjectDef>
+		<techLevel>Industrial</techLevel>
+		<tab>CFAR_ResearchTab</tab>
+		<defName>CFAR_ArmorSpacer</defName>
+		<label>Arellian power armor</label>
+		<description>WIP</description>
+		<baseCost>3000</baseCost>
+		<prerequisites>
+			<li>CFAR_ArmorIndustrial</li>
+		</prerequisites>
+		<hiddenPrerequisites>
+			<li>ReconArmor</li>
+		</hiddenPrerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>4.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->WIP</li>
+
+				<li>subject_story->WIP</li>
+
+				<li>subject_gerund->WIP</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<techLevel>Industrial</techLevel>
+		<tab>CFAR_ResearchTab</tab>
+		<defName>CFAR_PulseShot</defName>
+		<label>Arellian pulse weaponry</label>
+		<description>WIP</description>
+		<baseCost>3000</baseCost>
+		<prerequisites>
+			<li>Fabrication</li>
+		</prerequisites>
+		<hiddenPrerequisites>
+			<li>PrecisionRifling</li>
+		</hiddenPrerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>4.00</researchViewX>
+		<researchViewY>1.00</researchViewY>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->WIP</li>
+
+				<li>subject_story->WIP</li>
+
+				<li>subject_gerund->WIP</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<techLevel>Industrial</techLevel>
+		<tab>CFAR_ResearchTab</tab>
+		<defName>CFAR_Bionics</defName>
+		<label>Arellian bionics</label>
+		<description>Build high-tech bionic implants to enhance or replace the lost limbs and eyes of your colonists.</description>
+		<baseCost>1000</baseCost>
+		<prerequisites>
+			<li>Bionics</li>
+		</prerequisites>
+		<hiddenPrerequisites>
+			<li>MicroelectronicsBasics</li>
+		</hiddenPrerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>4.00</researchViewX>
+		<researchViewY>1.50</researchViewY>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->Arellian cybernetic implants</li>
+
+				<li>subject_story->worked at an underground cybernetic clinic</li>
+				<li>subject_story->studied the bodies of dead Arellians</li>
+
+				<li>subject_gerund->crafting Arellian cybernetic implants</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+</Defs>
