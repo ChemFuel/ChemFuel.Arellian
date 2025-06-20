@@ -15,18 +15,104 @@
 	<ResearchProjectDef>
 		<techLevel>Industrial</techLevel>
 		<tab>CFAR_ResearchTab</tab>
-		<defName>CFAR_Apparel</defName>
-		<label>Arellian apparel</label>
+		<defName>CFAR_FieldManualProduction</defName>
+		<label>Field Manual</label>
 		<description>WIP</description>
-		<baseCost>600</baseCost>
+		<baseCost>500</baseCost>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->WIP</li>
+
+				<li>subject_story->WIP</li>
+
+				<li>subject_gerund->WIP</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<techLevel>Industrial</techLevel>
+		<tab>CFAR_ResearchTab</tab>
+		<defName>CFAR_WarBondProduction</defName>
+		<label>war bond</label>
+		<description>WIP</description>
+		<baseCost>250</baseCost>
+		<prerequisites>
+			<li>Smithing</li>
+		</prerequisites>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>0.50</researchViewY>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->WIP</li>
+
+				<li>subject_story->WIP</li>
+
+				<li>subject_gerund->WIP</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<techLevel>Industrial</techLevel>
+		<tab>CFAR_ResearchTab</tab>
+		<defName>CFAR_AntibioticsProduction</defName>
+		<label>antibiotics production</label>
+		<description>WIP</description>
+		<baseCost>500</baseCost>
+		<prerequisites>
+			<li>DrugProduction</li>
+		</prerequisites>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->WIP</li>
+
+				<li>subject_story->WIP</li>
+
+				<li>subject_gerund->WIP</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<techLevel>Industrial</techLevel>
+		<tab>CFAR_ResearchTab</tab>
+		<defName>CFAR_SedativeProduction</defName>
+		<label>sedative production</label>
+		<description>WIP</description>
+		<baseCost>500</baseCost>
+		<prerequisites>
+			<li>DrugProduction</li>
+		</prerequisites>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>0.50</researchViewY>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->WIP</li>
+
+				<li>subject_story->WIP</li>
+
+				<li>subject_gerund->WIP</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<techLevel>Industrial</techLevel>
+		<tab>CFAR_ResearchTab</tab>
+		<defName>CFAR_NavyUniform</defName>
+		<label>navy uniform</label>
+		<description>WIP</description>
+		<baseCost>500</baseCost>
 		<prerequisites>
 			<li>ComplexClothing</li>
 		</prerequisites>
-		<hiddenPrerequisites>
-			<li>Electricity</li>
-		</hiddenPrerequisites>
-		<researchViewX>0.00</researchViewX>
-		<researchViewY>0.00</researchViewY>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>2.00</researchViewY>
 		<generalRules>
 			<rulesStrings>
 				<li>subject->WIP</li>
@@ -43,55 +129,17 @@
 	<ResearchProjectDef>
 		<techLevel>Industrial</techLevel>
 		<tab>CFAR_ResearchTab</tab>
-		<defName>CFAR_DrugSynthesis</defName>
-		<label>Arellian pharmaceutics</label>
-		<description>Produce Arellian drugs like stim packs and vaccines.</description>
-		<baseCost>1000</baseCost>
+		<defName>CFAR_VaccineProduction</defName>
+		<label>vaccine production</label>
+		<description>WIP</description>
+		<baseCost>500</baseCost>
 		<prerequisites>
+			<li>PenoxycylineProduction</li>
 			<li>DrugProduction</li>
 		</prerequisites>
 		<hiddenPrerequisites>
-			<li>MicroelectronicsBasics</li>
+			<li>Electricity</li>
 		</hiddenPrerequisites>
-		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-		<researchViewX>1.00</researchViewX>
-		<researchViewY>1.00</researchViewY>
-		<generalRules>
-			<rulesStrings>
-				<li>subject->Arellian pharmaceutics</li>
-				<li>subject->stim pack production</li>
-				<li>subject->vaccine production</li>
-
-				<li>subject_story->researched pharmaceutical applications for frontline deployment</li>
-				<li>subject_story->worked on refining non-addictive combat drugs for mass production</li>
-
-				<li>subject_gerund->formulating advanced military stimulants</li>
-				<li>subject_gerund->refining and repurposing Go-juice compounds</li>
-				<li>subject_gerund->processing stabilized derivatives of Go-juice</li>
-			</rulesStrings>
-		</generalRules>
-	</ResearchProjectDef>
-
-<!--======== Hi-Tech Research Table + MultiAnalyzer ========-->
-
-	<ResearchProjectDef>
-		<techLevel>Industrial</techLevel>
-		<tab>CFAR_ResearchTab</tab>
-		<defName>CFAR_ArmorIndustrial</defName>
-		<label>Arellian armor</label>
-		<description>WIP</description>
-		<baseCost>3000</baseCost>
-		<prerequisites>
-			<li>CFAR_Apparel</li>
-		</prerequisites>
-		<hiddenPrerequisites>
-			<li>FlakArmor</li>
-			<li>MicroelectronicsBasics</li>
-		</hiddenPrerequisites>
-		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-		<requiredResearchFacilities>
-			<li>MultiAnalyzer</li>
-		</requiredResearchFacilities>
 		<researchViewX>2.00</researchViewX>
 		<researchViewY>0.00</researchViewY>
 		<generalRules>
@@ -108,30 +156,55 @@
 	<ResearchProjectDef>
 		<techLevel>Industrial</techLevel>
 		<tab>CFAR_ResearchTab</tab>
-		<defName>CFAR_Cybernetics</defName>
-		<label>Arellian cybernetics</label>
-		<description>Build high-tech cybernetic implants to enhance your colonists.</description>
+		<defName>CFAR_BlastDoor</defName>
+		<label>blast door</label>
+		<description>WIP</description>
 		<baseCost>1000</baseCost>
 		<prerequisites>
-			<li>Prosthetics</li>
+			<li>Autodoors</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<researchViewX>2.00</researchViewX>
+		<researchViewY>0.50</researchViewY>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->WIP</li>
+
+				<li>subject_story->WIP</li>
+
+				<li>subject_gerund->WIP</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+
+<!--======== Hi-Tech Research Table + Multi-Analyzer ========-->
+
+	<ResearchProjectDef>
+		<techLevel>Industrial</techLevel>
+		<tab>CFAR_ResearchTab</tab>
+		<defName>CFAR_Cybernetics</defName>
+		<label>cybernetics</label>
+		<description>WIP</description>
+		<baseCost>1000</baseCost>
+		<prerequisites>
+			<li>MicroelectronicsBasics</li>
 		</prerequisites>
 		<hiddenPrerequisites>
-			<li>MicroelectronicsBasics</li>
+			<li>Prosthetics</li>
 		</hiddenPrerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 		<requiredResearchFacilities>
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
-		<researchViewX>2.00</researchViewX>
-		<researchViewY>1.50</researchViewY>
+		<researchViewX>3.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
 		<generalRules>
 			<rulesStrings>
-				<li>subject->Arellian cybernetic implants</li>
+				<li>subject->WIP</li>
 
-				<li>subject_story->worked at an underground cybernetic clinic</li>
-				<li>subject_story->studied the bodies of dead Arellians</li>
+				<li>subject_story->WIP</li>
 
-				<li>subject_gerund->crafting Arellian cybernetic implants</li>
+				<li>subject_gerund->WIP</li>
 			</rulesStrings>
 		</generalRules>
 	</ResearchProjectDef>
@@ -141,54 +214,52 @@
 <!--======== Hi-Tech Research Table + MultiAnalyzer ========-->
 
 	<ResearchProjectDef>
-		<techLevel>Industrial</techLevel>
+		<techLevel>Spacer</techLevel>
 		<tab>CFAR_ResearchTab</tab>
-		<defName>CFAR_ArmorSpacer</defName>
-		<label>Arellian power armor</label>
+		<defName>CFAR_IonPropulsion</defName>
+		<label>ion propulsion</label>
 		<description>WIP</description>
-		<baseCost>3000</baseCost>
-		<prerequisites>
-			<li>CFAR_ArmorIndustrial</li>
-		</prerequisites>
-		<hiddenPrerequisites>
-			<li>ReconArmor</li>
-		</hiddenPrerequisites>
-		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-		<requiredResearchFacilities>
-			<li>MultiAnalyzer</li>
-		</requiredResearchFacilities>
-		<researchViewX>4.00</researchViewX>
-		<researchViewY>0.00</researchViewY>
-		<generalRules>
-			<rulesStrings>
-				<li>subject->WIP</li>
-
-				<li>subject_story->WIP</li>
-
-				<li>subject_gerund->WIP</li>
-			</rulesStrings>
-		</generalRules>
-	</ResearchProjectDef>
-
-	<ResearchProjectDef>
-		<techLevel>Industrial</techLevel>
-		<tab>CFAR_ResearchTab</tab>
-		<defName>CFAR_PulseShot</defName>
-		<label>Arellian pulse weaponry</label>
-		<description>WIP</description>
-		<baseCost>3000</baseCost>
+		<baseCost>4000</baseCost>
 		<prerequisites>
 			<li>Fabrication</li>
 		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>4.00</researchViewX>
+		<researchViewY>2.00</researchViewY>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->WIP</li>
+
+				<li>subject_story->WIP</li>
+
+				<li>subject_gerund->WIP</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+
+
+	<ResearchProjectDef>
+		<techLevel>Spacer</techLevel>
+		<tab>CFAR_ResearchTab</tab>
+		<defName>CFAR_TrooperArmor</defName>
+		<label>trooper armor</label>
+		<description>WIP</description>
+		<baseCost>3000</baseCost>
+		<prerequisites>
+			<li>ReconArmor</li>
+		</prerequisites>
 		<hiddenPrerequisites>
-			<li>PrecisionRifling</li>
+			<li>CFAR_NavyUniform</li>
 		</hiddenPrerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 		<requiredResearchFacilities>
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
 		<researchViewX>4.00</researchViewX>
-		<researchViewY>1.00</researchViewY>
+		<researchViewY>2.00</researchViewY>
 		<generalRules>
 			<rulesStrings>
 				<li>subject->WIP</li>
@@ -201,32 +272,61 @@
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
-		<techLevel>Industrial</techLevel>
+		<techLevel>Spacer</techLevel>
 		<tab>CFAR_ResearchTab</tab>
-		<defName>CFAR_Bionics</defName>
-		<label>Arellian bionics</label>
-		<description>Build high-tech bionic implants to enhance or replace the lost limbs and eyes of your colonists.</description>
-		<baseCost>1000</baseCost>
+		<defName>CFAR_AssaultArmor</defName>
+		<label>assault armor</label>
+		<description>WIP</description>
+		<baseCost>3000</baseCost>
 		<prerequisites>
-			<li>Bionics</li>
+			<li>CFAR_TrooperArmor</li>
 		</prerequisites>
 		<hiddenPrerequisites>
-			<li>MicroelectronicsBasics</li>
+			<li>PoweredArmor</li>
 		</hiddenPrerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 		<requiredResearchFacilities>
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
-		<researchViewX>4.00</researchViewX>
-		<researchViewY>1.50</researchViewY>
+		<researchViewX>5.00</researchViewX>
+		<researchViewY>2.00</researchViewY>
 		<generalRules>
 			<rulesStrings>
-				<li>subject->Arellian cybernetic implants</li>
+				<li>subject->WIP</li>
 
-				<li>subject_story->worked at an underground cybernetic clinic</li>
-				<li>subject_story->studied the bodies of dead Arellians</li>
+				<li>subject_story->WIP</li>
 
-				<li>subject_gerund->crafting Arellian cybernetic implants</li>
+				<li>subject_gerund->WIP</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<techLevel>Spacer</techLevel>
+		<tab>CFAR_ResearchTab</tab>
+		<defName>CFAR_OperatorArmor</defName>
+		<label>operator armor</label>
+		<description>WIP</description>
+		<baseCost>1500</baseCost>
+		<prerequisites>
+			<li>CFAR_TrooperArmor</li>
+		</prerequisites>
+		<hiddenPrerequisites>
+			<li>StandardMechtech</li>
+		</hiddenPrerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>5.00</researchViewX>
+		<researchViewY>2.50</researchViewY>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->WIP</li>
+
+				<li>subject_story->WIP</li>
+
+				<li>subject_gerund->WIP</li>
 			</rulesStrings>
 		</generalRules>
 	</ResearchProjectDef>
