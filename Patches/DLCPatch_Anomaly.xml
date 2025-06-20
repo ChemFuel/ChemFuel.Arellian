@@ -11,4 +11,16 @@
 			</value>
 		</match>
 	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Anomaly</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName="CFAR_BlastDoor"]/prerequisites</xpath>
+			<value>
+				<li>SecurityDoor</li>
+			</value>
+		</match>
+	</Operation>
 </Patch>
