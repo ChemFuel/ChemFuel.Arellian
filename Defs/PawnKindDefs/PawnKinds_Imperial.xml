@@ -3,6 +3,8 @@
 	<PawnKindDef Name="CFAR_ImperialPawnBase" Abstract="True">
 		<race>Human</race>
 		<defaultFactionType>CFAR_Empire</defaultFactionType>
+		<initialResistanceRange>10~20</initialResistanceRange>
+		<initialWillRange>1~2</initialWillRange>
 		<chemicalAddictionChance>0</chemicalAddictionChance>
 		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
 		<combatEnhancingDrugsCount>0~0</combatEnhancingDrugsCount>
@@ -16,21 +18,25 @@
 		</xenotypeChances></xenotypeSet>
 	</PawnKindDef>
 
-<!--================================ Navy ================================-->
-
-<!--======== Enlisted ========-->
+<!--================================ Trooper ================================-->
 
 	<PawnKindDef Name="CFAR_SoldierBase" ParentName="CFAR_ImperialPawnBase" Abstract="True">
 		<combatPower>150</combatPower>
 		<minTitleRequired>CFAR_Trooper</minTitleRequired>
 		<minGenerationAge>20</minGenerationAge>
-		<maxGenerationAge>25</maxGenerationAge>
-		<initialResistanceRange>10~20</initialResistanceRange>
-		<initialWillRange>1~2</initialWillRange>
-		<itemQuality>Normal</itemQuality>
+		<maxGenerationAge>35</maxGenerationAge>
+		<apparelTags>
+			<li>CFAR_Soldier</li>
+		</apparelTags>
 		<apparelColor>(100,100,100)</apparelColor>
 		<apparelMoney>5000~5000</apparelMoney>
 		<weaponMoney>9999~9999</weaponMoney>
+		<techHediffsTags>
+			<li>Simple</li>
+			<li>ImplantEmpireCommon</li>
+		</techHediffsTags>
+		<techHediffsMoney>50~500</techHediffsMoney>
+		<techHediffsChance>0.06</techHediffsChance>
 		<apparelRequired>
 		</apparelRequired>
 		<techHediffsRequired>
@@ -43,16 +49,28 @@
 					<countRange>-1~1</countRange>
 				</li>
 			</subOptionsChooseOne>
-		</inventoryOptions>-->
+		</inventoryOptions>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<stuff>Plasteel</stuff>
+			</li>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<stuff>Plasteel</stuff>
+			</li>
+			<li>
+				<bodyPartGroup>UpperHead</bodyPartGroup>
+				<styleDef MayRequire="Ludeon.RimWorld.Ideology">CFAR_FlakHelmet</styleDef>
+			</li>
+		</specificApparelRequirements>-->
 	</PawnKindDef>
 
-	<PawnKindDef Name="CFAR_InfantryBase" ParentName="CFAR_SoldierBase">
-		<defName>CFAR_Infantry</defName>
-		<label>Infantry trooper</label>
-		<apparelTags>
-			<li>CFAR_Soldier</li>
-			<li>CFAR_IndustrialArmor</li>
-		</apparelTags>
+<!--================ Naval Infantry Corps ================-->
+
+	<PawnKindDef ParentName="CFAR_SoldierBase">
+		<defName>CFAR_NavalTrooper</defName>
+		<label>naval trooper</label>
 		<apparelRequired>
 			<li>Apparel_CFAR_TrooperHelmet</li>
 			<li>Apparel_CFAR_TrooperArmor</li>
@@ -60,12 +78,6 @@
 		<weaponTags>
 			<li>CFAR_Rifle</li>
 		</weaponTags>
-		<techHediffsTags>
-			<li>Simple</li>
-			<li>ImplantEmpireCommon</li>
-		</techHediffsTags>
-		<techHediffsMoney>50~500</techHediffsMoney>
-		<techHediffsChance>0.06</techHediffsChance>
 		<backstoryFiltersOverride>
 			<li>
 				<categoriesChildhood>
@@ -76,158 +88,33 @@
 				</categoriesAdulthood>
 			</li>
 		</backstoryFiltersOverride>
-		<specificApparelRequirements>
-			<!--<li>
-				<apparelLayer>Middle</apparelLayer>
-				<stuff>Plasteel</stuff>
-			</li>
-			<li>
-				<apparelLayer>Overhead</apparelLayer>
-				<stuff>Plasteel</stuff>
-			</li>
-			<li>
-				<bodyPartGroup>UpperHead</bodyPartGroup>
-				<styleDef MayRequire="Ludeon.RimWorld.Ideology">CFAR_FlakHelmet</styleDef>
-			</li>-->
-		</specificApparelRequirements>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="CFAR_InfantryBase">
-		<defName>CFAR_Infantry_H</defName>
-		<label>Heavy trooper</label>
-		<weaponTags Inherit="False">
+	<PawnKindDef ParentName="CFAR_SoldierBase">
+		<defName>CFAR_HeavyTrooper</defName>
+		<label>heavy trooper</label>
+		<apparelRequired>
+			<li>Apparel_CFAR_TrooperHelmet</li>
+			<li>Apparel_CFAR_TrooperArmor</li>
+		</apparelRequired>
+		<weaponTags>
 			<li>CFAR_Repeater</li>
 		</weaponTags>
-	</PawnKindDef>
-
-	<PawnKindDef Name="CFAR_NCOInfantryBase" ParentName="CFAR_InfantryBase">
-		<minTitleRequired>CFAR_Sergeant</minTitleRequired>
-		<defName>CFAR_NCOInfantry</defName>
-		<label>Infantry sergeant</label>
-		<weaponTags Inherit="False">
-			<li>CFAR_Carbine</li>
-		</weaponTags>
-		<backstoryFiltersOverride Inherit="False">
+		<backstoryFiltersOverride>
 			<li>
 				<categoriesChildhood>
 					<li>CFAR_Child_Core</li>
 				</categoriesChildhood>
 				<categoriesAdulthood>
-					<li>CFAR_NCOInfantry</li>
+					<li>CFAR_Infantry</li>
 				</categoriesAdulthood>
 			</li>
 		</backstoryFiltersOverride>
-		<initialResistanceRange>30~40</initialResistanceRange>
-		<initialWillRange>2.5~3.5</initialWillRange>
 	</PawnKindDef>
 
-	<PawnKindDef Name="CFAR_COfficerInfantryBase" ParentName="CFAR_InfantryBase">
-		<minTitleRequired>CFAR_JuniorOfficer</minTitleRequired>
-		<titleSelectOne>
-			<li>CFAR_JuniorOfficer</li>
-			<li>CFAR_Officer</li>
-		</titleSelectOne>
-		<defName>CFAR_COfficerInfantry</defName>
-		<label>Infantry officer</label>
-		<weaponTags Inherit="False">
-			<li>CFAR_Pistol</li>
-		</weaponTags>
-		<backstoryFiltersOverride Inherit="False">
-			<li>
-				<categoriesChildhood>
-					<li>CFAR_Child_Core</li>
-				</categoriesChildhood>
-				<categoriesAdulthood>
-					<li>CFAR_COfficerInfantry</li>
-				</categoriesAdulthood>
-			</li>
-			<li>
-				<commonality>0.5</commonality>
-				<categoriesChildhood>
-					<li>CFAR_Child_Core</li>
-				</categoriesChildhood>
-				<categoriesAdulthood>
-					<li>CFAR_COfficerInfantry_N</li>
-				</categoriesAdulthood>
-			</li>
-		</backstoryFiltersOverride>
-		<initialResistanceRange>20~30</initialResistanceRange>
-		<initialWillRange>1.5~2.5</initialWillRange>
-	</PawnKindDef>
-
-<!-- The distinction becomes meaningless from this rank and forth-->
-
-	<PawnKindDef Name="CFAR_FOfficerInfantryBase" ParentName="CFAR_COfficerInfantryBase">
-		<minTitleRequired>CFAR_SeniorOfficer</minTitleRequired>
-		<defName>CFAR_FOfficerInfantry</defName>
-		<label>High officer</label>
-		<backstoryFiltersOverride Inherit="False">
-			<li>
-				<categoriesChildhood>
-					<li>CFAR_Child_Core</li>
-				</categoriesChildhood>
-				<categoriesAdulthood>
-					<li>CFAR_FOfficerInfantry</li>
-				</categoriesAdulthood>
-			</li>
-			<li>
-				<commonality>0.5</commonality>
-				<categoriesChildhood>
-					<li>CFAR_Child_Core</li>
-				</categoriesChildhood>
-				<categoriesAdulthood>
-					<li>CFAR_FOfficerInfantry_N</li>
-				</categoriesAdulthood>
-			</li>
-		</backstoryFiltersOverride>
-		<initialResistanceRange>25~35</initialResistanceRange>
-		<initialWillRange>2~3</initialWillRange>
-	</PawnKindDef>
-
-	<PawnKindDef Name="CFAR_GeneralInfantryBase" ParentName="CFAR_FOfficerInfantryBase">
-		<minTitleRequired>CFAR_General</minTitleRequired>
-		<defName>CFAR_GeneralInfantry</defName>
-		<label>General</label>
-		<backstoryFiltersOverride Inherit="False">
-			<li>
-				<categoriesChildhood>
-					<li>CFAR_Child_Core</li>
-				</categoriesChildhood>
-				<categoriesAdulthood>
-					<li>CFAR_FOfficerInfantry</li>
-				</categoriesAdulthood>
-			</li>
-			<li>
-				<commonality>0.5</commonality>
-				<categoriesChildhood>
-					<li>CFAR_Child_Core</li>
-				</categoriesChildhood>
-				<categoriesAdulthood>
-					<li>CFAR_FOfficerInfantry_N</li>
-				</categoriesAdulthood>
-			</li>
-		</backstoryFiltersOverride>
-		<initialResistanceRange>25~35</initialResistanceRange>
-		<initialWillRange>2~3</initialWillRange>
-	</PawnKindDef>
-
-<!--======== Officer - Low ========-->
-
-<!--======== Officer - High ========-->
-
-<!--======== General ========-->
-
-<!--================================ Marine ================================-->
-
-<!--======== Enlisted ========-->
-
-	<PawnKindDef Name="CFAR_AssaultBase" ParentName="CFAR_SoldierBase">
-		<defName>CFAR_Assault</defName>
-		<label>Marine</label>
-		<apparelTags>
-			<li>CFAR_Soldier</li>
-			<li>CFAR_IndustrialArmor</li>
-		</apparelTags>
+	<PawnKindDef ParentName="CFAR_SoldierBase">
+		<defName>CFAR_StrikeTrooper</defName>
+		<label>strike trooper</label>
 		<apparelRequired>
 			<li>Apparel_CFAR_TrooperHelmet</li>
 			<li>Apparel_CFAR_TrooperArmor</li>
@@ -235,12 +122,6 @@
 		<weaponTags>
 			<li>CFAR_Carbine</li>
 		</weaponTags>
-		<techHediffsTags>
-			<li>Simple</li>
-			<li>ImplantEmpireCommon</li>
-		</techHediffsTags>
-		<techHediffsMoney>50~500</techHediffsMoney>
-		<techHediffsChance>0.06</techHediffsChance>
 		<backstoryFiltersOverride>
 			<li>
 				<categoriesChildhood>
@@ -251,40 +132,5 @@
 				</categoriesAdulthood>
 			</li>
 		</backstoryFiltersOverride>
-		<specificApparelRequirements>
-			<!--<li>
-				<apparelLayer>Middle</apparelLayer>
-				<stuff>Plasteel</stuff>
-			</li>
-			<li>
-				<apparelLayer>Overhead</apparelLayer>
-				<stuff>Plasteel</stuff>
-			</li>
-			<li>
-				<bodyPartGroup>UpperHead</bodyPartGroup>
-				<styleDef MayRequire="Ludeon.RimWorld.Ideology">CFAR_FlakHelmet</styleDef>
-			</li>-->
-		</specificApparelRequirements>
-	</PawnKindDef>
-
-	<PawnKindDef Name="CFAR_NCOAssaultBase" ParentName="CFAR_AssaultBase">
-		<minTitleRequired>CFAR_Sergeant</minTitleRequired>
-		<defName>CFAR_NCOAssault</defName>
-		<label>Marine sergeant</label>
-		<weaponTags Inherit="False">
-			<li>CFAR_Carbine</li>
-		</weaponTags>
-		<backstoryFiltersOverride Inherit="False">
-			<li>
-				<categoriesChildhood>
-					<li>CFAR_Child_Core</li>
-				</categoriesChildhood>
-				<categoriesAdulthood>
-					<li>CFAR_NCOInfantry</li>
-				</categoriesAdulthood>
-			</li>
-		</backstoryFiltersOverride>
-		<initialResistanceRange>20~30</initialResistanceRange>
-		<initialWillRange>2~4</initialWillRange>
 	</PawnKindDef>
 </Defs>
