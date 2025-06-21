@@ -4,23 +4,29 @@
 		<mods>
 			<li>Anomaly</li>
 		</mods>
-		<match Class="PatchOperationAdd">
-			<xpath>Defs/MutantDef[defName="Ghoul"]/disablesGenes</xpath>
-			<value>
-				<li>Eyes_Arellian</li>
-			</value>
-		</match>
-	</Operation>
-
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Anomaly</li>
-		</mods>
-		<match Class="PatchOperationReplace">
-			<xpath>Defs/ResearchProjectDef[defName="CFAR_BlastDoor"]/prerequisites</xpath>
-			<value>
-				<li>SecurityDoor</li>
-			</value>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!--Ghoul Gene Patch-->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/MutantDef[defName="Ghoul"]/disablesGenes</xpath>
+					<value>
+						<li>Eyes_Arellian</li>
+					</value>
+				</li>
+				<!--Blast Door Research Patch-->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ResearchProjectDef[defName="CFAR_BlastDoor"]/prerequisites/li[1]</xpath>
+					<value>
+						<li>SecurityDoor</li>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ResearchProjectDef[defName="CFAR_BlastDoor"]/prerequisites</xpath>
+					<value>
+						<baseCost>500</baseCost>
+					</value>
+				</li>
+			</operations>
 		</match>
 	</Operation>
 </Patch>
