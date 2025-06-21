@@ -3,12 +3,12 @@
 	<FactionDef ParentName="FactionBase">
 		<techLevel>Ultra</techLevel>
 		<defName>CFAR_Empire</defName>
-		<label>Federation Colonial Armed Forces</label>
-		<fixedName>The Arellian Federation</fixedName>
+		<label>Arellian empire</label>
+		<fixedName>The Arellian Empire</fixedName>
 		<description>Hailing from the Arellia Sector, the Arellian Federation is governed by a militaristic authoritarian regime.\n\nDue to the versatile and steadfast nature of Arellians, combined with their unyielding discipline, the Imperial Armed Forces are a force to be reckoned with.</description>
 		<categoryTag>CFAR_Fed</categoryTag>
-		<pawnSingular>Arellian</pawnSingular>
-		<pawnsPlural>Arellians</pawnsPlural>
+		<pawnSingular>imperial</pawnSingular>
+		<pawnsPlural>imperials</pawnsPlural>
 		<allowedCultures><li>CFAR_Culture</li></allowedCultures>
 		<colorSpectrum><li>(255,212,83)</li></colorSpectrum>
 		<factionIconPath>World/WorldObjects/Expanding/CFAR_Empire</factionIconPath>
