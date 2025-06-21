@@ -59,7 +59,7 @@
 		<techLevel>Industrial</techLevel>
 		<tab>CFAR_ResearchTab</tab>
 		<defName>CFAR_AntibioticsProduction</defName>
-		<label>antibiotics production</label>
+		<label>antibiotics</label>
 		<description>WIP</description>
 		<baseCost>500</baseCost>
 		<prerequisites>
@@ -82,7 +82,7 @@
 		<techLevel>Industrial</techLevel>
 		<tab>CFAR_ResearchTab</tab>
 		<defName>CFAR_SedativeProduction</defName>
-		<label>sedative production</label>
+		<label>sedatives</label>
 		<description>WIP</description>
 		<baseCost>500</baseCost>
 		<prerequisites>
@@ -124,8 +124,6 @@
 		</generalRules>
 	</ResearchProjectDef>
 
-<!--======== Hi-Tech Research Table ========-->
-
 	<ResearchProjectDef>
 		<techLevel>Industrial</techLevel>
 		<tab>CFAR_ResearchTab</tab>
@@ -137,9 +135,32 @@
 			<li>PenoxycylineProduction</li>
 			<li>DrugProduction</li>
 		</prerequisites>
-		<hiddenPrerequisites>
-			<li>Electricity</li>
-		</hiddenPrerequisites>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>1.50</researchViewY>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->WIP</li>
+
+				<li>subject_story->WIP</li>
+
+				<li>subject_gerund->WIP</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+
+<!--======== Hi-Tech Research Table ========-->
+
+	<ResearchProjectDef>
+		<techLevel>Industrial</techLevel>
+		<tab>CFAR_ResearchTab</tab>
+		<defName>CFAR_BlastDoor</defName>
+		<label>blast door</label>
+		<description>WIP</description>
+		<baseCost>1000</baseCost>
+		<prerequisites>
+			<li>Autodoors</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 		<researchViewX>2.00</researchViewX>
 		<researchViewY>0.00</researchViewY>
 		<generalRules>
@@ -156,16 +177,16 @@
 	<ResearchProjectDef>
 		<techLevel>Industrial</techLevel>
 		<tab>CFAR_ResearchTab</tab>
-		<defName>CFAR_BlastDoor</defName>
-		<label>blast door</label>
+		<defName>CFAR_DefensiveMeasures</defName>
+		<label>emplacement</label>
 		<description>WIP</description>
-		<baseCost>1000</baseCost>
+		<baseCost>500</baseCost>
 		<prerequisites>
 			<li>Autodoors</li>
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 		<researchViewX>2.00</researchViewX>
-		<researchViewY>0.50</researchViewY>
+		<researchViewY>1.50</researchViewY>
 		<generalRules>
 			<rulesStrings>
 				<li>subject->WIP</li>
@@ -185,7 +206,7 @@
 		<defName>CFAR_Cybernetics</defName>
 		<label>cybernetics</label>
 		<description>WIP</description>
-		<baseCost>1000</baseCost>
+		<baseCost>2000</baseCost>
 		<prerequisites>
 			<li>MicroelectronicsBasics</li>
 		</prerequisites>
@@ -219,7 +240,7 @@
 		<defName>CFAR_IonPropulsion</defName>
 		<label>ion propulsion</label>
 		<description>WIP</description>
-		<baseCost>4000</baseCost>
+		<baseCost>2000</baseCost>
 		<prerequisites>
 			<li>Fabrication</li>
 		</prerequisites>
@@ -240,6 +261,86 @@
 		</generalRules>
 	</ResearchProjectDef>
 
+	<ResearchProjectDef>
+		<techLevel>Spacer</techLevel>
+		<tab>CFAR_ResearchTab</tab>
+		<defName>CFAR_PulseWeaponry</defName>
+		<label>pulse weaponry</label>
+		<description>WIP</description>
+		<baseCost>3000</baseCost>
+		<prerequisites>
+			<li>ChargedShot</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>4.00</researchViewX>
+		<researchViewY>2.00</researchViewY>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->WIP</li>
+
+				<li>subject_story->WIP</li>
+
+				<li>subject_gerund->WIP</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<techLevel>Spacer</techLevel>
+		<tab>CFAR_ResearchTab</tab>
+		<defName>CFAR_PulseArsenal</defName>
+		<label>pulse arsenal</label>
+		<description>WIP</description>
+		<baseCost>3000</baseCost>
+		<prerequisites>
+			<li>Fabrication</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>4.00</researchViewX>
+		<researchViewY>2.00</researchViewY>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->WIP</li>
+
+				<li>subject_story->WIP</li>
+
+				<li>subject_gerund->WIP</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<techLevel>Spacer</techLevel>
+		<tab>CFAR_ResearchTab</tab>
+		<defName>CFAR_PulseArsenal</defName>
+		<label>pulse arsenal</label>
+		<description>WIP</description>
+		<baseCost>3000</baseCost>
+		<prerequisites>
+			<li>ChargedShot</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>4.00</researchViewX>
+		<researchViewY>2.00</researchViewY>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->WIP</li>
+
+				<li>subject_story->WIP</li>
+
+				<li>subject_gerund->WIP</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
 
 	<ResearchProjectDef>
 		<techLevel>Spacer</techLevel>
@@ -259,7 +360,7 @@
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
 		<researchViewX>4.00</researchViewX>
-		<researchViewY>2.00</researchViewY>
+		<researchViewY>3.00</researchViewY>
 		<generalRules>
 			<rulesStrings>
 				<li>subject->WIP</li>
@@ -289,7 +390,7 @@
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
 		<researchViewX>5.00</researchViewX>
-		<researchViewY>2.00</researchViewY>
+		<researchViewY>3.00</researchViewY>
 		<generalRules>
 			<rulesStrings>
 				<li>subject->WIP</li>
@@ -319,7 +420,7 @@
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
 		<researchViewX>5.00</researchViewX>
-		<researchViewY>2.50</researchViewY>
+		<researchViewY>3.50</researchViewY>
 		<generalRules>
 			<rulesStrings>
 				<li>subject->WIP</li>
