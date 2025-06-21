@@ -59,26 +59,26 @@
 			<li>
 				<kindDef>Trader</kindDef>
 				<options>
-					<CFAR_NavyInfantry>10</CFAR_NavyInfantry>
+					<CFAR_NavalInfantry>10</CFAR_NavalInfantry>
 				</options>
 			</li>
 			<li>
 				<!-- Trooper 35, Heavy Trooper 15, Sentinel 10, Officer1 10, Officer2 5 -->
 				<kindDef>Combat</kindDef>
 				<options>
-					<CFAR_NavyInfantry>35</CFAR_NavyInfantry>
+					<CFAR_NavalInfantry>35</CFAR_NavalInfantry>
 				</options>
 			</li>
 			<!--<li>
 				<kindDef>Peaceful</kindDef>
 				<options>
-					<CFAR_NavyInfantry>10</CFAR_NavyInfantry>
+					<CFAR_NavalInfantry>10</CFAR_NavalInfantry>
 				</options>
 			</li>-->
 			<li>
 				<kindDef>Settlement</kindDef>
 				<options>
-					<CFAR_NavyInfantry>10</CFAR_NavyInfantry>
+					<CFAR_NavalInfantry>10</CFAR_NavalInfantry>
 				</options>
 			</li>
 		</pawnGroupMakers>
@@ -140,7 +140,7 @@
 		</disallowedPrecepts>
 
 		<fixedLeaderKinds MayRequire="Ludeon.RimWorld.Royalty">
-			<li>Villager</li>
+			<li>CFAR_NavalInfantry</li>
 		</fixedLeaderKinds>
 		<leaderForceGenerateNewPawn MayRequire="Ludeon.RimWorld.Royalty">true</leaderForceGenerateNewPawn>
 		<royalFavorLabel MayRequire="Ludeon.RimWorld.Royalty">credit</royalFavorLabel>
