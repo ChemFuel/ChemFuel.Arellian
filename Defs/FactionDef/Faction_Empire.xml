@@ -59,26 +59,26 @@
 			<li>
 				<kindDef>Trader</kindDef>
 				<options>
-					<CFAR_Infantry>10</CFAR_Infantry>
+					<CFAR_NavyInfantry>10</CFAR_NavyInfantry>
 				</options>
 			</li>
 			<li>
 				<!-- Trooper 35, Heavy Trooper 15, Sentinel 10, Officer1 10, Officer2 5 -->
 				<kindDef>Combat</kindDef>
 				<options>
-					<CFAR_Infantry>35</CFAR_Infantry>
+					<CFAR_NavyInfantry>35</CFAR_NavyInfantry>
 				</options>
 			</li>
 			<!--<li>
 				<kindDef>Peaceful</kindDef>
 				<options>
-					<CFAR_Infantry>10</CFAR_Infantry>
+					<CFAR_NavyInfantry>10</CFAR_NavyInfantry>
 				</options>
 			</li>-->
 			<li>
 				<kindDef>Settlement</kindDef>
 				<options>
-					<CFAR_Infantry>10</CFAR_Infantry>
+					<CFAR_NavyInfantry>10</CFAR_NavyInfantry>
 				</options>
 			</li>
 		</pawnGroupMakers>
