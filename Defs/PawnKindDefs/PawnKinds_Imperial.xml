@@ -22,9 +22,6 @@
 
 	<PawnKindDef Name="CFAR_SoldierBase" ParentName="CFAR_ImperialPawnBase" Abstract="True">
 		<combatPower>150</combatPower>
-		<minTitleRequired>CFAR_Trooper</minTitleRequired>
-		<minGenerationAge>20</minGenerationAge>
-		<maxGenerationAge>35</maxGenerationAge>
 		<apparelTags>
 			<li>CFAR_Soldier</li>
 		</apparelTags>
@@ -68,9 +65,13 @@
 
 <!--================ Naval Infantry Corps ================-->
 
+<!-- Role : Assault -->
 	<PawnKindDef ParentName="CFAR_SoldierBase">
-		<defName>CFAR_NavalTrooper</defName>
-		<label>naval trooper</label>
+		<defName>CFAR_Trooper</defName>
+		<label>trooper</label>
+		<minTitleRequired>CFAR_Trooper</minTitleRequired>
+		<minGenerationAge>18</minGenerationAge>
+		<maxGenerationAge>35</maxGenerationAge>
 		<apparelRequired>
 			<li>Apparel_CFAR_TrooperHelmet</li>
 			<li>Apparel_CFAR_TrooperArmor</li>
@@ -91,8 +92,37 @@
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="CFAR_SoldierBase">
+		<defName>CFAR_SergeantTrooper</defName>
+		<label>sergeant trooper</label>
+		<minTitleRequired>CFAR_Trooper</minTitleRequired>
+		<minGenerationAge>22</minGenerationAge>
+		<maxGenerationAge>45</maxGenerationAge>
+		<apparelRequired>
+			<li>Apparel_CFAR_TrooperHelmet</li>
+			<li>Apparel_CFAR_TrooperArmor</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>CFAR_Carbine</li>
+		</weaponTags>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>CFAR_Child_Core</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>CFAR_Infantry</li>
+				</categoriesAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+<!-- Role : Support -->
+	<PawnKindDef ParentName="CFAR_SoldierBase">
 		<defName>CFAR_HeavyTrooper</defName>
 		<label>heavy trooper</label>
+		<minTitleRequired>CFAR_Trooper</minTitleRequired>
+		<minGenerationAge>18</minGenerationAge>
+		<maxGenerationAge>35</maxGenerationAge>
 		<apparelRequired>
 			<li>Apparel_CFAR_TrooperHelmet</li>
 			<li>Apparel_CFAR_TrooperArmor</li>
@@ -113,14 +143,145 @@
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="CFAR_SoldierBase">
-		<defName>CFAR_StrikeTrooper</defName>
-		<label>strike trooper</label>
+		<defName>CFAR_ReconTrooper</defName>
+		<label>recon trooper</label>
+		<minTitleRequired>CFAR_Trooper</minTitleRequired>
+		<minGenerationAge>18</minGenerationAge>
+		<maxGenerationAge>35</maxGenerationAge>
+		<apparelRequired>
+			<li>Apparel_CFAR_TrooperHelmet</li>
+			<li>Apparel_CFAR_TrooperArmor</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>CFAR_Railgun</li>
+		</weaponTags>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>CFAR_Child_Core</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>CFAR_Infantry</li>
+				</categoriesAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+<!-- Role : Specialist -->
+	<PawnKindDef ParentName="CFAR_SoldierBase">
+		<defName>CFAR_JetTrooper</defName>
+		<label>jet trooper</label>
+		<minTitleRequired>CFAR_Trooper</minTitleRequired>
+		<minGenerationAge>18</minGenerationAge>
+		<maxGenerationAge>35</maxGenerationAge>
 		<apparelRequired>
 			<li>Apparel_CFAR_TrooperHelmet</li>
 			<li>Apparel_CFAR_TrooperArmor</li>
 		</apparelRequired>
 		<weaponTags>
 			<li>CFAR_Carbine</li>
+		</weaponTags>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>CFAR_Child_Core</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>CFAR_Infantry</li>
+				</categoriesAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+<!-- Role : Officer - Low -->
+	<PawnKindDef ParentName="CFAR_SoldierBase">
+		<defName>CFAR_Lieutenant</defName>
+		<label>lieutenant</label>
+		<minTitleRequired>CFAR_Trooper</minTitleRequired>
+		<minGenerationAge>22</minGenerationAge>
+		<maxGenerationAge>28</maxGenerationAge>
+		<apparelRequired>
+			<li>Apparel_CFAR_TrooperHelmet</li>
+			<li>Apparel_CFAR_TrooperArmor</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>CFAR_Carbine</li>
+		</weaponTags>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>CFAR_Child_Core</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>CFAR_Infantry</li>
+				</categoriesAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="CFAR_SoldierBase">
+		<defName>CFAR_Captain</defName>
+		<label>captain</label>
+		<minTitleRequired>CFAR_Trooper</minTitleRequired>
+		<minGenerationAge>27</minGenerationAge>
+		<maxGenerationAge>34</maxGenerationAge>
+		<apparelRequired>
+			<li>Apparel_CFAR_TrooperHelmet</li>
+			<li>Apparel_CFAR_TrooperArmor</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>CFAR_Carbine</li>
+		</weaponTags>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>CFAR_Child_Core</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>CFAR_Infantry</li>
+				</categoriesAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+<!-- Role : Officer - High -->
+	<PawnKindDef ParentName="CFAR_SoldierBase">
+		<defName>CFAR_Commander</defName>
+		<label>commander</label>
+		<minTitleRequired>CFAR_Trooper</minTitleRequired>
+		<minGenerationAge>37</minGenerationAge>
+		<maxGenerationAge>45</maxGenerationAge>
+		<apparelRequired>
+			<li>Apparel_CFAR_TrooperHelmet</li>
+			<li>Apparel_CFAR_TrooperArmor</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>CFAR_Pistol</li>
+		</weaponTags>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>CFAR_Child_Core</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>CFAR_Infantry</li>
+				</categoriesAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="CFAR_SoldierBase">
+		<defName>CFAR_General</defName>
+		<label>general</label>
+		<minTitleRequired>CFAR_Trooper</minTitleRequired>
+		<minGenerationAge>50</minGenerationAge>
+		<maxGenerationAge>65</maxGenerationAge>
+		<apparelRequired>
+			<li>Apparel_CFAR_TrooperHelmet</li>
+			<li>Apparel_CFAR_TrooperArmor</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>CFAR_Pistol</li>
 		</weaponTags>
 		<backstoryFiltersOverride>
 			<li>
