@@ -47,8 +47,8 @@
 	</RoyalTitleDef>
 
 	<RoyalTitleDef ParentName="CFAR_TitleBase" MayRequire="Ludeon.RimWorld.Royalty">
-		<defName>CFAR_JuniorOfficer</defName>
-		<label>junior officer</label>
+		<defName>CFAR_Lieutenant</defName>
+		<label>lieutenant</label>
 		<description>TEST</description>
 		<seniority>200</seniority>
 		<favorCost>40</favorCost>
@@ -56,8 +56,8 @@
 	</RoyalTitleDef>
 
 	<RoyalTitleDef ParentName="CFAR_TitleBase" MayRequire="Ludeon.RimWorld.Royalty">
-		<defName>CFAR_Officer</defName>
-		<label>officer</label>
+		<defName>CFAR_Commander</defName>
+		<label>commander</label>
 		<description>TEST</description>
 		<seniority>300</seniority>
 		<favorCost>150</favorCost>
@@ -65,8 +65,8 @@
 	</RoyalTitleDef>
 
 	<RoyalTitleDef ParentName="CFAR_TitleBase" MayRequire="Ludeon.RimWorld.Royalty">
-		<defName>CFAR_SeniorOfficer</defName>
-		<label>senior officer</label>
+		<defName>CFAR_Captain</defName>
+		<label>captain</label>
 		<description>TEST</description>
 		<seniority>400</seniority>
 		<favorCost>640</favorCost>
@@ -74,8 +74,8 @@
 	</RoyalTitleDef>
 
 	<RoyalTitleDef ParentName="CFAR_TitleBase" MayRequire="Ludeon.RimWorld.Royalty">
-		<defName>CFAR_General</defName>
-		<label>general</label>
+		<defName>CFAR_RearAdmiral</defName>
+		<label>rear admiral</label>
 		<description>TEST</description>
 		<seniority>500</seniority>
 		<favorCost>3250</favorCost>
@@ -83,11 +83,11 @@
 	</RoyalTitleDef>
 
 	<RoyalTitleDef ParentName="CFAR_TitleBase" MayRequire="Ludeon.RimWorld.Royalty">
-		<defName>CFAR_Magistrate</defName>
-		<label>magistrate</label>
+		<defName>CFAR_Admiral</defName>
+		<label>admiral</label>
 		<description>TEST</description>
 		<seniority>600</seniority>
-		<favorCost>19550</favorCost>
+		<favorCost>12500</favorCost>
 		<permitPointsAwarded>1</permitPointsAwarded>
 	</RoyalTitleDef>
 
