@@ -85,7 +85,7 @@
 					<li>CFAR_Child_Core</li>
 				</categoriesChildhood>
 				<categoriesAdulthood>
-					<li>CFAR_Infantry</li>
+					<li>CFAR_Trooper</li>
 				</categoriesAdulthood>
 			</li>
 		</backstoryFiltersOverride>
@@ -136,7 +136,7 @@
 					<li>CFAR_Child_Core</li>
 				</categoriesChildhood>
 				<categoriesAdulthood>
-					<li>CFAR_Infantry</li>
+					<li>CFAR_HeavyTrooper</li>
 				</categoriesAdulthood>
 			</li>
 		</backstoryFiltersOverride>
@@ -161,7 +161,7 @@
 					<li>CFAR_Child_Core</li>
 				</categoriesChildhood>
 				<categoriesAdulthood>
-					<li>CFAR_Infantry</li>
+					<li>CFAR_ReconTrooper</li>
 				</categoriesAdulthood>
 			</li>
 		</backstoryFiltersOverride>
@@ -187,7 +187,7 @@
 					<li>CFAR_Child_Core</li>
 				</categoriesChildhood>
 				<categoriesAdulthood>
-					<li>CFAR_Infantry</li>
+					<li>CFAR_JetTrooper</li>
 				</categoriesAdulthood>
 			</li>
 		</backstoryFiltersOverride>
