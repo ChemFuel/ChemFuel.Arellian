@@ -37,13 +37,28 @@
 		<defName>CFAR_Recruit1</defName>
 		<title>imperial recruit</title>
 		<titleShort>recruit</titleShort>
-		<description>WIP</description>
+		<description>[PAWN_nameDef] was a trooper in the Imperial Navy. [PAWN_pronoun] marched out of training with a shiny armor and sharper ambition. The stars were vast and unknown, but so was [PAWN_possessive] resolve. [PAWN_pronoun] waited for [PAWN_possessive] moment to shine.</description>
 		<skillGains>
-			<Social>3</Social>
-			<Intellectual>4</Intellectual>
+			<Shooting>5</Shooting>
+			<Melee>3</Melee>
 		</skillGains>
 		<spawnCategories>
-			<li>CFAR_Child_Core</li>
+			<li>CFAR_Recruit</li>
 		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_Recruit">
+		<defName>CFAR_Recruit2</defName>
+		<description>[PAWN_nameDef] was a trooper in the Imperial Navy. [PAWN_pronoun] stepped onto the battlefield with fresh boots and eager eyes. Every order was a lesson, every mission a test. [PAWN_pronoun] wasn’t ready for what came next—but [PAWN_pronoun] would learn fast.</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_Recruit">
+		<defName>CFAR_Recruit3</defName>
+		<description>[PAWN_nameDef] was a trooper in the Imperial Navy. Fresh from bootcamp, [PAWN_pronoun] gripped [PAWN_possessive] pulse rifle a little too tight. The hum of the warship’s engines was louder than [PAWN_possessive] confidence. Every order felt heavy, but [PAWN_pronoun] kept moving forward.</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_Recruit">
+		<defName>CFAR_Recruit4</defName>
+		<description>[PAWN_nameDef] was a trooper in the Imperial Navy. Fresh and eager, [PAWN_pronoun] made mistakes—missed targets, wrong calls. The frontlines didn’t forgive. Either [PAWN_pronoun] learned fast or didn’t learn at all.</description>
 	</BackstoryDef>
 </Defs>
