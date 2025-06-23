@@ -30,7 +30,7 @@
 		<description>WIP</description>
 	</BackstoryDef>
 	
-<!--================ Imperial Naval Assault Command ================-->
+<!--================ Imperial Naval Infantry Command ================-->
 
 <!--======== Trooper ========-->
 
@@ -38,28 +38,78 @@
 		<defName>CFAR_Trooper1</defName>
 		<title>imperial trooper</title>
 		<titleShort>trooper</titleShort>
-		<description>[PAWN_nameDef] was a trooper in the imperial navy. [PAWN_pronoun] fought in the frontlines, blasting pirates with [PAWN_possessive] trusty pulse rifle. The life was hard, but [PAWN_pronoun] never complained.</description>
+		<description>[PAWN_nameDef] was a trooper in the Imperial Navy. [PAWN_pronoun] thought war would be dramatic; it was mostly checking corridors and fixing jammed hatches. Still, [PAWN_nameDef] kept [PAWN_possessive] gear sharp and helmet visor polished.</description>
 		<skillGains>
 			<Shooting>5</Shooting>
 			<Melee>3</Melee>
 		</skillGains>
 		<spawnCategories>
-			<li>CFAR_Infantry</li>
+			<li>CFAR_Trooper</li>
 		</spawnCategories>
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_Trooper">
 		<defName>CFAR_Trooper2</defName>
-		<description>[PAWN_nameDef] was a trooper in the Imperial Navy. [PAWN_pronoun] spent countless hours patrolling barren moons, always on the lookout for hostile mechanoids.</description>
+		<description>[PAWN_nameDef] was a trooper in the imperial navy. [PAWN_pronoun] handled weapons locker checks and ran escort drills weekly. [PAWN_pronoun] cleaned rifles more than [PAWN_pronoun] fired them. Still, when orders came, [PAWN_nameDef] was always ready.</description>
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_Trooper">
 		<defName>CFAR_Trooper3</defName>
-		<description>WIP</description>
+		<description>[PAWN_nameDef] was a trooper in the Imperial Navy. [PAWN_pronoun] passed time guarding hangars and rerouting power lines. [PAWN_pronoun] memorized patrol routes and brewed coffee in engine heat.</description>
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_Trooper">
 		<defName>CFAR_Trooper4</defName>
-		<description>WIP</description>
+		<description>[PAWN_nameDef] was a trooper in the Imperial Navy. [PAWN_pronoun] spent long hours guarding fuel lines and sweeping docking bays. [PAWN_pronoun] knew the hum of every generator by heart. Off-shift, [PAWN_pronoun] traded bad jokes and played cards with the squad, always folding too early.</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_Trooper">
+		<defName>CFAR_Trooper5</defName>
+		<description>[PAWN_nameDef] was a trooper in the Imperial Navy. Whenever [PAWN_possessive] unit raided a pirate outpost, [PAWN_pronoun] set the trigger to full-auto, blasting pirates until they stood no more.</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_Trooper">
+		<defName>CFAR_Trooper6</defName>
+		<description>[PAWN_nameDef] was a trooper in the Imperial Navy. [PAWN_pronoun] cleared hallways in pirate outposts with short bursts and steady steps. No heroics—just corners, cover, and commands. After the sweep, [PAWN_pronoun] helped tag crates and carry bodies.</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_Trooper">
+		<defName>CFAR_Trooper7</defName>
+		<description>[PAWN_nameDef] was a trooper in the Imperial Navy. [PAWN_pronoun] followed orders, covered sectors, and kept the pulse rifle warm. Pirate outposts all smelled the same—burnt plastic and fear. [PAWN_pronoun] didn’t mind the work. It was simple.</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_Trooper">
+		<defName>CFAR_Trooper8</defName>
+		<description>[PAWN_nameDef] was a trooper in the Imperial Navy. During pirate raids, [PAWN_pronoun] lobbed thermal detonators into rooms before stepping in. It wasn’t subtle, but it worked. [PAWN_pronoun] carried extra, clipped across [PAWN_possessive] belt, and used them often. No one complained.</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_Trooper">
+		<defName>CFAR_Trooper9</defName>
+		<description>[PAWN_nameDef] was a trooper in the Imperial Navy. Fighting deserters felt wrong—they wore old uniforms, spoke the same codes. [PAWN_pronoun] still aimed center mass. Patrols turned tense; friendlies weren’t always friendly. [PAWN_pronoun] learned quick: hesitate, and you die.</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_Trooper">
+		<defName>CFAR_Trooper10</defName>
+		<description>[PAWN_nameDef] was a trooper in the Imperial Navy. Deserters used old callsigns and spoke like comrades. It made [PAWN_pronoun] pause, unsure if the welcome was real. [PAWN_pronoun] kept a finger near the trigger, but waited. Something always felt off.</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_Trooper">
+		<defName>CFAR_Trooper11</defName>
+		<description>[PAWN_nameDef] was a trooper in the Imperial Navy. Desertion meant betrayal, but it didn’t feel that simple. [PAWN_pronoun] swept camps where deserters shared old jokes and cooked Navy meals. [PAWN_pronoun] fired anyway. Good soldiers followed orders.</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_Trooper">
+		<defName>CFAR_Trooper12</defName>
+		<description>[PAWN_nameDef] was a trooper in the Imperial Navy. The deserters fought like trained squads—disciplined, tight formations. [PAWN_pronoun] won the fight, but it didn’t feel like victory. It felt like shooting [PAWN_possessive] comrades—which they were, at one point.</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_Trooper" MayRequire="Ludeon.RimWorld.Anomaly">
+		<defName>CFAR_Trooper13</defName>
+		<description>[PAWN_nameDef] was a trooper in the Imperial Navy. The infected looked human—until they moved. Too fast, too stiff. [PAWN_pronoun] learned to spot the signs: flickering eyes, metal under skin. [PAWN_pronoun] kept the helmet sealed and the safety off.</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_Trooper" MayRequire="Ludeon.RimWorld.Anomaly">
+		<defName>CFAR_Trooper14</defName>
+		<description>[PAWN_nameDef] was a trooper in the Imperial Navy. The shamblers moved wrong—silent, twitching, eyes like old comrades. Pulse fire barely slowed them. After the first sweep, [PAWN_pronoun] stopped talking. The squad left the lights on, even when they slept.</description>
 	</BackstoryDef>
 </Defs>
