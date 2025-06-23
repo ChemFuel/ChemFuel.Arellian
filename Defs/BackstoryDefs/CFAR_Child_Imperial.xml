@@ -4,8 +4,8 @@
 
 	<BackstoryDef ParentName="CFAR_Child">
 		<defName>CFAR_ChildCadet1</defName>
-		<title>Coreworld kitten</title><!--코어월드 야옹이-->
-		<titleShort>Core kitten</titleShort><!--코어 야옹이-->
+		<title>Coreworld kitten</title>
+		<titleShort>Core kitten</titleShort>
 		<description>Like every other kittens born in Arellia Prime, [PAWN_nameDef] received basic education at a Federation academy.</description>
 		<slot>Childhood</slot>
 		<skillGains>
@@ -19,8 +19,8 @@
 
 	<BackstoryDef ParentName="CFAR_Child">
 		<defName>CFAR_ChildCadet2</defName>
-		<title>Coreworld kitten</title><!--코어월드 야옹이-->
-		<titleShort>Core kitten</titleShort><!--코어 야옹이-->
+		<title>Coreworld kitten</title>
+		<titleShort>Core kitten</titleShort>
 		<description>Like every other kittens born in Arellia Prime, [PAWN_nameDef] received basic education at a Federation academy.</description>
 		<skillGains>
 			<Social>3</Social>
