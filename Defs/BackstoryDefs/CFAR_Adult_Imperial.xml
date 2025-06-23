@@ -40,8 +40,8 @@
 		<titleShort>trooper</titleShort>
 		<description>[PAWN_nameDef] was a trooper in the Imperial Navy. [PAWN_pronoun] thought war would be dramatic; it was mostly checking corridors and fixing jammed hatches. Still, [PAWN_nameDef] kept [PAWN_possessive] gear sharp and helmet visor polished.</description>
 		<skillGains>
-			<Shooting>5</Shooting>
-			<Melee>3</Melee>
+			<Shooting>6</Shooting>
+			<Melee>2</Melee>
 		</skillGains>
 		<spawnCategories>
 			<li>CFAR_Trooper</li>
@@ -111,5 +111,128 @@
 	<BackstoryDef ParentName="CFAR_Trooper" MayRequire="Ludeon.RimWorld.Anomaly">
 		<defName>CFAR_Trooper14</defName>
 		<description>[PAWN_nameDef] was a trooper in the Imperial Navy. The shamblers moved wrong—silent, twitching, eyes like old comrades. Pulse fire barely slowed them. After the first sweep, [PAWN_pronoun] stopped talking. The squad left the lights on, even when they slept.</description>
+	</BackstoryDef>
+
+<!--======== Heavy Trooper ========-->
+
+	<BackstoryDef Name="CFAR_HeavyTrooper" ParentName="CFAR_Adult">
+		<defName>CFAR_HeavyTrooper1</defName>
+		<title>heavy trooper</title>
+		<titleShort>trooper</titleShort>
+		<description>[PAWN_nameDef] was a heavy trooper in the Imperial Navy. [PAWN_pronoun] carried the pulse repeater like a second arm—slow, steady, deadly. When the line broke, [PAWN_pronoun] held it together with bursts of suppressing fire.</description>
+		<skillGains>
+			<Shooting>6</Shooting>
+			<Melee>4</Melee>
+		</skillGains>
+		<spawnCategories>
+			<li>CFAR_HeavyTrooper</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_HeavyTrooper">
+		<defName>CFAR_HeavyTrooper2</defName>
+		<description>[PAWN_nameDef] was a heavy trooper in the Imperial Navy. Hordes of enemies poured in, but [PAWN_pronoun] just kept mowing them down, like clockwork. [PAWN_pronoun] wasn’t even sweating anymore. It was boring, really—just another day of endless fire and too much blood to wipe off [PAWN_possessive] gear.</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_HeavyTrooper">
+		<defName>CFAR_HeavyTrooper3</defName>
+		<description>[PAWN_nameDef] was a heavy trooper in the Imperial Navy. [PAWN_pronoun] wasn’t just fighting—[PAWN_pronoun] was having a blast. The pulse cannon kicked like a beast, and the explosions were music to [PAWN_pronoun]’s ears. [PAWN_pronoun] didn’t care about the chaos. This was the job.</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_HeavyTrooper">
+		<defName>CFAR_HeavyTrooper4</defName>
+		<description>[PAWN_nameDef] was a heavy trooper in the Imperial Navy. The pulse repeater was a part of [PAWN_pronoun] like a second arm. When [PAWN_pronoun] opened fire, the battlefield turned into a spectacle—bright, loud, and impossible to ignore. And [PAWN_pronoun] wouldn’t have it any other way.</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_HeavyTrooper">
+		<defName>CFAR_HeavyTrooper5</defName>
+		<description>[PAWN_nameDef] was a heavy trooper in the Imperial Navy. [PAWN_pronoun] liked the rhythm of the battlefield—steady, reliable fire while the jet troopers danced in and out of danger. [PAWN_pronoun] covered their backs, and they made sure [PAWN_possessive] pulse repeater stayed steady. Afterward, it was a good laugh, a couple of drinks, and watching [PAWN_objective] try to land a perfect jump.</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_HeavyTrooper">
+		<defName>CFAR_HeavyTrooper6</defName>
+		<description>[PAWN_nameDef] was a heavy trooper in the Imperial Navy. [PAWN_pronoun] always kept an eye on the jet troopers—they loved to fly fast, but their landings were never pretty. [PAWN_pronoun] covered their landings, making sure they'd have a spot to return to. After the fight, they'd joke around and talk about which one of them could keep the adrenaline going longer.</description>
+	</BackstoryDef>
+
+<!--======== Recon Trooper ========-->
+
+	<BackstoryDef Name="CFAR_ReconTrooper" ParentName="CFAR_Adult">
+		<defName>CFAR_ReconTrooper1</defName>
+		<title>recon trooper</title>
+		<titleShort>trooper</titleShort>
+		<description>[PAWN_nameDef] was a recon trooper in the Imperial Navy. [PAWN_pronoun] preferred the quiet, the solitude. With a cloaking module and pulse railgun, [PAWN_pronoun] was a shadow in the dark, watching, waiting. [PAWN_pronoun] never missed—[PAWN_possessive] silence was as much a weapon as the gun.</description>
+		<skillGains>
+			<Shooting>6</Shooting>
+			<Melee>4</Melee>
+		</skillGains>
+		<spawnCategories>
+			<li>CFAR_ReconTrooper</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_ReconTrooper">
+		<defName>CFAR_ReconTrooper2</defName>
+		<description>[PAWN_nameDef] was a recon trooper in the Imperial Navy. Silent and unnoticed, [PAWN_pronoun] moved through shadows, pulse railgun always at the ready. [PAWN_pronoun] didn’t need to speak—one clean shot was all that mattered. The world didn’t know [PAWN_pronoun] was there until it was too late.</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_ReconTrooper">
+		<defName>CFAR_ReconTrooper3</defName>
+		<description>[PAWN_nameDef] was a recon trooper in the Imperial Navy. [PAWN_pronoun] was all about stealth... except when [PAWN_pronoun] tripped over a crate during a recon mission. [PAWN_pronoun] didn’t make a sound after that—mostly because [PAWN_pronoun] was hiding in a corner, pretending to be a rock.</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_ReconTrooper">
+		<defName>CFAR_ReconTrooper4</defName>
+		<description>[PAWN_nameDef] was a recon trooper in the Imperial Navy. With the cloaking module on and pulse railgun ready, [PAWN_pronoun] would vanish into the environment. [PAWN_pronoun] was good at "surveying" the battlefield... and occasionally skipping patrols to sneak in a nap. No one ever saw [PAWN_pronoun] anyway.</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_ReconTrooper">
+		<defName>CFAR_ReconTrooper5</defName>
+		<description>[PAWN_nameDef] was a recon trooper in the Imperial Navy. [PAWN_pronoun] could vanish at will, using the cloaking module to stay hidden for hours. Sometimes, it was easier to just avoid the fight entirely—stay in position, watch, and let others do the hard work. The mission could wait.</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_ReconTrooper">
+		<defName>CFAR_ReconTrooper6</defName>
+		<description>[PAWN_nameDef] was a recon trooper in the Imperial Navy. Armed with a pulse railgun and cloaking tech, [PAWN_pronoun] preferred to let others deal with the mess. [PAWN_pronoun] took a lot of "recon" breaks, finding remote spots to watch the chaos unfold, out of sight, away from responsibility.</description>
+	</BackstoryDef>
+
+<!--======== Recon Trooper ========-->
+
+	<BackstoryDef Name="CFAR_JetTrooper" ParentName="CFAR_Adult">
+		<defName>CFAR_JetTrooper1</defName>
+		<title>jet trooper</title>
+		<titleShort>trooper</titleShort>
+		<description>[PAWN_nameDef] was a jet trooper in the Imperial Navy. Most soldiers stayed on the ground, but [PAWN_pronoun] never did. Jumping was a dance, dodging fire and sending enemies scrambling in all directions. Sure, it made [PAWN_pronoun] a big target—but what’s life without a little risk?</description>
+		<skillGains>
+			<Shooting>6</Shooting>
+			<Melee>4</Melee>
+		</skillGains>
+		<spawnCategories>
+			<li>CFAR_ReconTrooper</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_JetTrooper">
+		<defName>CFAR_JetTrooper2</defName>
+		<description>[PAWN_nameDef] was a jet trooper in the Imperial Navy. When not in the air, [PAWN_pronoun] could be found checking equipment, adjusting thrusters, or doing a hundred laps around the hangar. There was always something to improve, always something to break—[PAWN_pronoun] liked it that way.</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_JetTrooper">
+		<defName>CFAR_JetTrooper3</defName>
+		<description>[PAWN_nameDef] was a jet trooper in the Imperial Navy. Between maintenance checks and test jumps, [PAWN_pronoun] could always be found at the table, rolling dice or flipping cards. The adrenaline rush of the jump wasn’t enough—[PAWN_pronoun] needed the thrill of the gamble to keep the edge sharp.</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_JetTrooper">
+		<defName>CFAR_JetTrooper4</defName>
+		<description>[PAWN_nameDef] was a jet trooper in the Imperial Navy. [PAWN_pronoun] jumped high, fired fast, and bet hard. After a successful run, [PAWN_pronoun] would kick back with a few hands of poker, trying to win it all back—or lose it all and jump again for the next thrill.</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_JetTrooper">
+		<defName>CFAR_JetTrooper5</defName>
+		<description>[PAWN_nameDef] was a jet trooper in the Imperial Navy. In the thick of it, [PAWN_pronoun] darted around like a blur, while the heavies created a wall of firepower that no one could breach. Once the mission was done, they'd meet in the break room, laughing, swapping bets, and sharing a cigar. That was how they celebrated victories—together.</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_JetTrooper">
+		<defName>CFAR_JetTrooper6</defName>
+		<description>[PAWN_nameDef] was a jet trooper in the Imperial Navy. [PAWN_pronoun] and the heavies had a rhythm—[PAWN_pronoun] would launch in, disrupt, and pull back while the heavies unleashed hell on anything that didn’t move. Afterward, they’d chill, betting on which squadmate could do the wildest stunt next time.</description>
 	</BackstoryDef>
 </Defs>
