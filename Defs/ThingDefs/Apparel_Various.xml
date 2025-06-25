@@ -1,13 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+<!--================ Tailor Bench ================-->
+
+<!--======== Officer Uniform ========-->
+
 <!--================ Machineing Table ================-->
 
 <!--======== Trooper Armor ========-->
 
 	<ThingDef ParentName="ArmorHelmetMakeableBase">
 		<techLevel>Spacer</techLevel>
-		<defName>Apparel_CFAR_TrooperHelmet</defName>
-		<label>trooper helmet</label>
+		<defName>Apparel_CFAR_StrikerHelmet</defName>
+		<label>striker helmet</label>
 		<description>WIP</description>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
@@ -18,7 +22,7 @@
 			<displayPriority>1170</displayPriority>
 		</recipeMaker>
 		<graphicData>
-			<texPath>Things/Pawn/Arellian/Apparel/TrooperArmor/Helmet/Helmet</texPath>
+			<texPath>Things/Pawn/Arellian/Apparel/StrikerArmor/Helmet/Helmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -51,7 +55,7 @@
 			<bodyPartGroups>
 				<li>FullHead</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/Arellian/Apparel/TrooperArmor/Helmet/Helmet</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Arellian/Apparel/StrikerArmor/Helmet/Helmet</wornGraphicPath>
 			<layers>
 				<li>Overhead</li>
 			</layers>
@@ -74,8 +78,8 @@
 
 	<ThingDef ParentName="ArmorMachineableBase">
 		<techLevel>Spacer</techLevel>
-		<defName>Apparel_CFAR_TrooperArmor</defName>
-		<label>trooper armor</label>
+		<defName>Apparel_CFAR_StrikerArmor</defName>
+		<label>striker armor</label>
 		<description>WIP</description>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
@@ -86,7 +90,7 @@
 			<displayPriority>1171</displayPriority>
 		</recipeMaker>
 		<graphicData>
-			<texPath>Things/Pawn/Arellian/Apparel/TrooperArmor/Armor</texPath>
+			<texPath>Things/Pawn/Arellian/Apparel/StrikerArmor/Armor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -124,7 +128,7 @@
 				<li>Legs</li>
 				<li>Feet</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/Arellian/Apparel/TrooperArmor/Armor</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Arellian/Apparel/StrikerArmor/Armor</wornGraphicPath>
 			<layers>
 				<li>Middle</li>
 				<li>Shell</li>
@@ -152,8 +156,8 @@
 
 	<ThingDef ParentName="ArmorHelmetMakeableBase">
 		<techLevel>Spacer</techLevel>
-		<defName>Apparel_CFAR_AssaultHelmet</defName>
-		<label>Arellian sentinel helmet</label>
+		<defName>Apparel_CFAR_VanguardHelmet</defName>
+		<label>vanguard helmet</label>
 		<description>WIP</description>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
@@ -167,7 +171,7 @@
 			<displayPriority>1160</displayPriority>
 		</recipeMaker>
 		<graphicData>
-			<texPath>Things/Pawn/Arellian/Apparel/AssaultArmor/Helmet/Helmet</texPath>
+			<texPath>Things/Pawn/Arellian/Apparel/VanguardArmor/Helmet/Helmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -202,7 +206,7 @@
 			<bodyPartGroups>
 				<li>FullHead</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/Arellian/Apparel/AssaultHelmet/Helmet</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Arellian/Apparel/VanguardHelmet/Helmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Overhead</li>
@@ -226,8 +230,8 @@
 
 	<ThingDef ParentName="ArmorMachineableBase">
 		<techLevel>Spacer</techLevel>
-		<defName>Apparel_CFAR_AssaultArmor</defName>
-		<label>Arellian assault armor</label>
+		<defName>Apparel_CFAR_VanguardArmor</defName>
+		<label>vanguard armor</label>
 		<description>WIP</description>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
@@ -241,7 +245,7 @@
 			<displayPriority>1161</displayPriority>
 		</recipeMaker>
 		<graphicData>
-			<texPath>Things/Pawn/Arellian/Apparel/AssaultArmor/Armor</texPath>
+			<texPath>Things/Pawn/Arellian/Apparel/Vanguard/Armor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -278,7 +282,7 @@
 				<li>Legs</li>
 				<li>Feet</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/Arellian/Apparel/AssaultArmor/Armor</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Arellian/Apparel/VanguardArmor/Armor</wornGraphicPath>
 			<layers>
 				<li>Middle</li>
 				<li>Shell</li>
