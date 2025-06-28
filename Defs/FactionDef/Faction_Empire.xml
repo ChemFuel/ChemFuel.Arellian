@@ -13,7 +13,7 @@
 		<colorSpectrum><li>(255,212,83)</li></colorSpectrum>
 		<factionIconPath>World/WorldObjects/Expanding/CFAR_Empire</factionIconPath>
 		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
-		<settlementGenerationWeight>0</settlementGenerationWeight>
+		<settlementGenerationWeight>0.25</settlementGenerationWeight>
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
 		<maxCountAtGameStart>1</maxCountAtGameStart>
 		<maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
