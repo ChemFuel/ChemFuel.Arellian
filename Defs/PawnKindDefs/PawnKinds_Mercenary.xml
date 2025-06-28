@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<PawnKindDef Name="CFAR_EnclavePawnBase" Abstract="True">
+		<race>Human</race>
+		<defaultFactionType>CFAR_Enclave</defaultFactionType>
+		<chemicalAddictionChance>0.15</chemicalAddictionChance>
+		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>0~0</combatEnhancingDrugsCount>
+		<backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<xenotypeSet><xenotypeChances>
+			<CFAR_Arellian>999</CFAR_Arellian>
+		</xenotypeChances></xenotypeSet>
+	</PawnKindDef>
+
+<!--================================ Navy ================================-->
+
+<!--======== Enlisted ========-->
+
+	<PawnKindDef Name="CFAR_SoldierBase_Traitor" ParentName="CFAR_EnclavePawnBase" Abstract="True">
+		<combatPower>200</combatPower>
+		<minTitleRequired>CFAR_Trooper</minTitleRequired>
+		<minGenerationAge>20</minGenerationAge>
+		<maxGenerationAge>25</maxGenerationAge>
+		<initialResistanceRange>10~20</initialResistanceRange>
+		<initialWillRange>1~2</initialWillRange>
+		<itemQuality>Normal</itemQuality>
+		<apparelColor>(100,25,25)</apparelColor>
+		<apparelMoney>5000~5000</apparelMoney>
+		<weaponMoney>9999~9999</weaponMoney>
+		<apparelRequired>
+		</apparelRequired>
+		<techHediffsRequired>
+			<li>CFAR_CombatChip</li>
+		</techHediffsRequired>
+	</PawnKindDef>
+
+	<PawnKindDef Name="CFAR_InfantryBase_Traitor" ParentName="CFAR_SoldierBase_Traitor">
+		<defName>CFAR_Infantry_Traitor</defName>
+		<label>Infantry trooper</label>
+		<apparelTags>
+			<li>CFAR_Soldier</li>
+			<li>CFAR_IndustrialArmor</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>Apparel_CFAR_StrikerHelmet</li>
+			<li>Apparel_CFAR_StrikerArmor</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>CFAR_Carbine</li>
+			<li>CFAR_Rifle</li>
+		</weaponTags>
+		<techHediffsTags>
+			<li>Simple</li>
+			<li>ImplantEmpireCommon</li>
+		</techHediffsTags>
+		<techHediffsMoney>50~500</techHediffsMoney>
+		<techHediffsChance>0.06</techHediffsChance>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>CFAR_Child_Core</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>CFAR_Infantry_Traitor</li>
+				</categoriesAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+		<specificApparelRequirements>
+			<!--<li>
+				<apparelLayer>Middle</apparelLayer>
+				<stuff>Plasteel</stuff>
+			</li>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<stuff>Plasteel</stuff>
+			</li>
+			<li>
+				<bodyPartGroup>UpperHead</bodyPartGroup>
+				<styleDef MayRequire="Ludeon.RimWorld.Ideology">CFAR_FlakHelmet</styleDef>
+			</li>-->
+		</specificApparelRequirements>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="CFAR_MercenaryBase">
+		<combatPower>85</combatPower>
+		<defName>CFAR_MercenaryGunner</defName>
+		<label>Arellian gunner</label>
+		<itemQuality>Normal</itemQuality>
+		<gearHealthRange>0.7~3.2</gearHealthRange>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+			<li>IndustrialAdvanced</li>
+			<li>SpacerMilitary</li>
+		</apparelTags>
+		<weaponTags>
+			<li>CFAR_TestGun</li>
+		</weaponTags>
+		<techHediffsTags>
+			<li>Simple</li>
+			<li>ImplantEmpireCommon</li>
+		</techHediffsTags>
+		<apparelMoney>9999~9999</apparelMoney>
+		<weaponMoney>9999~9999</weaponMoney>
+		<techHediffsMoney>50~500</techHediffsMoney>
+		<techHediffsChance>0.06</techHediffsChance>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<!--<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>AR_Civilian</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>-->
+		<initialResistanceRange>10~16</initialResistanceRange>
+		<initialWillRange>2~4</initialWillRange>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="CFAR_MercenaryBase">
+		<combatPower>130</combatPower>
+		<defName>CFAR_PirateBoss</defName>
+		<label>Arellian pirate boss</label>
+		<labelPlural>pirate bosses</labelPlural>
+		<itemQuality>Normal</itemQuality>
+		<factionLeader>true</factionLeader>
+		<canBeSapper>true</canBeSapper>
+		<gearHealthRange>0.7~2.3</gearHealthRange>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+			<li>IndustrialAdvanced</li>
+			<li>SpacerMilitary</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>Apparel_PowerArmor</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>CFAR_AutoPistol</li>
+			<li>CFAR_MachinePistol</li>
+		</weaponTags>
+		<techHediffsTags>
+			<li>Simple</li>
+			<li>ImplantEmpireCommon</li>
+		</techHediffsTags>
+		<techHediffsMoney>50~500</techHediffsMoney>
+		<techHediffsChance>0.06</techHediffsChance>
+		<initialResistanceRange>10~16</initialResistanceRange>
+		<initialWillRange>2~4</initialWillRange>
+	</PawnKindDef>
+</Defs>

@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<FactionDef ParentName="FactionBase">
+		<techLevel>Ultra</techLevel>
+		<defName>CFAR_Empire</defName>
+		<label>Arellian empire</label>
+		<fixedName>The Arellian Empire</fixedName>
+		<description>Hailing from the Arellia Sector, the Arellian Federation is governed by a militaristic authoritarian regime.\n\nDue to the versatile and steadfast nature of Arellians, combined with their unyielding discipline, the Imperial Armed Forces are a force to be reckoned with.</description>
+		<categoryTag>CFAR_Fed</categoryTag>
+		<pawnSingular>imperial</pawnSingular>
+		<pawnsPlural>imperials</pawnsPlural>
+		<allowedCultures><li>CFAR_Culture</li></allowedCultures>
+		<colorSpectrum><li>(255,212,83)</li></colorSpectrum>
+		<factionIconPath>World/WorldObjects/Expanding/CFAR_Empire</factionIconPath>
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<settlementGenerationWeight>0.25</settlementGenerationWeight>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<maxCountAtGameStart>1</maxCountAtGameStart>
+		<maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>117</configurationListOrderPriority>
+		<canSiege>false</canSiege>
+		<autoFlee>false</autoFlee>
+		<rescueesCanJoin>false</rescueesCanJoin>
+		<hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
+		<permanentEnemyToEveryoneExceptPlayer>true</permanentEnemyToEveryoneExceptPlayer>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<baseTraderKinds>
+			<li>Base_Outlander_Standard</li>
+			<!--<li MayRequire="Ludeon.Rimworld.Royalty">TEST</li>-->
+		</baseTraderKinds>
+		<caravanTraderKinds>
+			<li>Caravan_Outlander_BulkGoods</li>
+			<!--<li MayRequire="Ludeon.Rimworld.Royalty">TEST</li>-->
+		</caravanTraderKinds>
+		<allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+		<raidLootMaker>OutlanderRaidLootMaker</raidLootMaker>
+		<raidCommonalityFromPointsCurve>
+			<points>
+				<li>(0, 1)</li>
+				<li>(5000, 1.5)</li>
+				<li>(10000, 2)</li>
+			</points>
+		</raidCommonalityFromPointsCurve>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(500, 200)</li>
+				<li>(1000, 450)</li>
+				<li>(10000, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<pawnGroupMakers>
+			<li>
+				<kindDef>Trader</kindDef>
+				<options>
+					<CFAR_Trooper>10</CFAR_Trooper>
+				</options>
+			</li>
+			<li>
+				<!-- Trooper 35, Heavy Trooper 15, Sentinel 10, Officer1 10, Officer2 5 -->
+				<kindDef>Combat</kindDef>
+				<options>
+					<CFAR_Trooper>1</CFAR_Trooper>
+					<CFAR_SergeantTrooper>1</CFAR_SergeantTrooper>
+					<CFAR_HeavyTrooper>1</CFAR_HeavyTrooper>
+					<CFAR_ReconTrooper>1</CFAR_ReconTrooper>
+					<CFAR_JetTrooper>1</CFAR_JetTrooper>
+					<CFAR_Lieutenant>1</CFAR_Lieutenant>
+					<CFAR_Commander>1</CFAR_Commander>
+					<CFAR_Captain>1</CFAR_Captain>
+				</options>
+			</li>
+			<!--<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<CFAR_Trooper>10</CFAR_Trooper>
+				</options>
+			</li>-->
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<CFAR_Trooper>10</CFAR_Trooper>
+				</options>
+			</li>
+		</pawnGroupMakers>
+
+		<fixedIdeo>true</fixedIdeo>
+		<ideoName>Imperial Militocracy</ideoName>
+		<ideoDescription>In this society, the military is not merely an institution but the core essence of existence. Every facet of life—political, social, and economic—is aligned with the singular objective of enhancing and expanding military strength. Citizenship itself is equated with military service, and an individual's value is measured by their contribution to the state’s military power.</ideoDescription>
+		<deityPresets>
+			<li>
+				<nameType>
+					<name>Aria Erisis</name><type>Empress of Steel</type>
+				</nameType>
+				<gender>Female</gender>
+				<iconPath>UI/Deities/DeityGeneric</iconPath>
+			</li>
+		</deityPresets>
+		<styles>
+			<li MayRequire="Ludeon.RimWorld.Ideology">CFAR_Style</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Techist</li>
+		</styles>
+		<forcedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">CFAR_Technocrat</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">CFAR_MilitaryAristocrat</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Proselytizer</li>
+		</forcedMemes>
+		<structureMemeWeights>
+			<Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
+		</structureMemeWeights>
+		<disallowedPrecepts>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Charity_Essential</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Charity_Important</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Charity_Worthwhile</li>
+
+			<li MayRequire="Ludeon.RimWorld.Ideology">AutonomousWeapons_Prohibited</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AutonomousWeapons_Horrible</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AutonomousWeapons_Disapproved</li>
+
+			<li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_Prohibited</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_MedicalOnly</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_MedicalOrSocial</li>
+
+			<li MayRequire="Ludeon.RimWorld.Ideology">Bloodfeeders_Revered</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">ChildLabor_Encouraged</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">GrowthVat_Prohibited</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">MechanoidLabor_Enhanced</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">PreferredXenotype</li>
+
+			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_Acceptable</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_Preferred</li>
+
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinChestOrHairDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinChestHairOrFaceDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_UncoveredGroinChestOrHairDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_UncoveredGroinChestHairOrFaceDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
+		</disallowedPrecepts>
+
+		<fixedLeaderKinds MayRequire="Ludeon.RimWorld.Royalty">
+			<li>CFAR_Trooper</li>
+		</fixedLeaderKinds>
+		<leaderForceGenerateNewPawn MayRequire="Ludeon.RimWorld.Royalty">true</leaderForceGenerateNewPawn>
+		<royalFavorLabel MayRequire="Ludeon.RimWorld.Royalty">credit</royalFavorLabel>
+		<royalFavorIconPath MayRequire="Ludeon.RimWorld.Royalty">World/WorldObjects/Expanding/ArellianFederation</royalFavorIconPath>
+		<royalTitleTags><li MayRequire="Ludeon.RimWorld.Royalty">CFAR_Title</li></royalTitleTags>
+		<royalTitleInheritanceWorkerClass MayRequire="Ludeon.RimWorld.Royalty">RoyalTitleInheritanceWorker</royalTitleInheritanceWorkerClass>
+		<royalTitleInheritanceRelations MayRequire="Ludeon.RimWorld.Royalty"></royalTitleInheritanceRelations>
+
+		<xenotypeSet><xenotypeChances>
+			<CFAR_Arellian>999</CFAR_Arellian>
+		</xenotypeChances></xenotypeSet>
+		<disallowedRaidAgeRestrictions>
+			<li>Children</li>
+		</disallowedRaidAgeRestrictions>
+	</FactionDef>
+</Defs>
