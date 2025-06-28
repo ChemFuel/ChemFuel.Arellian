@@ -5,6 +5,7 @@
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>CFAR_Child</li>
+			<li>CFAR_Player</li>
 		</spawnCategories>
 	</BackstoryDef>
 

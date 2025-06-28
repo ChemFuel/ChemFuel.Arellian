@@ -44,7 +44,7 @@
 			<Melee>2</Melee>
 		</skillGains>
 		<spawnCategories>
-			<li>CFAR_Trooper</li>
+			<li>CFAR_Recruit</li>
 			<li>CFAR_Player</li>
 		</spawnCategories>
 	</BackstoryDef>
