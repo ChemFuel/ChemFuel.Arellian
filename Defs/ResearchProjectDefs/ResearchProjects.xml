@@ -264,7 +264,7 @@
 		<defName>CFAR_PulseWeaponry</defName>
 		<label>pulse weaponry</label>
 		<description>WIP</description>
-		<baseCost>3000</baseCost>
+		<baseCost>1500</baseCost>
 		<prerequisites>
 			<li>ChargedShot</li>
 		</prerequisites>
@@ -291,15 +291,15 @@
 		<defName>CFAR_PulseArsenal</defName>
 		<label>pulse arsenal</label>
 		<description>WIP</description>
-		<baseCost>3000</baseCost>
+		<baseCost>1500</baseCost>
 		<prerequisites>
-			<li>Fabrication</li>
+			<li>CFAR_PulseWeaponry</li>
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 		<requiredResearchFacilities>
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
-		<researchViewX>4.50</researchViewX>
+		<researchViewX>5.00</researchViewX>
 		<researchViewY>2.00</researchViewY>
 		<generalRules>
 			<rulesStrings>
