@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<PawnKindDef Name="CFAR_Base" Abstract="True">
+		<race>Human</race>
+		<chemicalAddictionChance>0</chemicalAddictionChance>
+		<backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
+		<apparelTags>
+		</apparelTags>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<xenotypeSet><xenotypeChances>
+			<CFAR_Arellian>999</CFAR_Arellian>
+		</xenotypeChances></xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef Name="CFAR_MercenaryBase" Abstract="True">
+		<race>Human</race>
+		<defaultFactionType>CFAR_Enclave</defaultFactionType>
+		<chemicalAddictionChance>0.15</chemicalAddictionChance>
+		<invNutrition>2.55</invNutrition>
+		<itemQuality>Normal</itemQuality>
+		<backstoryCryptosleepCommonality>0.15</backstoryCryptosleepCommonality>
+		<maxGenerationAge>50</maxGenerationAge>
+		<combatEnhancingDrugsChance>0.30</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>0~2</combatEnhancingDrugsCount>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<xenotypeSet><xenotypeChances>
+			<CFAR_Arellian>999</CFAR_Arellian>
+		</xenotypeChances></xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef Name="CFAR_PirateBase" Abstract="True">
+		<race>Human</race>
+		<defaultFactionType>CFAR_Enclave</defaultFactionType>
+		<chemicalAddictionChance>0.24</chemicalAddictionChance>
+		<invNutrition>2.55</invNutrition>
+		<backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
+		<maxGenerationAge>50</maxGenerationAge>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<xenotypeSet><xenotypeChances>
+			<CFAR_Arellian>999</CFAR_Arellian>
+		</xenotypeChances></xenotypeSet>
+	</PawnKindDef>
+</Defs>

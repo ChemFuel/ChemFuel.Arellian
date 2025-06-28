@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+<!--==== Abhorrent ====-->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Ideology</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			<!--Opinion-->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/PreceptDef[defName="Execution_Abhorrent"]/comps/li[1]/nullifyingHediffs</xpath>
+					<value>
+						<li>CFAR_CombatChip</li>
+					</value>
+				</li>
+			<!--Opinion-->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThoughtDef[defName="InnocentPrisonerDied_Abhorrent" or defName="ExecutedPrisoner_Know_Abhorrent" or defName="InnocentPrisonerDied_Know_Abhorrent" or defName="InnocentPrisonerDied_Know_Abhorrent_Mood" or defName="ExecutedPrisoner_Horrible" or defName="InnocentPrisonerDied_Horrible" or defName="ExecutedPrisoner_Know_Horrible" or defName="InnocentPrisonerDied_Know_Horrible" or defName="KnowPrisonerDiedInnocent" or defName="ExecutedPrisonerInnocent_Know_Horrible" or defName="ExecutedGuest_Know_Abhorrent_Mood" or defName="KnowGuestExecuted"]/nullifyingHediffs</xpath>
+					<value>
+						<li>CFAR_CombatChip</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
