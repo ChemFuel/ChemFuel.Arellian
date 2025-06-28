@@ -73,7 +73,7 @@
 		<combatPower>30</combatPower>
 		<isFighter>false</isFighter>
 		<forceNormalGearQuality>true</forceNormalGearQuality>
-		<minGenerationAge>18</minGenerationAge>
+		<minGenerationAge>20</minGenerationAge>
 		<maxGenerationAge>22</maxGenerationAge>
 		<apparelRequired>
 			<li>Apparel_CFAR_StrikerHelmet</li>
@@ -97,7 +97,7 @@
 		<defName>CFAR_Trooper</defName>
 		<label>trooper</label>
 		<minTitleRequired>CFAR_Trooper</minTitleRequired>
-		<minGenerationAge>19</minGenerationAge>
+		<minGenerationAge>20</minGenerationAge>
 		<maxGenerationAge>35</maxGenerationAge>
 		<apparelRequired>
 			<li>Apparel_CFAR_StrikerHelmet</li>
