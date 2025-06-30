@@ -23,33 +23,10 @@
 			<li>Violent</li>
 			<li>ManualDumb</li>
 		</requiredWorkTags>
-		<disallowedTraits>
-		</disallowedTraits>
 	</BackstoryDef>
 	
-<!--================ White Collar ================-->
+<!--================ Civilian ================-->
 
-<!--======== Business ========-->
-
-	<BackstoryDef Name="CFAR_OfficeWorker" ParentName="CFAR_Adult">
-		<defName>CFAR_OfficeWorker1</defName>
-		<title>Office worker</title>
-		<titleShort>Office worker</titleShort>
-		<description>WIP</description>
-		<skillGains>
-			<Social>5</Social>
-			<Intellectual>3</Intellectual>
-		</skillGains>
-		<spawnCategories>
-			<li>CFAR_OfficeWorker</li>
-		</spawnCategories>
-	</BackstoryDef>
-
-	<BackstoryDef ParentName="CFAR_OfficeWorker">
-		<defName>CFAR_OfficeWorker2</defName>
-		<description>WIP</description>
-	</BackstoryDef>
-	
 <!--================ Imperial Naval Infantry Command ================-->
 
 <!--======== Recruit ========-->
