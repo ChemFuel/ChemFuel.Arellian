@@ -229,22 +229,22 @@
 
 	<BackstoryDef ParentName="CFAR_HeavyTrooper">
 		<defName>CFAR_HeavyTrooper2</defName>
-		<description>[PAWN_nameDef] was a heavy trooper in the Imperial Navy. Hordes of enemies poured in, but [PAWN_pronoun] just kept mowing them down, like clockwork. [PAWN_pronoun] wasn’t even sweating anymore. It was boring, really—just another day of endless fire and too much blood to wipe off [PAWN_possessive] gear.</description>
+		<description>[PAWN_nameDef] was a heavy trooper in the Imperial Navy. Jolly and loud, [PAWN_pronoun] had a booming presence in the barracks, always ready with a joke or a drink. But when the pulse repeater revved up, [PAWN_pronoun] was a force no one wanted to cross—calm one moment, deadly the next.</description>
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_HeavyTrooper">
 		<defName>CFAR_HeavyTrooper3</defName>
-		<description>[PAWN_nameDef] was a heavy trooper in the Imperial Navy. [PAWN_pronoun] wasn’t just fighting—[PAWN_pronoun] was having a blast. The pulse cannon kicked like a beast, and the explosions were music to [PAWN_pronoun]’s ears. [PAWN_pronoun] didn’t care about the chaos. This was the job.</description>
+		<description>[PAWN_nameDef] was a heavy trooper in the Imperial Navy. [PAWN_pronoun] didn’t whisper orders—[PAWN_pronoun] shouted them, backing every word with the roar of [PAWN_possessive] pulse repeater. The enemy knew [PAWN_pronoun] was coming before they saw [PAWN_objective].</description>
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_HeavyTrooper">
 		<defName>CFAR_HeavyTrooper4</defName>
-		<description>[PAWN_nameDef] was a heavy trooper in the Imperial Navy. The pulse repeater was a part of [PAWN_pronoun] like a second arm. When [PAWN_pronoun] opened fire, the battlefield turned into a spectacle—bright, loud, and impossible to ignore. And [PAWN_pronoun] wouldn’t have it any other way.</description>
+		<description>[PAWN_nameDef] was a heavy trooper in the Imperial Navy. [PAWN_pronoun] carried [PAWN_possessive] pulse repeater like a trusty old friend and had a habit of slapping backs and cracking jokes after a few drinks. But when [PAWN_pronoun] got serious, [PAWN_pronoun] became a storm on the battlefield—unpredictable and deadly.</description>
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_HeavyTrooper">
 		<defName>CFAR_HeavyTrooper5</defName>
-		<description>[PAWN_nameDef] was a heavy trooper in the Imperial Navy. Munching on a sandwich while covering fire was [PAWN_possessive] specialty. The battlefield was chaotic, but hunger was constant—and louder than the pulse cannon.</description>
+		<description>[PAWN_nameDef] was a heavy trooper in the Imperial Navy. [PAWN_pronoun] earned a reputation in the mess hall—not just for [PAWN_possessive] appetite but for shouting over clattering trays and daring anyone to challenge [PAWN_objective]. [PAWN_pronoun] treated every meal like a battle, and [PAWN_possessive] pulse repeater was never far away.</description>
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_HeavyTrooper">
@@ -258,11 +258,11 @@
 		<defName>CFAR_ReconTrooper1</defName>
 		<title>recon trooper</title>
 		<titleShort>trooper</titleShort>
-		<description>[PAWN_nameDef] was a recon trooper in the Imperial Navy. [PAWN_pronoun] preferred the quiet, the solitude. With a cloaking module and pulse railgun, [PAWN_pronoun] was a shadow in the dark, watching, waiting. [PAWN_pronoun] never missed—[PAWN_possessive] silence was as much a weapon as the gun.</description>
+		<description>[PAWN_nameDef] was a recon trooper in the Imperial Navy. [PAWN_pronoun] rarely spoke first but listened closely, always watching. The cool exterior hid nerves, but when the pulse railgun fired, it was clear [PAWN_pronoun] knew exactly what [PAWN_pronoun] was doing.</description>
 		<skillGains>
-			<Shooting>8</Shooting>
-			<Melee>2</Melee>
-			<Social>-2</Social>
+			<Shooting>12</Shooting>
+			<Melee>-2</Melee>
+			<Social>-4</Social>
 		</skillGains>
 		<spawnCategories>
 			<li>CFAR_ReconTrooper</li>
@@ -281,17 +281,17 @@
 
 	<BackstoryDef ParentName="CFAR_ReconTrooper">
 		<defName>CFAR_ReconTrooper4</defName>
-		<description>[PAWN_nameDef] was a recon trooper in the Imperial Navy. With the cloaking module on and pulse railgun ready, [PAWN_pronoun] would vanish into the environment. [PAWN_pronoun] was good at "surveying" the battlefield... and occasionally skipping patrols to sneak in a nap. No one ever saw [PAWN_pronoun] anyway.</description>
+		<description>[PAWN_nameDef] was a recon trooper in the Imperial Navy. [PAWN_pronoun] acted aloof, but compliments from the squad left [PAWN_objective] flustered and stumbling over words. Despite the teasing, [PAWN_pronoun] appreciated the rare moments of warmth among the chaos.</description>
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_ReconTrooper">
 		<defName>CFAR_ReconTrooper5</defName>
-		<description>[PAWN_nameDef] was a recon trooper in the Imperial Navy. [PAWN_pronoun] could vanish at will, using the cloaking module to stay hidden for hours. Sometimes, it was easier to just avoid the fight entirely—stay in position, watch, and let others do the hard work. The mission could wait.</description>
+		<description>[PAWN_nameDef] was a recon trooper in the Imperial Navy. [PAWN_pronoun] often “patrolled” the same corridor, but preferred hiding out in supply rooms. The squad joked about [PAWN_possessive] laziness, but no one ever caught [PAWN_objective] slacking.</description>
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_ReconTrooper">
 		<defName>CFAR_ReconTrooper6</defName>
-		<description>[PAWN_nameDef] was a recon trooper in the Imperial Navy. Armed with a pulse railgun and cloaking tech, [PAWN_pronoun] preferred to let others deal with the mess. [PAWN_pronoun] took a lot of "recon" breaks, finding remote spots to watch the chaos unfold, out of sight, away from responsibility.</description>
+		<description>[PAWN_nameDef] was a recon trooper in the Imperial Navy. [PAWN_pronoun] dodged extra drills and long shifts with practiced ease. The squad might tease, but no one ever saw [PAWN_pronoun] truly caught—[PAWN_pronoun] was just too good at blending into the shadows.</description>
 	</BackstoryDef>
 
 <!--======== Jet Trooper ========-->
