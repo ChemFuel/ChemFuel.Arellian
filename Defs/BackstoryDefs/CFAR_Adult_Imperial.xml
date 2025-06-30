@@ -5,14 +5,6 @@
 		<slot>Adulthood</slot>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
-		<disallowedTraits>
-			<TorturedArtist>0</TorturedArtist>
-			<Nudist>0</Nudist>
-			<Cannibal>0</Cannibal>
-			<Pyromaniac>0</Pyromaniac>
-			<Delicate>0</Delicate>
-			<Recluse>0</Recluse>
-		</disallowedTraits>
 	</BackstoryDef>
 
 	<BackstoryDef Name="CFAR_Enlisted" ParentName="CFAR_Adult" Abstract="True">
@@ -23,6 +15,31 @@
 			<li>Violent</li>
 			<li>ManualDumb</li>
 		</requiredWorkTags>
+		<disallowedTraits>
+			<TorturedArtist>0</TorturedArtist>
+			<Nudist>0</Nudist>
+			<Cannibal>0</Cannibal>
+			<Pyromaniac>0</Pyromaniac>
+			<Delicate>0</Delicate>
+			<Recluse>0</Recluse>
+		</disallowedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef Name="CFAR_Officer" ParentName="CFAR_Adult" Abstract="True">
+		<requiredWorkTags>
+			<li>Firefighting</li>
+			<li>Caring</li>
+			<li>Social</li>
+			<li>Violent</li>
+			<li>Intellectual</li>
+		</requiredWorkTags>
+		<disallowedTraits>
+			<TorturedArtist>0</TorturedArtist>
+			<Nudist>0</Nudist>
+			<Cannibal>0</Cannibal>
+			<Pyromaniac>0</Pyromaniac>
+			<Recluse>0</Recluse>
+		</disallowedTraits>
 	</BackstoryDef>
 	
 <!--================ Civilian ================-->
