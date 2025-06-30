@@ -44,6 +44,38 @@
 	
 <!--================ Civilian ================-->
 
+<!--======== Miner ========-->
+
+	<BackstoryDef ParentName="CFAR_Adult">
+		<defName>CFAR_Miner1</defName>
+		<title>farmer</title>
+		<titleShort>farmer</titleShort>
+		<description>.</description>
+		<skillGains>
+			<Shooting>4</Shooting>
+			<Melee>2</Melee>
+		</skillGains>
+		<spawnCategories>
+			<li>CFAR_Miner</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+<!--======== Farmer ========-->
+
+	<BackstoryDef ParentName="CFAR_Adult">
+		<defName>CFAR_FarmerPlant1</defName>
+		<title>farmer</title>
+		<titleShort>farmer</titleShort>
+		<description>[PAWN_nameDef] lived a simple life, tending to [PAWN_possessive] crops and removing weeds from dawn to dusk. The soil was familiar beneath [PAWN_possessive] hands, steady and honest work. There was pride in knowing that [PAWN_pronoun] helped feed the Imperial Navy, that every harvest kept the soldiers strong and the fleet running.</description>
+		<skillGains>
+			<Shooting>4</Shooting>
+			<Melee>2</Melee>
+		</skillGains>
+		<spawnCategories>
+			<li>CFAR_Farmer</li>
+		</spawnCategories>
+	</BackstoryDef>
+
 <!--================ Imperial Naval Infantry Command ================-->
 
 <!--======== Recruit ========-->
@@ -96,47 +128,67 @@
 
 	<BackstoryDef ParentName="CFAR_Trooper">
 		<defName>CFAR_Trooper2</defName>
-		<description>[PAWN_nameDef] was a trooper in the imperial navy. [PAWN_pronoun] handled weapons locker checks and ran escort drills weekly. [PAWN_pronoun] cleaned rifles more than [PAWN_pronoun] fired them. Still, when orders came, [PAWN_nameDef] was always ready.</description>
+		<description>[PAWN_nameDef] was a trooper in the Imperial Navy. Whenever [PAWN_possessive] unit raided a pirate outpost, [PAWN_pronoun] set the trigger to full-auto, blasting pirates until they stood no more.</description>
+		<skillGains>
+			<Shooting>8</Shooting>
+			<Social>-1</Social>
+		</skillGains>
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_Trooper">
 		<defName>CFAR_Trooper3</defName>
-		<description>[PAWN_nameDef] was a trooper in the Imperial Navy. [PAWN_pronoun] passed time guarding hangars and rerouting power lines. [PAWN_pronoun] memorized patrol routes and brewed coffee in engine heat.</description>
+		<description>[PAWN_nameDef] was a trooper in the Imperial Navy. [PAWN_pronoun] cleared hallways in pirate outposts with short bursts and steady steps. No heroics—just corners, cover, and commands. After the sweep, [PAWN_pronoun] helped tag crates and carry bodies.</description>
+		<skillGains>
+			<Melee>4</Melee>
+		</skillGains>
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_Trooper">
 		<defName>CFAR_Trooper4</defName>
-		<description>[PAWN_nameDef] was a trooper in the Imperial Navy. [PAWN_pronoun] spent long hours guarding fuel lines and sweeping docking bays. [PAWN_pronoun] knew the hum of every generator by heart. Off-shift, [PAWN_pronoun] traded bad jokes and played cards with the squad, always folding too early.</description>
+		<description>[PAWN_nameDef] was a trooper in the Imperial Navy. [PAWN_pronoun] passed time guarding hangars and rerouting power lines. [PAWN_pronoun] memorized patrol routes and brewed coffee in engine heat.</description>
+		<skillGains>
+			<Cooking>3</Cooking>
+		</skillGains>
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_Trooper">
 		<defName>CFAR_Trooper5</defName>
-		<description>[PAWN_nameDef] was a trooper in the Imperial Navy. Whenever [PAWN_possessive] unit raided a pirate outpost, [PAWN_pronoun] set the trigger to full-auto, blasting pirates until they stood no more.</description>
+		<description>[PAWN_nameDef] was a trooper in the Imperial Navy. Before joining, [PAWN_pronoun] expected thrilling adventures—not endless trench-digging and fortification. Days were spent digging and building, waiting for the real fight to start.</description>
+		<skillGains>
+			<Construction>2</Construction>
+			<Mining>1</Mining>
+		</skillGains>
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_Trooper">
 		<defName>CFAR_Trooper6</defName>
-		<description>[PAWN_nameDef] was a trooper in the Imperial Navy. [PAWN_pronoun] cleared hallways in pirate outposts with short bursts and steady steps. No heroics—just corners, cover, and commands. After the sweep, [PAWN_pronoun] helped tag crates and carry bodies.</description>
+		<description>[PAWN_nameDef] was a trooper in the Imperial Navy. Despite the carnage and bloodshed around [PAWN_objective], [PAWN_pronoun] kept [PAWN_possessive] artistic shine alive. [PAWN_pronoun] was often found sketching the scenery or sculpting tiny figurines with [PAWN_possessive] bayonet.</description>
+		<skillGains>
+			<Artistic>5</Artistic>
+		</skillGains>
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_Trooper">
 		<defName>CFAR_Trooper7</defName>
-		<description>[PAWN_nameDef] was a trooper in the Imperial Navy. [PAWN_pronoun] followed orders, covered sectors, and kept the pulse rifle warm. Pirate outposts all smelled the same—burnt plastic and fear. [PAWN_pronoun] didn’t mind the work. It was simple.</description>
+		<description>[PAWN_nameDef] was a trooper in the Imperial Navy. [PAWN_pronoun] spent long hours guarding fuel lines and sweeping docking bays. [PAWN_pronoun] knew the hum of every generator by heart. Off-shift, [PAWN_pronoun] traded bad jokes and played cards with the squad, always folding too early.</description>
+		<skillGains>
+			<Social>3</Social>
+		</skillGains>
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_Trooper">
 		<defName>CFAR_Trooper8</defName>
-		<description>[PAWN_nameDef] was a trooper in the Imperial Navy. During pirate raids, [PAWN_pronoun] lobbed thermal detonators into rooms before stepping in. It wasn’t subtle, but it worked. [PAWN_pronoun] carried extra, clipped across [PAWN_possessive] belt, and used them often. No one complained.</description>
+		<description>[PAWN_nameDef] was a trooper in the Imperial Navy. [PAWN_pronoun] always kept a hand-carved lucky charm with [PAWN_objective], gifted by [PAWN_possessive] significant other. It was a small reminder of home, something to hold onto when the fighting got harsh and the nights grew cold.</description>
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_Trooper">
 		<defName>CFAR_Trooper9</defName>
-		<description>[PAWN_nameDef] was a trooper in the Imperial Navy. Fighting deserters felt wrong—they wore old uniforms, spoke the same codes. [PAWN_pronoun] still aimed center mass. Patrols turned tense; friendlies weren’t always friendly. [PAWN_pronoun] learned quick: hesitate, and you die.</description>
+		<description>[PAWN_nameDef] was a trooper in the Imperial Navy. During pirate raids, [PAWN_pronoun] lobbed thermal detonators into rooms before stepping in. It wasn’t subtle, but it worked. [PAWN_pronoun] carried extra, clipped across [PAWN_possessive] belt, and used them often. No one complained.</description>
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_Trooper">
 		<defName>CFAR_Trooper10</defName>
-		<description>[PAWN_nameDef] was a trooper in the Imperial Navy. Deserters used old callsigns and spoke like comrades. It made [PAWN_pronoun] pause, unsure if the welcome was real. [PAWN_pronoun] kept a finger near the trigger, but waited. Something always felt off.</description>
+		<description>[PAWN_nameDef] was a trooper in the Imperial Navy. Deserters used old callsigns and spoke like [PAWN_possessive] comrades. It made [PAWN_pronoun] pause, unsure if the welcome was real. [PAWN_pronoun] kept a finger near the trigger, but waited. Something always felt off.</description>
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_Trooper">
