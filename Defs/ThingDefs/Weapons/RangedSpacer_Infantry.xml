@@ -39,8 +39,21 @@
 		</projectile>
 	</ThingDef>
 
-<!--================ Basic Spacer Engineering ================-->
+	<ThingDef ParentName="Base_CFAR_PulseBullet">
+		<defName>Bullet_CFAR_PulseRailgunI</defName>
+		<graphicData>
+			<texPath>Things/Projectile/ChargeLanceShot</texPath>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>40</damageAmountBase>
+			<stoppingPower>0.5</stoppingPower>
+			<armorPenetrationBase>0.35</armorPenetrationBase>
+			<speed>100</speed>
+		</projectile>
+	</ThingDef>
 
+<!--================ Basic Spacer Engineering ================-->
 
 	<ThingDef Name="Base_CFAR_PulseGun" ParentName="BaseGunWithQuality" Abstract="True">
 		<possessionCount>1</possessionCount>
@@ -317,6 +330,71 @@
 			</li>
 		</verbs>
 		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<ThingDef ParentName="Base_CFAR_PulseGun">
+		<defName>Gun_CFAR_PulseRailgun</defName>
+		<label>pulse railgun</label>
+		<description>WIP</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/CFAR_PulseRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_ChargeRifle</soundInteract>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<displayPriority>1171</displayPriority>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>50000</WorkToMake>
+			<Mass>4.25</Mass>
+			<AccuracyTouch>0.65</AccuracyTouch>
+			<AccuracyShort>0.75</AccuracyShort>
+			<AccuracyMedium>0.90</AccuracyMedium>
+			<AccuracyLong>0.70</AccuracyLong>
+			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>CFAR_Railgun</li>
+		</weaponTags>
+		<costList>
+			<Chemfuel>20</Chemfuel>
+			<Plasteel>40</Plasteel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_CFAR_PulseRailgunI</defaultProjectile>
+				<warmupTime>1.8</warmupTime>
+				<range>39.9</range>
+				<soundCast>Shot_CFAR_PulseRailgunI</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>16</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
 			<li>
 				<label>barrel</label>
 				<capacities>
