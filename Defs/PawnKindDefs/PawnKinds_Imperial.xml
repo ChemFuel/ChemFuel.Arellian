@@ -182,6 +182,7 @@
 		<apparelRequired>
 			<li>Apparel_CFAR_TrooperHelmet</li>
 			<li>Apparel_CFAR_TrooperArmor</li>
+			<li>Apparel_CFAR_ThermalDetonatorBelt</li>
 		</apparelRequired>
 		<weaponTags>
 			<li>CFAR_Carbine</li>

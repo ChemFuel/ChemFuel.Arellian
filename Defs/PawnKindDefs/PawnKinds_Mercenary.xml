@@ -96,7 +96,7 @@
 			<li>SpacerMilitary</li>
 		</apparelTags>
 		<weaponTags>
-			<li>CFAR_TestGun</li>
+			<li>CFAR_Repeater</li>
 		</weaponTags>
 		<techHediffsTags>
 			<li>Simple</li>
@@ -138,8 +138,7 @@
 			<li>Apparel_PowerArmor</li>
 		</apparelRequired>
 		<weaponTags>
-			<li>CFAR_AutoPistol</li>
-			<li>CFAR_MachinePistol</li>
+			<li>CFAR_Pistol</li>
 		</weaponTags>
 		<techHediffsTags>
 			<li>Simple</li>

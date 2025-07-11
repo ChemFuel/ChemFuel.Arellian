@@ -10,7 +10,7 @@
 
 	<ThingDef ParentName="ApparelBase">
 		<techLevel>Spacer</techLevel>
-		<defName>Apparel_CFAR_TDBelt</defName>
+		<defName>Apparel_CFAR_ThermalDetonatorBelt</defName>
 		<label>thermal detonator belt</label>
 		<description>WIP</description>
 		<thingClass>Apparel</thingClass>
@@ -102,7 +102,6 @@
 			</targetParams>
 			<defaultProjectile>Proj_GrenadeFrag</defaultProjectile>
 			<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
-			<ai_IsWeapon>false</ai_IsWeapon>
 		</verbProperties>
 	</AbilityDef>
 
