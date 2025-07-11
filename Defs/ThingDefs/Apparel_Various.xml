@@ -6,99 +6,76 @@
 
 <!--================ Machineing Table ================-->
 
-<!--======== Jump Pack ========-->
+<!--======== TD Belt ========-->
 
-  <ThingDef ParentName="ApparelBase" Abstract="true">
-    <defName>Apparel_CFAR_TDBelt</defName>
-    <label>thermal detonator belt</label>
-    <description>WIP</description>
-    <thingClass>Apparel</thingClass>
-    <graphicData>
-      <texPath>Things/Pawn/Humanlike/Apparel/ShieldBelt/ShieldBelt</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <tickerType>Normal</tickerType>
-    <techLevel>Spacer</techLevel>
-    <statBases>
-      <Mass>3</Mass>
-      <WorkToMake>14000</WorkToMake>
-      <Flammability>0.4</Flammability>
-      <EnergyShieldRechargeRate>0.13</EnergyShieldRechargeRate>
-      <EnergyShieldEnergyMax>1.1</EnergyShieldEnergyMax>
-      <EquipDelay>2</EquipDelay>
-    </statBases>
-    <thingSetMakerTags>
-      <li>RewardStandardQualitySuper</li>
-    </thingSetMakerTags>
-    <costList>
-      <ComponentIndustrial>2</ComponentIndustrial>
-      <Steel>50</Steel>
-      <Plasteel>20</Plasteel>
-    </costList>
-    <recipeMaker>
-      <unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
-      <researchPrerequisite>ShieldBelt</researchPrerequisite>
-      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-      <workSkill>Crafting</workSkill>
-      <effectWorking>Smith</effectWorking>
-      <soundWorking>Recipe_Machining</soundWorking>
-      <recipeUsers>
-        <li>TableMachining</li>
-      </recipeUsers>
-      <useIngredientsForColor>false</useIngredientsForColor>
-      <skillRequirements>
-        <Crafting>6</Crafting>
-      </skillRequirements>
-      <displayPriority>300</displayPriority>
-    </recipeMaker>
-    <thingCategories>
-      <li>ApparelUtility</li>
-    </thingCategories>
-    <apparel>
-      <countsAsClothingForNudity>false</countsAsClothingForNudity>
-      <careIfWornByCorpse>false</careIfWornByCorpse>
-      <careIfDamaged>false</careIfDamaged>
-      <wearPerDay>0</wearPerDay>
-      <bodyPartGroups>
-        <li>Waist</li>
-      </bodyPartGroups>
-      <layers>
-        <li>Belt</li>
-      </layers>
-      <tags>
-        <li>CFAR_TDBelt</li>
-      </tags>
-      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
-    </apparel>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <weight>10</weight>
-          <only>(0.33,0.33,0.33,1)</only>
-        </li>
-        <li>
-          <weight>10</weight>
-          <only>(0.65,0.65,0.65,1)</only>
-        </li>
-        <li>
-          <weight>6</weight>
-          <min>(0.3,0.3,0.3,1)</min>
-          <max>(0.5,0.5,0.5,1)</max>
-        </li>
-        <li>
-          <weight>10</weight>
-          <only>(0.9,0.9,0.9,1)</only>
-        </li>
-      </options>
-    </colorGenerator>
-    <comps>
-      <li Class="CompProperties_Shield" />
-    </comps>
-    <allowedArchonexusCount>1</allowedArchonexusCount>
-    <tradeTags>
-      <li>Armor</li>
-    </tradeTags>
-  </ThingDef>
+	<ThingDef ParentName="ApparelBase" Abstract="true">
+		<techLevel>Spacer</techLevel>
+		<defName>Apparel_CFAR_TDBelt</defName>
+		<label>thermal detonator belt</label>
+		<description>WIP</description>
+		<thingClass>Apparel</thingClass>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/ShieldBelt/ShieldBelt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<tickerType>Normal</tickerType>
+		<statBases>
+			<Mass>3</Mass>
+			<WorkToMake>14000</WorkToMake>
+			<Flammability>0.4</Flammability>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<costList>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<Uranium>10</Uranium>
+			<Plasteel>20</Plasteel>
+		</costList>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
+			<researchPrerequisite>CFAR_PulseWeaponry</researchPrerequisite>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<recipeUsers>
+				<li>TableMachining</li>
+			</recipeUsers>
+			<useIngredientsForColor>false</useIngredientsForColor>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+			<displayPriority>300</displayPriority>
+		</recipeMaker>
+		<thingCategories>
+			<li>ApparelUtility</li>
+		</thingCategories>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<careIfDamaged>false</careIfDamaged>
+			<wearPerDay>0</wearPerDay>
+			<bodyPartGroups>
+				<li>Waist</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Belt</li>
+			</layers>
+			<tags>
+				<li>CFAR_TDBelt</li>
+			</tags>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options><li><only>(1,1,1)</only></li></options>
+		</colorGenerator>
+		<allowedArchonexusCount>1</allowedArchonexusCount>
+		<tradeTags>
+			<li>Armor</li>
+		</tradeTags>
+	</ThingDef>
 
 <!--======== Jump Pack ========-->
 
@@ -109,7 +86,7 @@
     <techLevel>Industrial</techLevel>
     <recipeMaker>
       <unfinishedThingDef>UnfinishedPack</unfinishedThingDef>
-      <researchPrerequisite>JumpPack</researchPrerequisite>
+      <researchPrerequisite>CFAR_IonPropulsion</researchPrerequisite>
       <recipeUsers>
         <li>TableMachining</li>
       </recipeUsers>
@@ -169,38 +146,40 @@
       <li>ExoticMisc</li>
       <li>Clothing</li>
     </tradeTags>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li><weight>1</weight><only>(1,1,1,1)</only></li>
-      </options>
-    </colorGenerator>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options><li><only>(1,1,1)</only></li></options>
+		</colorGenerator>
     <allowedArchonexusCount>1</allowedArchonexusCount>
   </ThingDef>
 
 	<AbilityDef MayRequire="Ludeon.RimWorld.Royalty">
 		<defName>CFAR_JetPackJump</defName>
-		<label>jetpack jump</label>
+		<label>jump</label>
 		<description>WIP</description>
 		<iconPath>UI/Abilities/MechLongJump</iconPath>
-		<charges>2</charges>
 		<cooldownTicksRange>300</cooldownTicksRange>
 		<hostile>false</hostile>
 		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<showOnCharacterCard>false</showOnCharacterCard>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<groupAbility>true</groupAbility>
+		<aiCanUse>true</aiCanUse>
+		<ai_IsOffensive>false</ai_IsOffensive>
 		<verbProperties>
 			<verbClass>Verb_CastAbilityJump</verbClass>
 			<label>jump</label>
 			<violent>false</violent>
 			<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
-			<warmupTime>0.5</warmupTime>
-			<minRange>5.9</minRange>
-			<range>9.9</range>
-			<requireLineOfSight>true</requireLineOfSight>
+			<warmupTime>0.25</warmupTime>
+			<range>12</range>
+			<requireLineOfSight>false</requireLineOfSight>
 			<soundCast>Longjump_Jump</soundCast>
 			<soundLanding>Longjump_Land</soundLanding>
-			<flyWithCarriedThing>false</flyWithCarriedThing>
+			<flyWithCarriedThing>true</flyWithCarriedThing>
 			<targetParams>
 				<canTargetLocations>true</canTargetLocations>
-				<canTargetPawns>false</canTargetPawns>
+				<canTargetPawns>true</canTargetPawns>
 				<canTargetBuildings>false</canTargetBuildings>
 			</targetParams>
 		</verbProperties>
@@ -210,12 +189,12 @@
 
 	<ThingDef ParentName="ArmorHelmetMakeableBase">
 		<techLevel>Spacer</techLevel>
-		<defName>Apparel_CFAR_StrikerHelmet</defName>
-		<label>striker helmet</label>
+		<defName>Apparel_CFAR_TrooperHelmet</defName>
+		<label>trooper helmet</label>
 		<description>WIP</description>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-			<researchPrerequisite>CFAR_StrikerArmor</researchPrerequisite>
+			<researchPrerequisite>CFAR_TrooperArmor</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>7</Crafting>
 			</skillRequirements>
@@ -267,9 +246,7 @@
 			</defaultOutfitTags>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_Options">
-			<options>
-				<li><only>(1,1,1)</only></li>
-			</options>
+			<options><li><only>(1,1,1)</only></li></options>
 		</colorGenerator>
 		<tradeTags>
 			<li>CFAR_Armor_Fed</li>
@@ -278,12 +255,12 @@
 
 	<ThingDef ParentName="ArmorMachineableBase">
 		<techLevel>Spacer</techLevel>
-		<defName>Apparel_CFAR_StrikerArmor</defName>
-		<label>striker armor</label>
+		<defName>Apparel_CFAR_TrooperArmor</defName>
+		<label>trooper armor</label>
 		<description>WIP</description>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-			<researchPrerequisite>CFAR_StrikerArmor</researchPrerequisite>
+			<researchPrerequisite>CFAR_TrooperArmor</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>7</Crafting>
 			</skillRequirements>
@@ -354,7 +331,7 @@
 
 <!--======== Assault Armor ========-->
 
-	<ThingDef ParentName="ArmorHelmetMakeableBase">
+	<!--<ThingDef ParentName="ArmorHelmetMakeableBase">
 		<techLevel>Spacer</techLevel>
 		<defName>Apparel_CFAR_VanguardHelmet</defName>
 		<label>vanguard helmet</label>
@@ -502,5 +479,5 @@
 		<tradeTags>
 			<li>CFAR_Armor_Fed</li>
 		</tradeTags>
-	</ThingDef>
+	</ThingDef>-->
 </Defs>

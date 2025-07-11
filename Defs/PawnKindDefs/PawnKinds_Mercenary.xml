@@ -22,7 +22,6 @@
 
 	<PawnKindDef Name="CFAR_SoldierBase_Traitor" ParentName="CFAR_EnclavePawnBase" Abstract="True">
 		<combatPower>200</combatPower>
-		<minTitleRequired>CFAR_Trooper</minTitleRequired>
 		<minGenerationAge>20</minGenerationAge>
 		<maxGenerationAge>25</maxGenerationAge>
 		<initialResistanceRange>10~20</initialResistanceRange>
@@ -46,8 +45,8 @@
 			<li>CFAR_IndustrialArmor</li>
 		</apparelTags>
 		<apparelRequired>
-			<li>Apparel_CFAR_StrikerHelmet</li>
-			<li>Apparel_CFAR_StrikerArmor</li>
+			<li>Apparel_CFAR_TrooperHelmet</li>
+			<li>Apparel_CFAR_TrooperArmor</li>
 		</apparelRequired>
 		<weaponTags>
 			<li>CFAR_Carbine</li>

@@ -2,7 +2,7 @@
 <Defs>
 	<RoyalTitleDef Abstract="True" Name="CFAR_TitleBase">
 		<tags>
-			<li>CFAR_Title</li>
+			<li>CFAR_Empire</li>
 		</tags>
 		<awardThought>GainedTitle</awardThought>
 		<lostThought>LostTitle</lostThought>

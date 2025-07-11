@@ -6,7 +6,7 @@
 		<label>Arellian empire</label>
 		<fixedName>The Arellian Empire</fixedName>
 		<description>Hailing from the Arellia Sector, the Arellian Federation is governed by a militaristic authoritarian regime.\n\nDue to the versatile and steadfast nature of Arellians, combined with their unyielding discipline, the Imperial Armed Forces are a force to be reckoned with.</description>
-		<categoryTag>CFAR_Fed</categoryTag>
+		<categoryTag>CFAR_Empire</categoryTag>
 		<pawnSingular>imperial</pawnSingular>
 		<pawnsPlural>imperials</pawnsPlural>
 		<allowedCultures><li>CFAR_Culture</li></allowedCultures>
@@ -20,7 +20,6 @@
 		<configurationListOrderPriority>117</configurationListOrderPriority>
 		<canSiege>false</canSiege>
 		<autoFlee>false</autoFlee>
-		<rescueesCanJoin>false</rescueesCanJoin>
 		<hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
 		<permanentEnemyToEveryoneExceptPlayer>true</permanentEnemyToEveryoneExceptPlayer>
 		<backstoryFilters>
@@ -65,14 +64,12 @@
 				<!-- Trooper 35, Heavy Trooper 15, Sentinel 10, Officer1 10, Officer2 5 -->
 				<kindDef>Combat</kindDef>
 				<options>
-					<CFAR_Trooper>1</CFAR_Trooper>
-					<CFAR_SergeantTrooper>1</CFAR_SergeantTrooper>
-					<CFAR_HeavyTrooper>1</CFAR_HeavyTrooper>
-					<CFAR_ReconTrooper>1</CFAR_ReconTrooper>
-					<CFAR_JetTrooper>1</CFAR_JetTrooper>
-					<CFAR_Lieutenant>1</CFAR_Lieutenant>
-					<CFAR_Commander>1</CFAR_Commander>
-					<CFAR_Captain>1</CFAR_Captain>
+					<CFAR_Trooper>5</CFAR_Trooper>
+					<CFAR_HeavyTrooper>2</CFAR_HeavyTrooper>
+					<CFAR_SniperTrooper>2</CFAR_SniperTrooper>
+					<CFAR_ShockTrooper>1</CFAR_ShockTrooper>
+					<CFAR_JetTrooper MayRequire="Ludeon.RimWorld.Royalty">1</CFAR_JetTrooper>
+					<CFAR_Lieutenant>0.5</CFAR_Lieutenant>
 				</options>
 			</li>
 			<!--<li>
@@ -151,7 +148,7 @@
 		<leaderForceGenerateNewPawn MayRequire="Ludeon.RimWorld.Royalty">true</leaderForceGenerateNewPawn>
 		<royalFavorLabel MayRequire="Ludeon.RimWorld.Royalty">credit</royalFavorLabel>
 		<royalFavorIconPath MayRequire="Ludeon.RimWorld.Royalty">World/WorldObjects/Expanding/ArellianFederation</royalFavorIconPath>
-		<royalTitleTags><li MayRequire="Ludeon.RimWorld.Royalty">CFAR_Title</li></royalTitleTags>
+		<royalTitleTags><li MayRequire="Ludeon.RimWorld.Royalty">CFAR_Empire</li></royalTitleTags>
 		<royalTitleInheritanceWorkerClass MayRequire="Ludeon.RimWorld.Royalty">RoyalTitleInheritanceWorker</royalTitleInheritanceWorkerClass>
 		<royalTitleInheritanceRelations MayRequire="Ludeon.RimWorld.Royalty"></royalTitleInheritanceRelations>
 

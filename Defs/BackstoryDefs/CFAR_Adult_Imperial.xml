@@ -76,7 +76,7 @@
 		</spawnCategories>
 	</BackstoryDef>
 
-<!--================ Imperial Naval Infantry Command ================-->
+<!--================ Special ================-->
 
 <!--======== Recruit ========-->
 
@@ -109,6 +109,8 @@
 		<defName>CFAR_Recruit4</defName>
 		<description>[PAWN_nameDef] was a recruit in the Imperial Navy. Chow time was a chaotic moment of forced calm. [PAWN_pronoun] ate quietly, mindful of who sat nearby—knowing every meal was also a lesson in survival beyond the battlefield.</description>
 	</BackstoryDef>
+
+<!--================ Regular ================-->
 
 <!--======== Trooper ========-->
 
@@ -230,6 +232,9 @@
 	<BackstoryDef ParentName="CFAR_HeavyTrooper">
 		<defName>CFAR_HeavyTrooper2</defName>
 		<description>[PAWN_nameDef] was a heavy trooper in the Imperial Navy. Jolly and loud, [PAWN_pronoun] had a booming presence in the barracks, always ready with a joke or a drink. But when the pulse repeater revved up, [PAWN_pronoun] was a force no one wanted to cross—calm one moment, deadly the next.</description>
+		<skillGains>
+			<Social>4</Social>
+		</skillGains>
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_HeavyTrooper">
@@ -254,8 +259,8 @@
 
 <!--======== Recon Trooper ========-->
 
-	<BackstoryDef Name="CFAR_ReconTrooper" ParentName="CFAR_Enlisted">
-		<defName>CFAR_ReconTrooper1</defName>
+	<BackstoryDef Name="CFAR_SniperTrooper" ParentName="CFAR_Enlisted">
+		<defName>CFAR_SniperTrooper1</defName>
 		<title>recon trooper</title>
 		<titleShort>trooper</titleShort>
 		<description>[PAWN_nameDef] was a recon trooper in the Imperial Navy. [PAWN_pronoun] rarely spoke first but listened closely, always watching. The cool exterior hid nerves, but when the pulse railgun fired, it was clear [PAWN_pronoun] knew exactly what [PAWN_pronoun] was doing.</description>
@@ -265,33 +270,56 @@
 			<Social>-4</Social>
 		</skillGains>
 		<spawnCategories>
-			<li>CFAR_ReconTrooper</li>
+			<li>CFAR_SniperTrooper</li>
 		</spawnCategories>
 	</BackstoryDef>
 
-	<BackstoryDef ParentName="CFAR_ReconTrooper">
-		<defName>CFAR_ReconTrooper2</defName>
+	<BackstoryDef ParentName="CFAR_SniperTrooper">
+		<defName>CFAR_SniperTrooper2</defName>
 		<description>[PAWN_nameDef] was a recon trooper in the Imperial Navy. Silent and unnoticed, [PAWN_pronoun] moved through shadows, pulse railgun always at the ready. [PAWN_pronoun] didn’t need to speak—one clean shot was all that mattered. The world didn’t know [PAWN_pronoun] was there until it was too late.</description>
 	</BackstoryDef>
 
-	<BackstoryDef ParentName="CFAR_ReconTrooper">
-		<defName>CFAR_ReconTrooper3</defName>
+	<BackstoryDef ParentName="CFAR_SniperTrooper">
+		<defName>CFAR_SniperTrooper3</defName>
 		<description>[PAWN_nameDef] was a recon trooper in the Imperial Navy. [PAWN_pronoun] was all about stealth... except when [PAWN_pronoun] tripped over a crate during a recon mission. [PAWN_pronoun] didn’t make a sound after that—mostly because [PAWN_pronoun] was hiding in a corner, pretending to be a rock.</description>
 	</BackstoryDef>
 
-	<BackstoryDef ParentName="CFAR_ReconTrooper">
-		<defName>CFAR_ReconTrooper4</defName>
+	<BackstoryDef ParentName="CFAR_SniperTrooper">
+		<defName>CFAR_SniperTrooper4</defName>
 		<description>[PAWN_nameDef] was a recon trooper in the Imperial Navy. [PAWN_pronoun] acted aloof, but compliments from the squad left [PAWN_objective] flustered and stumbling over words. Despite the teasing, [PAWN_pronoun] appreciated the rare moments of warmth among the chaos.</description>
 	</BackstoryDef>
 
-	<BackstoryDef ParentName="CFAR_ReconTrooper">
-		<defName>CFAR_ReconTrooper5</defName>
+	<BackstoryDef ParentName="CFAR_SniperTrooper">
+		<defName>CFAR_SniperTrooper5</defName>
 		<description>[PAWN_nameDef] was a recon trooper in the Imperial Navy. [PAWN_pronoun] often “patrolled” the same corridor, but preferred hiding out in supply rooms. The squad joked about [PAWN_possessive] laziness, but no one ever caught [PAWN_objective] slacking.</description>
 	</BackstoryDef>
 
-	<BackstoryDef ParentName="CFAR_ReconTrooper">
-		<defName>CFAR_ReconTrooper6</defName>
+	<BackstoryDef ParentName="CFAR_SniperTrooper">
+		<defName>CFAR_SniperTrooper6</defName>
 		<description>[PAWN_nameDef] was a recon trooper in the Imperial Navy. [PAWN_pronoun] dodged extra drills and long shifts with practiced ease. The squad might tease, but no one ever saw [PAWN_pronoun] truly caught—[PAWN_pronoun] was just too good at blending into the shadows.</description>
+	</BackstoryDef>
+
+<!--================ Elite ================-->
+
+<!--======== Shock Trooper ========-->
+
+	<BackstoryDef Name="CFAR_ShockTrooper" ParentName="CFAR_Enlisted">
+		<defName>CFAR_ShockTrooper1</defName>
+		<title>shock trooper</title>
+		<titleShort>shocktrooper</titleShort>
+		<description>.</description>
+		<skillGains>
+			<Shooting>8</Shooting>
+			<Melee>6</Melee>
+		</skillGains>
+		<spawnCategories>
+			<li>CFAR_ShockTrooper</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_ShockTrooper">
+		<defName>CFAR_ShockTrooper2</defName>
+		<description>.</description>
 	</BackstoryDef>
 
 <!--======== Jet Trooper ========-->

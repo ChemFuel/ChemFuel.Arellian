@@ -315,8 +315,8 @@
 	<ResearchProjectDef>
 		<techLevel>Spacer</techLevel>
 		<tab>CFAR_ResearchTab</tab>
-		<defName>CFAR_StrikerArmor</defName>
-		<label>striker armor</label>
+		<defName>CFAR_TrooperArmor</defName>
+		<label>trooper armor</label>
 		<description>WIP</description>
 		<baseCost>3000</baseCost>
 		<prerequisites>
@@ -342,7 +342,7 @@
 		</generalRules>
 	</ResearchProjectDef>
 
-	<ResearchProjectDef>
+	<!--<ResearchProjectDef>
 		<techLevel>Spacer</techLevel>
 		<tab>CFAR_ResearchTab</tab>
 		<defName>CFAR_VanguardArmor</defName>
@@ -350,7 +350,7 @@
 		<description>WIP</description>
 		<baseCost>3000</baseCost>
 		<prerequisites>
-			<li>CFAR_StrikerArmor</li>
+			<li>CFAR_TrooperArmor</li>
 		</prerequisites>
 		<hiddenPrerequisites>
 			<li>PoweredArmor</li>
@@ -380,7 +380,7 @@
 		<description>WIP</description>
 		<baseCost>1500</baseCost>
 		<prerequisites>
-			<li>CFAR_StrikerArmor</li>
+			<li>CFAR_TrooperArmor</li>
 		</prerequisites>
 		<hiddenPrerequisites>
 			<li>StandardMechtech</li>
@@ -400,5 +400,5 @@
 				<li>subject_gerund->WIP</li>
 			</rulesStrings>
 		</generalRules>
-	</ResearchProjectDef>
+	</ResearchProjectDef>-->
 </Defs>

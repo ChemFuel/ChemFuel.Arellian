@@ -65,7 +65,8 @@
 
 <!--================ Naval Infantry Corps ================-->
 
-<!-- Role : Assault -->
+<!--======== Special ========-->
+
 	<PawnKindDef ParentName="CFAR_SoldierBase">
 		<defName>CFAR_Recruit</defName>
 		<label>recruit</label>
@@ -76,8 +77,8 @@
 		<minGenerationAge>20</minGenerationAge>
 		<maxGenerationAge>22</maxGenerationAge>
 		<apparelRequired>
-			<li>Apparel_CFAR_StrikerHelmet</li>
-			<li>Apparel_CFAR_StrikerArmor</li>
+			<li>Apparel_CFAR_TrooperHelmet</li>
+			<li>Apparel_CFAR_TrooperArmor</li>
 		</apparelRequired>
 		<backstoryFiltersOverride>
 			<li>
@@ -93,6 +94,8 @@
 		<initialWillRange>0.5~1.5</initialWillRange>
 	</PawnKindDef>
 
+<!--======== Regular ========-->
+
 	<PawnKindDef ParentName="CFAR_SoldierBase">
 		<defName>CFAR_Trooper</defName>
 		<label>trooper</label>
@@ -100,8 +103,8 @@
 		<minGenerationAge>21</minGenerationAge>
 		<maxGenerationAge>35</maxGenerationAge>
 		<apparelRequired>
-			<li>Apparel_CFAR_StrikerHelmet</li>
-			<li>Apparel_CFAR_StrikerArmor</li>
+			<li>Apparel_CFAR_TrooperHelmet</li>
+			<li>Apparel_CFAR_TrooperArmor</li>
 		</apparelRequired>
 		<weaponTags>
 			<li>CFAR_Rifle</li>
@@ -119,40 +122,14 @@
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="CFAR_SoldierBase">
-		<defName>CFAR_SergeantTrooper</defName>
-		<label>sergeant trooper</label>
-		<minTitleRequired>CFAR_Trooper</minTitleRequired>
-		<minGenerationAge>22</minGenerationAge>
-		<maxGenerationAge>45</maxGenerationAge>
-		<apparelRequired>
-			<li>Apparel_CFAR_StrikerHelmet</li>
-			<li>Apparel_CFAR_StrikerArmor</li>
-		</apparelRequired>
-		<weaponTags>
-			<li>CFAR_Carbine</li>
-		</weaponTags>
-		<backstoryFiltersOverride>
-			<li>
-				<categoriesChildhood>
-					<li>CFAR_Child</li>
-				</categoriesChildhood>
-				<categoriesAdulthood>
-					<li>CFAR_Trooper</li>
-				</categoriesAdulthood>
-			</li>
-		</backstoryFiltersOverride>
-	</PawnKindDef>
-
-<!-- Role : Support -->
-	<PawnKindDef ParentName="CFAR_SoldierBase">
 		<defName>CFAR_HeavyTrooper</defName>
 		<label>heavy trooper</label>
 		<minTitleRequired>CFAR_Trooper</minTitleRequired>
-		<minGenerationAge>18</minGenerationAge>
+		<minGenerationAge>20</minGenerationAge>
 		<maxGenerationAge>35</maxGenerationAge>
 		<apparelRequired>
-			<li>Apparel_CFAR_StrikerHelmet</li>
-			<li>Apparel_CFAR_StrikerArmor</li>
+			<li>Apparel_CFAR_TrooperHelmet</li>
+			<li>Apparel_CFAR_TrooperArmor</li>
 		</apparelRequired>
 		<weaponTags>
 			<li>CFAR_Repeater</li>
@@ -170,14 +147,14 @@
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="CFAR_SoldierBase">
-		<defName>CFAR_ReconTrooper</defName>
-		<label>recon trooper</label>
+		<defName>CFAR_SniperTrooper</defName>
+		<label>sniper trooper</label>
 		<minTitleRequired>CFAR_Trooper</minTitleRequired>
-		<minGenerationAge>18</minGenerationAge>
+		<minGenerationAge>20</minGenerationAge>
 		<maxGenerationAge>35</maxGenerationAge>
 		<apparelRequired>
-			<li>Apparel_CFAR_StrikerHelmet</li>
-			<li>Apparel_CFAR_StrikerArmor</li>
+			<li>Apparel_CFAR_TrooperHelmet</li>
+			<li>Apparel_CFAR_TrooperArmor</li>
 		</apparelRequired>
 		<weaponTags>
 			<li>CFAR_Railgun</li>
@@ -188,22 +165,50 @@
 					<li>CFAR_Child</li>
 				</categoriesChildhood>
 				<categoriesAdulthood>
-					<li>CFAR_ReconTrooper</li>
+					<li>CFAR_SniperTrooper</li>
 				</categoriesAdulthood>
 			</li>
 		</backstoryFiltersOverride>
 	</PawnKindDef>
 
-<!-- Role : Specialist -->
+<!--======== Elite ========-->
+
 	<PawnKindDef ParentName="CFAR_SoldierBase">
-		<defName>CFAR_JetTrooper</defName>
-		<label>jet trooper</label>
-		<minTitleRequired>CFAR_Trooper</minTitleRequired>
-		<minGenerationAge>18</minGenerationAge>
+		<defName>CFAR_ShockTrooper</defName>
+		<label>shock trooper</label>
+		<minTitleRequired>CFAR_Sergeant</minTitleRequired>
+		<minGenerationAge>22</minGenerationAge>
 		<maxGenerationAge>35</maxGenerationAge>
 		<apparelRequired>
-			<li>Apparel_CFAR_StrikerHelmet</li>
-			<li>Apparel_CFAR_StrikerArmor</li>
+			<li>Apparel_CFAR_TrooperHelmet</li>
+			<li>Apparel_CFAR_TrooperArmor</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>CFAR_Carbine</li>
+		</weaponTags>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>CFAR_Child</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>CFAR_ShockTrooper</li>
+				</categoriesAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="CFAR_SoldierBase" MayRequire="Ludeon.RimWorld.Royalty">
+		<defName>CFAR_JetTrooper</defName>
+		<label>jet trooper</label>
+		<minTitleRequired>CFAR_Sergeant</minTitleRequired>
+		<aiAvoidCover>true</aiAvoidCover>
+		<minGenerationAge>22</minGenerationAge>
+		<maxGenerationAge>35</maxGenerationAge>
+		<apparelRequired>
+			<li>Apparel_CFAR_TrooperHelmet</li>
+			<li>Apparel_CFAR_TrooperArmor</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">Apparel_CFAR_JetPack</li>
 		</apparelRequired>
 		<weaponTags>
 			<li>CFAR_Carbine</li>
@@ -228,8 +233,8 @@
 		<minGenerationAge>22</minGenerationAge>
 		<maxGenerationAge>28</maxGenerationAge>
 		<apparelRequired>
-			<li>Apparel_CFAR_StrikerHelmet</li>
-			<li>Apparel_CFAR_StrikerArmor</li>
+			<li>Apparel_CFAR_TrooperHelmet</li>
+			<li>Apparel_CFAR_TrooperArmor</li>
 		</apparelRequired>
 		<weaponTags>
 			<li>CFAR_Carbine</li>
@@ -253,8 +258,8 @@
 		<minGenerationAge>27</minGenerationAge>
 		<maxGenerationAge>34</maxGenerationAge>
 		<apparelRequired>
-			<li>Apparel_CFAR_StrikerHelmet</li>
-			<li>Apparel_CFAR_StrikerArmor</li>
+			<li>Apparel_CFAR_TrooperHelmet</li>
+			<li>Apparel_CFAR_TrooperArmor</li>
 		</apparelRequired>
 		<weaponTags>
 			<li>CFAR_Carbine</li>
@@ -279,8 +284,8 @@
 		<minGenerationAge>37</minGenerationAge>
 		<maxGenerationAge>45</maxGenerationAge>
 		<apparelRequired>
-			<li>Apparel_CFAR_StrikerHelmet</li>
-			<li>Apparel_CFAR_StrikerArmor</li>
+			<li>Apparel_CFAR_TrooperHelmet</li>
+			<li>Apparel_CFAR_TrooperArmor</li>
 		</apparelRequired>
 		<weaponTags>
 			<li>CFAR_Pistol</li>
@@ -304,8 +309,8 @@
 		<minGenerationAge>45</minGenerationAge>
 		<maxGenerationAge>60</maxGenerationAge>
 		<apparelRequired>
-			<li>Apparel_CFAR_StrikerHelmet</li>
-			<li>Apparel_CFAR_StrikerArmor</li>
+			<li>Apparel_CFAR_TrooperHelmet</li>
+			<li>Apparel_CFAR_TrooperArmor</li>
 		</apparelRequired>
 		<weaponTags>
 			<li>CFAR_Pistol</li>
@@ -329,8 +334,8 @@
 		<minGenerationAge>50</minGenerationAge>
 		<maxGenerationAge>65</maxGenerationAge>
 		<apparelRequired>
-			<li>Apparel_CFAR_StrikerHelmet</li>
-			<li>Apparel_CFAR_StrikerArmor</li>
+			<li>Apparel_CFAR_TrooperHelmet</li>
+			<li>Apparel_CFAR_TrooperArmor</li>
 		</apparelRequired>
 		<weaponTags>
 			<li>CFAR_Pistol</li>
