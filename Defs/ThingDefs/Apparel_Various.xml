@@ -8,7 +8,7 @@
 
 <!--======== TD Belt ========-->
 
-	<ThingDef ParentName="ApparelBase" Abstract="true">
+	<ThingDef ParentName="ApparelBase">
 		<techLevel>Spacer</techLevel>
 		<defName>Apparel_CFAR_TDBelt</defName>
 		<label>thermal detonator belt</label>
@@ -67,6 +67,9 @@
 				<li>CFAR_TDBelt</li>
 			</tags>
 			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+			<abilities>
+				<li>CFAR_ThermalDetonator</li>
+			</abilities>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_Options">
 			<options><li><only>(1,1,1)</only></li></options>
@@ -76,6 +79,45 @@
 			<li>Armor</li>
 		</tradeTags>
 	</ThingDef>
+
+	<AbilityDef>
+		<defName>CFAR_ThermalDetonator</defName>
+		<label>throw detonator</label>
+		<description>WIP</description>
+		<iconPath>UI/Abilities/MechLongJump</iconPath>
+		<cooldownTicksRange>7500</cooldownTicksRange> <!-- 3 hours -->
+		<charges>3</charges>
+		<showOnCharacterCard>false</showOnCharacterCard>
+		<groupAbility>true</groupAbility>
+		<aiCanUse>true</aiCanUse>
+		<verbProperties>
+			<verbClass>Verb_AbilityShoot</verbClass>
+			<label>jump</label>
+			<range>12.9</range>
+			<warmupTime>1.5</warmupTime>
+			<noiseRadius>4</noiseRadius>
+			<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+			<soundCast>ThrowGrenade</soundCast>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+			<defaultProjectile>Proj_GrenadeFrag</defaultProjectile>
+			<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			<ai_IsWeapon>false</ai_IsWeapon>
+		</verbProperties>
+	</AbilityDef>
+
+  <ThingDef ParentName="BaseFragGrenadeProjectile">
+    <defName>Proj_CFAR_ThermalDetonator</defName>
+    <label>thermal detonator</label>
+    <graphicData>
+      <texPath>Things/Projectile/Grenade</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <speed>36</speed>
+    </projectile>
+  </ThingDef>
 
 <!--======== Jump Pack ========-->
 
@@ -165,7 +207,6 @@
 		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
 		<groupAbility>true</groupAbility>
 		<aiCanUse>true</aiCanUse>
-		<ai_IsOffensive>false</ai_IsOffensive>
 		<verbProperties>
 			<verbClass>Verb_CastAbilityJump</verbClass>
 			<label>jump</label>
