@@ -85,8 +85,7 @@
 		<label>throw detonator</label>
 		<description>WIP</description>
 		<iconPath>UI/Abilities/MechLongJump</iconPath>
-		<cooldownTicksRange>7500</cooldownTicksRange> <!-- 3 hours -->
-		<charges>3</charges>
+		<cooldownTicksRange>1250</cooldownTicksRange><!-- 30 Mins -->
 		<showOnCharacterCard>false</showOnCharacterCard>
 		<groupAbility>true</groupAbility>
 		<aiCanUse>true</aiCanUse>
@@ -107,17 +106,17 @@
 		</verbProperties>
 	</AbilityDef>
 
-  <ThingDef ParentName="BaseFragGrenadeProjectile">
-    <defName>Proj_CFAR_ThermalDetonator</defName>
-    <label>thermal detonator</label>
-    <graphicData>
-      <texPath>Things/Projectile/Grenade</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <projectile>
-      <speed>36</speed>
-    </projectile>
-  </ThingDef>
+	<ThingDef ParentName="BaseFragGrenadeProjectile">
+		<defName>Proj_CFAR_ThermalDetonator</defName>
+		<label>thermal detonator</label>
+		<graphicData>
+			<texPath>Things/Projectile/Grenade</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<speed>36</speed>
+		</projectile>
+	</ThingDef>
 
 <!--======== Jump Pack ========-->
 
