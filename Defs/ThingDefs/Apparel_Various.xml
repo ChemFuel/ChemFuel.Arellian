@@ -84,8 +84,8 @@
 		<defName>CFAR_ThermalDetonator</defName>
 		<label>throw detonator</label>
 		<description>WIP</description>
-		<iconPath>UI/Abilities/MechLongJump</iconPath>
-		<cooldownTicksRange>1250</cooldownTicksRange><!-- 30 Mins -->
+		<iconPath>Things/Item/Equipment/WeaponRanged/Grenades</iconPath>
+		<cooldownTicksRange>600</cooldownTicksRange><!-- 10 Secs -->
 		<showOnCharacterCard>false</showOnCharacterCard>
 		<groupAbility>true</groupAbility>
 		<aiCanUse>true</aiCanUse>
