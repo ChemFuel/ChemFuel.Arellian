@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef Name="CFAR_Cybernetic" ParentName="BodyPartBase" Abstract="True">
+		<thingClass>ThingWithComps</thingClass>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<WorkToMake>20000</WorkToMake>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Item/Health/HealthItem</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+			<color>(104,124,154)</color>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>CFAR_Cybernetics</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedHealthItemProsthetic</unfinishedThingDef>
+			<displayPriority>1160</displayPriority>
+			<recipeUsers>
+				<li>TableMachining</li>
+			</recipeUsers>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+		</recipeMaker>
+		<tradeTags>
+			<li>CFAR_Prosthetic_Fed</li>
+		</tradeTags>
+		<thingCategories>
+			<li>BodyPartsProsthetic</li>
+		</thingCategories>
+	</ThingDef>
+
+<!--================================ Head ================================-->
+
+<!--================ Combat chip ================-->
+<!-- I intend this chip to function like a downgraded version of the bloodlust trait -->
+
+	<ThingDef ParentName="CFAR_Cybernetic">
+		<defName>CFAR_CombatChip</defName>
+		<label>combat chip</label>
+		<description>This implant enhances combat performance by optimizing target acquisition and suppressing hesitation, enabling rapid, instinctive engagement in high-pressure scenarios.</description>
+		<descriptionHyperlinks><RecipeDef>Install_CFAR_CombatChip</RecipeDef></descriptionHyperlinks>
+		<costList>
+			<Plasteel>15</Plasteel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+	</ThingDef>
+
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>CFAR_CombatChip</defName>
+		<label>combat chip</label>
+		<labelNoun>a combat chip</labelNoun>
+		<description>A military-grade implant that enhances combat performance by optimizing target acquisition and suppressing hesitation, enabling rapid, instinctive engagement in high-pressure scenarios.</description>
+		<descriptionHyperlinks><ThingDef>CFAR_CombatChip</ThingDef></descriptionHyperlinks>
+		<spawnThingOnRemoved>CFAR_CombatChip</spawnThingOnRemoved>
+		<stages>
+			<li>
+				<statOffsets>
+					<ShootingAccuracyPawn>5</ShootingAccuracyPawn>
+					<MentalBreakThreshold>-0.04</MentalBreakThreshold>
+				</statOffsets>
+				<statFactors>
+					<AimingDelayFactor>0.75</AimingDelayFactor>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<RecipeDef ParentName="SurgeryInstallImplantBase">
+		<defName>Install_CFAR_CombatChip</defName>
+		<label>install combat chip</label>
+		<description>Install a combat chip.</description>
+		<descriptionHyperlinks>
+			<ThingDef>CFAR_CombatChip</ThingDef>
+			<HediffDef>CFAR_CombatChip</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing a combat chip.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CFAR_CombatChip</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>CFAR_CombatChip</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>CFAR_CombatChip</addsHediff>
+	</RecipeDef>
+  
+	<RecipeDef ParentName="SurgeryRemoveImplantBase">
+		<defName>Remove_CFAR_CombatChip</defName>
+		<label>remove combat chip</label>
+		<description>Remove combat chip.</description>
+		<descriptionHyperlinks>
+			<ThingDef>CFAR_CombatChip</ThingDef>
+			<HediffDef>CFAR_CombatChip</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing combat chip.</jobString>
+		<removesHediff>CFAR_CombatChip</removesHediff>
+	</RecipeDef>
+
+<!--================================ Torso ================================-->
+
+<!--================ Subdermal Plating ================-->
+
+	<ThingDef ParentName="CFAR_Cybernetic">
+		<defName>CFAR_SubdermalPlating</defName>
+		<label>subdermal plating</label>
+		<description>This implant uses advanced subdermal dispersion tech to partially negate physical damage with no adverse effects on the user./n/nThis implant is incompatible with skin-hardening glands.</description>
+		<descriptionHyperlinks><RecipeDef>Install_CFAR_SubdermalPlating</RecipeDef></descriptionHyperlinks>
+		<costList>
+			<Plasteel>15</Plasteel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+	</ThingDef>
+
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>CFAR_SubdermalPlating</defName>
+		<label>subdermal plating</label>
+		<labelNoun>a subdermal plating</labelNoun>
+		<description>An implant that uses advanced subdermal dispersion tech to partially negate physical damage with no adverse effects on the user.</description>
+		<descriptionHyperlinks><ThingDef>CFAR_SubdermalPlating</ThingDef></descriptionHyperlinks>
+		<spawnThingOnRemoved>CFAR_SubdermalPlating</spawnThingOnRemoved>
+		<stages>
+			<li>
+				<statOffsets>
+					<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.30</ArmorRating_Heat>
+				</statOffsets>
+				<statFactors>
+					<IncomingDamageFactor>0.90</IncomingDamageFactor>
+				</statFactors>
+			</li>
+		</stages>
+		<tags><li>ArmorGland</li></tags>
+	</HediffDef>
+
+	<RecipeDef ParentName="SurgeryInstallImplantBase">
+		<defName>Install_CFAR_SubdermalPlating</defName>
+		<label>install subdermal plating</label>
+		<description>Install a subdermal plating.</description>
+		<descriptionHyperlinks>
+			<ThingDef>CFAR_SubdermalPlating</ThingDef>
+			<HediffDef>CFAR_SubdermalPlating</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing a subdermal plating.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CFAR_SubdermalPlating</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>CFAR_SubdermalPlating</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Torso</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>CFAR_SubdermalPlating</addsHediff>
+	</RecipeDef>
+  
+	<RecipeDef ParentName="SurgeryRemoveImplantBase">
+		<defName>Remove_CFAR_SubdermalPlating</defName>
+		<label>remove subdermal plating</label>
+		<description>Remove subdermal plating.</description>
+		<descriptionHyperlinks>
+			<ThingDef>CFAR_SubdermalPlating</ThingDef>
+			<HediffDef>CFAR_SubdermalPlating</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing subdermal plating.</jobString>
+		<removesHediff>CFAR_SubdermalPlating</removesHediff>
+	</RecipeDef>
+
+</Defs>

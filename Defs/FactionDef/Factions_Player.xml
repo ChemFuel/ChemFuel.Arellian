@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<FactionDef ParentName="FactionBase">
+		<defName>CFAR_ExpeditionTeam</defName>
+		<label>Expedition Team</label>
+		<description>A colony of recently-deployed Arellians.</description>
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<colorSpectrum><li>(0.8, 0.8, 0.8)</li></colorSpectrum>
+		<isPlayer>true</isPlayer>
+		<basicMemberKind>CFAR_Trooper</basicMemberKind>
+		<pawnSingular>soldier</pawnSingular>
+		<pawnsPlural>soldiers</pawnsPlural>
+		<techLevel>Industrial</techLevel>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<allowedCultures><li>CFAR_Culture</li></allowedCultures>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>CFAR_Player</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath>
+		<startingResearchTags>
+			<li>ClassicStart</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+			<li>ClassicStart</li>
+			<li>ClassicStartTechprints</li>
+		</startingTechprintsResearchTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Synthread</li>
+			</thingDefs>
+		</apparelStuffFilter>
+	</FactionDef>
+
+	<ScenarioDef ParentName="ScenarioBase">
+		<defName>CFAR_ExpeditionTeam</defName>
+		<label>The Expedition Team</label>
+		<description>WIP\n\nNote: Your characters will start with pre-defined armor and weapons according to their class.</description>
+		<scenario>
+			<summary>One lieutenant and three troopers.</summary>
+			<playerFaction>
+				<factionDef>CFAR_ExpeditionTeam</factionDef>
+			</playerFaction>
+			<parts>
+				<!-- Game start dialog -->
+				<li Class="ScenPart_GameStartDialog">
+					<def>GameStartDialog</def>
+					<text>WIP</text>
+					<closeSound>GameStartSting</closeSound>
+				</li>
+
+				<!-- Config pages -->
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs">
+					<def>ConfigurePawnsKindDefs</def>
+					<pawnChoiceCount>8</pawnChoiceCount>
+					<leftBehindPawnKind>CFAR_Trooper</leftBehindPawnKind>
+					<kindCounts>
+						<li>
+							<kindDef>CFAR_Lieutenant</kindDef>
+							<count>1</count>
+							<requiredAtStart>true</requiredAtStart>
+						</li>
+						<li>
+							<kindDef>CFAR_Trooper</kindDef>
+							<count>3</count>
+							<requiredAtStart>true</requiredAtStart>
+						</li>
+					</kindCounts>
+				</li>
+
+				<!-- Player starting stuff spawn method-->
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+					<visible>false</visible>
+					<method>DropPods</method>
+				</li>
+					
+				<!-- Starting research -->
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>MicroelectronicsBasics</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>Batteries</project>
+				</li>
+
+				<!-- Player starting things -->
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MealSurvivalPack</thingDef>
+					<count>40</count>
+				</li>
+			</parts>
+		</scenario>
+	</ScenarioDef>
+</Defs>
