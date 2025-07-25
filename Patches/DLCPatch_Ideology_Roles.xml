@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Ideology</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			<!--==== Leader ====-->
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PreceptDef[defName="IdeoRole_Leader" or defName="IdeoRole_Moralist" or defName="IdeoRole_ShootingSpecialist" or defName="IdeoRole_ResearchSpecialist" or defName="IdeoRole_PlantSpecialist"]/roleApparelRequirements/li[1]/disallowedFactionCategoryTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/PreceptDef[defName="IdeoRole_Leader" or defName="IdeoRole_Moralist" or defName="IdeoRole_ShootingSpecialist" or defName="IdeoRole_ResearchSpecialist" or defName="IdeoRole_PlantSpecialist"]/roleApparelRequirements/li[1]/disallowedFactionCategoryTags</xpath>
+						<value><li>CFAR_ImperialTag</li></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/PreceptDef[defName="IdeoRole_Leader" or defName="IdeoRole_Moralist" or defName="IdeoRole_ShootingSpecialist" or defName="IdeoRole_ResearchSpecialist" or defName="IdeoRole_PlantSpecialist"]/roleApparelRequirements/li[1]</xpath>
+						<value><disallowedFactionCategoryTags><li>CFAR_ImperialTag</li></disallowedFactionCategoryTags></value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PreceptDef[defName="IdeoRole_Leader" or defName="IdeoRole_Moralist"]/roleApparelRequirements/li[2]/disallowedFactionCategoryTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/PreceptDef[defName="IdeoRole_Leader" or defName="IdeoRole_Moralist"]/roleApparelRequirements/li[2]/disallowedFactionCategoryTags</xpath>
+						<value><li>CFAR_ImperialTag</li></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/PreceptDef[defName="IdeoRole_Leader" or defName="IdeoRole_Moralist"]/roleApparelRequirements/li[2]</xpath>
+						<value><disallowedFactionCategoryTags><li>CFAR_ImperialTag</li></disallowedFactionCategoryTags></value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PreceptDef[defName="IdeoRole_Leader" or defName="IdeoRole_Moralist"]/roleApparelRequirements/li[3]/disallowedFactionCategoryTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/PreceptDef[defName="IdeoRole_Leader" or defName="IdeoRole_Moralist"]/roleApparelRequirements/li[3]/disallowedFactionCategoryTags</xpath>
+						<value><li>CFAR_ImperialTag</li></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/PreceptDef[defName="IdeoRole_Leader" or defName="IdeoRole_Moralist"]/roleApparelRequirements/li[3]</xpath>
+						<value><disallowedFactionCategoryTags><li>CFAR_ImperialTag</li></disallowedFactionCategoryTags></value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PreceptDef[defName="IdeoRole_Leader" or defName="IdeoRole_Moralist"]/roleApparelRequirements/li[4]/disallowedFactionCategoryTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/PreceptDef[defName="IdeoRole_Leader" or defName="IdeoRole_Moralist"]/roleApparelRequirements/li[4]/disallowedFactionCategoryTags</xpath>
+						<value><li>CFAR_ImperialTag</li></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/PreceptDef[defName="IdeoRole_Leader" or defName="IdeoRole_Moralist"]/roleApparelRequirements/li[4]</xpath>
+						<value><disallowedFactionCategoryTags><li>CFAR_ImperialTag</li></disallowedFactionCategoryTags></value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PreceptDef[defName="IdeoRole_Leader" or defName="IdeoRole_Moralist"]/roleApparelRequirements/li[5]/disallowedFactionCategoryTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/PreceptDef[defName="IdeoRole_Leader" or defName="IdeoRole_Moralist"]/roleApparelRequirements/li[5]/disallowedFactionCategoryTags</xpath>
+						<value><li>CFAR_ImperialTag</li></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/PreceptDef[defName="IdeoRole_Leader" or defName="IdeoRole_Moralist"]/roleApparelRequirements/li[5]</xpath>
+						<value><disallowedFactionCategoryTags><li>CFAR_ImperialTag</li></disallowedFactionCategoryTags></value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PreceptDef[defName="IdeoRole_Leader" or defName="IdeoRole_Moralist"]/roleApparelRequirements/li[6]/disallowedFactionCategoryTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/PreceptDef[defName="IdeoRole_Leader" or defName="IdeoRole_Moralist"]/roleApparelRequirements/li[6]/disallowedFactionCategoryTags</xpath>
+						<value><li>CFAR_ImperialTag</li></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/PreceptDef[defName="IdeoRole_Leader" or defName="IdeoRole_Moralist"]/roleApparelRequirements/li[6]</xpath>
+						<value><disallowedFactionCategoryTags><li>CFAR_ImperialTag</li></disallowedFactionCategoryTags></value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PreceptDef[defName="IdeoRole_Leader" or defName="IdeoRole_Moralist"]/roleApparelRequirements/li[7]/disallowedFactionCategoryTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/PreceptDef[defName="IdeoRole_Leader" or defName="IdeoRole_Moralist"]/roleApparelRequirements/li[7]/disallowedFactionCategoryTags</xpath>
+						<value><li>CFAR_ImperialTag</li></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/PreceptDef[defName="IdeoRole_Leader" or defName="IdeoRole_Moralist"]/roleApparelRequirements/li[7]</xpath>
+						<value><disallowedFactionCategoryTags><li>CFAR_ImperialTag</li></disallowedFactionCategoryTags></value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PreceptDef[defName="IdeoRole_Leader" or defName="IdeoRole_Moralist"]/roleApparelRequirements/li[8]/disallowedFactionCategoryTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/PreceptDef[defName="IdeoRole_Leader" or defName="IdeoRole_Moralist"]/roleApparelRequirements/li[8]/disallowedFactionCategoryTags</xpath>
+						<value><li>CFAR_ImperialTag</li></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/PreceptDef[defName="IdeoRole_Leader" or defName="IdeoRole_Moralist"]/roleApparelRequirements/li[8]</xpath>
+						<value><disallowedFactionCategoryTags><li>CFAR_ImperialTag</li></disallowedFactionCategoryTags></value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PreceptDef[defName="IdeoRole_Leader" or defName="IdeoRole_Moralist"]/roleApparelRequirements/li[9]/disallowedFactionCategoryTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/PreceptDef[defName="IdeoRole_Leader" or defName="IdeoRole_Moralist"]/roleApparelRequirements/li[9]/disallowedFactionCategoryTags</xpath>
+						<value><li>CFAR_ImperialTag</li></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/PreceptDef[defName="IdeoRole_Leader" or defName="IdeoRole_Moralist"]/roleApparelRequirements/li[9]</xpath>
+						<value><disallowedFactionCategoryTags><li>CFAR_ImperialTag</li></disallowedFactionCategoryTags></value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PreceptDef[defName="IdeoRole_Leader" or defName="IdeoRole_Moralist"]/roleApparelRequirements/li[10]/disallowedFactionCategoryTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/PreceptDef[defName="IdeoRole_Leader" or defName="IdeoRole_Moralist"]/roleApparelRequirements/li[10]/disallowedFactionCategoryTags</xpath>
+						<value><li>CFAR_ImperialTag</li></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/PreceptDef[defName="IdeoRole_Leader" or defName="IdeoRole_Moralist"]/roleApparelRequirements/li[10]</xpath>
+						<value><disallowedFactionCategoryTags><li>CFAR_ImperialTag</li></disallowedFactionCategoryTags></value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PreceptDef[defName="IdeoRole_Leader" or defName="IdeoRole_Moralist"]/roleApparelRequirements/li[11]/disallowedFactionCategoryTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/PreceptDef[defName="IdeoRole_Leader" or defName="IdeoRole_Moralist"]/roleApparelRequirements/li[11]/disallowedFactionCategoryTags</xpath>
+						<value><li>CFAR_ImperialTag</li></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/PreceptDef[defName="IdeoRole_Leader" or defName="IdeoRole_Moralist"]/roleApparelRequirements/li[11]</xpath>
+						<value><disallowedFactionCategoryTags><li>CFAR_ImperialTag</li></disallowedFactionCategoryTags></value>
+					</nomatch>
+				</li>
+
+			<!--==== RoleMultiBase ====-->
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PreceptDef[@Name="PreceptRoleMultiBase"]/roleApparelRequirements/li[1]/disallowedFactionCategoryTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/PreceptDef[@Name="PreceptRoleMultiBase"]/roleApparelRequirements/li[1]/disallowedFactionCategoryTags</xpath>
+						<value><li>CFAR_ImperialTag</li></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/PreceptDef[@Name="PreceptRoleMultiBase"]/roleApparelRequirements/li[1]</xpath>
+						<value><disallowedFactionCategoryTags><li>CFAR_ImperialTag</li></disallowedFactionCategoryTags></value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PreceptDef[@Name="PreceptRoleMultiBase"]/roleApparelRequirements/li[2]/disallowedFactionCategoryTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/PreceptDef[@Name="PreceptRoleMultiBase"]/roleApparelRequirements/li[2]/disallowedFactionCategoryTags</xpath>
+						<value><li>CFAR_ImperialTag</li></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/PreceptDef[@Name="PreceptRoleMultiBase"]/roleApparelRequirements/li[2]</xpath>
+						<value><disallowedFactionCategoryTags><li>CFAR_ImperialTag</li></disallowedFactionCategoryTags></value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PreceptDef[@Name="PreceptRoleMultiBase"]/roleApparelRequirements/li[3]/disallowedFactionCategoryTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/PreceptDef[@Name="PreceptRoleMultiBase"]/roleApparelRequirements/li[3]/disallowedFactionCategoryTags</xpath>
+						<value><li>CFAR_ImperialTag</li></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/PreceptDef[@Name="PreceptRoleMultiBase"]/roleApparelRequirements/li[3]</xpath>
+						<value><disallowedFactionCategoryTags><li>CFAR_ImperialTag</li></disallowedFactionCategoryTags></value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PreceptDef[@Name="PreceptRoleMultiBase"]/roleApparelRequirements/li[4]/disallowedFactionCategoryTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/PreceptDef[@Name="PreceptRoleMultiBase"]/roleApparelRequirements/li[4]/disallowedFactionCategoryTags</xpath>
+						<value><li>CFAR_ImperialTag</li></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/PreceptDef[@Name="PreceptRoleMultiBase"]/roleApparelRequirements/li[4]</xpath>
+						<value><disallowedFactionCategoryTags><li>CFAR_ImperialTag</li></disallowedFactionCategoryTags></value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PreceptDef[@Name="PreceptRoleMultiBase"]/roleApparelRequirements/li[5]/disallowedFactionCategoryTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/PreceptDef[@Name="PreceptRoleMultiBase"]/roleApparelRequirements/li[5]/disallowedFactionCategoryTags</xpath>
+						<value><li>CFAR_ImperialTag</li></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/PreceptDef[@Name="PreceptRoleMultiBase"]/roleApparelRequirements/li[5]</xpath>
+						<value><disallowedFactionCategoryTags><li>CFAR_ImperialTag</li></disallowedFactionCategoryTags></value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PreceptDef[@Name="PreceptRoleMultiBase"]/roleApparelRequirements/li[6]/disallowedFactionCategoryTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/PreceptDef[@Name="PreceptRoleMultiBase"]/roleApparelRequirements/li[6]/disallowedFactionCategoryTags</xpath>
+						<value><li>CFAR_ImperialTag</li></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/PreceptDef[@Name="PreceptRoleMultiBase"]/roleApparelRequirements/li[6]</xpath>
+						<value><disallowedFactionCategoryTags><li>CFAR_ImperialTag</li></disallowedFactionCategoryTags></value>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
