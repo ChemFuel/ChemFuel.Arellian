@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<CultureDef>
+		<defName>CFAR_Culture</defName>
+		<label>Arellian</label>
+		<description>A strict militaristic culture of the Arellian Federation, centered on Arellia Prime.</description>
+		<pawnNameMaker>CFAR_PawnNamer_C</pawnNameMaker>
+		<pawnNameMakerFemale>CFAR_PawnNamerFemale_C</pawnNameMakerFemale>
+		<ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">CFAR_NamerIdeo</ideoNameMaker>
+		<deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">CFAR_NamerDeity</deityNameMaker>
+		<deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">CFAR_DeityTypeMaker</deityTypeMaker>
+		<leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">CFAR_LeaderTitleMakerEmpire</leaderTitleMaker>
+		<festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalAstropolitan</festivalNameMaker>
+		<allowedPlaceTags>
+			<li>CFAR_ImperialPlace</li>
+		</allowedPlaceTags>
+		<iconPath>World/WorldObjects/Expanding/CFAR_Empire</iconPath>
+		<styleItemTags>
+			<li>
+				<tag>AR_HairTag</tag>
+				<baseWeight>5</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>Urban</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoBeard</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoTattoo</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+		</styleItemTags>
+	</CultureDef>
+
+<!--======== Place ========-->
+
+	<PlaceDef>
+		<defName>CFAR_ArelliaPrime</defName>
+		<tags>
+			<li>CFAR_ImperialPlace</li>
+		</tags>
+		<placeRules>
+			<include>
+				<li MayRequire="Ludeon.RimWorld.Ideology">PlaceMakerCommon</li>
+			</include>
+			<rulesStrings>
+			<!-- A fortified urban world filled with megacities and barracks -->
+				<li>place_name->Arellia Prime</li>
+				<li>place_adjective->Arellian</li>
+				<li>place_summary->administrative capital</li>
+
+				<li>place_community->barracks</li>
+				<li>place_community->fort</li>
+				<li>place_powerCenter->command center</li>
+				<li>place_powerCenter->palace</li>
+
+				<li>place_job->soldier</li>
+				<li>place_job->sergeant</li>
+				<li>place_job->officer</li>
+				<li>place_job->general</li>
+
+				<li>place_personalWeapon->pulse pistol</li>
+				<li>place_personalWeapon->pulse rifle</li>
+				<li>place_personalWeapon->pulse carbine</li>
+				<li>place_personalWeapon->pulse repeater</li>
+
+				<li>place_massWeapon->an orbital barrage</li>
+
+				<li>place_foeLeader->pirate leader</li>
+				<li>place_foeSoldiers->pirates</li>
+			</rulesStrings>
+		</placeRules>
+	</PlaceDef>
+</Defs>
