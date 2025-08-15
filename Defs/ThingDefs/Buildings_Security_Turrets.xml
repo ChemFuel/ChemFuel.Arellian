@@ -38,37 +38,6 @@
 			<ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
 		</statBases>
 		<tickerType>Normal</tickerType>
-		<comps>
-			<li Class="CompProperties_Explosive">
-				<wickTicks>90~150</wickTicks>
-				<explosiveRadius>1</explosiveRadius>
-				<explosiveExpandPerFuel>0.45</explosiveExpandPerFuel>
-				<explosiveDamageType>Bomb</explosiveDamageType>
-			</li>
-			<li Class="CompProperties_Forbiddable"/>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
-				<basePowerConsumption>200</basePowerConsumption>
-			</li>
-			<li Class="CompProperties_Flickable"/>
-			<li Class="CompProperties_Refuelable">
-				<fuelLabel>Shots until breakdown</fuelLabel>
-				<fuelGizmoLabel>Turret integrity</fuelGizmoLabel>
-				<outOfFuelMessage>Needs component swapping</outOfFuelMessage>
-				<fuelConsumptionRate>2.5</fuelConsumptionRate>
-				<fuelCapacity>150</fuelCapacity>
-				<fuelMultiplier>25</fuelMultiplier>
-				<fuelFilter><thingDefs><li>IndustrialComponent</li></thingDefs></fuelFilter>
-				<autoRefuelPercent>0.5</autoRefuelPercent>
-				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
-			</li>
-			<li Class="CompProperties_Stunnable">
-				<affectedDamageDefs>
-					<li>Stun</li>
-					<li>EMP</li>
-				</affectedDamageDefs>
-			</li>
-		</comps>
 		<passability>Impassable</passability>
 		<fillPercent>1</fillPercent>
 		<coversFloor>true</coversFloor>
@@ -99,6 +68,37 @@
     <researchPrerequisites>
       <li>GunTurrets</li>
     </researchPrerequisites>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<wickTicks>90~150</wickTicks>
+				<explosiveRadius>1</explosiveRadius>
+				<explosiveExpandPerFuel>0.45</explosiveExpandPerFuel>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>200</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Refuelable">
+				<fuelLabel>Shots until breakdown</fuelLabel>
+				<fuelGizmoLabel>Turret integrity</fuelGizmoLabel>
+				<outOfFuelMessage>Needs component swapping</outOfFuelMessage>
+				<fuelConsumptionRate>2.5</fuelConsumptionRate>
+				<fuelCapacity>150</fuelCapacity>
+				<fuelMultiplier>25</fuelMultiplier>
+				<fuelFilter><thingDefs><li>ComponentIndustrial</li></thingDefs></fuelFilter>
+				<autoRefuelPercent>0.5</autoRefuelPercent>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+			<li Class="CompProperties_Stunnable">
+				<affectedDamageDefs>
+					<li>Stun</li>
+					<li>EMP</li>
+				</affectedDamageDefs>
+			</li>
+		</comps>
   </ThingDef>
 
 	<ThingDef ParentName="BaseWeaponTurret">
