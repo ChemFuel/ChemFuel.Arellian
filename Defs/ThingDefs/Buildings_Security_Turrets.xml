@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!--=============== 1x1 turret ===============-->
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Turret_CFAR_PDWTurret</defName>
+    <label>PDW turret</label>
+    <description>WIP</description>
+    <thingClass>Building_TurretGun</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Things/Building/Security/TurretMini_Base</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(0.27,0.25,0.27)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+    </graphicData>
+    <uiIconPath>Things/Building/Security/TurretMini_MenuIcon</uiIconPath>
+    <uiIconScale>0.90</uiIconScale>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <altitudeLayer>Building</altitudeLayer>
+    <stealable>false</stealable>
+    <rotatable>false</rotatable>
+    <thingCategories>
+      <li>BuildingsSecurity</li>
+    </thingCategories>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>0.7</Flammability>
+			<WorkToBuild>1800</WorkToBuild>
+			<Mass>8</Mass>
+			<Beauty>-20</Beauty>
+			<ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<wickTicks>90~150</wickTicks>
+				<explosiveRadius>1</explosiveRadius>
+				<explosiveExpandPerFuel>0.45</explosiveExpandPerFuel>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>200</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Refuelable">
+				<fuelLabel>Shots until breakdown</fuelLabel>
+				<fuelGizmoLabel>Turret integrity</fuelGizmoLabel>
+				<outOfFuelMessage>Needs component swapping</outOfFuelMessage>
+				<fuelConsumptionRate>2.5</fuelConsumptionRate>
+				<fuelCapacity>150</fuelCapacity>
+				<fuelMultiplier>25</fuelMultiplier>
+				<fuelFilter><thingDefs><li>IndustrialComponent</li></thingDefs></fuelFilter>
+				<autoRefuelPercent>0.5</autoRefuelPercent>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+			<li Class="CompProperties_Stunnable">
+				<affectedDamageDefs>
+					<li>Stun</li>
+					<li>EMP</li>
+				</affectedDamageDefs>
+			</li>
+		</comps>
+		<passability>Impassable</passability>
+		<fillPercent>1</fillPercent>
+		<coversFloor>true</coversFloor>
+    <hasTooltip>true</hasTooltip>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>150</costStuffCount>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <costList>
+      <Plasteel>30</Plasteel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <building>
+      <combatPower>45</combatPower>   <!-- same as a scavenger -->
+      <ai_combatDangerous>true</ai_combatDangerous>
+      <turretGunDef>Gun_MiniTurret</turretGunDef>
+      <turretBurstCooldownTime>4.8</turretBurstCooldownTime>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_TurretTop</li>
+      <li>PlaceWorker_ShowTurretRadius</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>GunTurrets</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+	<ThingDef ParentName="BaseWeaponTurret">
+		<defName>Gun_CFAR_PDWTurret</defName>
+		<label>PDW turret gun</label>
+		<description>WIP</description>
+		<graphicData>
+			<texPath>Things/Building/Security/TurretMini_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<AccuracyTouch>0.77</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.45</AccuracyMedium>
+			<AccuracyLong>0.24</AccuracyLong>
+			<RangedWeapon_Cooldown>4.8</RangedWeapon_Cooldown>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Mass>5</Mass>
+			<Flammability>0</Flammability>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<defaultProjectile>Bullet_CFAR_PulseIII</defaultProjectile>
+				<warmupTime>0</warmupTime>
+				<range>28.9</range>
+				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+				<burstShotCount>2</burstShotCount>
+				<soundCast>GunShotA</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+				<consumeFuelPerShot>1</consumeFuelPerShot>
+			</li>
+		</verbs>
+	</ThingDef>
+</Defs>
