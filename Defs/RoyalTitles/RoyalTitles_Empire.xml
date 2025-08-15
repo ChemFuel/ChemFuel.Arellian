@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<RoyalTitleDef Abstract="True" Name="CFAR_TitleBase">
+		<tags>
+			<li>CFAR_EmpireTitle</li>
+		</tags>
+		<commonality>1</commonality>
+		<awardThought>GainedTitle</awardThought>
+		<lostThought>LostTitle</lostThought>
+		<changeHeirQuestPoints>10</changeHeirQuestPoints>
+		<awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+	</RoyalTitleDef>
+
+<!--================ Title ================-->
+
+	<RoyalTitleDef ParentName="CFAR_TitleBase" MayRequire="Ludeon.RimWorld.Royalty">
+		<defName>CFAR_Trooper</defName>
+		<label>Trooper</label>
+		<description>TEST</description>
+		<seniority>0</seniority>
+		<favorCost>1</favorCost>
+	</RoyalTitleDef>
+
+	<RoyalTitleDef ParentName="CFAR_TitleBase" MayRequire="Ludeon.RimWorld.Royalty">
+		<defName>CFAR_Sergeant</defName>
+		<label>Sergeant</label>
+		<description>TEST</description>
+		<seniority>100</seniority>
+		<favorCost>9</favorCost>
+		<permitPointsAwarded>1</permitPointsAwarded>
+	</RoyalTitleDef>
+
+	<RoyalTitleDef ParentName="CFAR_TitleBase" MayRequire="Ludeon.RimWorld.Royalty">
+		<defName>CFAR_Lieutenant</defName>
+		<label>Lieutenant</label>
+		<description>TEST</description>
+		<seniority>200</seniority>
+		<favorCost>40</favorCost>
+		<permitPointsAwarded>2</permitPointsAwarded>
+		<bedroomRequirements>
+			<li Class="RoomRequirement_ForbiddenBuildings">
+				<labelKey>RoomRequirementNoProductionFacilities</labelKey>
+				<buildingTags><li>Production</li></buildingTags>
+			</li>
+			<li Class="RoomRequirement_ForbidAltars" MayRequire="Ludeon.RimWorld.Ideology">
+				<labelKey>RoomRequirementNoAltars</labelKey>
+			</li>
+			<li Class="RoomRequirement_ForbiddenBuildings">
+				<labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+				<buildingTags><li>Biotech</li></buildingTags>
+			</li>
+			<li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Anomaly">
+				<labelKey>RoomRequirementNoAnomalyBuildings</labelKey>
+				<buildingTags><li>Anomaly</li></buildingTags>
+			</li>
+		</bedroomRequirements>
+		<grantedAbilities>
+			<li>CFAR_FiringOrder</li>
+		</grantedAbilities>
+	</RoyalTitleDef>
+
+	<RoyalTitleDef ParentName="CFAR_TitleBase" MayRequire="Ludeon.RimWorld.Royalty">
+		<defName>CFAR_Commander</defName>
+		<label>Commander</label>
+		<description>TEST</description>
+		<seniority>300</seniority>
+		<favorCost>150</favorCost>
+		<permitPointsAwarded>2</permitPointsAwarded>
+		<bedroomRequirements>
+			<li Class="RoomRequirement_ForbiddenBuildings">
+				<labelKey>RoomRequirementNoProductionFacilities</labelKey>
+				<buildingTags><li>Production</li></buildingTags>
+			</li>
+			<li Class="RoomRequirement_ForbidAltars" MayRequire="Ludeon.RimWorld.Ideology">
+				<labelKey>RoomRequirementNoAltars</labelKey>
+			</li>
+			<li Class="RoomRequirement_ForbiddenBuildings">
+				<labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+				<buildingTags><li>Biotech</li></buildingTags>
+			</li>
+			<li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Anomaly">
+				<labelKey>RoomRequirementNoAnomalyBuildings</labelKey>
+				<buildingTags><li>Anomaly</li></buildingTags>
+			</li>
+		</bedroomRequirements>
+		<grantedAbilities>
+			<li>CFAR_FiringOrder</li>
+		</grantedAbilities>
+	</RoyalTitleDef>
+
+	<RoyalTitleDef ParentName="CFAR_TitleBase" MayRequire="Ludeon.RimWorld.Royalty">
+		<defName>CFAR_Captain</defName>
+		<label>Captain</label>
+		<description>TEST</description>
+		<seniority>400</seniority>
+		<favorCost>640</favorCost>
+		<permitPointsAwarded>2</permitPointsAwarded>
+		<bedroomRequirements>
+			<li Class="RoomRequirement_ForbiddenBuildings">
+				<labelKey>RoomRequirementNoProductionFacilities</labelKey>
+				<buildingTags><li>Production</li></buildingTags>
+			</li>
+			<li Class="RoomRequirement_ForbidAltars" MayRequire="Ludeon.RimWorld.Ideology">
+				<labelKey>RoomRequirementNoAltars</labelKey>
+			</li>
+			<li Class="RoomRequirement_ForbiddenBuildings">
+				<labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+				<buildingTags><li>Biotech</li></buildingTags>
+			</li>
+			<li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Anomaly">
+				<labelKey>RoomRequirementNoAnomalyBuildings</labelKey>
+				<buildingTags><li>Anomaly</li></buildingTags>
+			</li>
+		</bedroomRequirements>
+		<grantedAbilities>
+			<li>CFAR_FiringOrder</li>
+		</grantedAbilities>
+	</RoyalTitleDef>
+
+	<RoyalTitleDef ParentName="CFAR_TitleBase" MayRequire="Ludeon.RimWorld.Royalty">
+		<defName>CFAR_RearAdmiral</defName>
+		<label>Rear admiral</label>
+		<description>TEST</description>
+		<seniority>500</seniority>
+		<favorCost>3250</favorCost>
+		<permitPointsAwarded>1</permitPointsAwarded>
+		<bedroomRequirements>
+			<li Class="RoomRequirement_ForbiddenBuildings">
+				<labelKey>RoomRequirementNoProductionFacilities</labelKey>
+				<buildingTags><li>Production</li></buildingTags>
+			</li>
+			<li Class="RoomRequirement_ForbidAltars" MayRequire="Ludeon.RimWorld.Ideology">
+				<labelKey>RoomRequirementNoAltars</labelKey>
+			</li>
+			<li Class="RoomRequirement_ForbiddenBuildings">
+				<labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+				<buildingTags><li>Biotech</li></buildingTags>
+			</li>
+			<li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Anomaly">
+				<labelKey>RoomRequirementNoAnomalyBuildings</labelKey>
+				<buildingTags><li>Anomaly</li></buildingTags>
+			</li>
+		</bedroomRequirements>
+		<grantedAbilities>
+			<li>CFAR_FiringOrder</li>
+		</grantedAbilities>
+	</RoyalTitleDef>
+
+	<RoyalTitleDef ParentName="CFAR_TitleBase" MayRequire="Ludeon.RimWorld.Royalty">
+		<defName>CFAR_Admiral</defName>
+		<label>Admiral</label>
+		<description>TEST</description>
+		<seniority>600</seniority>
+		<favorCost>12500</favorCost>
+		<permitPointsAwarded>1</permitPointsAwarded>
+		<bedroomRequirements>
+			<li Class="RoomRequirement_ForbiddenBuildings">
+				<labelKey>RoomRequirementNoProductionFacilities</labelKey>
+				<buildingTags><li>Production</li></buildingTags>
+			</li>
+			<li Class="RoomRequirement_ForbidAltars" MayRequire="Ludeon.RimWorld.Ideology">
+				<labelKey>RoomRequirementNoAltars</labelKey>
+			</li>
+			<li Class="RoomRequirement_ForbiddenBuildings">
+				<labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+				<buildingTags><li>Biotech</li></buildingTags>
+			</li>
+			<li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Anomaly">
+				<labelKey>RoomRequirementNoAnomalyBuildings</labelKey>
+				<buildingTags><li>Anomaly</li></buildingTags>
+			</li>
+		</bedroomRequirements>
+		<grantedAbilities>
+			<li>CFAR_FiringOrder</li>
+		</grantedAbilities>
+	</RoyalTitleDef>
+</Defs>
