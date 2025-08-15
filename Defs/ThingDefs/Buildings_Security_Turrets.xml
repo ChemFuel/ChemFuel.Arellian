@@ -26,9 +26,15 @@
     <altitudeLayer>Building</altitudeLayer>
     <stealable>false</stealable>
     <rotatable>false</rotatable>
-    <thingCategories>
-      <li>BuildingsSecurity</li>
-    </thingCategories>
+		<blockLight>true</blockLight>
+		<holdsRoof>true</holdsRoof>
+		<canOverlapZones>false</canOverlapZones>
+		<passability>Impassable</passability>
+		<fillPercent>1</fillPercent>
+		<coversFloor>true</coversFloor>
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Flammability>0.7</Flammability>
@@ -38,9 +44,6 @@
 			<ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
 		</statBases>
 		<tickerType>Normal</tickerType>
-		<passability>Impassable</passability>
-		<fillPercent>1</fillPercent>
-		<coversFloor>true</coversFloor>
     <hasTooltip>true</hasTooltip>
     <stuffCategories>
       <li>Metallic</li>
@@ -52,15 +55,16 @@
       <ComponentIndustrial>2</ComponentIndustrial>
       <ComponentSpacer>3</ComponentSpacer>
     </costList>
-    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-    <designationCategory>Security</designationCategory>
-    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
-    <building>
-      <combatPower>45</combatPower>   <!-- same as a scavenger -->
-      <ai_combatDangerous>true</ai_combatDangerous>
-      <turretGunDef>Gun_MiniTurret</turretGunDef>
-      <turretBurstCooldownTime>4.8</turretBurstCooldownTime>
-    </building>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Security</designationCategory>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<building>
+			<combatPower>45</combatPower>   <!-- same as a scavenger -->
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<isPlaceOverableWall>true</isPlaceOverableWall>
+			<turretGunDef>Gun_CFAR_PDWTurret</turretGunDef>
+			<turretBurstCooldownTime>4.8</turretBurstCooldownTime>
+		</building>
     <placeWorkers>
       <li>PlaceWorker_TurretTop</li>
       <li>PlaceWorker_ShowTurretRadius</li>
