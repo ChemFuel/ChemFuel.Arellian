@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--======== Infantry Pulse ========-->
+
+	<SoundDef>
+		<defName>Shot_CFAR_PulsePistol</defName>  
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder"><clipFolderPath>Weapon/ChargeRifle</clipFolderPath></li>
+				</grains>
+				<pitchRange>1.95~2.05</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>Shot_CFAR_PulseRifle</defName>  
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder"><clipFolderPath>Weapon/ChargeRifle</clipFolderPath></li>
+				</grains>
+				<pitchRange>1.60~1.80</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+<!--======== Ship Weapons ========-->
+
+	<SoundDef>
+		<defName>Shot_CFAR_PulseRailgunS</defName>  
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>Weapon/ChargeLance/Fire</clipFolderPath>
+					</li>
+				</grains>
+				<pitchRange>1.95~2.05</pitchRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>Shot_CFAR_PulseRailgunS_Aiming</defName>
+		<sustain>true</sustain>
+		<context>MapOnly</context>
+		<maxSimultaneous>2</maxSimultaneous>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<tempoAffectedByGameSpeed>true</tempoAffectedByGameSpeed>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Weapon/HellsphereCannon/Hellsphere_Cannon_Warmup</clipPath>
+					</li>
+				</grains>
+				<pitchRange>1.95~2.05</pitchRange>
+				<volumeRange>20</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>Shot_CFAR_PulseRailgunM</defName>  
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>Weapon/ChargeLance/Fire</clipFolderPath>
+					</li>
+				</grains>
+				<pitchRange>1.60~1.80</pitchRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>Shot_CFAR_PulseRailgunM_Aiming</defName>
+		<sustain>true</sustain>
+		<context>MapOnly</context>
+		<maxSimultaneous>2</maxSimultaneous>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<tempoAffectedByGameSpeed>true</tempoAffectedByGameSpeed>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Weapon/HellsphereCannon/Hellsphere_Cannon_Warmup</clipPath>
+					</li>
+				</grains>
+				<pitchRange>1.60~1.80</pitchRange>
+				<volumeRange>40</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>Shot_CFAR_PulseRailgunL</defName>  
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>Weapon/ChargeLance/Fire</clipFolderPath>
+					</li>
+				</grains>
+				<pitchRange>1.45~1.55</pitchRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>Shot_CFAR_PulseRailgunL_Aiming</defName>
+		<sustain>true</sustain>
+		<context>MapOnly</context>
+		<maxSimultaneous>2</maxSimultaneous>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<tempoAffectedByGameSpeed>true</tempoAffectedByGameSpeed>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Weapon/HellsphereCannon/Hellsphere_Cannon_Warmup</clipPath>
+					</li>
+				</grains>
+				<pitchRange>1.45~1.55</pitchRange>
+				<volumeRange>60</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>Shot_CFAR_PulseGunM</defName>  
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Weapon/HellsphereCannon/Hellsphere_Cannon_Shot</clipPath>
+					</li>
+				</grains>
+				<pitchRange>1.60~1.80</pitchRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+</Defs>

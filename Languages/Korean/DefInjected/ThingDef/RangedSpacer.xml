@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+<!--================ BulletDefs ================-->
+	<!-- EN: charge lance shot 
+	<Bullet_ChargeLance.label>차지 랜스 투사체</Bullet_ChargeLance.label>-->
+  
+	<!-- EN: charge shot 
+	<Bullet_ChargeRifle.label>충전 탄환</Bullet_ChargeRifle.label>-->
+  
+	<!-- EN: pulse pistol -->
+	<Gun_CFAR_PulsePistol.label>펄스 권총</Gun_CFAR_PulsePistol.label>
+	<!-- EN: A light, accurate sidearm issued to Imperial officers and pilots. Lacks range and stopping power but excels in close quarters with punishing pulse blasts. -->
+	<Gun_CFAR_PulsePistol.description>제국군 장교와 조종사들에게 지급되는 작고 정밀한 권총. 사거리와 저지력은 부족하지만, 근거리에서는 강력한 펄스 파동으로 적을 제압합니다.</Gun_CFAR_PulsePistol.description>
+	<!-- EN: barrel -->
+	<Gun_CFAR_PulsePistol.tools.barrel.label>총열</Gun_CFAR_PulsePistol.tools.barrel.label>
+	<!-- EN: pulse pistol -->
+	<Gun_CFAR_PulsePistol.verbs.Verb_Shoot.label>펄스 권총</Gun_CFAR_PulsePistol.verbs.Verb_Shoot.label>
+
+</LanguageData>
