@@ -427,6 +427,9 @@
 			<AccuracyLong>0.30</AccuracyLong>
 			<RangedWeapon_Cooldown>2.40</RangedWeapon_Cooldown>
 		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.16</MoveSpeed>
+		</equippedStatOffsets>
 		<weaponTags>
 			<li>CFAR_Repeater</li>
 		</weaponTags>
@@ -451,6 +454,14 @@
 			</li>
 		</verbs>
 		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
 			<li>
 				<label>barrel</label>
 				<capacities>
@@ -536,6 +547,3 @@
 	</ThingDef>
 
 </Defs>
-
-
-
