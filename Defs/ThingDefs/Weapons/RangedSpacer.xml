@@ -186,14 +186,6 @@
 		</verbs>
 		<tools>
 			<li>
-				<label>grip</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-			<li>
 				<label>barrel</label>
 				<capacities>
 					<li>Blunt</li>
@@ -255,14 +247,6 @@
 			</li>
 		</verbs>
 		<tools>
-			<li>
-				<label>stock</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
 			<li>
 				<label>barrel</label>
 				<capacities>
@@ -552,3 +536,4 @@
 	</ThingDef>
 
 </Defs>
+
