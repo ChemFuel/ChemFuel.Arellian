@@ -264,7 +264,7 @@
 	<ThingDef ParentName="Base_CFAR_PulseGun">
 		<defName>Gun_CFAR_PulseRifle</defName>
 		<label>pulse rifle</label>
-		<description>The standard-issue Imperial pulse rifle. Balanced and reliable, it delivers stable energy shots with moderate recoil and accuracy at medium ranges. Effective across varied combat scenarios.</description>
+		<description>The standard-issue Imperial pulse rifle. Reliable and well-balanced, it delivers consistent shots with low recoil at medium ranges, making it effective in a wide range of combat situations.</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/CFAR_PulseRifle</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -396,7 +396,7 @@
 	<ThingDef ParentName="Base_CFAR_PulseGun">
 		<defName>Gun_CFAR_PulseRepeater</defName>
 		<label>pulse repeater</label>
-		<description>A pulse squad support weapon built for sustained suppressive fire. Fires continuous pulse streams with a high-capacity cell and reinforced cooling. Effective at area denial but cumbersome to maneuver.</description>
+		<description>A pulse squad support weapon designed for sustained suppressive fire. It fires continuous pulse streams using a high-capacity cell and reinforced cooling, making it effective for area denial, though cumbersome to maneuver.</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/CFAR_PulseRepeater</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -463,7 +463,7 @@
 	<ThingDef ParentName="Base_CFAR_PulseGun">
 		<defName>Gun_CFAR_PulseRailgun</defName>
 		<label>pulse railgun</label>
-		<description>A sniper variant of the pulse rifle, built for anti-armor precision strikes at long range. It fires concentrated plasma pulses that melt through both armor and flesh with ease. Effective at eliminating high-value targets, but cumbersome to maneuver.</description>
+		<description>A sniper variant of the pulse rifle, designed for long-range anti-armor precision. It fires concentrated plasma pulses that effortlessly melt through both armor and flesh. Highly effective at eliminating high-value targets, but cumbersome to maneuver.</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/CFAR_PulseRailgun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
