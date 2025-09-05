@@ -34,7 +34,7 @@
 		</graphicData>
 		<projectile>
 			<damageAmountBase>5</damageAmountBase>
-			<stoppingPower>1.5</stoppingPower>
+			<stoppingPower>0.3</stoppingPower>
 			<armorPenetrationBase>0.35</armorPenetrationBase>
 			<speed>75</speed>
 		</projectile>
@@ -536,5 +536,6 @@
 	</ThingDef>
 
 </Defs>
+
 
 
