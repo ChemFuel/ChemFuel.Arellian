@@ -3,7 +3,7 @@
 <!--================ BulletDefs ================-->
 
 	<ThingDef Name="Base_CFAR_PulseBullet" ParentName="BaseBullet" Abstract="True">
-		<label>plasma shot</label>
+		<label>pulse shot</label>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
@@ -55,6 +55,7 @@
 
 	<ThingDef Name="Bullet_CFAR_PulseRailgun" ParentName="Base_CFAR_PulseBullet">
 		<defName>Bullet_CFAR_PulseRailgunS</defName>
+		<label>pulse railgun shot</label>
 		<graphicData>
 			<texPath>Things/Projectile/ChargeLanceShot</texPath>
 		</graphicData>
@@ -185,7 +186,7 @@
 		</verbs>
 		<tools>
 			<li>
-				<label>stock</label>
+				<label>grip</label>
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
@@ -549,4 +550,5 @@
 			<li>CFAR_WeaponRangedHeavy</li>
 		</tradeTags>
 	</ThingDef>
+
 </Defs>
