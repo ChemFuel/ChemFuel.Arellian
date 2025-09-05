@@ -23,7 +23,7 @@
 	<!-- EN: pulse blaster -->
 	<Gun_CFAR_PulseBlaster.label>펄스 블라스터</Gun_CFAR_PulseBlaster.label>
 	<!-- EN: A close-quarter scatter blaster issued to Imperial shock troopers. While it lacks range and anti-armor effectiveness, it excels at shredding targets in close combat. -->
-	<Gun_CFAR_PulseBlaster.description>제국군 충격 부대원에게 지급되는 근접전용 산탄 블래스터. 사거리와 대-장갑 관통력은 부족하지만, 근거리에서 대상을 효과적으로 분쇄합니다.</Gun_CFAR_PulseBlaster.description>
+	<Gun_CFAR_PulseBlaster.description>제국군 충격 부대원에게 지급되는 근접전용 산탄 블래스터. 사거리와 대장갑 관통력은 부족하지만, 근거리에서 대상을 효과적으로 분쇄합니다.</Gun_CFAR_PulseBlaster.description>
 	<!-- EN: barrel -->
 	<Gun_CFAR_PulseBlaster.tools.barrel.label>총열</Gun_CFAR_PulseBlaster.tools.barrel.label>
 	<!-- EN: pulse blaster -->
@@ -40,5 +40,6 @@
 	<!-- EN: pulse rifle -->
 	<Gun_CFAR_PulseRifle.verbs.Verb_Shoot.label>펄스 소총</Gun_CFAR_PulseRifle.verbs.Verb_Shoot.label>
 </LanguageData>
+
 
 
