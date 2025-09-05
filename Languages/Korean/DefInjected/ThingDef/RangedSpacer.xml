@@ -39,4 +39,31 @@
 	<Gun_CFAR_PulseRifle.tools.barrel.label>총열</Gun_CFAR_PulseRifle.tools.barrel.label>
 	<!-- EN: pulse rifle -->
 	<Gun_CFAR_PulseRifle.verbs.Verb_Shoot.label>펄스 소총</Gun_CFAR_PulseRifle.verbs.Verb_Shoot.label>
+
+	<!-- EN: pulse carbine -->
+	<Gun_CFAR_PulseCarbine.label>펄스 카빈</Gun_CFAR_PulseCarbine.label>
+	<!-- EN: A compact variant of the pulse rifle, optimized for speed and handling. Fires rapid bursts with minimal recoil, ideal for close-quarters and shipboard operations. -->
+	<Gun_CFAR_PulseCarbine.description>WIP</Gun_CFAR_PulseCarbine.description>
+	<!-- EN: barrel -->
+	<Gun_CFAR_PulseCarbine.tools.barrel.label>총열</Gun_CFAR_PulseCarbine.tools.barrel.label>
+	<!-- EN: pulse carbine -->
+	<Gun_CFAR_PulseCarbine.verbs.Verb_Shoot.label>펄스 카빈</Gun_CFAR_PulseCarbine.verbs.Verb_Shoot.label>
+
+	<!-- EN: pulse repeater -->
+	<Gun_CFAR_PulseRepeater.label>펄스 리피터</Gun_CFAR_PulseRepeater.label>
+	<!-- EN: A pulse squad support weapon built for sustained suppressive fire. Fires continuous pulse streams with a high-capacity cell and reinforced cooling. Effective at area denial but cumbersome to maneuver. -->
+	<Gun_CFAR_PulseRepeater.description>지속적인 제압 사격을 위해 설계된 분대지원화기. 고용량 파워 셀과 개선된 냉각 시스템으로 연속적인 펄스 탄막을 살포합니다. 영역 차단에 효과적이지만, 무겁고 이동이 불편합니다.</Gun_CFAR_PulseRepeater.description>
+	<!-- EN: barrel -->
+	<Gun_CFAR_PulseRepeater.tools.barrel.label>총열</Gun_CFAR_PulseRepeater.tools.barrel.label>
+	<!-- EN: pulse repeater -->
+	<Gun_CFAR_PulseRepeater.verbs.Verb_Shoot.label>펄스 리피터</Gun_CFAR_PulseRepeater.verbs.Verb_Shoot.label>
+
+	<!-- EN: pulse railgun -->
+	<Gun_CFAR_PulseRailgun.label>펄스 레일건</Gun_CFAR_PulseRailgun.label>
+	<!-- EN: A sniper variant of the pulse rifle, built for anti-armor precision strikes at long range. It fires concentrated plasma pulses that melt through both armor and flesh with ease. Effective at eliminating high-value targets, but cumbersome to maneuver. -->
+	<Gun_CFAR_PulseRifle.description>장거리에서 대장갑 정밀 타격을 위해 개량된 펄스 소총. 갑옷과 육체를 손쉽게 녹이는 강력한 플라즈마 펄스를 발사합니다. 고가치 표적을 제거하는 데 효과적이지만, 무겁고 이동이 불편합니다.</Gun_CFAR_PulseRifle.description>
+	<!-- EN: barrel -->
+	<Gun_CFAR_PulseRifle.tools.barrel.label>총열</Gun_CFAR_PulseRifle.tools.barrel.label>
+	<!-- EN: pulse railgun -->
+	<Gun_CFAR_PulseRifle.verbs.Verb_Shoot.label>펄스 레일건</Gun_CFAR_PulseRifle.verbs.Verb_Shoot.label>
 </LanguageData>
