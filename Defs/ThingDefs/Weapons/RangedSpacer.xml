@@ -359,7 +359,7 @@
 			<li>CFAR_Carbine</li>
 		</weaponTags>
 		<costList>
-			<Chemfuel>10</Chemfuel>
+			<Chemfuel>15</Chemfuel>
 			<Plasteel>40</Plasteel>
 			<ComponentIndustrial>1</ComponentIndustrial>
 			<ComponentSpacer>2</ComponentSpacer>
@@ -380,14 +380,6 @@
 		</verbs>
 		<tools>
 			<li>
-				<label>stock</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-			<li>
 				<label>barrel</label>
 				<capacities>
 					<li>Blunt</li>
@@ -404,7 +396,7 @@
 	<ThingDef ParentName="Base_CFAR_PulseGun">
 		<defName>Gun_CFAR_PulseRepeater</defName>
 		<label>pulse repeater</label>
-		<description>A heavy squad support weapon built for sustained suppressive fire. Fires continuous pulse streams with a high-capacity cell and reinforced cooling. Effective at area denial but cumbersome to maneuver.</description>
+		<description>A pulse squad support weapon built for sustained suppressive fire. Fires continuous pulse streams with a high-capacity cell and reinforced cooling. Effective at area denial but cumbersome to maneuver.</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/CFAR_PulseRepeater</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -420,7 +412,7 @@
 		</recipeMaker>
 		<statBases>
 			<WorkToMake>60000</WorkToMake>
-			<Mass>5.0</Mass>
+			<Mass>6.3</Mass>
 			<AccuracyTouch>0.45</AccuracyTouch>
 			<AccuracyShort>0.65</AccuracyShort>
 			<AccuracyMedium>0.45</AccuracyMedium>
@@ -428,14 +420,14 @@
 			<RangedWeapon_Cooldown>2.40</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.16</MoveSpeed>
+			<MoveSpeed>-0.08</MoveSpeed>
 		</equippedStatOffsets>
 		<weaponTags>
 			<li>CFAR_Repeater</li>
 		</weaponTags>
 		<costList>
-			<Chemfuel>25</Chemfuel>
-			<Plasteel>55</Plasteel>
+			<Chemfuel>30</Chemfuel>
+			<Plasteel>50</Plasteel>
 			<ComponentIndustrial>4</ComponentIndustrial>
 			<ComponentSpacer>3</ComponentSpacer>
 		</costList>
@@ -455,14 +447,6 @@
 		</verbs>
 		<tools>
 			<li>
-				<label>stock</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-			<li>
 				<label>barrel</label>
 				<capacities>
 					<li>Blunt</li>
@@ -479,7 +463,7 @@
 	<ThingDef ParentName="Base_CFAR_PulseGun">
 		<defName>Gun_CFAR_PulseRailgun</defName>
 		<label>pulse railgun</label>
-		<description>WIP</description>
+		<description>A sniper variant of the pulse rifle, built for anti-armor precision strikes at long range. It fires concentrated plasma pulses that melt through both armor and flesh with ease. Effective at eliminating high-value targets, but cumbersome to maneuver.</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/CFAR_PulseRailgun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -493,22 +477,25 @@
 			<displayPriority>1175</displayPriority>
 		</recipeMaker>
 		<statBases>
-			<WorkToMake>50000</WorkToMake>
-			<Mass>4.25</Mass>
+			<WorkToMake>75000</WorkToMake>
+			<Mass>5.75</Mass>
 			<AccuracyTouch>0.70</AccuracyTouch>
 			<AccuracyShort>0.85</AccuracyShort>
 			<AccuracyMedium>0.97</AccuracyMedium>
 			<AccuracyLong>0.95</AccuracyLong>
 			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
 		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.06</MoveSpeed>
+		</equippedStatOffsets>
 		<weaponTags>
 			<li>CFAR_Railgun</li>
 		</weaponTags>
 		<costList>
-			<Chemfuel>20</Chemfuel>
-			<Plasteel>40</Plasteel>
-			<ComponentIndustrial>2</ComponentIndustrial>
-			<ComponentSpacer>2</ComponentSpacer>
+			<Chemfuel>25</Chemfuel>
+			<Plasteel>60</Plasteel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<ComponentSpacer>4</ComponentSpacer>
 		</costList>
 		<verbs>
 			<li>
@@ -525,14 +512,6 @@
 		</verbs>
 		<tools>
 			<li>
-				<label>stock</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-			<li>
 				<label>barrel</label>
 				<capacities>
 					<li>Blunt</li>
@@ -545,5 +524,4 @@
 			<li>CFAR_WeaponRangedHeavy</li>
 		</tradeTags>
 	</ThingDef>
-
 </Defs>
