@@ -1,19 +1,46 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 <!--================ BulletDefs ================-->
-	<!-- EN: charge lance shot 
-	<Bullet_ChargeLance.label>차지 랜스 투사체</Bullet_ChargeLance.label>-->
-  
-	<!-- EN: charge shot 
-	<Bullet_ChargeRifle.label>충전 탄환</Bullet_ChargeRifle.label>-->
-  
+	<!-- EN: pulse shot -->
+	<Bullet_CFAR_PulsePistol.label>펄스 탄환</Bullet_CFAR_PulsePistol.label>
+	<Bullet_CFAR_PulseBlaster.label>펄스 탄환</Bullet_CFAR_PulseBlaster.label>
+	<Bullet_CFAR_PulseRifle.label>펄스 탄환</Bullet_CFAR_PulseRifle.label>
+	<Bullet_CFAR_PulseRailgunS.label>펄스 레일건 투사체</Bullet_CFAR_PulseRailgunS.label>
+	<Bullet_CFAR_PulseRailgunM.label>펄스 레일건 투사체</Bullet_CFAR_PulseRailgunM.label>
+	<Bullet_CFAR_PulseRailgunL.label>펄스 레일건 투사체</Bullet_CFAR_PulseRailgunL.label>
+
+<!--================ Basic Spacer Engineering ================-->
+
 	<!-- EN: pulse pistol -->
 	<Gun_CFAR_PulsePistol.label>펄스 권총</Gun_CFAR_PulsePistol.label>
 	<!-- EN: A light, accurate sidearm issued to Imperial officers and pilots. Lacks range and stopping power but excels in close quarters with punishing pulse blasts. -->
 	<Gun_CFAR_PulsePistol.description>제국군 장교와 조종사들에게 지급되는 작고 정밀한 권총. 사거리와 저지력은 부족하지만, 근거리에서는 강력한 펄스 파동으로 적을 제압합니다.</Gun_CFAR_PulsePistol.description>
+	<!-- EN: grip -->
+	<Gun_CFAR_PulsePistol.tools.grip.label>손잡이</Gun_CFAR_PulsePistol.tools.grip.label>
 	<!-- EN: barrel -->
 	<Gun_CFAR_PulsePistol.tools.barrel.label>총열</Gun_CFAR_PulsePistol.tools.barrel.label>
 	<!-- EN: pulse pistol -->
 	<Gun_CFAR_PulsePistol.verbs.Verb_Shoot.label>펄스 권총</Gun_CFAR_PulsePistol.verbs.Verb_Shoot.label>
 
+	<!-- EN: pulse blaster -->
+	<Gun_CFAR_PulseBlaster.label>펄스 블라스터</Gun_CFAR_PulseBlaster.label>
+	<!-- EN: WIP -->
+	<Gun_CFAR_PulseBlaster.description>WIP</Gun_CFAR_PulseBlaster.description>
+	<!-- EN: stock -->
+	<Gun_CFAR_PulseBlaster.tools.stock.label>개머리판</Gun_CFAR_PulseBlaster.tools.stock.label>
+	<!-- EN: barrel -->
+	<Gun_CFAR_PulseBlaster.tools.barrel.label>총열</Gun_CFAR_PulseBlaster.tools.barrel.label>
+	<!-- EN: pulse blaster -->
+	<Gun_CFAR_PulseBlaster.verbs.Verb_Shoot.label>펄스 블라스터</Gun_CFAR_PulseBlaster.verbs.Verb_Shoot.label>
+
+	<!-- EN: pulse rifle -->
+	<Gun_CFAR_PulseRifle.label>펄스 소총</Gun_CFAR_PulseRifle.label>
+	<!-- EN: The standard-issue Imperial pulse rifle. Balanced and reliable, it delivers stable energy shots with moderate recoil and accuracy at medium ranges. Effective across varied combat scenarios. -->
+	<Gun_CFAR_PulseRifle.description>WIP</Gun_CFAR_PulseRifle.description>
+	<!-- EN: stock -->
+	<Gun_CFAR_PulseRifle.tools.stock.label>개머리판</Gun_CFAR_PulseRifle.tools.stock.label>
+	<!-- EN: barrel -->
+	<Gun_CFAR_PulseRifle.tools.barrel.label>총열</Gun_CFAR_PulseRifle.tools.barrel.label>
+	<!-- EN: pulse rifle -->
+	<Gun_CFAR_PulseRifle.verbs.Verb_Shoot.label>펄스 소총</Gun_CFAR_PulseRifle.verbs.Verb_Shoot.label>
 </LanguageData>
