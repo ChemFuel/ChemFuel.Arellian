@@ -8,7 +8,11 @@
 		<graphicData>
 			<texPath>Things/Projectile/Grenade</texPath>
 		</graphicData>
-		<projectile><damageDef>CFAR_Thermal</damageDef></projectile>
+		<projectile>
+			<damageDef>CFAR_Thermal</damageDef>
+			<explosionRadius>2.4</explosionRadius>
+			<speed>36</speed>
+		</projectile>
 	</ThingDef>
 
 <!--================ BulletDefs ================-->
@@ -536,4 +540,5 @@
 		</tradeTags>
 	</ThingDef>
 </Defs>
+
 
