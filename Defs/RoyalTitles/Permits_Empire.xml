@@ -8,7 +8,7 @@
 		<minTitle>CFAR_Sergeant</minTitle>
 		<faction>CFAR_Empire</faction>
 		<permitPointCost>1</permitPointCost>
-		<cooldownDays>15</cooldownDays>
+		<cooldownDays>30</cooldownDays>
 		<usableOnWorldMap>true</usableOnWorldMap>
 		<royalAid>
 			<targetingRange>39.9</targetingRange>
@@ -241,4 +241,5 @@
 			<explosionCount>12</explosionCount>
 		</royalAid>
 	</RoyalTitlePermitDef>
+
 </Defs>
