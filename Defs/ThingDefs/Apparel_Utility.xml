@@ -76,19 +76,6 @@
 		</tradeTags>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseFragGrenadeProjectile">
-		<defName>Proj_CFAR_ThermalDetonator</defName>
-		<label>thermal detonator</label>
-		<graphicData>
-			<texPath>Things/Projectile/Grenade</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<projectile>
-			<explosionRadius>2.4</explosionRadius>
-			<speed>36</speed>
-		</projectile>
-	</ThingDef>
-
 <!--======== Jump Pack ========-->
 
 	<ThingDef ParentName="ApparelBase" MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Odyssey">
