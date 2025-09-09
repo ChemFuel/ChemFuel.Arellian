@@ -2,6 +2,7 @@
 <Defs>
 	<DamageDef ParentName="Bullet">
 		<defName>CFAR_Pulse</defName>
+		<label>pulse</label>
 		<hediff>Burn</hediff>
 		<hediffSkin>Gunshot</hediffSkin>
 		<hediffSolid>Crack</hediffSolid>
@@ -20,3 +21,4 @@
 		<corpseDamageFactor>0.5</corpseDamageFactor>
 	</DamageDef>
 </Defs>
+
