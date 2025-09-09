@@ -105,8 +105,8 @@
 <!-- Ideology-->
 
 		<fixedIdeo>true</fixedIdeo>
-		<ideoName>Imperial Militocracy</ideoName>
-		<ideoDescription>In this society, the military is not merely an institution but the core essence of existence. Every facet of life—political, social, and economic—is aligned with the singular objective of enhancing and expanding military strength. Citizenship itself is equated with military service, and an individual's value is measured by their contribution to the state’s military power.</ideoDescription>
+		<ideoName>The Imperial Codex</ideoName>
+		<ideoDescription>The Imperial Codex binds the Arellian Empire in war and rank. Only officers earn nobility, only conquest earns honor. Obedience is absolute, retreat is treason, and the stars exist to be ruled by the Eternal Armada.\n\nGlory to the Empire!</ideoDescription>
 		<deityPresets>
 			<li>
 				<nameType>
@@ -184,3 +184,4 @@
 	</FactionDef>
 
 </Defs>
+
