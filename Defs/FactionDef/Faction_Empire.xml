@@ -4,8 +4,8 @@
 		<techLevel>Ultra</techLevel>
 		<defName>CFAR_Empire</defName>
 		<label>Arellian empire</label>
-		<fixedName>The Arellian Empire</fixedName>
-		<description>Hailing from the Arellia Sector, the Arellian Federation is governed by a militaristic authoritarian regime.\n\nDue to the versatile and steadfast nature of Arellians, combined with their unyielding discipline, the Imperial Armed Forces are a force to be reckoned with.</description>
+		<fixedName>Arellian grand armada</fixedName>
+		<description>WIP</description>
 		<categoryTag>CFAR_ImperialTag</categoryTag>
 		<pawnSingular>imperial</pawnSingular>
 		<pawnsPlural>imperials</pawnsPlural>
@@ -80,21 +80,24 @@
 					<CFAR_Trooper>5</CFAR_Trooper>
 					<CFAR_HeavyTrooper>2</CFAR_HeavyTrooper>
 					<CFAR_SniperTrooper>2</CFAR_SniperTrooper>
-					<CFAR_ShockTrooper>1</CFAR_ShockTrooper>
-					<CFAR_GravTrooper MayRequire="Ludeon.RimWorld.Royalty">1</CFAR_GravTrooper>
+					<CFAR_ShockTrooper>2</CFAR_ShockTrooper>
 					<CFAR_Lieutenant>0.5</CFAR_Lieutenant>
 				</options>
 			</li>
 			<!--<li>
 				<kindDef>Peaceful</kindDef>
 				<options>
-					<CFAR_Trooper>10</CFAR_Trooper>
+					<CFAR_Trooper>1</CFAR_Trooper>
 				</options>
 			</li>-->
 			<li>
 				<kindDef>Settlement</kindDef>
 				<options>
-					<CFAR_Trooper>10</CFAR_Trooper>
+					<CFAR_Trooper>5</CFAR_Trooper>
+					<CFAR_HeavyTrooper>2</CFAR_HeavyTrooper>
+					<CFAR_SniperTrooper>2</CFAR_SniperTrooper>
+					<CFAR_ShockTrooper>2</CFAR_ShockTrooper>
+					<CFAR_Lieutenant>0.5</CFAR_Lieutenant>
 				</options>
 			</li>
 		</pawnGroupMakers>
@@ -173,10 +176,11 @@
 		<royalTitleInheritanceRelations MayRequire="Ludeon.RimWorld.Royalty"></royalTitleInheritanceRelations>
 
 		<xenotypeSet><xenotypeChances>
-			<CFAR_Arellian>999</CFAR_Arellian>
+			<CFAR_Arellian MayRequire="Ludeon.RimWorld.Biotech">999</CFAR_Arellian>
 		</xenotypeChances></xenotypeSet>
 		<disallowedRaidAgeRestrictions>
-			<li>Children</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Children</li>
 		</disallowedRaidAgeRestrictions>
 	</FactionDef>
+
 </Defs>
