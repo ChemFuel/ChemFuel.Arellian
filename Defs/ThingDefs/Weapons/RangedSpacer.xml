@@ -2,6 +2,17 @@
 <Defs>
 <!--================ BulletDefs ================-->
 
+	<ThingDef ParentName="BaseFragGrenadeProjectile">
+		<defName>Proj_CFAR_ThermalDetonator</defName>
+		<label>thermal detonator</label>
+		<graphicData>
+			<texPath>Things/Projectile/Grenade</texPath>
+		</graphicData>
+		<projectile><damageDef>CFAR_Thermal</damageDef></projectile>
+	</ThingDef>
+
+<!--================ BulletDefs ================-->
+
 	<ThingDef Name="Base_CFAR_PulseBullet" ParentName="BaseBullet" Abstract="True">
 		<label>pulse shot</label>
 		<graphicData>
@@ -525,3 +536,4 @@
 		</tradeTags>
 	</ThingDef>
 </Defs>
+
