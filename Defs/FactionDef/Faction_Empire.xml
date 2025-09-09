@@ -106,7 +106,7 @@
 
 		<fixedIdeo>true</fixedIdeo>
 		<ideoName>The Imperial Codex</ideoName>
-		<ideoDescription>The Imperial Codex binds the Arellian Empire in war and rank. Only officers earn nobility, only conquest earns honor. Obedience is absolute, retreat is treason, and the stars exist to be ruled by the Eternal Armada.\n\nGlory to the Empire!</ideoDescription>
+		<ideoDescription>The Imperial Codex establishes rank through war and unites the Arellian Empire as one. Only officers may become nobles, and under the Empress’ command, endless conquest is the only honorable life. Obedience is absolute, retreat is treason, and the stars exist to be ruled by the Imperial Fleet.\n\nGlory to the Empire!</ideoDescription>
 		<deityPresets>
 			<li>
 				<nameType>
@@ -184,4 +184,5 @@
 	</FactionDef>
 
 </Defs>
+
 
