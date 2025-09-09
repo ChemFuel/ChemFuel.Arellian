@@ -13,7 +13,7 @@
 		<defName>CFAR_LeaderTitleMakerEmpire</defName>
 		<rulePack>
 			<rulesStrings>
-				<li>r_leaderTitle->Commander</li>
+				<li>r_leaderTitle->Grand Admiral</li>
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
@@ -21,11 +21,12 @@
 	<RulePackDef>
 		<defName>CFAR_NamerIdeo</defName>
 		<rulePack><rulesStrings>
-			<li>r_ideoName->Militocracy</li><!--군국주의-->
+			<li>r_ideoName->The Imperial Codex</li><!--제국 율서-->
 
-			<li>r_ideoAdjective->militaristic</li><!--군사적-->
+			<li>r_ideoAdjective->imperial</li>
+			<li>r_ideoAdjective->honorable</li>
 
-			<li>r_memberName->soldier</li><!--군인-->
+			<li>r_memberName->imperial</li>
 
 			<li>creed(priority=1)->[memeCreed]</li>
 
