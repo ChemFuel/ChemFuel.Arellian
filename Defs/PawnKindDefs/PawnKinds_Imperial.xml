@@ -232,33 +232,6 @@
 		<defName>CFAR_ShockTrooper_Caravan</defName>
 		<combatPower>50</combatPower>
 	</PawnKindDef>
-	
-	<PawnKindDef ParentName="CFAR_SoldierBase" MayRequire="Ludeon.RimWorld.Royalty">
-		<defName>CFAR_GravTrooper</defName>
-		<label>grav trooper</label>
-		<titleRequired>CFAR_Sergeant</titleRequired>
-		<aiAvoidCover>true</aiAvoidCover>
-		<minGenerationAge>22</minGenerationAge>
-		<maxGenerationAge>35</maxGenerationAge>
-		<apparelRequired>
-			<li>Apparel_CFAR_TrooperHelmet</li>
-			<li>Apparel_CFAR_TrooperArmor</li>
-			<li MayRequire="Ludeon.RimWorld.Royalty">Apparel_CFAR_GravPack</li>
-		</apparelRequired>
-		<weaponTags>
-			<li>CFAR_Carbine</li>
-		</weaponTags>
-		<backstoryFiltersOverride>
-			<li>
-				<categoriesChildhood>
-					<li>CFAR_Child</li>
-				</categoriesChildhood>
-				<categoriesAdulthood>
-					<li>CFAR_GravTrooper</li>
-				</categoriesAdulthood>
-			</li>
-		</backstoryFiltersOverride>
-	</PawnKindDef>
 
 <!-- Role : Officer - Low -->
 	<PawnKindDef ParentName="CFAR_SoldierBase">
