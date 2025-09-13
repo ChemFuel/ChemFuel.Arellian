@@ -3,8 +3,7 @@
 	<DamageDef ParentName="Bullet">
 		<defName>CFAR_Pulse</defName>
 		<label>pulse</label>
-		<hediff>Burn</hediff>
-		<hediffSkin>Gunshot</hediffSkin>
+		<hediff>Gunshot</hediff>
 		<hediffSolid>Crack</hediffSolid>
 		<impactSoundType>Electric</impactSoundType>
 	</DamageDef>
@@ -14,7 +13,7 @@
 		<hediff>Shredded</hediff>
 		<hediffSkin>Burn</hediffSkin>
 		<hediffSolid>Crack</hediffSolid>
-		<defaultDamage>80</defaultDamage>
+		<defaultDamage>50</defaultDamage>
 		<armorCategory>Sharp</armorCategory>
 		<defaultArmorPenetration>0.60</defaultArmorPenetration>
 		<defaultStoppingPower>3</defaultStoppingPower>
