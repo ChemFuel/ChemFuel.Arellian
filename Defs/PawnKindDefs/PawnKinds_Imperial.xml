@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<PawnKindDef Name="CFAR_ImperialPawnBase" Abstract="True">
+
+<!--================================ Base ================================-->
+
+	<PawnKindDef Name="CFAR_ImperialBase" Abstract="True">
 		<race>Human</race>
 		<defaultFactionType>CFAR_Empire</defaultFactionType>
-		<initialResistanceRange>10~20</initialResistanceRange>
-		<initialWillRange>1~2</initialWillRange>
 		<chemicalAddictionChance>0</chemicalAddictionChance>
 		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
 		<combatEnhancingDrugsCount>0~0</combatEnhancingDrugsCount>
@@ -12,21 +13,48 @@
 		<disallowedTraits>
 			<li>Brawler</li>
 		</disallowedTraits>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<stuff>Synthread</stuff>
+			</li>
+		</specificApparelRequirements>
 		<useFactionXenotypes>false</useFactionXenotypes>
 		<xenotypeSet><xenotypeChances>
 			<CFAR_Arellian>999</CFAR_Arellian>
 		</xenotypeChances></xenotypeSet>
 	</PawnKindDef>
 
-<!--================================ Trooper ================================-->
-
-	<PawnKindDef Name="CFAR_SoldierBase" ParentName="CFAR_ImperialPawnBase" Abstract="True">
-		<combatPower>150</combatPower>
-		<minApparelQuality>Normal</minApparelQuality>
+	<PawnKindDef Name="CFAR_CivilianBase" ParentName="CFAR_ImperialBase" Abstract="True">
+		<combatPower>50</combatPower>
+		<minApparelQuality>Poor</minApparelQuality>
+		<initialResistanceRange>5~10</initialResistanceRange>
+		<initialWillRange>0~1</initialWillRange>
 		<apparelTags>
 			<li>CFAR_Soldier</li>
 		</apparelTags>
-		<apparelColor>(100,100,100)</apparelColor>
+		<apparelColor>(255,255,255)</apparelColor>
+		<apparelMoney>5000~5000</apparelMoney>
+		<weaponMoney>9999~9999</weaponMoney>
+		<techHediffsTags>
+			<li>Simple</li>
+			<li>ImplantEmpireCommon</li>
+		</techHediffsTags>
+		<techHediffsMoney>50~500</techHediffsMoney>
+		<techHediffsChance>0.06</techHediffsChance>
+	</PawnKindDef>
+
+	<PawnKindDef Name="CFAR_SoldierBase" ParentName="CFAR_ImperialBase" Abstract="True">
+		<combatPower>150</combatPower>
+		<minApparelQuality>Normal</minApparelQuality>
+		<initialResistanceRange>10~20</initialResistanceRange>
+		<initialWillRange>1~2</initialWillRange>
+		<minGenerationAge>21</minGenerationAge>
+		<maxGenerationAge>35</maxGenerationAge>
+		<apparelTags>
+			<li>CFAR_Soldier</li>
+		</apparelTags>
+		<apparelColor>(255,255,255)</apparelColor>
 		<apparelMoney>5000~5000</apparelMoney>
 		<weaponMoney>9999~9999</weaponMoney>
 		<techHediffsTags>
@@ -36,37 +64,18 @@
 		<techHediffsMoney>50~500</techHediffsMoney>
 		<techHediffsChance>0.06</techHediffsChance>
 		<apparelRequired>
+			<li>Apparel_Pants</li>
+			<li>Apparel_BasicShirt</li>
+			<li>Apparel_CFAR_TrooperArmor</li>
 		</apparelRequired>
 		<techHediffsRequired>
 			<li>CFAR_CombatChip</li>
 		</techHediffsRequired>
-		<!--<inventoryOptions>
-			<subOptionsChooseOne>
-				<li>
-					<thingDef>CFAR_Stimpack</thingDef>
-					<countRange>-1~1</countRange>
-				</li>
-			</subOptionsChooseOne>
-		</inventoryOptions>
-		<specificApparelRequirements>
-			<li>
-				<apparelLayer>Middle</apparelLayer>
-				<stuff>Plasteel</stuff>
-			</li>
-			<li>
-				<apparelLayer>Overhead</apparelLayer>
-				<stuff>Plasteel</stuff>
-			</li>
-			<li>
-				<bodyPartGroup>UpperHead</bodyPartGroup>
-				<styleDef MayRequire="Ludeon.RimWorld.Ideology">CFAR_FlakHelmet</styleDef>
-			</li>
-		</specificApparelRequirements>-->
 	</PawnKindDef>
 
-<!--================ Naval Infantry Corps ================-->
+<!--================================ Trooper - Regular ================================-->
 
-<!--======== Special ========-->
+<!--================ Recruit ================-->
 
 	<PawnKindDef ParentName="CFAR_SoldierBase">
 		<defName>CFAR_Recruit</defName>
@@ -77,10 +86,6 @@
 		<forceNormalGearQuality>true</forceNormalGearQuality>
 		<minGenerationAge>20</minGenerationAge>
 		<maxGenerationAge>22</maxGenerationAge>
-		<apparelRequired>
-			<li>Apparel_Pants</li>
-			<li>Apparel_BasicShirt</li>
-		</apparelRequired>
 		<weaponMoney Inherit="False" />
 		<backstoryFiltersOverride>
 			<li>
@@ -96,7 +101,7 @@
 		<initialWillRange>0.5~1.5</initialWillRange>
 	</PawnKindDef>
 
-<!--======== Regular ========-->
+<!--================ Trooper ================-->
 
 	<PawnKindDef ParentName="CFAR_SoldierBase" Name="CFAR_TrooperBase">
 		<defName>CFAR_Trooper</defName>
@@ -105,11 +110,8 @@
 			<li>CFAR_Trooper</li>
 			<li>CFAR_Sergeant</li>
 		</titleSelectOne>
-		<minGenerationAge>21</minGenerationAge>
-		<maxGenerationAge>35</maxGenerationAge>
 		<apparelRequired>
 			<li>Apparel_CFAR_TrooperHelmet</li>
-			<li>Apparel_CFAR_TrooperArmor</li>
 		</apparelRequired>
 		<weaponTags>
 			<li>CFAR_Rifle</li>
@@ -131,6 +133,8 @@
 		<combatPower>50</combatPower>
 	</PawnKindDef>
 
+<!--================ Heavy ================-->
+
 	<PawnKindDef ParentName="CFAR_SoldierBase" Name="CFAR_HeavyTrooperBase">
 		<defName>CFAR_HeavyTrooper</defName>
 		<label>heavy trooper</label>
@@ -138,12 +142,8 @@
 			<li>CFAR_Trooper</li>
 			<li>CFAR_Sergeant</li>
 		</titleSelectOne>
-		<aiAvoidCover>true</aiAvoidCover>
-		<minGenerationAge>20</minGenerationAge>
-		<maxGenerationAge>35</maxGenerationAge>
 		<apparelRequired>
 			<li>Apparel_CFAR_TrooperHelmet</li>
-			<li>Apparel_CFAR_TrooperArmor</li>
 		</apparelRequired>
 		<weaponTags>
 			<li>CFAR_Repeater</li>
@@ -154,7 +154,7 @@
 					<li>CFAR_Child</li>
 				</categoriesChildhood>
 				<categoriesAdulthood>
-					<li>CFAR_HeavyTrooper</li>
+					<li>CFAR_Trooper</li>
 				</categoriesAdulthood>
 			</li>
 		</backstoryFiltersOverride>
@@ -165,52 +165,19 @@
 		<combatPower>50</combatPower>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="CFAR_SoldierBase" Name="CFAR_SniperTrooperBase">
-		<defName>CFAR_SniperTrooper</defName>
-		<label>sniper trooper</label>
-		<titleSelectOne>
-			<li>CFAR_Trooper</li>
-			<li>CFAR_Sergeant</li>
-		</titleSelectOne>
-		<minGenerationAge>20</minGenerationAge>
-		<maxGenerationAge>35</maxGenerationAge>
-		<apparelRequired>
-			<li>Apparel_CFAR_TrooperHelmet</li>
-			<li>Apparel_CFAR_TrooperArmor</li>
-		</apparelRequired>
-		<weaponTags>
-			<li>CFAR_Railgun</li>
-		</weaponTags>
-		<backstoryFiltersOverride>
-			<li>
-				<categoriesChildhood>
-					<li>CFAR_Child</li>
-				</categoriesChildhood>
-				<categoriesAdulthood>
-					<li>CFAR_SniperTrooper</li>
-				</categoriesAdulthood>
-			</li>
-		</backstoryFiltersOverride>
-	</PawnKindDef>
+<!--================================ Trooper - Elite ================================-->
 
-	<PawnKindDef ParentName="CFAR_SniperTrooperBase">
-		<defName>CFAR_SniperTrooper_Caravan</defName>
-		<combatPower>50</combatPower>
-	</PawnKindDef>
-
-<!--======== Elite ========-->
+<!--================ Shock ================-->
 
 	<PawnKindDef ParentName="CFAR_SoldierBase" Name="CFAR_ShockTrooperBase">
 		<defName>CFAR_ShockTrooper</defName>
 		<label>shock trooper</label>
 		<titleRequired>CFAR_Sergeant</titleRequired>
-		<minGenerationAge>22</minGenerationAge>
-		<maxGenerationAge>35</maxGenerationAge>
+		<aiAvoidCover>true</aiAvoidCover>
 		<isGoodBreacher>true</isGoodBreacher>
 		<canBeSapper>true</canBeSapper>
 		<apparelRequired>
 			<li>Apparel_CFAR_TrooperHelmet</li>
-			<li>Apparel_CFAR_TrooperArmor</li>
 			<li>Apparel_CFAR_ThermalDetonatorBelt</li>
 		</apparelRequired>
 		<weaponTags>
@@ -233,7 +200,39 @@
 		<combatPower>50</combatPower>
 	</PawnKindDef>
 
-<!-- Role : Officer - Low -->
+<!--================ Railgun ================-->
+
+	<PawnKindDef ParentName="CFAR_SoldierBase" Name="CFAR_RailgunTrooperBase">
+		<defName>CFAR_RailgunTrooper</defName>
+		<label>railgun trooper</label>
+		<titleRequired>CFAR_Sergeant</titleRequired>
+		<apparelRequired>
+			<li>Apparel_CFAR_TrooperHelmet</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>CFAR_Railgun</li>
+		</weaponTags>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>CFAR_Child</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>CFAR_RailgunTrooper</li>
+				</categoriesAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="CFAR_RailgunTrooperBase">
+		<defName>CFAR_RailgunTrooper_Caravan</defName>
+		<combatPower>50</combatPower>
+	</PawnKindDef>
+
+<!--================================ Officer - Low ================================-->
+
+<!--================ Lieutenant ================-->
+
 	<PawnKindDef ParentName="CFAR_SoldierBase">
 		<defName>CFAR_Lieutenant</defName>
 		<label>lieutenant</label>
@@ -259,6 +258,8 @@
 			</li>
 		</backstoryFiltersOverride>
 	</PawnKindDef>
+
+<!--================ Commander ================-->
 
 	<PawnKindDef ParentName="CFAR_SoldierBase" Name="CFAR_CommanderBase">
 		<defName>CFAR_Commander</defName>
@@ -301,7 +302,10 @@
 		</weaponTags>
 	</PawnKindDef>
 
-<!-- Role : Officer - High -->
+<!--================================ Officer - High ================================-->
+
+<!--================ Captain ================-->
+
 	<PawnKindDef ParentName="CFAR_SoldierBase">
 		<defName>CFAR_Captain</defName>
 		<label>captain</label>
