@@ -228,9 +228,9 @@
 
 <!--======== Trooper - MP ========-->
 
-	<BackstoryDef Name="CFAR_MilitaryPolice" ParentName="CFAR_Enlisted">
-		<defName>CFAR_MilitaryPolice1</defName>
-		<title>military police</title>
+	<BackstoryDef Name="CFAR_MPTrooper" ParentName="CFAR_Enlisted">
+		<defName>CFAR_MPTrooper1</defName>
+		<title>MP trooper</title>
 		<titleShort>navy MP</titleShort>
 		<description>Not every threat to the empire came from pirates or raiders. Some came from within the ranks. [PAWN_nameDef] served as military police, rooting out smugglers, brawlers, and deserters before their actions could endanger the empire.</description>
 		<skillGains>
@@ -243,22 +243,22 @@
 			<li>Social</li>
 		</requiredWorkTags>
 		<spawnCategories>
-			<li>CFAR_MilitaryPolice</li>
+			<li>CFAR_MPTrooper</li>
 		</spawnCategories>
 	</BackstoryDef>
 
-	<BackstoryDef ParentName="CFAR_MilitaryPolice">
-		<defName>CFAR_MilitaryPolice2</defName>
+	<BackstoryDef ParentName="CFAR_MPTrooper">
+		<defName>CFAR_MPTrooper2</defName>
 		<description>Discipline was a weapon, and [PAWN_nameDef] wielded it with precision. When troopers tested boundaries, [PAWN_pronoun] was there to set them straight. The empire trusted [PAWN_objective] to ensure its soldiers fought the enemy, not each other.</description>
 	</BackstoryDef>
 
-	<BackstoryDef ParentName="CFAR_MilitaryPolice">
-		<defName>CFAR_MilitaryPolice3</defName>
+	<BackstoryDef ParentName="CFAR_MPTrooper">
+		<defName>CFAR_MPTrooper3</defName>
 		<description>On patrol through the ship’s lower decks, [PAWN_nameDef] kept a watchful eye for contraband and misconduct. A sharp word or firm hand was often enough, but when it wasn’t, [PAWN_pronoun] made sure discipline was restored swiftly.</description>
 	</BackstoryDef>
 
-	<BackstoryDef ParentName="CFAR_MilitaryPolice">
-		<defName>CFAR_MilitaryPolice4</defName>
+	<BackstoryDef ParentName="CFAR_MPTrooper">
+		<defName>CFAR_MPTrooper4</defName>
 		<description>Keeping soldiers in line was no easy task. [PAWN_nameDef] spent countless hours breaking up brawls, confiscating illicit goods, and reminding troopers that the empire’s law didn’t stop at the barracks door. Order came first, no matter the cost.</description>
 	</BackstoryDef>
 
@@ -470,11 +470,13 @@
 		<description>As an imperial railgun trooper, [PAWN_nameDef] kept to the shadows of the squad. Aloof and quiet, [PAWN_pronoun] spoke little, but the pulse railgun did all the talking [PAWN_objective] needed. Every burst tore through the enemy, even if [PAWN_pronoun] avoided eye contact with allies.</description>
 	</BackstoryDef>
 
-<!--======== Lieutenant ========-->
+<!--================ Lieutenant ================-->
 
-	<BackstoryDef Name="CFAR_Lieutenant" ParentName="CFAR_Adult">
+<!--======== Infantry ========-->
+
+	<BackstoryDef Name="CFAR_Lieutenant" ParentName="CFAR_Officer">
 		<defName>CFAR_Lieutenant1</defName>
-		<title>lieutenant</title>
+		<title>infantry officer</title>
 		<titleShort>lieutenant</titleShort>
 		<description>[PAWN_nameDef] was a lieutenant in the Imperial Navy. Orders were clear, but troopers always added their own spin. It drove [PAWN_objective] nuts, but deep down, [PAWN_pronoun] knew [PAWN_possessive] squad was loyal through and through.</description>
 		<skillGains>
@@ -492,9 +494,33 @@
 		<description>[PAWN_nameDef] was a lieutenant in the Imperial Navy. [PAWN_pronoun] knew the troopers tested limits and took chances, but sergeants kept them grounded. Where [PAWN_pronoun] issued orders and made plans, sergeants enforced discipline and settled disputes. The two ranks worked side by side, one controlling chaos through command, the other through force.</description>
 	</BackstoryDef>
 
-<!--======== Commander ========-->
+<!--======== NORD - NKVD ========-->
 
-	<BackstoryDef Name="CFAR_Commander" ParentName="CFAR_Adult">
+	<BackstoryDef Name="CFAR_NORDLieutenant" ParentName="CFAR_Officer">
+		<defName>CFAR_Lieutenant1</defName>
+		<title>NORD lieutenant</title>
+		<titleShort>NORD</titleShort>
+		<description>As a NORD lieutenant, [PAWN_nameDef] enforced order in the ranks with an iron hand. Patrols through the barracks, sudden inspections, and public punishments kept troopers in line. [PAWN_pronoun] wasn’t entrusted with secrets, only with fear—and that was more than enough.</description>
+		<skillGains>
+			<Shooting>4</Shooting>
+			<Social>6</Social>
+			<Intellectual>2</Intellectual>
+		</skillGains>
+		<spawnCategories>
+			<li>CFAR_Lieutenant</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_Lieutenant">
+		<defName>CFAR_Lieutenant2</defName>
+		<description>.</description>
+	</BackstoryDef>
+
+<!--================ Commander ================-->
+
+<!--======== Infantry ========-->
+
+	<BackstoryDef Name="CFAR_Commander" ParentName="CFAR_Officer">
 		<defName>CFAR_Commander1</defName>
 		<title>commander</title>
 		<titleShort>commander</titleShort>
@@ -514,9 +540,11 @@
 		<description>WIP</description>
 	</BackstoryDef>
 
-<!--======== Captain ========-->
+<!--================ Captain ================-->
 
-	<BackstoryDef Name="CFAR_Captain" ParentName="CFAR_Adult">
+<!--======== Infantry ========-->
+
+	<BackstoryDef Name="CFAR_Captain" ParentName="CFAR_Officer">
 		<defName>CFAR_Captain1</defName>
 		<title>captain</title>
 		<titleShort>captain</titleShort>
@@ -538,7 +566,7 @@
 
 <!--======== Rear Admiral ========-->
 
-	<BackstoryDef Name="CFAR_Admiral" ParentName="CFAR_Adult">
+	<BackstoryDef Name="CFAR_Admiral" ParentName="CFAR_Officer">
 		<defName>CFAR_Admiral1</defName>
 		<title>admiral</title>
 		<titleShort>rear admiral</titleShort>
