@@ -137,7 +137,7 @@
 
 	<BackstoryDef Name="CFAR_Trooper" ParentName="CFAR_Enlisted">
 		<defName>CFAR_Trooper1</defName>
-		<title>naval infantry</title>
+		<title>naval trooper</title>
 		<titleShort>navy trooper</titleShort>
 		<description>[PAWN_nameDef] served as a trooper in the imperial navy, eager to see action against the empire’s enemies. After a few dozen close calls on anti-pirate patrols, [PAWN_pronoun] began to hope for uneventful days instead.</description>
 		<skillGains>
