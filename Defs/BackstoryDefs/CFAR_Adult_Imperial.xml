@@ -10,33 +10,35 @@
 		</spawnCategories>
 		<disallowedTraits>
 			<Cannibal>0</Cannibal>
-			<TorturedArtist>0</TorturedArtist>
 			<Nudist>0</Nudist>
-			<Jealous>0</Jealous>
-			<Undergrounder>0</Undergrounder>
-			<BodyPurist>0</BodyPurist>
-			<Neurotic>0</Neurotic>
 			<Pyromaniac>0</Pyromaniac>
-			<Ascetic>0</Ascetic>
 			<Recluse>0</Recluse>
 		</disallowedTraits>
 	</BackstoryDef>
 
-	<BackstoryDef Name="CFAR_Enlisted" ParentName="CFAR_Adult" Abstract="True">
+	<BackstoryDef Name="CFAR_Soldier" ParentName="CFAR_Adult" Abstract="True">
+		<disallowedTraits>
+			<Wimp>0</Wimp>
+			<TorturedArtist>0</TorturedArtist>
+			<Jealous>0</Jealous>
+			<Undergrounder>0</Undergrounder>
+			<BodyPurist>0</BodyPurist>
+			<Neurotic>0</Neurotic>
+			<Ascetic>0</Ascetic>
+		</disallowedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef Name="CFAR_Enlisted" ParentName="CFAR_Soldier" Abstract="True">
 		<requiredWorkTags>
-			<li>Firefighting</li>
-			<li>Caring</li>
-			<li>Social</li>
 			<li>Violent</li>
 			<li>ManualDumb</li>
 		</requiredWorkTags>
 		<disallowedTraits>
 			<Delicate>0</Delicate>
-			<Wimp>0</Wimp>
 		</disallowedTraits>
 	</BackstoryDef>
 
-	<BackstoryDef Name="CFAR_Officer" ParentName="CFAR_Adult" Abstract="True">
+	<BackstoryDef Name="CFAR_Officer" ParentName="CFAR_Soldier" Abstract="True">
 		<requiredWorkTags>
 			<li>Firefighting</li>
 			<li>Caring</li>
@@ -76,7 +78,7 @@
 		<defName>CFAR_FarmerPlant1</defName>
 		<title>farmer</title>
 		<titleShort>farmer</titleShort>
-		<description>[PAWN_nameDef] lived a simple life, tending to [PAWN_possessive] crops and removing weeds from dawn to dusk. The soil was familiar beneath [PAWN_possessive] hands, steady and honest work. There was pride in knowing that [PAWN_pronoun] helped feed the Imperial Navy, that every harvest kept the soldiers strong and the fleet running.</description>
+		<description>[PAWN_nameDef] lived a simple life, tending to [PAWN_possessive] crops and removing weeds from dawn to dusk. The soil was familiar beneath [PAWN_possessive] hands, steady and honest work. There was pride in knowing that [PAWN_pronoun] helped feed the imperial navy, that every harvest kept the soldiers strong and the fleet running.</description>
 		<skillGains>
 			<Shooting>4</Shooting>
 			<Melee>2</Melee>
@@ -113,12 +115,13 @@
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_Recruit">
-		<commonality>0.05</commonality>
-		<defName>CFAR_RecruitOptimist</defName>
-		<title>optimistic recruit</title>
-		<description>Back in boot camp, [PAWN_nameDef] was known for [PAWN_possessive] trademark optimism. [PAWN_pronoun] could always find a silver lining in the direst situations, inspiring fellow recruits.</description>
-		<forcedTraits><NaturalMood>1</NaturalMood></forcedTraits>
-		<skillGains><Social>2</Social></skillGains>
+		<defName>CFAR_Recruit3</defName>
+		<description>Orders in hand, [PAWN_nameDef] rehearsed the salute one last time and tried to steady a racing pulse. New squad, new officers, a clean slate—exactly what [PAWN_pronoun] had hoped for. If the empire needed enthusiasm, [PAWN_pronoun] had plenty; if it needed results, [PAWN_pronoun] would deliver them.</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_Recruit">
+		<defName>CFAR_Recruit4</defName>
+		<description>The shuttle doors opened on a new command, and [PAWN_nameDef] felt nerves spark under the armor. This was the posting [PAWN_pronoun] wanted—real duty, real stakes. [PAWN_pronoun] checked [PAWN_possessive] kit twice, squared [PAWN_possessive] shoulders, and stepped out ready to prove [PAWN_possessive] worth.</description>
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_Recruit">
@@ -126,7 +129,7 @@
 		<defName>CFAR_RecruitLucky</defName>
 		<title>lucky recruit</title>
 		<description>Fresh from boot camp, [PAWN_nameDef] clutched [PAWN_possessive] lucky charm as the shuttle touched down. A new station, a new chain of command—[PAWN_pronoun] straightened [PAWN_possessive] uniform and braced for the first impression.</description>
-		<possessions><CFAR_WarBond>1</CFAR_WarBond></possessions>
+		<possessions><CFAR_WarBond>1~2</CFAR_WarBond></possessions>
 	</BackstoryDef>
 
 <!--================ Regular ================-->
@@ -169,45 +172,58 @@
 
 	<BackstoryDef ParentName="CFAR_Trooper">
 		<defName>CFAR_Trooper6</defName>
-		<description>The empire’s enemies lurked at the edges of settled space, and troopers were sent to flush them out. For [PAWN_nameDef], that meant sudden deployments, long nights without sleep, and the knowledge that the next firefight could be [PAWN_possessive] last. Still, [PAWN_pronoun] never faltered.</description>
-	</BackstoryDef>
-
-	<BackstoryDef ParentName="CFAR_Trooper">
-		<defName>CFAR_Trooper7</defName>
 		<description>As a trooper, [PAWN_nameDef] quickly learned that glory was rare, but danger was constant. A single mistake could cost a squad everything, so [PAWN_pronoun] drilled until every movement was second nature. The god of war favored perfection, and [PAWN_nameDef] intended to give nothing less.</description>
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_Trooper">
-		<defName>CFAR_Trooper8</defName>
+		<defName>CFAR_Trooper7</defName>
 		<description>Many troopers grumbled about long patrol routes, but [PAWN_nameDef] found purpose in them. Every quiet journey meant another world safe from raiders. Every captured pirate meant fewer innocents lost. It was a slow war, but one [PAWN_pronoun] believed was worth fighting.</description>
+		<forcedTraits><QuickSleeper>0</QuickSleeper></forcedTraits>
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_Trooper">
-		<commonality>0.25</commonality>
-		<defName>CFAR_TrooperReader</defName>
+		<defName>CFAR_Trooper8</defName>
+		<description>The empire’s enemies lurked at the edges of settled space, and troopers were sent to flush them out. For [PAWN_nameDef], that meant sudden deployments, long nights without sleep, and the knowledge that the next firefight could be [PAWN_possessive] last. Still, [PAWN_pronoun] never faltered.</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_Trooper">
+		<defName>CFAR_Trooper9</defName>
+		<description>[PAWN_nameDef] was a walking storm of curses, filling barracks and battlefields alike with [PAWN_possessive] foul mouth. Officers hated it, squads laughed at it—but when the shooting started, [PAWN_pronoun] fought like hell and always pulled through.</description>
+		<forcedTraits><Abrasive>0</Abrasive></forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_Trooper">
+		<defName>CFAR_Trooper10</defName>
+		<description>[PAWN_nameDef] fought with ruthless zeal, seeing pirates and traitors as vermin to be exterminated. Protecting citizens came easy—but tending wounds never interested [PAWN_objective]. Some whispered [PAWN_pronoun] enjoyed the killing a little too much.</description>
+		<forcedTraits><Bloodlust>0</Bloodlust></forcedTraits>
+		<workDisables><li>Caring</li></workDisables>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_Trooper">
+		<defName>CFAR_Trooper11</defName>
 		<description>[PAWN_nameDef] signed up to fight pirates and rebels, but spent more hours waiting than shooting. Between long guard shifts, [PAWN_pronoun] buried [PAWN_objective]self in novels, finding calm in stories while narrowly avoiding inspections.</description>
 		<possessions><Novel>1</Novel></possessions>
 	</BackstoryDef>
 
 	<!--<BackstoryDef ParentName="CFAR_Trooper">
-		<commonality>0.25</commonality>
-		<defName>CFAR_TrooperGambler</defName>
+		<defName>CFAR_Trooper12</defName>
 		<description>[PAWN_nameDef] signed up to fight pirates and rebels, but spent more hours waiting than shooting. Between long guard shifts, [PAWN_pronoun] buried [PAWN_objective]self in novels, finding calm in stories while narrowly avoiding inspections.</description>
 		<possessions><Novel>1</Novel></possessions>
 	</BackstoryDef>-->
 
 	<BackstoryDef ParentName="CFAR_Trooper">
-		<commonality>0.25</commonality>
-		<defName>CFAR_TrooperSnacker</defName>
+		<defName>CFAR_Trooper13</defName>
 		<description>[PAWN_nameDef] thought the navy would be all glory and battle. Instead, most days were long patrols with tense standoffs. [PAWN_pronoun] passed the downtime by sneaking rations of chocolate, a small comfort against the cold of deep space.</description>
 		<possessions><Chocolate>1~4</Chocolate></possessions>
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_Trooper">
-		<commonality>0.25</commonality>
-		<defName>CFAR_TrooperLoyal</defName>
+		<defName>CFAR_Trooper14</defName>
 		<description>[PAWN_nameDef] was a loyal trooper, unquestioning and steadfast, though never the sharpest tool in the shed. Still, [PAWN_pronoun] held an unshakable devotion to the empress, a love as constant as the empire itself.</description>
-		<forcedTraits><Nerves>1</Nerves></forcedTraits>
+		<forcedTraits>
+			<Nerves>2</Nerves>
+			<SlowLearner>0</SlowLearner>
+		</forcedTraits>
 		<workDisables><li>Intellectual</li></workDisables>
 	</BackstoryDef>
 
@@ -215,7 +231,7 @@
 
 	<BackstoryDef Name="CFAR_TrooperMP" ParentName="CFAR_Enlisted">
 		<defName>CFAR_TrooperMP1</defName>
-		<title>military police<title>
+		<title>military police</title>
 		<titleShort>navy MP</titleShort>
 		<description>Not every threat to the empire came from pirates or raiders. Some came from within the ranks. [PAWN_nameDef] served as military police, rooting out smugglers, brawlers, and deserters before their actions could endanger the empire.</description>
 		<skillGains>
@@ -238,7 +254,7 @@
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_TrooperMP">
-		<defName>CFAR_TrooperMP</defName>
+		<defName>CFAR_TrooperMP4</defName>
 		<description>Keeping soldiers in line was no easy task. [PAWN_nameDef] spent countless hours breaking up brawls, confiscating illicit goods, and reminding troopers that the empire’s law didn’t stop at the barracks door. Order came first, no matter the cost.</description>
 	</BackstoryDef>
 
@@ -274,6 +290,14 @@
 		<description>On long voyages, supplies ran thin and tempers grew short. [PAWN_nameDef] became skilled at stretching rations, turning scraps into hearty meals that kept the squad satisfied. It was quiet work, but [PAWN_pronoun] knew it kept the navy running.</description>
 	</BackstoryDef>
 
+	<BackstoryDef ParentName="CFAR_TrooperCook">
+		<defName>CFAR_TrooperCook5</defName>
+		<description>The empire needed more than soldiers—it needed someone to feed them. [PAWN_nameDef] served as a navy cook, turning rations into meals that kept morale steady on long deployments. [PAWN_pronoun] loved food in all its forms, and made sure every trooper got a taste of home before marching out again.</description>
+		<forcedTraits><Gourmand>0</Gourmand></forcedTraits>
+		<bodyTypeMale>Fat</bodyTypeMale>
+		<bodyTypeFemale>Fat</bodyTypeFemale>
+	</BackstoryDef>
+
 <!--======== Trooper - Medic ========-->
 
 	<BackstoryDef Name="CFAR_TrooperMedic" ParentName="CFAR_Enlisted">
@@ -306,6 +330,12 @@
 		<description>Every squad needed a medic, and [PAWN_nameDef] filled that role with grim efficiency. From sealing plasma burns to stopping blood loss, [PAWN_pronoun] made the difference between survival and a body bag. Troopers trusted [PAWN_possessive] hands more than armor.</description>
 	</BackstoryDef>
 
+	<BackstoryDef ParentName="CFAR_TrooperMedic">
+		<defName>CFAR_TrooperMedic5</defName>
+		<description>[PAWN_nameDef] had seen enough battlefields to stomach blood, but fire was different. The searing stench of burned flesh clung to every memory of plasma strikes and shipboard blazes. From then on, [PAWN_pronoun] treated wounds without hesitation—but [PAWN_pronoun] could never bring [PAWN_objective]self to face the flames.</description>
+		<workDisables><li>Firefighting</li></workDisables>
+	</BackstoryDef>
+
 <!--================ Elite ================-->
 
 <!--======== Shock Trooper ========-->
@@ -314,10 +344,10 @@
 		<defName>CFAR_ShockTrooper1</defName>
 		<title>shock trooper</title>
 		<titleShort>shocktrooper</titleShort>
-		<description>[PAWN_nameDef] served as an imperial shocktrooper, clearing corridors and bunkers with scatter-fire and explosives. Where regular troopers stalled, [PAWN_pronoun] broke resistance wide open.</description>
+		<description>Imperial shock troopers lived for the breach. [PAWN_nameDef] carried pulse blaster and TD grenades into gravship corridors where seconds meant survival. Training drilled out fear, leaving only precision—and [PAWN_pronoun] delivered it with every strike.</description>
 		<skillGains>
 			<Shooting>8</Shooting>
-			<Melee>8</Melee>
+			<Melee>10</Melee>
 		</skillGains>
 		<spawnCategories>
 			<li>CFAR_ShockTrooper</li>
@@ -326,27 +356,79 @@
 
 	<BackstoryDef ParentName="CFAR_ShockTrooper">
 		<defName>CFAR_ShockTrooper2</defName>
-		<description>Imperial shocktroopers like [PAWN_nameDef] thrived in close combat. A single blast from [PAWN_possessive] pulse blaster or the detonation of a TD charge was often enough to decide the battle.</description>
+		<description>[PAWN_nameDef] treated shock trooper duty like a game of chance—kick in the hatch, toss the grenades, and see who was left standing. Reckless as it seemed, [PAWN_pronoun] had a knack for walking out of firefights others feared to enter.</description>
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_ShockTrooper">
 		<defName>CFAR_ShockTrooper3</defName>
-		<description>As an imperial shocktrooper, [PAWN_nameDef] was always first through the breach. Pulse blaster raised, TD charges at the ready, [PAWN_pronoun] lived to turn strongholds into rubble.</description>
+		<description>Imperial shock troopers were the empire’s spearpoint, and [PAWN_nameDef] was no exception. Pulse blaster steady, grenades primed, [PAWN_pronoun] carved a path through gravship hulls with methodical precision. Chaos reigned outside the breach, but inside, every move was calculated.</description>
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_ShockTrooper">
 		<defName>CFAR_ShockTrooper4</defName>
-		<description>As an imperial shocktrooper, [PAWN_nameDef] led boarding charges with a pulse blaster and a belt of thermal detonators. Close quarters was brutal work, but it was the empire’s way of ending fights quickly.</description>
+		<description>Every breach hardened [PAWN_nameDef] further. Smoke, blood, and shattered bulkheads became the rhythm of [PAWN_possessive] service as a shock trooper. Resistance never lasted long; once the charge went off, [PAWN_pronoun] was already moving through the wreckage.</description>
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_ShockTrooper">
 		<defName>CFAR_ShockTrooper5</defName>
-		<description>Imperial shocktroopers like [PAWN_nameDef] were the first through the breach. Pulse blaster in hand, TD charges primed, [PAWN_pronoun] embodied the empire’s doctrine: crush resistance swiftly, leave nothing standing.</description>
+		<description>For [PAWN_nameDef], shock trooper duty was an exact science: breach, clear, secure. Training honed [PAWN_objective] into a weapon sharper than steel, and when orders came down, [PAWN_pronoun] struck with flawless execution.</description>
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_ShockTrooper">
 		<defName>CFAR_ShockTrooper6</defName>
-		<description>As an imperial shocktrooper, [PAWN_nameDef] boarded enemy ships with [PAWN_possessive] pulse blaster in hand and TD charges primed. Bulkhead by bulkhead, [PAWN_pronoun] cleared the corridors, leaving the vessel ready for the empire to claim.</description>
+		<description>Imperial shock troopers were the empire’s hammer, and [PAWN_nameDef] swung hard. Breaches ended in fire and broken resistance, corridors cleared with ruthless speed. To enemies, [PAWN_pronoun] wasn’t a soldier—[PAWN_pronoun] was the executioner at the door.</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_ShockTrooper">
+		<defName>CFAR_ShockTrooper7</defName>
+		<description>To [PAWN_nameDef], breaching was the purest test of courage. The deafening explosion, the rush of smoke, the charge into fire—moments where hesitation vanished and pride carried [PAWN_objective] forward as the empire’s vanguard.</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_ShockTrooper">
+		<defName>CFAR_ShockTrooper8</defName>
+		<description>Storming through gravship hulls wasn’t just a duty for [PAWN_nameDef]—it was an art. Each charge was placed with care, each blast a signature. Fellow shock troopers fought to survive; [PAWN_pronoun] fought to make the breach unforgettable.</description>
+		<skillGains>
+			<Artistic>4</Artistic>
+		</skillGains>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_ShockTrooper">
+		<defName>CFAR_ShockTrooper9</defName>
+		<description>[PAWN_nameDef] moved through breaches like a machine, pulse blaster steady and grenades placed with cold precision. No shouts, no fury—just the methodical clearing of targets until nothing remained. Fellow shock troopers called [PAWN_objective] heartless, but none denied [PAWN_pronoun] was reliable.</description>
+		<forcedTraits><Psychopath>-1</Psychopath></forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_ShockTrooper">
+		<defName>CFAR_ShockTrooper10</defName>
+		<description>Every breach felt like a thrill ride to [PAWN_nameDef]. The explosions, the chaos, the rush of storming into enemy fire—[PAWN_pronoun] embraced it all. Recklessness kept commanders wary, but victories piled up behind [PAWN_possessive] name.</description>
+		<forcedTraits><ShootingAccuracy>-1</ShootingAccuracy></forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_ShockTrooper">
+		<defName>CFAR_ShockTrooper11</defName>
+		<description></description>
+		<forcedTraits><Tough>0</Tough></forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_ShockTrooper">
+		<defName>CFAR_ShockTrooper12</defName>
+		<description>Most shock troopers cursed the cramped gravship corridors, but [PAWN_nameDef] thrived in them. Tight corners, no room to retreat—exactly how [PAWN_pronoun] liked it. For [PAWN_objective], there was no better feeling than standing toe-to-toe with the enemy and refusing to give ground.</description>
+		<forcedTraits><Nimble>0</Nimble></forcedTraits>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_ShockTrooper">
+		<commonality>0.05</commonality>
+		<defName>CFAR_ShockTrooper13</defName>
+		<description>Beneath the armor, [PAWN_nameDef] was fury given form. Shock trooper duty gave [PAWN_objective] the chance to unleash it—breaching gravship hulls, cutting down raiders, and crushing resistance under boot. The empire called it duty. Enemies called it terror.</description>
+		<forcedTraits>
+			<Tough>0</Tough>
+			<Bloodlust>0</Bloodlust>
+			<SpeedOffset>2</SpeedOffset>
+		</forcedTraits>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
 	</BackstoryDef>
 
 <!--======== Railgun Trooper ========-->
