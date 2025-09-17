@@ -229,32 +229,37 @@
 
 <!--======== Trooper - MP ========-->
 
-	<BackstoryDef Name="CFAR_TrooperMP" ParentName="CFAR_Enlisted">
-		<defName>CFAR_TrooperMP1</defName>
+	<BackstoryDef Name="CFAR_MilitaryPolice" ParentName="CFAR_Enlisted">
+		<defName>CFAR_MilitaryPolice1</defName>
 		<title>military police</title>
 		<titleShort>navy MP</titleShort>
 		<description>Not every threat to the empire came from pirates or raiders. Some came from within the ranks. [PAWN_nameDef] served as military police, rooting out smugglers, brawlers, and deserters before their actions could endanger the empire.</description>
 		<skillGains>
 			<Shooting>6</Shooting>
 			<Melee>4</Melee>
+			<Social>2</Social>
+			<Artistic>-4</Artistic>
 		</skillGains>
+		<requiredWorkTags>
+			<li>Social</li>
+		</requiredWorkTags>
 		<spawnCategories>
-			<li>CFAR_TrooperMP</li>
+			<li>CFAR_MilitaryPolice</li>
 		</spawnCategories>
 	</BackstoryDef>
 
-	<BackstoryDef ParentName="CFAR_TrooperMP">
-		<defName>CFAR_TrooperMP2</defName>
+	<BackstoryDef ParentName="CFAR_MilitaryPolice">
+		<defName>CFAR_MilitaryPolice2</defName>
 		<description>Discipline was a weapon, and [PAWN_nameDef] wielded it with precision. When troopers tested boundaries, [PAWN_pronoun] was there to set them straight. The empire trusted [PAWN_objective] to ensure its soldiers fought the enemy, not each other.</description>
 	</BackstoryDef>
 
-	<BackstoryDef ParentName="CFAR_TrooperMP">
-		<defName>CFAR_TrooperMP3</defName>
+	<BackstoryDef ParentName="CFAR_MilitaryPolice">
+		<defName>CFAR_MilitaryPolice3</defName>
 		<description>On patrol through the ship’s lower decks, [PAWN_nameDef] kept a watchful eye for contraband and misconduct. A sharp word or firm hand was often enough, but when it wasn’t, [PAWN_pronoun] made sure discipline was restored swiftly.</description>
 	</BackstoryDef>
 
-	<BackstoryDef ParentName="CFAR_TrooperMP">
-		<defName>CFAR_TrooperMP4</defName>
+	<BackstoryDef ParentName="CFAR_MilitaryPolice">
+		<defName>CFAR_MilitaryPolice4</defName>
 		<description>Keeping soldiers in line was no easy task. [PAWN_nameDef] spent countless hours breaking up brawls, confiscating illicit goods, and reminding troopers that the empire’s law didn’t stop at the barracks door. Order came first, no matter the cost.</description>
 	</BackstoryDef>
 
@@ -406,8 +411,10 @@
 
 	<BackstoryDef ParentName="CFAR_ShockTrooper">
 		<defName>CFAR_ShockTrooper11</defName>
-		<description></description>
+		<description>As an imperial shock trooper, [PAWN_nameDef] shrugged off wounds that would fell lesser soldiers. Bandages could wait—[PAWN_pronoun] had breaches to clear, and pain was just another obstacle.</description>
 		<forcedTraits><Tough>0</Tough></forcedTraits>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_ShockTrooper">
@@ -421,6 +428,7 @@
 	<BackstoryDef ParentName="CFAR_ShockTrooper">
 		<commonality>0.05</commonality>
 		<defName>CFAR_ShockTrooper13</defName>
+		<title>unstoppable shock trooper</title>
 		<description>Beneath the armor, [PAWN_nameDef] was fury given form. Shock trooper duty gave [PAWN_objective] the chance to unleash it—breaching gravship hulls, cutting down raiders, and crushing resistance under boot. The empire called it duty. Enemies called it terror.</description>
 		<forcedTraits>
 			<Tough>0</Tough>
@@ -431,13 +439,13 @@
 		<bodyTypeFemale>Hulk</bodyTypeFemale>
 	</BackstoryDef>
 
-<!--======== Railgun Trooper ========-->
+<!--======== Railgunner ========-->
 
 	<BackstoryDef Name="CFAR_RailgunTrooper" ParentName="CFAR_Enlisted">
 		<defName>CFAR_RailgunTrooper1</defName>
 		<title>railgun trooper</title>
-		<titleShort>trooper</titleShort>
-		<description>[PAWN_nameDef] was a recon trooper in the Imperial Navy. [PAWN_pronoun] rarely spoke first but listened closely, always watching. The cool exterior hid nerves, but when the pulse railgun fired, it was clear [PAWN_pronoun] knew exactly what [PAWN_pronoun] was doing.</description>
+		<titleShort>railgunner</titleShort>
+		<description>As an imperial railgun trooper, [PAWN_nameDef] carried a weapon that could punch through nearly anything. The recoil was brutal, but once [PAWN_pronoun] mastered it, few enemies could stand against [PAWN_possessive] fire.</description>
 		<skillGains>
 			<Shooting>12</Shooting>
 			<Melee>-2</Melee>
