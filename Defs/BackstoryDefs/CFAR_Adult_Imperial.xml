@@ -12,7 +12,6 @@
 			<Cannibal>0</Cannibal>
 			<Nudist>0</Nudist>
 			<Pyromaniac>0</Pyromaniac>
-			<Recluse>0</Recluse>
 		</disallowedTraits>
 	</BackstoryDef>
 
@@ -439,7 +438,7 @@
 		<bodyTypeFemale>Hulk</bodyTypeFemale>
 	</BackstoryDef>
 
-<!--======== Railgunner ========-->
+<!--======== Railgun trooper ========-->
 
 	<BackstoryDef Name="CFAR_RailgunTrooper" ParentName="CFAR_Enlisted">
 		<defName>CFAR_RailgunTrooper1</defName>
@@ -458,7 +457,17 @@
 
 	<BackstoryDef ParentName="CFAR_RailgunTrooper">
 		<defName>CFAR_RailgunTrooper2</defName>
-		<description>[PAWN_nameDef] was a recon trooper in the Imperial Navy. Silent and unnoticed, [PAWN_pronoun] moved through shadows, pulse railgun always at the ready. [PAWN_pronoun] didn’t need to speak—one clean shot was all that mattered. The world didn’t know [PAWN_pronoun] was there until it was too late.</description>
+		<description>As an imperial railgun trooper, [PAWN_nameDef] fired with icy precision. Each pull of the trigger sent a burst strong enough to tear through cover, and each burst landed exactly where [PAWN_pronoun] intended. To [PAWN_objective], it wasn’t battle—it was target practice.</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_RailgunTrooper">
+		<defName>CFAR_RailgunTrooper3</defName>
+		<description>The pulse railgun kicked like a beast, but [PAWN_nameDef] tamed it with calm discipline. Burst after burst slammed through enemy lines, leaving no room for mistakes. [PAWN_pronoun] never raised [PAWN_possessive] voice, never lost [PAWN_possessive] focus—just aimed, fired, and moved on.</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_RailgunTrooper">
+		<defName>CFAR_RailgunTrooper4</defName>
+		<description>As an imperial railgun trooper, [PAWN_nameDef] kept to the shadows of the squad. Aloof and quiet, [PAWN_pronoun] spoke little, but the pulse railgun did all the talking [PAWN_objective] needed. Every burst tore through the enemy, even if [PAWN_pronoun] avoided eye contact with allies.</description>
 	</BackstoryDef>
 
 <!--======== Lieutenant ========-->
