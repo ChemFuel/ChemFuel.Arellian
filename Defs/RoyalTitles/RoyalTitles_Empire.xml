@@ -7,94 +7,86 @@
 		<commonality>1</commonality>
 		<awardThought>GainedTitle</awardThought>
 		<lostThought>LostTitle</lostThought>
-		<changeHeirQuestPoints>10</changeHeirQuestPoints>
+		<changeHeirQuestPoints>50</changeHeirQuestPoints>
 		<awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
 	</RoyalTitleDef>
 
-<!--================ Title ================-->
+<!--================ Enlisted ================-->
 
+<!--======== Trooper ========-->
+	
 	<RoyalTitleDef ParentName="CFAR_TitleBase" MayRequire="Ludeon.RimWorld.Royalty">
-		<defName>CFAR_Trooper</defName>
-		<label>Trooper</label>
+		<defName>CFAR_RankA1</defName>
+		<label>Private</label>
 		<description>TEST</description>
 		<seniority>0</seniority>
 		<favorCost>1</favorCost>
 	</RoyalTitleDef>
 
 	<RoyalTitleDef ParentName="CFAR_TitleBase" MayRequire="Ludeon.RimWorld.Royalty">
-		<defName>CFAR_Sergeant</defName>
-		<label>Sergeant</label>
+		<defName>CFAR_RankA2</defName>
+		<label>Corporal</label>
 		<description>TEST</description>
 		<seniority>100</seniority>
-		<favorCost>9</favorCost>
-		<permitPointsAwarded>1</permitPointsAwarded>
+		<favorCost>4</favorCost>
 	</RoyalTitleDef>
 
+<!--======== NCO ========-->
+
 	<RoyalTitleDef ParentName="CFAR_TitleBase" MayRequire="Ludeon.RimWorld.Royalty">
-		<defName>CFAR_Lieutenant</defName>
-		<label>Lieutenant</label>
+		<defName>CFAR_RankA3</defName>
+		<label>Junior Petty Officer</label>
 		<description>TEST</description>
 		<seniority>200</seniority>
-		<favorCost>40</favorCost>
-		<permitPointsAwarded>2</permitPointsAwarded>
-		<bedroomRequirements>
-			<li Class="RoomRequirement_ForbiddenBuildings">
-				<labelKey>RoomRequirementNoProductionFacilities</labelKey>
-				<buildingTags><li>Production</li></buildingTags>
-			</li>
-			<li Class="RoomRequirement_ForbidAltars" MayRequire="Ludeon.RimWorld.Ideology">
-				<labelKey>RoomRequirementNoAltars</labelKey>
-			</li>
-			<li Class="RoomRequirement_ForbiddenBuildings">
-				<labelKey>RoomRequirementNoBiotechBuildings</labelKey>
-				<buildingTags><li>Biotech</li></buildingTags>
-			</li>
-			<li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Anomaly">
-				<labelKey>RoomRequirementNoAnomalyBuildings</labelKey>
-				<buildingTags><li>Anomaly</li></buildingTags>
-			</li>
-		</bedroomRequirements>
-		<grantedAbilities>
-			<li>CFAR_FiringOrder</li>
-		</grantedAbilities>
+		<favorCost>25</favorCost>
+		<permitPointsAwarded>1</permitPointsAwarded>
 	</RoyalTitleDef>
 
 	<RoyalTitleDef ParentName="CFAR_TitleBase" MayRequire="Ludeon.RimWorld.Royalty">
-		<defName>CFAR_Commander</defName>
-		<label>Commander</label>
+		<defName>CFAR_RankA4</defName>
+		<label>Petty Officer</label>
 		<description>TEST</description>
 		<seniority>300</seniority>
-		<favorCost>150</favorCost>
-		<permitPointsAwarded>2</permitPointsAwarded>
-		<bedroomRequirements>
-			<li Class="RoomRequirement_ForbiddenBuildings">
-				<labelKey>RoomRequirementNoProductionFacilities</labelKey>
-				<buildingTags><li>Production</li></buildingTags>
-			</li>
-			<li Class="RoomRequirement_ForbidAltars" MayRequire="Ludeon.RimWorld.Ideology">
-				<labelKey>RoomRequirementNoAltars</labelKey>
-			</li>
-			<li Class="RoomRequirement_ForbiddenBuildings">
-				<labelKey>RoomRequirementNoBiotechBuildings</labelKey>
-				<buildingTags><li>Biotech</li></buildingTags>
-			</li>
-			<li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Anomaly">
-				<labelKey>RoomRequirementNoAnomalyBuildings</labelKey>
-				<buildingTags><li>Anomaly</li></buildingTags>
-			</li>
-		</bedroomRequirements>
-		<grantedAbilities>
-			<li>CFAR_FiringOrder</li>
-		</grantedAbilities>
+		<favorCost>35</favorCost>
+		<permitPointsAwarded>1</permitPointsAwarded>
 	</RoyalTitleDef>
 
 	<RoyalTitleDef ParentName="CFAR_TitleBase" MayRequire="Ludeon.RimWorld.Royalty">
-		<defName>CFAR_Captain</defName>
-		<label>Captain</label>
+		<defName>CFAR_RankA5</defName>
+		<label>Senior Petty Officer</label>
+		<description>TEST</description>
+		<seniority>300</seniority>
+		<favorCost>50</favorCost>
+		<permitPointsAwarded>1</permitPointsAwarded>
+	</RoyalTitleDef>
+
+	<RoyalTitleDef ParentName="CFAR_TitleBase" MayRequire="Ludeon.RimWorld.Royalty">
+		<defName>CFAR_RankA6</defName>
+		<label>Chief Petty Officer</label>
 		<description>TEST</description>
 		<seniority>400</seniority>
-		<favorCost>640</favorCost>
-		<permitPointsAwarded>2</permitPointsAwarded>
+		<favorCost>65</favorCost>
+		<permitPointsAwarded>1</permitPointsAwarded>
+	</RoyalTitleDef>
+
+<!--================ Other ================-->
+
+<!--======== WO ========-->
+
+	<RoyalTitleDef ParentName="CFAR_TitleBase" MayRequire="Ludeon.RimWorld.Royalty">
+		<defName>CFAR_RankB1</defName>
+		<label>Master Chief Petty Officer</label>
+		<description>TEST</description>
+		<seniority>400</seniority>
+		<favorCost>100</favorCost>
+		<permitPointsAwarded>1</permitPointsAwarded>
+	</RoyalTitleDef>
+
+<!--================ Officer ================-->
+
+<!--======== Junior ========-->
+
+	<RoyalTitleDef Name="CFAR_TitleOfficerBase" ParentName="CFAR_TitleBase" Abstract="True" MayRequire="Ludeon.RimWorld.Royalty">
 		<bedroomRequirements>
 			<li Class="RoomRequirement_ForbiddenBuildings">
 				<labelKey>RoomRequirementNoProductionFacilities</labelKey>
@@ -117,61 +109,97 @@
 		</grantedAbilities>
 	</RoyalTitleDef>
 
-	<RoyalTitleDef ParentName="CFAR_TitleBase" MayRequire="Ludeon.RimWorld.Royalty">
-		<defName>CFAR_RearAdmiral</defName>
-		<label>Rear admiral</label>
+	<RoyalTitleDef ParentName="CFAR_TitleOfficerBase" MayRequire="Ludeon.RimWorld.Royalty">
+		<defName>CFAR_RankC1</defName>
+		<label>Ensign</label>
 		<description>TEST</description>
 		<seniority>500</seniority>
-		<favorCost>3250</favorCost>
+		<favorCost>450</favorCost>
 		<permitPointsAwarded>1</permitPointsAwarded>
-		<bedroomRequirements>
-			<li Class="RoomRequirement_ForbiddenBuildings">
-				<labelKey>RoomRequirementNoProductionFacilities</labelKey>
-				<buildingTags><li>Production</li></buildingTags>
-			</li>
-			<li Class="RoomRequirement_ForbidAltars" MayRequire="Ludeon.RimWorld.Ideology">
-				<labelKey>RoomRequirementNoAltars</labelKey>
-			</li>
-			<li Class="RoomRequirement_ForbiddenBuildings">
-				<labelKey>RoomRequirementNoBiotechBuildings</labelKey>
-				<buildingTags><li>Biotech</li></buildingTags>
-			</li>
-			<li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Anomaly">
-				<labelKey>RoomRequirementNoAnomalyBuildings</labelKey>
-				<buildingTags><li>Anomaly</li></buildingTags>
-			</li>
-		</bedroomRequirements>
-		<grantedAbilities>
-			<li>CFAR_FiringOrder</li>
-		</grantedAbilities>
 	</RoyalTitleDef>
 
-	<RoyalTitleDef ParentName="CFAR_TitleBase" MayRequire="Ludeon.RimWorld.Royalty">
-		<defName>CFAR_Admiral</defName>
-		<label>Admiral</label>
+	<RoyalTitleDef ParentName="CFAR_TitleOfficerBase" MayRequire="Ludeon.RimWorld.Royalty">
+		<defName>CFAR_RankC2</defName>
+		<label>Junior Lieutenant</label>
 		<description>TEST</description>
 		<seniority>600</seniority>
+		<favorCost>575</favorCost>
+		<permitPointsAwarded>1</permitPointsAwarded>
+	</RoyalTitleDef>
+
+	<RoyalTitleDef ParentName="CFAR_TitleOfficerBase" MayRequire="Ludeon.RimWorld.Royalty">
+		<defName>CFAR_RankC3</defName>
+		<label>Lieutenant</label>
+		<description>TEST</description>
+		<seniority>700</seniority>
+		<favorCost>700</favorCost>
+		<permitPointsAwarded>1</permitPointsAwarded>
+	</RoyalTitleDef>
+
+<!--======== Senior ========-->
+
+	<RoyalTitleDef ParentName="CFAR_TitleOfficerBase" MayRequire="Ludeon.RimWorld.Royalty">
+		<defName>CFAR_RankD1</defName>
+		<label>Lieutenant Commander</label>
+		<description>TEST</description>
+		<seniority>800</seniority>
+		<favorCost>800</favorCost>
+		<permitPointsAwarded>1</permitPointsAwarded>
+	</RoyalTitleDef>
+
+	<RoyalTitleDef ParentName="CFAR_TitleOfficerBase" MayRequire="Ludeon.RimWorld.Royalty">
+		<defName>CFAR_RankD2</defName>
+		<label>Commander</label>
+		<description>TEST</description>
+		<seniority>900</seniority>
+		<favorCost>1700</favorCost>
+		<permitPointsAwarded>1</permitPointsAwarded>
+	</RoyalTitleDef>
+
+	<RoyalTitleDef ParentName="CFAR_TitleOfficerBase" MayRequire="Ludeon.RimWorld.Royalty">
+		<defName>CFAR_RankD3</defName>
+		<label>Captain</label>
+		<description>TEST</description>
+		<seniority>1000</seniority>
+		<favorCost>2000</favorCost>
+		<permitPointsAwarded>1</permitPointsAwarded>
+	</RoyalTitleDef>
+
+<!--================ Admirality ================-->
+
+<!--======== Player ========-->
+
+	<RoyalTitleDef ParentName="CFAR_TitleOfficerBase" MayRequire="Ludeon.RimWorld.Royalty">
+		<defName>CFAR_RankE1</defName>
+		<label>Rear Admiral</label>
+		<description>TEST</description>
+		<seniority>1100</seniority>
+		<favorCost>6000</favorCost>
+		<permitPointsAwarded>1</permitPointsAwarded>
+	</RoyalTitleDef>
+
+	<RoyalTitleDef ParentName="CFAR_TitleOfficerBase" MayRequire="Ludeon.RimWorld.Royalty">
+		<defName>CFAR_RankE2</defName>
+		<label>Admiral</label>
+		<description>TEST</description>
+		<seniority>1200</seniority>
 		<favorCost>12500</favorCost>
 		<permitPointsAwarded>1</permitPointsAwarded>
-		<bedroomRequirements>
-			<li Class="RoomRequirement_ForbiddenBuildings">
-				<labelKey>RoomRequirementNoProductionFacilities</labelKey>
-				<buildingTags><li>Production</li></buildingTags>
-			</li>
-			<li Class="RoomRequirement_ForbidAltars" MayRequire="Ludeon.RimWorld.Ideology">
-				<labelKey>RoomRequirementNoAltars</labelKey>
-			</li>
-			<li Class="RoomRequirement_ForbiddenBuildings">
-				<labelKey>RoomRequirementNoBiotechBuildings</labelKey>
-				<buildingTags><li>Biotech</li></buildingTags>
-			</li>
-			<li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Anomaly">
-				<labelKey>RoomRequirementNoAnomalyBuildings</labelKey>
-				<buildingTags><li>Anomaly</li></buildingTags>
-			</li>
-		</bedroomRequirements>
-		<grantedAbilities>
-			<li>CFAR_FiringOrder</li>
-		</grantedAbilities>
+	</RoyalTitleDef>
+
+<!--======== NPC ========-->
+
+	<RoyalTitleDef ParentName="CFAR_TitleOfficerBase" MayRequire="Ludeon.RimWorld.Royalty">
+		<defName>CFAR_RankE3</defName>
+		<label>Fleet Admiral</label>
+		<description>TEST</description>
+		<seniority>1300</seniority>
+	</RoyalTitleDef>
+
+	<RoyalTitleDef ParentName="CFAR_TitleOfficerBase" MayRequire="Ludeon.RimWorld.Royalty">
+		<defName>CFAR_RankE4</defName>
+		<label>Grand Admiral</label>
+		<description>TEST</description>
+		<seniority>1400</seniority>
 	</RoyalTitleDef>
 </Defs>
