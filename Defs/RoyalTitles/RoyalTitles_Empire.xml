@@ -55,7 +55,7 @@
 		<defName>CFAR_RankA5</defName>
 		<label>Senior Petty Officer</label>
 		<description>TEST</description>
-		<seniority>300</seniority>
+		<seniority>400</seniority>
 		<favorCost>50</favorCost>
 		<permitPointsAwarded>1</permitPointsAwarded>
 	</RoyalTitleDef>
@@ -64,7 +64,7 @@
 		<defName>CFAR_RankA6</defName>
 		<label>Chief Petty Officer</label>
 		<description>TEST</description>
-		<seniority>400</seniority>
+		<seniority>500</seniority>
 		<favorCost>65</favorCost>
 		<permitPointsAwarded>1</permitPointsAwarded>
 	</RoyalTitleDef>
@@ -77,7 +77,7 @@
 		<defName>CFAR_RankB1</defName>
 		<label>Master Chief Petty Officer</label>
 		<description>TEST</description>
-		<seniority>400</seniority>
+		<seniority>600</seniority>
 		<favorCost>100</favorCost>
 		<permitPointsAwarded>1</permitPointsAwarded>
 	</RoyalTitleDef>
@@ -113,7 +113,7 @@
 		<defName>CFAR_RankC1</defName>
 		<label>Ensign</label>
 		<description>TEST</description>
-		<seniority>500</seniority>
+		<seniority>700</seniority>
 		<favorCost>450</favorCost>
 		<permitPointsAwarded>1</permitPointsAwarded>
 	</RoyalTitleDef>
@@ -122,7 +122,7 @@
 		<defName>CFAR_RankC2</defName>
 		<label>Junior Lieutenant</label>
 		<description>TEST</description>
-		<seniority>600</seniority>
+		<seniority>800</seniority>
 		<favorCost>575</favorCost>
 		<permitPointsAwarded>1</permitPointsAwarded>
 	</RoyalTitleDef>
@@ -131,7 +131,7 @@
 		<defName>CFAR_RankC3</defName>
 		<label>Lieutenant</label>
 		<description>TEST</description>
-		<seniority>700</seniority>
+		<seniority>900</seniority>
 		<favorCost>700</favorCost>
 		<permitPointsAwarded>1</permitPointsAwarded>
 	</RoyalTitleDef>
@@ -142,7 +142,7 @@
 		<defName>CFAR_RankD1</defName>
 		<label>Lieutenant Commander</label>
 		<description>TEST</description>
-		<seniority>800</seniority>
+		<seniority>1000</seniority>
 		<favorCost>800</favorCost>
 		<permitPointsAwarded>1</permitPointsAwarded>
 	</RoyalTitleDef>
@@ -151,7 +151,7 @@
 		<defName>CFAR_RankD2</defName>
 		<label>Commander</label>
 		<description>TEST</description>
-		<seniority>900</seniority>
+		<seniority>1100</seniority>
 		<favorCost>1700</favorCost>
 		<permitPointsAwarded>1</permitPointsAwarded>
 	</RoyalTitleDef>
@@ -160,7 +160,7 @@
 		<defName>CFAR_RankD3</defName>
 		<label>Captain</label>
 		<description>TEST</description>
-		<seniority>1000</seniority>
+		<seniority>1200</seniority>
 		<favorCost>2000</favorCost>
 		<permitPointsAwarded>1</permitPointsAwarded>
 	</RoyalTitleDef>
@@ -173,7 +173,7 @@
 		<defName>CFAR_RankE1</defName>
 		<label>Rear Admiral</label>
 		<description>TEST</description>
-		<seniority>1100</seniority>
+		<seniority>1300</seniority>
 		<favorCost>6000</favorCost>
 		<permitPointsAwarded>1</permitPointsAwarded>
 	</RoyalTitleDef>
@@ -182,7 +182,7 @@
 		<defName>CFAR_RankE2</defName>
 		<label>Admiral</label>
 		<description>TEST</description>
-		<seniority>1200</seniority>
+		<seniority>1400</seniority>
 		<favorCost>12500</favorCost>
 		<permitPointsAwarded>1</permitPointsAwarded>
 	</RoyalTitleDef>
@@ -193,13 +193,14 @@
 		<defName>CFAR_RankE3</defName>
 		<label>Fleet Admiral</label>
 		<description>TEST</description>
-		<seniority>1300</seniority>
+		<seniority>1500</seniority>
 	</RoyalTitleDef>
 
 	<RoyalTitleDef ParentName="CFAR_TitleOfficerBase" MayRequire="Ludeon.RimWorld.Royalty">
 		<defName>CFAR_RankE4</defName>
 		<label>Grand Admiral</label>
 		<description>TEST</description>
-		<seniority>1400</seniority>
+		<seniority>1600</seniority>
 	</RoyalTitleDef>
 </Defs>
+
