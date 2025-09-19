@@ -12,38 +12,38 @@
 <!--================ Basic Spacer Engineering ================-->
 
 	<!-- EN: pulse pistol -->
-	<Gun_CFAR_PulsePistol.label>펄스 권총</Gun_CFAR_PulsePistol.label>
+	<Gun_CFAR_PulsePistol.label>펄스 피스톨</Gun_CFAR_PulsePistol.label>
 	<!-- EN: A light, accurate sidearm issued to Imperial officers and pilots. Lacks range and stopping power but excels in close quarters with punishing pulse blasts. -->
 	<Gun_CFAR_PulsePistol.description>제국군 장교와 조종사들에게 지급되는 작고 정밀한 권총. 사거리와 저지력은 부족하지만, 근거리에서는 강력한 펄스 파동으로 적을 제압합니다.</Gun_CFAR_PulsePistol.description>
 	<!-- EN: barrel -->
 	<Gun_CFAR_PulsePistol.tools.barrel.label>총열</Gun_CFAR_PulsePistol.tools.barrel.label>
 	<!-- EN: pulse pistol -->
-	<Gun_CFAR_PulsePistol.verbs.Verb_Shoot.label>펄스 권총</Gun_CFAR_PulsePistol.verbs.Verb_Shoot.label>
+	<Gun_CFAR_PulsePistol.verbs.Verb_Shoot.label>펄스 피스톨</Gun_CFAR_PulsePistol.verbs.Verb_Shoot.label>
 
 	<!-- EN: pulse blaster -->
 	<Gun_CFAR_PulseBlaster.label>펄스 블라스터</Gun_CFAR_PulseBlaster.label>
 	<!-- EN: A close-quarter scatter blaster issued to Imperial shock troopers. While it lacks range and anti-armor effectiveness, it excels at shredding targets in close combat. -->
-	<Gun_CFAR_PulseBlaster.description>제국군 충격 부대원에게 지급되는 근접전용 산탄 블래스터. 사거리와 대장갑 관통력은 부족하지만, 근거리에서 대상을 효과적으로 분쇄합니다.</Gun_CFAR_PulseBlaster.description>
+	<Gun_CFAR_PulseBlaster.description>제국군 충격 부대원에게 지급되는 근접전용 펄스 산탄총. 사거리와 대장갑 관통력은 부족하지만, 근거리에서 대상을 효과적으로 분쇄합니다.</Gun_CFAR_PulseBlaster.description>
 	<!-- EN: barrel -->
 	<Gun_CFAR_PulseBlaster.tools.barrel.label>총열</Gun_CFAR_PulseBlaster.tools.barrel.label>
 	<!-- EN: pulse blaster -->
 	<Gun_CFAR_PulseBlaster.verbs.Verb_Shoot.label>펄스 블라스터</Gun_CFAR_PulseBlaster.verbs.Verb_Shoot.label>
 
 	<!-- EN: pulse rifle -->
-	<Gun_CFAR_PulseRifle.label>펄스 소총</Gun_CFAR_PulseRifle.label>
+	<Gun_CFAR_PulseRifle.label>펄스 라이플</Gun_CFAR_PulseRifle.label>
 	<!-- EN: The standard-issue Imperial pulse rifle. Reliable and well-balanced, it delivers consistent shots with low recoil at medium ranges, making it effective in a wide range of combat situations. -->
-	<Gun_CFAR_PulseRifle.description>제국군 제식 펄스 소총. 신뢰성이 높고 균형 잡힌 이 소총은 중거리에서 적은 반동으로 안정적인 탄착군을 형성하며, 전천후 전투 상황에서 효과적입니다.</Gun_CFAR_PulseRifle.description>
+	<Gun_CFAR_PulseRifle.description>제국군 제식 펄스 라이플. 신뢰성이 높고 균형 잡힌 이 소총은 중거리에서 적은 반동으로 안정적인 탄착군을 형성하며, 전천후 전투 상황에서 효과적입니다.</Gun_CFAR_PulseRifle.description>
 	<!-- EN: stock -->
 	<Gun_CFAR_PulseRifle.tools.stock.label>개머리판</Gun_CFAR_PulseRifle.tools.stock.label>
 	<!-- EN: barrel -->
 	<Gun_CFAR_PulseRifle.tools.barrel.label>총열</Gun_CFAR_PulseRifle.tools.barrel.label>
 	<!-- EN: pulse rifle -->
-	<Gun_CFAR_PulseRifle.verbs.Verb_Shoot.label>펄스 소총</Gun_CFAR_PulseRifle.verbs.Verb_Shoot.label>
+	<Gun_CFAR_PulseRifle.verbs.Verb_Shoot.label>펄스 라이플</Gun_CFAR_PulseRifle.verbs.Verb_Shoot.label>
 
 	<!-- EN: pulse carbine -->
 	<Gun_CFAR_PulseCarbine.label>펄스 카빈</Gun_CFAR_PulseCarbine.label>
 	<!-- EN: A compact variant of the pulse rifle, optimized for speed and handling. Fires rapid bursts with minimal recoil, ideal for close-quarters and shipboard operations. -->
-	<Gun_CFAR_PulseCarbine.description>조작성과 기동성을 극대화한 펄스 소총의 카빈 버전. 최소한의 반동으로 속사가 가능하며, 근접전 및 함선 내 작전에 이상적입니다.</Gun_CFAR_PulseCarbine.description>
+	<Gun_CFAR_PulseCarbine.description>조작성과 기동성을 극대화한 펄스 라이플의 카빈 버전. 최소한의 반동으로 속사가 가능하며, 근접전 및 함선 내 작전에 이상적입니다.</Gun_CFAR_PulseCarbine.description>
 	<!-- EN: barrel -->
 	<Gun_CFAR_PulseCarbine.tools.barrel.label>총열</Gun_CFAR_PulseCarbine.tools.barrel.label>
 	<!-- EN: pulse carbine -->
@@ -61,7 +61,7 @@
 	<!-- EN: pulse railgun -->
 	<Gun_CFAR_PulseRailgun.label>펄스 레일건</Gun_CFAR_PulseRailgun.label>
 	<!-- EN: A sniper variant of the pulse rifle, designed for long-range anti-armor precision. It fires concentrated plasma pulses that effortlessly melt through both armor and flesh. Highly effective at eliminating high-value targets, but cumbersome to maneuver. -->
-	<Gun_CFAR_PulseRifle.description>장거리에서 대장갑 정밀 타격을 위해 개량된 펄스 소총. 갑옷과 육체를 손쉽게 녹이는 강력한 플라즈마 펄스를 발사합니다. 고가치 표적을 제거하는 데 효과적이지만, 무겁고 이동이 불편합니다.</Gun_CFAR_PulseRifle.description>
+	<Gun_CFAR_PulseRifle.description>장거리에서 대장갑 정밀 타격을 위해 개량된 펄스 라이플. 갑옷과 육체를 손쉽게 녹이는 강력한 플라즈마 펄스를 발사합니다. 고가치 표적을 제거하는 데 효과적이지만, 무겁고 이동이 불편합니다.</Gun_CFAR_PulseRifle.description>
 	<!-- EN: barrel -->
 	<Gun_CFAR_PulseRifle.tools.barrel.label>총열</Gun_CFAR_PulseRifle.tools.barrel.label>
 	<!-- EN: pulse railgun -->

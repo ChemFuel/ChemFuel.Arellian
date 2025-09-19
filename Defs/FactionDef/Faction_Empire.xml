@@ -59,7 +59,7 @@
 			<li>
 				<kindDef>Trader</kindDef>
 				<traders>
-					<CFAR_Commander_Caravan>1</CFAR_Commander_Caravan>
+					<CFAR_MCPOTrader>1</CFAR_MCPOTrader>
 				</traders>
 				<carriers>
 					<Muffalo>6</Muffalo>
@@ -68,20 +68,26 @@
 					<Elephant>1</Elephant>
 				</carriers>
 				<guards>
-					<CFAR_Trooper_Caravan>5</CFAR_Trooper_Caravan>
-					<CFAR_HeavyTrooper_Caravan>2</CFAR_HeavyTrooper_Caravan>
-					<CFAR_SniperTrooper_Caravan>2</CFAR_SniperTrooper_Caravan>
-					<CFAR_ShockTrooper_Caravan>1</CFAR_ShockTrooper_Caravan>
+					<CFAR_Trooper>7</CFAR_Trooper>
+					<CFAR_GunnerTrooper>3</CFAR_GunnerTrooper>
+					<CFAR_RailgunTrooper>1</CFAR_RailgunTrooper>
+					<CFAR_Lieutenant>0.5</CFAR_Lieutenant>
 				</guards>
 			</li>
 			<li>
 				<kindDef>Combat</kindDef>
 				<options>
-					<CFAR_Trooper>5</CFAR_Trooper>
-					<CFAR_HeavyTrooper>2</CFAR_HeavyTrooper>
-					<CFAR_SniperTrooper>2</CFAR_SniperTrooper>
-					<CFAR_ShockTrooper>2</CFAR_ShockTrooper>
+					<CFAR_Trooper>7</CFAR_Trooper>
+					<CFAR_GunnerTrooper>3</CFAR_GunnerTrooper>
+					<CFAR_RailgunTrooper>1</CFAR_RailgunTrooper>
 					<CFAR_Lieutenant>0.5</CFAR_Lieutenant>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<options>
+					<CFAR_ShockTrooper>8</CFAR_ShockTrooper>
+					<CFAR_RailgunTrooper>2</CFAR_RailgunTrooper>
 				</options>
 			</li>
 			<!--<li>
@@ -93,10 +99,9 @@
 			<li>
 				<kindDef>Settlement</kindDef>
 				<options>
-					<CFAR_Trooper>5</CFAR_Trooper>
-					<CFAR_HeavyTrooper>2</CFAR_HeavyTrooper>
-					<CFAR_SniperTrooper>2</CFAR_SniperTrooper>
-					<CFAR_ShockTrooper>2</CFAR_ShockTrooper>
+					<CFAR_Trooper>7</CFAR_Trooper>
+					<CFAR_GunnerTrooper>3</CFAR_GunnerTrooper>
+					<CFAR_RailgunTrooper>1</CFAR_RailgunTrooper>
 					<CFAR_Lieutenant>0.5</CFAR_Lieutenant>
 				</options>
 			</li>

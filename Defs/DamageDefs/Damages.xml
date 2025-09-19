@@ -10,8 +10,7 @@
 	
 	<DamageDef ParentName="Vaporize">
 		<defName>CFAR_Thermal</defName>
-		<hediff>Shredded</hediff>
-		<hediffSkin>Burn</hediffSkin>
+		<hediff>Burn</hediff>
 		<hediffSolid>Crack</hediffSolid>
 		<defaultDamage>50</defaultDamage>
 		<armorCategory>Sharp</armorCategory>

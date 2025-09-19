@@ -3,7 +3,7 @@
 
 	<AbilityDef>
 		<defName>CFAR_ThermalDetonator</defName>
-		<label>throw TD charge</label>
+		<label>throw detonator</label>
 		<description>WIP</description>
 		<iconPath>Things/Item/Equipment/WeaponRanged/Grenades</iconPath>
 		<cooldownTicksRange>300</cooldownTicksRange><!-- 5 Secs -->
@@ -12,7 +12,7 @@
 		<aiCanUse>true</aiCanUse>
 		<verbProperties>
 			<verbClass>Verb_AbilityShoot</verbClass>
-			<label>TD charge</label>
+			<label>thermal detonator</label>
 			<range>12.9</range>
 			<warmupTime>1.5</warmupTime>
 			<noiseRadius>4</noiseRadius>
@@ -146,5 +146,4 @@
 			</li>
 		</comps>
 	</AbilityDef>
-
 </Defs>

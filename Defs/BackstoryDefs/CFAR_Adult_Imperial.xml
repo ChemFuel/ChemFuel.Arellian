@@ -124,7 +124,6 @@
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_Recruit">
-		<commonality>0.05</commonality>
 		<defName>CFAR_RecruitLucky</defName>
 		<title>lucky recruit</title>
 		<description>Fresh from boot camp, [PAWN_nameDef] clutched [PAWN_possessive] lucky charm as the shuttle touched down. A new station, a new chain of command—[PAWN_pronoun] straightened [PAWN_possessive] uniform and braced for the first impression.</description>
@@ -399,7 +398,7 @@
 	<BackstoryDef ParentName="CFAR_ShockTrooper">
 		<defName>CFAR_ShockTrooper9</defName>
 		<description>[PAWN_nameDef] moved through breaches like a machine, pulse blaster steady and grenades placed with cold precision. No shouts, no fury—just the methodical clearing of targets until nothing remained. Fellow shock troopers called [PAWN_objective] heartless, but none denied [PAWN_pronoun] was reliable.</description>
-		<forcedTraits><Psychopath>-1</Psychopath></forcedTraits>
+		<forcedTraits><Psychopath>0</Psychopath></forcedTraits>
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_ShockTrooper">
@@ -425,8 +424,7 @@
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_ShockTrooper">
-		<commonality>0.05</commonality>
-		<defName>CFAR_ShockTrooper13</defName>
+		<defName>CFAR_Hero_ShockTrooper</defName>
 		<title>unstoppable shock trooper</title>
 		<description>Beneath the armor, [PAWN_nameDef] was fury given form. Shock trooper duty gave [PAWN_objective] the chance to unleash it—breaching gravship hulls, cutting down raiders, and crushing resistance under boot. The empire called it duty. Enemies called it terror.</description>
 		<forcedTraits>
@@ -434,6 +432,9 @@
 			<Bloodlust>0</Bloodlust>
 			<SpeedOffset>2</SpeedOffset>
 		</forcedTraits>
+		<spawnCategories Inherit="False">
+			<li>CFAR_Hero_ShockTrooper</li>
+		</spawnCategories>
 		<bodyTypeMale>Hulk</bodyTypeMale>
 		<bodyTypeFemale>Hulk</bodyTypeFemale>
 	</BackstoryDef>
@@ -497,7 +498,7 @@
 <!--======== NORD - NKVD ========-->
 
 	<BackstoryDef Name="CFAR_NORDLieutenant" ParentName="CFAR_Officer">
-		<defName>CFAR_Lieutenant1</defName>
+		<defName>CFAR_NORDLieutenant1</defName>
 		<title>NORD lieutenant</title>
 		<titleShort>NORD</titleShort>
 		<description>As a NORD lieutenant, [PAWN_nameDef] enforced order in the ranks with an iron hand. Patrols through the barracks, sudden inspections, and public punishments kept troopers in line. [PAWN_pronoun] wasn’t entrusted with secrets, only with fear—and that was more than enough.</description>
@@ -507,12 +508,12 @@
 			<Intellectual>2</Intellectual>
 		</skillGains>
 		<spawnCategories>
-			<li>CFAR_Lieutenant</li>
+			<li>CFAR_NORDLieutenant</li>
 		</spawnCategories>
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_Lieutenant">
-		<defName>CFAR_Lieutenant2</defName>
+		<defName>CFAR_NORDLieutenant2</defName>
 		<description>.</description>
 	</BackstoryDef>
 
