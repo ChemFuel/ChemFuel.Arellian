@@ -185,12 +185,14 @@
 
 	<BackstoryDef ParentName="CFAR_Trooper">
 		<defName>CFAR_Trooper9</defName>
+		<title>brash trooper</title>
 		<description>[PAWN_nameDef] was a walking storm of curses, filling barracks and battlefields alike with [PAWN_possessive] foul mouth. Officers hated it, squads laughed at it—but when the shooting started, [PAWN_pronoun] fought like hell and always pulled through.</description>
 		<forcedTraits><Abrasive>0</Abrasive></forcedTraits>
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_Trooper">
 		<defName>CFAR_Trooper10</defName>
+		<titleShort>zealot</titleShort>
 		<description>[PAWN_nameDef] fought with ruthless zeal, seeing pirates and traitors as vermin to be exterminated. Protecting citizens came easy—but tending wounds never interested [PAWN_objective]. Some whispered [PAWN_pronoun] enjoyed the killing a little too much.</description>
 		<forcedTraits><Bloodlust>0</Bloodlust></forcedTraits>
 		<workDisables><li>Caring</li></workDisables>
@@ -198,12 +200,14 @@
 
 	<BackstoryDef ParentName="CFAR_Trooper">
 		<defName>CFAR_Trooper11</defName>
+		<titleShort>bookworm</titleShort>
 		<description>[PAWN_nameDef] signed up to fight pirates and rebels, but spent more hours waiting than shooting. Between long guard shifts, [PAWN_pronoun] buried [PAWN_objective]self in novels, finding calm in stories while narrowly avoiding inspections.</description>
 		<possessions><Novel>1</Novel></possessions>
 	</BackstoryDef>
 
 	<!--<BackstoryDef ParentName="CFAR_Trooper">
 		<defName>CFAR_Trooper12</defName>
+		<titleShort>gambler</titleShort>
 		<description>[PAWN_nameDef] signed up to fight pirates and rebels, but spent more hours waiting than shooting. Between long guard shifts, [PAWN_pronoun] buried [PAWN_objective]self in novels, finding calm in stories while narrowly avoiding inspections.</description>
 		<possessions><Novel>1</Novel></possessions>
 	</BackstoryDef>-->
@@ -216,12 +220,15 @@
 
 	<BackstoryDef ParentName="CFAR_Trooper">
 		<defName>CFAR_Trooper14</defName>
-		<description>[PAWN_nameDef] was a loyal trooper, unquestioning and steadfast, though never the sharpest tool in the shed. Still, [PAWN_pronoun] held an unshakable devotion to the empress, a love as constant as the empire itself.</description>
-		<forcedTraits>
-			<Nerves>2</Nerves>
-			<SlowLearner>0</SlowLearner>
-		</forcedTraits>
-		<workDisables><li>Intellectual</li></workDisables>
+		<titleShort>smarty</titleShort>
+		<description>[PAWN_nameDef] stood out not for strength but for quick thinking. While others relied on muscle and drills, [PAWN_pronoun] solved problems on the fly—rewiring a hatch under fire, finding cover where none seemed to exist. Brains kept [PAWN_objective] alive where brawn might not.</description>
+		<requiredWorkTags>
+			<li>Intellectual</li>
+		</requiredWorkTags>
+		<skillGains>
+			<Melee>2</Melee>
+			<Intellectual>2</Intellectual>
+		</skillGains>
 	</BackstoryDef>
 
 <!--======== Trooper - MP ========-->
@@ -401,6 +408,9 @@
 		<defName>CFAR_ShockTrooper9</defName>
 		<description>[PAWN_nameDef] moved through breaches like a machine, pulse blaster steady and grenades placed with cold precision. No shouts, no fury—just the methodical clearing of targets until nothing remained. Fellow shock troopers called [PAWN_objective] heartless, but none denied [PAWN_pronoun] was reliable.</description>
 		<forcedTraits><Psychopath>0</Psychopath></forcedTraits>
+		<skillGains>
+			<Social>-2</Social>
+		</skillGains>
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_ShockTrooper">
@@ -548,30 +558,44 @@
 	<BackstoryDef ParentName="CFAR_NORDOfficer">
 		<defName>CFAR_NORDOfficer4</defName>
 		<description>As a Naval Order and Regulation Division officer, [PAWN_nameDef] worked quietly among the ranks, listening more than speaking. A misplaced word could reveal corruption, a tired expression could reveal strain. [PAWN_pronoun] offered a steady hand, ensuring the empire’s soldiers remained both loyal and unbroken.</description>
+		<skillGains>
+			<Social>6</Social>
+			<Intellectual>6</Intellectual>
+		</skillGains>
 	</BackstoryDef>
 
-<!--================ Lieutenant ================-->
+<!--================ Infantry ================-->
 
-<!--======== Infantry ========-->
+<!--======== Lieutenant ========-->
 
-	<BackstoryDef Name="CFAR_Lieutenant" ParentName="CFAR_Officer">
-		<defName>CFAR_Lieutenant1</defName>
-		<title>infantry officer</title>
-		<titleShort>line officer</titleShort>
-		<description>[PAWN_nameDef] was a lieutenant in the Imperial Navy. Orders were clear, but troopers always added their own spin. It drove [PAWN_objective] nuts, but deep down, [PAWN_pronoun] knew [PAWN_possessive] squad was loyal through and through.</description>
+	<BackstoryDef Name="CFAR_LineLt" ParentName="CFAR_Officer">
+		<defName>CFAR_LineLt1</defName>
+		<title>line lieutenant</title>
+		<titleShort>lieutenant</titleShort>
+		<description>Every officer started somewhere. For [PAWN_nameDef], that meant fumbling over maps, second-guessing [PAWN_possessive] own orders, and letting sergeants quietly cover [PAWN_possessive] mistakes. Even so, [PAWN_pronoun] showed flashes of potential—enough that the empire kept [PAWN_objective] in command.</description>
 		<skillGains>
 			<Shooting>4</Shooting>
 			<Social>6</Social>
 			<Intellectual>2</Intellectual>
 		</skillGains>
 		<spawnCategories>
-			<li>CFAR_Lieutenant</li>
+			<li>CFAR_LineLt</li>
 		</spawnCategories>
 	</BackstoryDef>
 
-	<BackstoryDef ParentName="CFAR_Lieutenant">
-		<defName>CFAR_Lieutenant2</defName>
-		<description>[PAWN_nameDef] was a lieutenant in the Imperial Navy. [PAWN_pronoun] knew the troopers tested limits and took chances, but sergeants kept them grounded. Where [PAWN_pronoun] issued orders and made plans, sergeants enforced discipline and settled disputes. The two ranks worked side by side, one controlling chaos through command, the other through force.</description>
+	<BackstoryDef ParentName="CFAR_LineLt">
+		<defName>CFAR_LineLt2</defName>
+		<description>As a lieutenant, [PAWN_nameDef] led a squad of troopers through their first deployments. Orders were often rough around the edges, sometimes misjudged, but [PAWN_pronoun] learned quickly—because mistakes on the field were paid for in blood.</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_LineLt">
+		<defName>CFAR_LineLt3</defName>
+		<description>[PAWN_nameDef] knew how to salute, issue commands, and wear the uniform right—but managing troopers in the field was another matter. A missed signal here, a botched formation there, and yet somehow [PAWN_pronoun] always pulled through by sheer stubbornness.</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_LineLt">
+		<defName>CFAR_LineLt4</defName>
+		<description>As a lieutenant, [PAWN_nameDef] carried authority well but often misread the field. A wrong turn, a mistimed order—small mistakes that veterans grumbled about. Still, [PAWN_pronoun] never shied from responsibility, learning leadership one error at a time.</description>
 	</BackstoryDef>
 
 <!--================ Commander ================-->
