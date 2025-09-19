@@ -91,7 +91,6 @@
 		</apparelRequired>
 		<weaponTags>
 			<li>CFAR_Rifle</li>
-			<li>CFAR_Repeater</li>
 		</weaponTags>
 		<backstoryFiltersOverride>
 			<li>
@@ -108,24 +107,9 @@
 	<PawnKindDef ParentName="CFAR_SoldierBase">
 		<defName>CFAR_GunnerTrooper</defName>
 		<label>gunner trooper</label>
-		<apparelRequired>
-			<li>Apparel_CFAR_TrooperHelmet</li>
-			<li>Apparel_CFAR_TrooperArmor</li>
-		</apparelRequired>
-		<weaponTags>
-			<li>CFAR_Rifle</li>
+		<weaponTags Inherit="False">
 			<li>CFAR_Repeater</li>
 		</weaponTags>
-		<backstoryFiltersOverride>
-			<li>
-				<categoriesChildhood>
-					<li>CFAR_Child</li>
-				</categoriesChildhood>
-				<categoriesAdulthood>
-					<li>CFAR_Trooper</li>
-				</categoriesAdulthood>
-			</li>
-		</backstoryFiltersOverride>
 	</PawnKindDef>
 
 <!--================ NCO ================-->
