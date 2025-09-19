@@ -12,6 +12,7 @@
 			<Cannibal>0</Cannibal>
 			<Nudist>0</Nudist>
 			<Pyromaniac>0</Pyromaniac>
+			<PsychicSensitivity>0</PsychicSensitivity>
 		</disallowedTraits>
 	</BackstoryDef>
 
@@ -23,7 +24,6 @@
 			<Undergrounder>0</Undergrounder>
 			<BodyPurist>0</BodyPurist>
 			<Neurotic>0</Neurotic>
-			<Ascetic>0</Ascetic>
 		</disallowedTraits>
 	</BackstoryDef>
 
@@ -39,8 +39,6 @@
 
 	<BackstoryDef Name="CFAR_Officer" ParentName="CFAR_Soldier" Abstract="True">
 		<requiredWorkTags>
-			<li>Firefighting</li>
-			<li>Caring</li>
 			<li>Social</li>
 			<li>Violent</li>
 			<li>Intellectual</li>
@@ -50,6 +48,7 @@
 			<SlowLearner>0</SlowLearner>
 			<DislikesMen>0</DislikesMen>
 			<DislikesWomen>0</DislikesWomen>
+			<DrugDesire>0</DrugDesire>
 		</disallowedTraits>
 	</BackstoryDef>
 	
@@ -232,15 +231,13 @@
 		<title>MP trooper</title>
 		<titleShort>navy MP</titleShort>
 		<description>Not every threat to the empire came from pirates or raiders. Some came from within the ranks. [PAWN_nameDef] served as military police, rooting out smugglers, brawlers, and deserters before their actions could endanger the empire.</description>
-		<skillGains>
-			<Shooting>6</Shooting>
-			<Melee>4</Melee>
-			<Social>2</Social>
-			<Artistic>-4</Artistic>
-		</skillGains>
 		<requiredWorkTags>
 			<li>Social</li>
 		</requiredWorkTags>
+		<skillGains>
+			<Shooting>4</Shooting>
+			<Melee>6</Melee>
+		</skillGains>
 		<spawnCategories>
 			<li>CFAR_MPTrooper</li>
 		</spawnCategories>
@@ -268,8 +265,10 @@
 		<title>culinary specialist</title>
 		<titleShort>navy cook</titleShort>
 		<description>Life as a navy cook meant long hours in hot galleys, preparing meals for hundreds of hungry troopers. [PAWN_nameDef] learned quickly that good food kept morale higher than any speech, and [PAWN_pronoun] took pride in every tray served.</description>
+		<requiredWorkTags>
+			<li>Cooking</li>
+		</requiredWorkTags>
 		<skillGains>
-			<Shooting>2</Shooting>
 			<Melee>4</Melee>
 			<Cooking>6</Cooking>
 		</skillGains>
@@ -308,6 +307,9 @@
 		<title>medical specialist</title>
 		<titleShort>navy medic</titleShort>
 		<description>The empire needed fighters, but it also needed someone to keep them breathing. [PAWN_nameDef] trained as a navy medic, patching wounds in field stations and shuttle bays. In battle, [PAWN_pronoun] learned that speed mattered more than precision—lives didn’t wait for perfection.</description>
+		<requiredWorkTags>
+			<li>Caring</li>
+		</requiredWorkTags>
 		<skillGains>
 			<Shooting>4</Shooting>
 			<Melee>2</Melee>
@@ -350,7 +352,7 @@
 		<description>Imperial shock troopers lived for the breach. [PAWN_nameDef] carried pulse blaster and TD grenades into gravship corridors where seconds meant survival. Training drilled out fear, leaving only precision—and [PAWN_pronoun] delivered it with every strike.</description>
 		<skillGains>
 			<Shooting>8</Shooting>
-			<Melee>10</Melee>
+			<Melee>8</Melee>
 		</skillGains>
 		<spawnCategories>
 			<li>CFAR_ShockTrooper</li>
@@ -411,8 +413,6 @@
 		<defName>CFAR_ShockTrooper11</defName>
 		<description>As an imperial shock trooper, [PAWN_nameDef] shrugged off wounds that would fell lesser soldiers. Bandages could wait—[PAWN_pronoun] had breaches to clear, and pain was just another obstacle.</description>
 		<forcedTraits><Tough>0</Tough></forcedTraits>
-		<bodyTypeMale>Hulk</bodyTypeMale>
-		<bodyTypeFemale>Hulk</bodyTypeFemale>
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_ShockTrooper">
@@ -430,7 +430,6 @@
 		<forcedTraits>
 			<Tough>0</Tough>
 			<Bloodlust>0</Bloodlust>
-			<SpeedOffset>2</SpeedOffset>
 		</forcedTraits>
 		<spawnCategories Inherit="False">
 			<li>CFAR_Hero_ShockTrooper</li>
@@ -447,9 +446,8 @@
 		<titleShort>railgunner</titleShort>
 		<description>As an imperial railgun trooper, [PAWN_nameDef] carried a weapon that could punch through nearly anything. The recoil was brutal, but once [PAWN_pronoun] mastered it, few enemies could stand against [PAWN_possessive] fire.</description>
 		<skillGains>
-			<Shooting>12</Shooting>
-			<Melee>-2</Melee>
-			<Social>-4</Social>
+			<Shooting>10</Shooting>
+			<Melee>2</Melee>
 		</skillGains>
 		<spawnCategories>
 			<li>CFAR_RailgunTrooper</li>
@@ -471,6 +469,87 @@
 		<description>As an imperial railgun trooper, [PAWN_nameDef] kept to the shadows of the squad. Aloof and quiet, [PAWN_pronoun] spoke little, but the pulse railgun did all the talking [PAWN_objective] needed. Every burst tore through the enemy, even if [PAWN_pronoun] avoided eye contact with allies.</description>
 	</BackstoryDef>
 
+<!--================================ Officer ================================-->
+
+<!--================ Special ================-->
+
+<!--======== NORD - Agent ========-->
+
+	<BackstoryDef Name="CFAR_NORDAgent" ParentName="CFAR_Officer">
+		<defName>CFAR_NORDAgent1</defName>
+		<title>NORD agent</title>
+		<titleShort>NORD agent</titleShort>
+		<description>As a Naval Order and Regulation Division field agent, [PAWN_nameDef] worked in the shadows where soldiers could not. Infiltrations, assassinations, and sudden disappearances followed in [PAWN_possessive] wake, leaving enemies broken and silent.</description>
+		<workDisables>
+			<li>Artistic</li>
+		</workDisables>
+		<disallowedTraits>
+			<Kind>0</Kind>
+			<Greedy>0</Greedy>
+			<Jealous>0</Jealous>
+			<TooSmart>0</TooSmart>
+		</disallowedTraits>
+		<skillGains>
+			<Shooting>8</Shooting>
+			<Melee>8</Melee>
+		</skillGains>
+		<spawnCategories>
+			<li>CFAR_NORDAgent</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_NORDAgent">
+		<defName>CFAR_NORDAgent2</defName>
+		<description>The empire demanded order, and the Naval Order and Regulation Division provided it by any means. [PAWN_nameDef] drugged prisoners, broke traitors in interrogation cells, and silenced witnesses who might weaken the fleet’s resolve.</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_NORDAgent">
+		<defName>CFAR_NORDAgent3</defName>
+		<description>As a field agent of the Naval Order and Regulation Division, [PAWN_nameDef] was dispatched where whispers of conspiracy lingered. [PAWN_pronoun] blended in, gathered secrets, and cut out threats before they could fester. Few ever saw [PAWN_objective] coming.</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_NORDAgent">
+		<defName>CFAR_NORDAgent4</defName>
+		<description>As a Naval Order and Regulation Division field agent, [PAWN_nameDef] carried out missions that could never be spoken of. [PAWN_pronoun] slipped behind enemy lines, dismantled cells of traitors, and made sure the empire’s problems never lived long enough to spread.</description>
+	</BackstoryDef>
+
+<!--======== NORD - Officer ========-->
+
+	<BackstoryDef Name="CFAR_NORDOfficer" ParentName="CFAR_Officer">
+		<defName>CFAR_NORDOfficer1</defName>
+		<title>NORD officer</title>
+		<titleShort>NORD officer</titleShort>
+		<description>The Naval Order and Regulation Division gave [PAWN_nameDef] authority to question and correct the empire’s officers. Some feared [PAWN_objective], but most knew [PAWN_pronoun] sought only to keep units sharp. Discipline, guidance, and the occasional hard truth were [PAWN_possessive] tools, wielded for the empire’s good.</description>
+		<disallowedTraits>
+			<Psychopath>0</Psychopath>
+			<Greedy>0</Greedy>
+			<Jealous>0</Jealous>
+		</disallowedTraits>
+		<skillGains>
+			<Shooting>4</Shooting>
+			<Social>8</Social>
+			<Intellectual>4</Intellectual>
+		</skillGains>
+		<spawnCategories>
+			<li>CFAR_NORDOfficer</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_NORDOfficer">
+		<defName>CFAR_NORDOfficer2</defName>
+		<description>As a Naval Order and Regulation Division officer, [PAWN_nameDef] oversaw inspections of barracks, supplies, and command posts. Fraud and negligence were punished swiftly, but [PAWN_pronoun] also made sure soldiers had the support they needed to fight effectively.</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_NORDOfficer">
+		<defName>CFAR_NORDOfficer3</defName>
+		<description>In the Naval Order and Regulation Division, [PAWN_nameDef] acted as both auditor and advisor. Reports were scrutinized, chains of command tested, and gaps in discipline closed. When morale faltered, [PAWN_pronoun] provided counsel—because a soldier who wavered today might not stand tomorrow.</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_NORDOfficer">
+		<defName>CFAR_NORDOfficer4</defName>
+		<description>As a Naval Order and Regulation Division officer, [PAWN_nameDef] worked quietly among the ranks, listening more than speaking. A misplaced word could reveal corruption, a tired expression could reveal strain. [PAWN_pronoun] offered a steady hand, ensuring the empire’s soldiers remained both loyal and unbroken.</description>
+	</BackstoryDef>
+
 <!--================ Lieutenant ================-->
 
 <!--======== Infantry ========-->
@@ -478,7 +557,7 @@
 	<BackstoryDef Name="CFAR_Lieutenant" ParentName="CFAR_Officer">
 		<defName>CFAR_Lieutenant1</defName>
 		<title>infantry officer</title>
-		<titleShort>lieutenant</titleShort>
+		<titleShort>line officer</titleShort>
 		<description>[PAWN_nameDef] was a lieutenant in the Imperial Navy. Orders were clear, but troopers always added their own spin. It drove [PAWN_objective] nuts, but deep down, [PAWN_pronoun] knew [PAWN_possessive] squad was loyal through and through.</description>
 		<skillGains>
 			<Shooting>4</Shooting>
@@ -493,28 +572,6 @@
 	<BackstoryDef ParentName="CFAR_Lieutenant">
 		<defName>CFAR_Lieutenant2</defName>
 		<description>[PAWN_nameDef] was a lieutenant in the Imperial Navy. [PAWN_pronoun] knew the troopers tested limits and took chances, but sergeants kept them grounded. Where [PAWN_pronoun] issued orders and made plans, sergeants enforced discipline and settled disputes. The two ranks worked side by side, one controlling chaos through command, the other through force.</description>
-	</BackstoryDef>
-
-<!--======== NORD - NKVD ========-->
-
-	<BackstoryDef Name="CFAR_NORDLieutenant" ParentName="CFAR_Officer">
-		<defName>CFAR_NORDLieutenant1</defName>
-		<title>NORD lieutenant</title>
-		<titleShort>NORD</titleShort>
-		<description>As a NORD lieutenant, [PAWN_nameDef] enforced order in the ranks with an iron hand. Patrols through the barracks, sudden inspections, and public punishments kept troopers in line. [PAWN_pronoun] wasn’t entrusted with secrets, only with fear—and that was more than enough.</description>
-		<skillGains>
-			<Shooting>4</Shooting>
-			<Social>6</Social>
-			<Intellectual>2</Intellectual>
-		</skillGains>
-		<spawnCategories>
-			<li>CFAR_NORDLieutenant</li>
-		</spawnCategories>
-	</BackstoryDef>
-
-	<BackstoryDef ParentName="CFAR_Lieutenant">
-		<defName>CFAR_NORDLieutenant2</defName>
-		<description>.</description>
 	</BackstoryDef>
 
 <!--================ Commander ================-->
