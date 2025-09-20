@@ -1,241 +1,67 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<BackstoryDef Name="CFAR_Adult_Traitor" Abstract="True">
-		<requiresSpawnCategory>true</requiresSpawnCategory>
-		<slot>Adulthood</slot>
-		<bodyTypeMale>Male</bodyTypeMale>
-		<bodyTypeFemale>Female</bodyTypeFemale>
+	<BackstoryDef Name="CFAR_AdultEnclave" ParentName="CFAR_Adult" Abstract="True">
+		<spawnCategories Inherit="False">
+			<li>CFAR_Enclave</li>
+		</spawnCategories>
+		<disallowedTraits Inherit="False">
+			<PsychicSensitivity>0</PsychicSensitivity>
+		</disallowedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef Name="CFAR_SoldierEnclave" ParentName="CFAR_AdultEnclave" Abstract="True">
+		<spawnCategories Inherit="False" />
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
 		<disallowedTraits>
 			<Ascetic>0</Ascetic>
 			<Kind>0</Kind>
 		</disallowedTraits>
 	</BackstoryDef>
 
-<!--================ Imperial Ground Command ================-->
+<!--================ Enlisted ================-->
 
-<!--======== Soldier - Infantry ========-->
-
-	<BackstoryDef Name="CFAR_Infantry_Traitor" ParentName="CFAR_Adult_Traitor">
-		<defName>CFAR_Infantry1_Traitor</defName>
-		<title>Traitor trooper</title>
-		<titleShort>Traitor</titleShort>
-		<description>[PAWN_nameDef] didn’t defect for ideology. [PAWN_pronoun] liked the killing, hated the discipline. The enclave lets [PAWN_pronoun] indulge both without consequence.</description>
+	<BackstoryDef Name="CFAR_Deserter" ParentName="CFAR_SoldierEnclave" Abstract="True">
 		<skillGains>
-			<Shooting>5</Shooting>
-			<Melee>3</Melee>
-		</skillGains>
-		<spawnCategories>
-			<li>CFAR_Infantry_Traitor</li>
-		</spawnCategories>
-	</BackstoryDef>
-
-	<BackstoryDef ParentName="CFAR_Infantry_Traitor">
-		<defName>CFAR_Infantry2_Traitor</defName>
-		<description>[PAWN_nameDef] hoarded grenades “just in case” and once detonated one in a mess hall over a card game. The Empire labeled [PAWN_pronoun] unstable; [PAWN_pronoun] vanished before reassignment to penal service.</description>
-	</BackstoryDef>
-
-	<BackstoryDef ParentName="CFAR_Infantry_Traitor">
-		<defName>CFAR_Infantry3_Traitor</defName>
-		<description>[PAWN_nameDef] refused to follow squad formations, claiming “creative tactics.” One such maneuver led to a friendly-fire incident. Rather than face court-martial, [PAWN_pronoun] disappeared during redeployment.</description>
-	</BackstoryDef>
-
-	<BackstoryDef ParentName="CFAR_Infantry_Traitor">
-		<defName>CFAR_Infantry4_Traitor</defName>
-		<description>[PAWN_nameDef] mistook a fuel line for a coolant pipe and caused an explosion that killed two techs. Labeled unfit, [PAWN_pronoun] fled transport en route to psychiatric review.</description>
-		<workDisables>
-			<li>Intellectual</li>
-		</workDisables>
-	</BackstoryDef>
-
-	<BackstoryDef ParentName="CFAR_Infantry_Traitor">
-		<defName>CFAR_Infantry5_Traitor</defName>
-		<description>[PAWN_nameDef] opened fire during a surrender, citing “unclear hand signals.” It wasn’t the first time. After repeated warnings and one too many dead prisoners, [PAWN_pronoun] vanished during convoy rotation.</description>
-		<forcedTraits>
-			<ShootingAccuracy>-1</ShootingAccuracy>
-		</forcedTraits>
-	</BackstoryDef>
-
-	<BackstoryDef ParentName="CFAR_Infantry_Traitor">
-		<defName>CFAR_Infantry6_Traitor</defName>
-		<description>[PAWN_nameDef] sabotaged a munitions cache and sold the location to raiders for credits. [PAWN_pronoun] fled with the pay before the smoke cleared, pulse carbine and stolen gear in tow.</description>
-		<forcedTraits>
-			<Greedy>0</Greedy>
-		</forcedTraits>
-	</BackstoryDef>
-
-	<BackstoryDef ParentName="CFAR_Infantry_Traitor">
-		<defName>CFAR_Infantry7_Traitor</defName>
-		<description>[PAWN_nameDef] forged requisition slips to acquire personal gear — then started selling extras to mercenaries. When caught, [PAWN_pronoun] shot the quartermaster and ran.</description>
-		<forcedTraits>
-			<Greedy>0</Greedy>
-		</forcedTraits>
-	</BackstoryDef>
-
-	<BackstoryDef ParentName="CFAR_Infantry_Traitor">
-		<defName>CFAR_Infantry8_Traitor</defName>
-		<description>[PAWN_nameDef] took to war too well — no questions, no mercy, no remorse. When the Empire tried to rein [PAWN_pronoun] in, [PAWN_pronoun] found a place that rewarded violence, not restrained it.</description>
-		<workDisables>
-			<li>Caring</li>
-		</workDisables>
-		<forcedTraits>
-			<Psychopath>0</Psychopath>
-		</forcedTraits>
-	</BackstoryDef>
-
-	<BackstoryDef ParentName="CFAR_Infantry_Traitor">
-		<defName>CFAR_Infantry9_Traitor</defName>
-		<description>[PAWN_nameDef] was notorious for barracks violence — hazing rookies until injuries required medevac. After nearly killing a squadmate over bunk space, [PAWN_pronoun] fled before arrest.</description>
-		<forcedTraits>
-			<Bloodlust>0</Bloodlust>
-		</forcedTraits>
-	</BackstoryDef>
-
-	<BackstoryDef ParentName="CFAR_Infantry_Traitor">
-		<defName>CFAR_Infantry10_Traitor</defName>
-		<description>[PAWN_nameDef] had a habit of “testing” incendiaries without orders — storage crates, bunk beds, even latrines. After torching an ammo dump during a blackout, [PAWN_pronoun] vanished into the outer zones with a stolen flamer pack.</description>
-		<forcedTraits>
-			<Pyromaniac>0</Pyromaniac>
-		</forcedTraits>
-	</BackstoryDef>
-
-<!--======== Soldier - Cook WIP ========-->
-
-	<BackstoryDef Name="CFAR_Cook_Traitor" ParentName="CFAR_Adult_Traitor">
-		<defName>CFAR_Cook1_Traitor</defName>
-		<title>Culinary specialist</title>
-		<titleShort>cook</titleShort>
-		<description>[PAWN_nameDef] can’t measure to save a life. One pinch becomes three, and sauces turn into chemical experiments. Still, [PAWN_pronoun] keeps the kitchen clean and the food moving — mostly forward.</description>
-		<skillGains>
-			<Shooting>2</Shooting>
+			<Shooting>6</Shooting>
 			<Melee>4</Melee>
-			<Cooking>6</Cooking>
 		</skillGains>
 		<spawnCategories>
-			<li>CFAR_Cook_Traitor</li>
+			<li>CFAR_EnclaveTrooper</li>
 		</spawnCategories>
 	</BackstoryDef>
 
-	<BackstoryDef ParentName="CFAR_Cook_Traitor">
-		<defName>CFAR_Cook2_Traitor</defName>
-		<description>[PAWN_nameDef] thinks recipes are suggestions and seasoning is a contest. [PAWN_pronoun] once added stim-powder instead of salt. The squad didn’t sleep for 30 hours, but morale was excellent.</description>
-		<skillGains>
-			<Cooking>4</Cooking>
-			<Medicine>2</Medicine>
-		</skillGains>
+	<BackstoryDef ParentName="CFAR_Deserter">
+		<defName>CFAR_Deserter1</defName>
+		<title>deserter</title>
+		<titleShort>deserter</titleShort>
+		<description>Worn down by endless drills and the weight of Imperial discipline, [PAWN_nameDef] finally broke. One night [PAWN_pronoun] abandoned [PAWN_possessive] post without orders, slipping past the watch. By dawn, [PAWN_pronoun] was gone, a deserter bound for the enclave.</description>
 	</BackstoryDef>
 
-<!--======== Sergeant - Infantry WIP ========-->
-
-	<BackstoryDef Name="CFAR_NCOInfantry_Traitor" ParentName="CFAR_Adult_Traitor">
-		<defName>CFAR_NCOInfantry1_Traitor</defName>
-		<title>Infantry sergeant</title>
-		<titleShort>Sergeant</titleShort>
-		<description>Sergeant [PAWN_nameDef] fought in every dust-covered trench and heat-scoured canyon the Imperial Navy forgot to name. [PAWN_pronoun] trusts old instincts more than fresh orders and keeps the squad alive through habit and spite.</description>
-		<forcedTraits>
-			<Nerves>2</Nerves>
-		</forcedTraits>
-		<disallowedTraits>
-			<Kind>0</Kind>
-			<Wimp>0</Wimp>
-		</disallowedTraits>
-		<skillGains>
-			<Shooting>6</Shooting>
-			<Melee>6</Melee>
-			<Social>2</Social>
-		</skillGains>
-		<spawnCategories>
-			<li>CFAR_NCOInfantry_Traitor</li>
-		</spawnCategories>
+	<BackstoryDef ParentName="CFAR_Deserter">
+		<defName>CFAR_Deserter2</defName>
+		<description>Exhausted by endless drills and sleepless deployments, [PAWN_nameDef] lost all taste for service. One night [PAWN_pronoun] packed what little [PAWN_possessive] bunk could hold and vanished into the dark. By morning, [PAWN_pronoun] was another deserter on the run.</description>
 	</BackstoryDef>
 
-	<BackstoryDef ParentName="CFAR_NCOInfantry_Traitor">
-		<defName>CFAR_NCOInfantry2_Traitor</defName>
-		<description>The front line was messy, but sergeant [PAWN_nameDef] was messier. [PAWN_pronoun] fought with grit, barked orders like cannon fire, and dragged victories out of battlefields that should’ve been lost.</description>
-		<skillGains>
-			<Melee>8</Melee>
-			<Social>2</Social>
-		</skillGains>
+	<BackstoryDef ParentName="CFAR_Deserter">
+		<defName>CFAR_Deserter3</defName>
+		<description>Imperial discipline weighed heavy on [PAWN_nameDef], every order like a chain around [PAWN_possessive] neck. [PAWN_pronoun] grew restless, eager to escape before the lash fell for another mistake. At the first chance, [PAWN_pronoun] bolted into the night and deserted.</description>
 	</BackstoryDef>
 
-<!--======== Company Officer - Infantry WIP ========-->
+<!--================ Enlisted ================-->
 
-	<BackstoryDef Name="CFAR_COfficerInfantry_Traitor" ParentName="CFAR_Adult_Traitor">
-		<defName>CFAR_COfficerInfantry1_Traitor</defName>
-		<title>Infantry officer</title>
-		<titleShort>Officer</titleShort>
-		<description>[PAWN_nameDef] studied logistics, formations, and battlefield tempo. [PAWN_pronoun] now spends most days redirecting soldiers who “creatively interpret” orders. Somehow, they succeed — and [PAWN_pronoun] gets the headache.</description>
-		<skillGains>
-			<Shooting>6</Shooting>
-			<Melee>2</Melee>
-			<Social>4</Social>
-			<Intellectual>4</Intellectual>
-		</skillGains>
-		<spawnCategories>
-			<li>CFAR_COfficerInfantry_Traitor</li>
-		</spawnCategories>
+	<BackstoryDef ParentName="CFAR_Deserter">
+		<defName>CFAR_DeserterCon1</defName>
+		<title>credit chip forger</title>
+		<titleShort>forger</titleShort>
+		<description>[PAWN_nameDef] began forging credit chips, inflating [PAWN_possessive] rations and wages at others’ expense. The scam was uncovered during a routine audit, and NORD officers came knocking. [PAWN_pronoun] deserted to avoid the military tribunal.</description>
 	</BackstoryDef>
 
-	<BackstoryDef ParentName="CFAR_COfficerInfantry_Traitor">
-		<defName>CFAR_COfficerInfantry2_Traitor</defName>
-		<description>[PAWN_nameDef] memorized doctrine to the letter. [PAWN_pronoun] now leads troops who ignore it in favor of improvised trench charges and spontaneous flanking. [PAWN_possessive] migraine is permanent, like their loyalty.</description>
-	</BackstoryDef>
-
-	<BackstoryDef Name="CFAR_COfficerInfantry_N_Traitor" ParentName="CFAR_COfficerInfantry_Traitor">
-		<defName>CFAR_COfficerInfantry_N1_Traitor</defName>
-		<description>[PAWN_nameDef] was raised on etiquette, ceremony, and battlefield theory. [PAWN_pronoun] now commands troopers who burp during briefings and tape knives to pulse rifles. [PAWN_pronoun] leads with forced grace and suppressed disbelief.</description>
-		<skillGains>
-			<Shooting>7</Shooting>
-			<Melee>4</Melee>
-			<Social>6</Social>
-			<Intellectual>4</Intellectual>
-		</skillGains>
-		<spawnCategories Inherit="False">
-			<li>CFAR_COfficerInfantry_N_Traitor</li>
-		</spawnCategories>
-	</BackstoryDef>
-
-	<BackstoryDef ParentName="CFAR_COfficerInfantry_N_Traitor">
-		<defName>CFAR_COfficerInfantry_N2_Traitor</defName>
-		<description>[PAWN_nameDef] assumed authority came with silence and obedience. [PAWN_pronoun] found that orders need shouting, repetition, and sometimes interpretive threats. [PAWN_pronoun] adapts — awkwardly, but effectively.</description>
-	</BackstoryDef>
-
-<!--======== Field Officer - Infantry WIP ========-->
-
-	<BackstoryDef Name="CFAR_FOfficerInfantry_Traitor" ParentName="CFAR_Adult_Traitor">
-		<defName>CFAR_FOfficerInfantry1_Traitor</defName>
-		<title>Infantry officer</title>
-		<titleShort>Officer</titleShort>
-		<description>[PAWN_nameDef] earned every stripe managing troops who turned drills into brawls and patrols into bar fights. Now [PAWN_pronoun] delegates with precision, watches the chaos from above, and files reports with the door locked.</description>
-		<skillGains>
-			<Shooting>4</Shooting>
-			<Social>8</Social>
-			<Intellectual>6</Intellectual>
-		</skillGains>
-		<spawnCategories>
-			<li>CFAR_FOfficerInfantry_Traitor</li>
-		</spawnCategories>
-	</BackstoryDef>
-
-	<BackstoryDef ParentName="CFAR_FOfficerInfantry_Traitor">
-		<defName>CFAR_FOfficerInfantry2_Traitor</defName>
-		<description>[PAWN_nameDef] used to shout orders across trenches. Now [PAWN_pronoun] signs requisitions, issues strategic commands, and fends off migraines caused by junior officers making familiar mistakes.</description>
-	</BackstoryDef>
-
-	<BackstoryDef Name="CFAR_FOfficerInfantry_N_Traitor" ParentName="CFAR_FOfficerInfantry_Traitor">
-		<defName>CFAR_FOfficerInfantry_N1_Traitor</defName>
-		<description>[PAWN_nameDef] once believed war was honor and procession. Reality replaced that with triage reports and logistics failures. Now [PAWN_pronoun] commands firmly, speaks carefully, and respects the unpredictable loyalty of the common ranks.</description>
-		<skillGains>
-			<Shooting>6</Shooting>
-			<Social>10</Social>
-			<Intellectual>6</Intellectual>
-		</skillGains>
-		<spawnCategories Inherit="False">
-			<li>CFAR_FOfficerInfantry_N</li>
-		</spawnCategories>
-	</BackstoryDef>
-
-	<BackstoryDef ParentName="CFAR_FOfficerInfantry_N_Traitor">
-		<defName>CFAR_FOfficerInfantry_N2_Traitor</defName>
-		<description>[PAWN_nameDef] entered war with lineage and theory. Years of commanding unpredictable troopers taught [PAWN_pronoun] the value of redundancy — in plans and aspirin. Now [PAWN_pronoun] rules from a polished desk with a locked liquor drawer.</description>
+	<BackstoryDef ParentName="CFAR_Deserter">
+		<defName>CFAR_DeserterCon2</defName>
+		<title>cheating gambler</title>
+		<titleShort>cheat</titleShort>
+		<description>[PAWN_nameDef] was notorious for rigging cards and dice, cheating comrades of their credit chips. Suspicion grew with every game, whispers turning into quiet reports to the MPs. Before arrest could follow, [PAWN_pronoun] slipped away into pirate ranks.</description>
 	</BackstoryDef>
 </Defs>
