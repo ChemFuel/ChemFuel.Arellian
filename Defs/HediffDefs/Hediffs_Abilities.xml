@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef>
+		<isBad>false</isBad>
+		<defName>CFAR_FiringOrderCaster</defName>
+		<label>firing order</label>
+		<description>WIP</description>
+		<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="HediffCompProperties_GiveHediffsInRange">
+				<range>9.9</range>
+				<hediff>CFAR_FiringOrderBuff</hediff>
+				<mote>Mote_CombatCommand</mote>
+				<hideMoteWhenNotDrafted>true</hideMoteWhenNotDrafted>
+				<targetingParameters>
+					<neverTargetHostileFaction>true</neverTargetHostileFaction>
+					<canTargetPawns>true</canTargetPawns>
+					<canTargetSubhumans>false</canTargetSubhumans>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetAnimals>false</canTargetAnimals>
+					<canTargetMechs>false</canTargetMechs>
+				</targetingParameters>
+			</li>
+		</comps>
+	</HediffDef>
+	<HediffDef>
+		<isBad>false</isBad>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defName>CFAR_FiringOrderBuff</defName>
+		<label>firing order</label>
+		<description>WIP</description>
+		<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+		<debugLabelExtra>other</debugLabelExtra>
+		<stages>
+			<li>
+				<statOffsets>
+					<ShootingAccuracyPawn>2.5</ShootingAccuracyPawn>
+					<AimingDelayFactor>-0.25</AimingDelayFactor>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>false</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="DiseaseBase">
+		<isBad>false</isBad>
+		<defName>CFAR_StunFire</defName>
+		<label>stun shock</label>
+		<description>WIP</description>
+		<debugLabelExtra>other</debugLabelExtra>
+		<initialSeverity>1</initialSeverity>
+		<maxSeverity>1</maxSeverity>
+		<stages>
+			<li>
+				<minSeverity>0.4</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.90</setMax>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.6</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.75</setMax>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.8</minSeverity>
+				<painFactor>0</painFactor>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.01</setMax>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>45000~75000</disappearsAfterTicks>
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-1</severityPerDay>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+	</HediffDef>
+</Defs>

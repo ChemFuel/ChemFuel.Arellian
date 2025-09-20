@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<FactionDef ParentName="FactionBase">
+		<defName>CFAR_ExpeditionTeam</defName>
+		<label>Expedition Team</label>
+		<description>A colony of recently-deployed Arellians.</description>
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<colorSpectrum><li>(0.8, 0.8, 0.8)</li></colorSpectrum>
+		<categoryTag>CFAR_ImperialTag</categoryTag>
+		<isPlayer>true</isPlayer>
+		<basicMemberKind>CFAR_Trooper</basicMemberKind>
+		<pawnSingular>soldier</pawnSingular>
+		<pawnsPlural>soldiers</pawnsPlural>
+		<techLevel>Industrial</techLevel>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<allowedCultures><li>CFAR_Culture</li></allowedCultures>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>CFAR_Player</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath>
+		<startingResearchTags>
+			<li>ClassicStart</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+			<li>ClassicStart</li>
+			<li>ClassicStartTechprints</li>
+		</startingTechprintsResearchTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Synthread</li>
+			</thingDefs>
+		</apparelStuffFilter>
+	</FactionDef>
+</Defs>

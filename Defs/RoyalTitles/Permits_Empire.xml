@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<!--================ Resource Drops ================-->
+
+	<RoyalTitlePermitDef Name="CFAR_DropResources" MayRequire="Ludeon.RimWorld.Royalty" Abstract="True">
+		<workerClass>RoyalTitlePermitWorker_DropResources</workerClass>
+		<faction>CFAR_Empire</faction>
+		<minTitle>CFAR_RankA3</minTitle>
+		<permitPointCost>1</permitPointCost>
+		<cooldownDays>30</cooldownDays>
+		<usableOnWorldMap>true</usableOnWorldMap>
+		<royalAid>
+			<targetingRange>39.9</targetingRange>
+			<favorCost>10</favorCost>
+		</royalAid>
+	</RoyalTitlePermitDef>
+
+	<!--======== Packaged Survival Meals - 480 ========-->
+
+		<RoyalTitlePermitDef ParentName="CFAR_DropResources" MayRequire="Ludeon.RimWorld.Royalty">
+			<defName>CFAR_DropFood</defName>
+			<label>call food rations</label>
+			<description>Call for a drop of 20 packaged survival meals.</description>
+			<uiPosition>(0,0)</uiPosition>
+			<royalAid>
+				<itemsToDrop>
+					<MealSurvivalPack>20</MealSurvivalPack>
+				</itemsToDrop>
+			</royalAid>
+		</RoyalTitlePermitDef>
+	
+	<!--======== Industrial Medicine - 360 ========-->
+
+		<RoyalTitlePermitDef ParentName="CFAR_DropResources" MayRequire="Ludeon.RimWorld.Royalty">
+			<defName>CFAR_DropMedicine</defName>
+			<label>call medicine</label>
+			<description>Call for a drop of 20 medicine.</description>
+			<uiPosition>(1,0)</uiPosition>
+			<royalAid>
+				<itemsToDrop>
+					<MedicineIndustrial>20</MedicineIndustrial>
+				</itemsToDrop>
+			</royalAid>
+		</RoyalTitlePermitDef>
+
+	<!--======== Refresher Package - nnn ========-->
+
+		<RoyalTitlePermitDef ParentName="CFAR_DropResources" MayRequire="Ludeon.RimWorld.Royalty">
+			<defName>CFAR_DropRefresher</defName>
+			<label>call refresher package</label>
+			<description>Call for a drop of nn WIP.</description>
+			<uiPosition>(2,0)</uiPosition>
+			<royalAid>
+				<itemsToDrop>
+					<MealSurvivalPack>10</MealSurvivalPack>
+					<MedicineIndustrial>10</MedicineIndustrial>
+				</itemsToDrop>
+			</royalAid>
+		</RoyalTitlePermitDef>
+	
+	<!--======== Steel - 475 ========-->
+
+		<RoyalTitlePermitDef ParentName="CFAR_DropResources" MayRequire="Ludeon.RimWorld.Royalty">
+			<defName>CFAR_DropSteel</defName>
+			<label>call medicine</label>
+			<description>Call for a drop of 250 steel.</description>
+			<uiPosition>(0,1)</uiPosition>
+			<royalAid>
+				<itemsToDrop>
+					<Steel>250</Steel>
+				</itemsToDrop>
+			</royalAid>
+		</RoyalTitlePermitDef>
+
+	<!--======== Components - 480 ========-->
+
+		<RoyalTitlePermitDef ParentName="CFAR_DropResources" MayRequire="Ludeon.RimWorld.Royalty">
+			<defName>CFAR_DropComponent</defName>
+			<label>call refresher package</label>
+			<description>Call for a drop of 15 components.</description>
+			<uiPosition>(1,1)</uiPosition>
+			<royalAid>
+				<itemsToDrop>
+					<ComponentIndustrial>15</ComponentIndustrial>
+				</itemsToDrop>
+			</royalAid>
+		</RoyalTitlePermitDef>
+	
+	<!--======== Chemfuel - 345 ========-->
+
+		<RoyalTitlePermitDef ParentName="CFAR_DropResources" MayRequire="Ludeon.RimWorld.Royalty">
+			<defName>CFAR_DropChemfuel</defName>
+			<label>call chemfuel</label>
+			<description>Call for a drop of 150 chemfuel.</description>
+			<uiPosition>(2,1)</uiPosition>
+			<royalAid>
+				<itemsToDrop>
+					<Chemfuel>150</Chemfuel>
+				</itemsToDrop>
+			</royalAid>
+		</RoyalTitlePermitDef>
+
+<!--================ Reinforcements ================-->
+
+	<RoyalTitlePermitDef Name="CFAR_CallSoldiers" MayRequire="Ludeon.RimWorld.Royalty" Abstract="True">
+		<workerClass>ArellianCore.RoyalTitlePermitWorker_CallSoldiers</workerClass>
+		<faction>CFAR_Empire</faction>
+		<cooldownDays>30</cooldownDays>
+		<permitPointCost>1</permitPointCost>
+		<royalAid>
+			<aidDurationDays>5</aidDurationDays>
+			<targetingRange>44.9</targetingRange>
+		</royalAid>
+	</RoyalTitlePermitDef>
+
+	<!--======== ACAF Infantry - 2.5/unit ========-->
+
+		<RoyalTitlePermitDef ParentName="CFAR_CallSoldiers" MayRequire="Ludeon.RimWorld.Royalty">
+			<defName>CFAR_CallTrooperA</defName>
+			<label>call trooper team</label>
+			<description>Call a team of troopers to assist you in combat and manual labor for 5 days. They may die in battle, but the Empire will be displeased if they do.</description>
+			<minTitle>CFAR_RankC1</minTitle>
+			<uiPosition>(0,2)</uiPosition>
+			<royalAid>
+				<favorCost>8</favorCost>
+				<pawnKindDef>CFAR_Trooper</pawnKindDef>
+				<pawnCount>4</pawnCount>
+			</royalAid>
+		</RoyalTitlePermitDef>
+
+		<RoyalTitlePermitDef ParentName="CFAR_CallSoldiers" MayRequire="Ludeon.RimWorld.Royalty">
+			<defName>CFAR_CallTrooperB</defName>
+			<label>call shock trooper team</label>
+			<description>Call a team of shock troopers to assist you in combat and manual labor for 5 days. They may die in battle, but the Federal Empire will be displeased if they do.</description>
+			<minTitle>CFAR_RankD1</minTitle>
+			<prerequisite>CFAR_CallTrooperA</prerequisite>
+			<uiPosition>(1,2)</uiPosition>
+			<royalAid>
+				<favorCost>12</favorCost>
+				<pawnKindDef>CFAR_ShockTrooper</pawnKindDef>
+				<pawnCount>4</pawnCount>
+			</royalAid>
+		</RoyalTitlePermitDef>
+
+	<!--======== ACAF Engineer - 10/unit ========-->
+
+		<RoyalTitlePermitDef ParentName="CFAR_CallSoldiers" MayRequire="Ludeon.RimWorld.Royalty">
+			<workerClass>ArellianCore.RoyalTitlePermitWorker_CallSpecialists</workerClass>
+			<defName>CFAR_CallEngineer</defName>
+			<label>call engineering specialist</label>
+			<description>Call engineering specialists for assistance in crafting and research for 5 days. The Federal Empire will be very displeased if they were to be killed or missing in action.</description>
+			<minTitle>CFAR_RankD1</minTitle>
+			<cooldownDays>60</cooldownDays>
+			<uiPosition>(0,4)</uiPosition>
+			<royalAid>
+				<favorCost>20</favorCost>
+				<pawnKindDef>CFAR_Trooper</pawnKindDef>
+				<pawnCount>2</pawnCount>
+			</royalAid>
+		</RoyalTitlePermitDef>
+
+	<!--======== ACAF Medic - 10/unit ========-->
+
+		<RoyalTitlePermitDef ParentName="CFAR_CallSoldiers" MayRequire="Ludeon.RimWorld.Royalty">
+			<workerClass>ArellianCore.RoyalTitlePermitWorker_CallSpecialists</workerClass>
+			<defName>CFAR_CallMedic</defName>
+			<label>call medical specialist</label>
+			<description>Call medical specialists for assistance in doctoring and research for 5 days. The Federal Empire will be very displeased if they were to be killed or missing in action.</description>
+			<minTitle>CFAR_RankD1</minTitle>
+			<cooldownDays>60</cooldownDays>
+			<uiPosition>(1,4)</uiPosition>
+			<royalAid>
+				<favorCost>20</favorCost>
+				<pawnKindDef>CFAR_Trooper</pawnKindDef>
+				<pawnCount>2</pawnCount>
+			</royalAid>
+		</RoyalTitlePermitDef>
+
+<!--================ ACAF Transport 10/unit ================-->
+
+	<RoyalTitlePermitDef Name="CFAR_CallTransportShuttle" MayRequire="Ludeon.RimWorld.Royalty">
+		<defName>CFAR_CallTransportShuttleA</defName>
+		<label>call transport shuttle</label>
+		<description>Call a shuttle for your own use. It will transport colonists, items, and animals anywhere you like within 70 world tiles.</description>
+		<workerClass>RoyalTitlePermitWorker_CallShuttle</workerClass>
+		<minTitle>CFAR_RankC3</minTitle>
+		<faction>CFAR_Empire</faction>
+		<permitPointCost>1</permitPointCost>
+		<cooldownDays>30</cooldownDays>
+		<usableOnWorldMap>true</usableOnWorldMap>
+		<uiPosition>(0,5)</uiPosition>
+		<royalAid>
+			<favorCost>10</favorCost>
+			<targetingRange>44.9</targetingRange>
+			<targetingRequireLOS>false</targetingRequireLOS>
+		</royalAid>
+	</RoyalTitlePermitDef>
+
+	<RoyalTitlePermitDef ParentName="CFAR_CallTransportShuttle" MayRequire="Ludeon.RimWorld.Royalty">
+		<defName>CFAR_CallTransportShuttleB</defName>
+		<minTitle>CFAR_RankD1</minTitle>
+		<prerequisite>CFAR_CallTransportShuttleA</prerequisite>
+		<cooldownDays>15</cooldownDays>
+		<uiPosition>(1,5)</uiPosition>
+	</RoyalTitlePermitDef>
+
+<!--================ ACAF Transfer 50/unit ================-->
+
+	<RoyalTitlePermitDef MayRequire="Ludeon.RimWorld.Royalty">
+		<defName>CFAR_TransferRecruitTeam</defName>
+		<label>recuit transfer</label>
+		<description>Request a team of a recruits.\n\nNote: The recruits will arrive unarmored and barehanded, but they will be permanently transferred to your faction.</description>
+		<workerClass>ArellianCore.RoyalTitlePermitWorker_TransferSoldiers</workerClass>
+		<minTitle>CFAR_RankD1</minTitle>
+		<faction>CFAR_Empire</faction>
+		<permitPointCost>1</permitPointCost>
+		<cooldownDays>60</cooldownDays>
+		<uiPosition>(0,6)</uiPosition>
+		<usableOnWorldMap>true</usableOnWorldMap>
+		<royalAid>
+			<favorCost>200</favorCost>
+			<pawnKindDef>CFAR_Recruit</pawnKindDef>
+			<pawnCount>4</pawnCount>
+			<targetingRange>44.9</targetingRange>
+		</royalAid>
+	</RoyalTitlePermitDef>
+
+<!--================ ACAF Bombardment ================-->
+
+	<RoyalTitlePermitDef Name="CFAR_CallOrbitalBarrage" MayRequire="Ludeon.RimWorld.Royalty">
+		<defName>CFAR_CallOrbitalBarrageA</defName>
+		<label>call orbital HE barrage</label>
+		<description>Call an orbital barrage on a target position.</description>
+		<workerClass>RoyalTitlePermitWorker_OrbitalStrike</workerClass>
+		<minTitle>CFAR_RankD1</minTitle>
+		<faction>CFAR_Empire</faction>
+		<permitPointCost>1</permitPointCost>
+		<cooldownDays>60</cooldownDays>
+		<uiPosition>(0,7)</uiPosition>
+		<royalAid>
+			<favorCost>30</favorCost>
+			<targetingRange>44.9</targetingRange>
+			<radius>14.9</radius>
+			<explosionRadiusRange>4.9</explosionRadiusRange>
+			<explosionCount>6</explosionCount>
+			<intervalTicks>60</intervalTicks>
+			<warmupTicks>90</warmupTicks>
+			<targetingRequireLOS>false</targetingRequireLOS>
+		</royalAid>
+	</RoyalTitlePermitDef>
+
+	<RoyalTitlePermitDef ParentName="CFAR_CallOrbitalBarrage" MayRequire="Ludeon.RimWorld.Royalty">
+		<defName>CFAR_CallOrbitalBarrageB</defName>
+		<minTitle>CFAR_RankE1</minTitle>
+		<prerequisite>CFAR_CallOrbitalBarrageA</prerequisite>
+		<uiPosition>(1,7)</uiPosition>
+		<royalAid>
+			<favorCost>30</favorCost>
+			<explosionCount>12</explosionCount>
+		</royalAid>
+	</RoyalTitlePermitDef>
+</Defs>
