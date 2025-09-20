@@ -9,20 +9,22 @@
 			<li>CFAR_Empire</li>
 		</spawnCategories>
 		<disallowedTraits>
+			<BodyPurist>0</BodyPurist>
 			<Cannibal>0</Cannibal>
 			<Nudist>0</Nudist>
 			<Pyromaniac>0</Pyromaniac>
+			<TorturedArtist>0</TorturedArtist>
 			<PsychicSensitivity>0</PsychicSensitivity>
 		</disallowedTraits>
 	</BackstoryDef>
 
 	<BackstoryDef Name="CFAR_Soldier" ParentName="CFAR_Adult" Abstract="True">
+		<spawnCategories Inherit="False"/>
 		<disallowedTraits>
+			<Delicate>0</Delicate>
 			<Wimp>0</Wimp>
-			<TorturedArtist>0</TorturedArtist>
 			<Jealous>0</Jealous>
 			<Undergrounder>0</Undergrounder>
-			<BodyPurist>0</BodyPurist>
 			<Neurotic>0</Neurotic>
 		</disallowedTraits>
 	</BackstoryDef>
@@ -32,15 +34,12 @@
 			<li>Violent</li>
 			<li>ManualDumb</li>
 		</requiredWorkTags>
-		<disallowedTraits>
-			<Delicate>0</Delicate>
-		</disallowedTraits>
 	</BackstoryDef>
 
 	<BackstoryDef Name="CFAR_Officer" ParentName="CFAR_Soldier" Abstract="True">
 		<requiredWorkTags>
-			<li>Social</li>
 			<li>Violent</li>
+			<li>Social</li>
 			<li>Intellectual</li>
 		</requiredWorkTags>
 		<disallowedTraits>
