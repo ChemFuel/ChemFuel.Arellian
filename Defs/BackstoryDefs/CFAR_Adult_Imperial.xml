@@ -234,7 +234,7 @@
 
 	<BackstoryDef Name="CFAR_MPTrooper" ParentName="CFAR_Enlisted">
 		<defName>CFAR_MPTrooper1</defName>
-		<title>MP trooper</title>
+		<title>military police</title>
 		<titleShort>navy MP</titleShort>
 		<description>Not every threat to the empire came from pirates or raiders. Some came from within the ranks. [PAWN_nameDef] served as military police, rooting out smugglers, brawlers, and deserters before their actions could endanger the empire.</description>
 		<requiredWorkTags>
