@@ -134,12 +134,11 @@
 
 	<BackstoryDef Name="CFAR_Trooper" ParentName="CFAR_Enlisted">
 		<defName>CFAR_Trooper1</defName>
-		<title>naval trooper</title>
-		<titleShort>navy trooper</titleShort>
+		<title>line trooper</title>
+		<titleShort>trooper</titleShort>
 		<description>[PAWN_nameDef] served as a trooper in the imperial navy, eager to see action against the empire’s enemies. After a few dozen close calls on anti-pirate patrols, [PAWN_pronoun] began to hope for uneventful days instead.</description>
 		<skillGains>
 			<Shooting>6</Shooting>
-			<Melee>4</Melee>
 		</skillGains>
 		<spawnCategories>
 			<li>CFAR_Trooper</li>
@@ -168,66 +167,65 @@
 
 	<BackstoryDef ParentName="CFAR_Trooper">
 		<defName>CFAR_Trooper6</defName>
-		<description>As a trooper, [PAWN_nameDef] quickly learned that glory was rare, but danger was constant. A single mistake could cost a squad everything, so [PAWN_pronoun] drilled until every movement was second nature. The god of war favored perfection, and [PAWN_nameDef] intended to give nothing less.</description>
+		<description>[PAWN_nameDef] joined the imperial navy as soon as [PAWN_pronoun] was of age. Campaign after campaign, [PAWN_pronoun] until muscle ached and calluses split. Each march and each raid reinforced [PAWN_possessive] resolve. Pride in service carried [PAWN_objective] through hardship without falter.</description>
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_Trooper">
 		<defName>CFAR_Trooper7</defName>
-		<description>Many troopers grumbled about long patrol routes, but [PAWN_nameDef] found purpose in them. Every quiet journey meant another world safe from raiders. Every captured pirate meant fewer innocents lost. It was a slow war, but one [PAWN_pronoun] believed was worth fighting.</description>
-		<forcedTraits><QuickSleeper>0</QuickSleeper></forcedTraits>
+		<description>On an outpost patrol, [PAWN_nameDef] watched alien beasts tear into comrades, dragging them away alive. The screams and chewing jaws broke something inside [PAWN_objective]. Since that night, [PAWN_pronoun] refuses to handle animals of any kind.</description>
+		<workDisables><li>Animals</li></workDisables>
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_Trooper">
 		<defName>CFAR_Trooper8</defName>
-		<description>The empire’s enemies lurked at the edges of settled space, and troopers were sent to flush them out. For [PAWN_nameDef], that meant sudden deployments, long nights without sleep, and the knowledge that the next firefight could be [PAWN_possessive] last. Still, [PAWN_pronoun] never faltered.</description>
+		<title>claustrophobic trooper</title>
+		<description>During a bombardment, [PAWN_nameDef] was buried alive when a trench collapsed. Hours passed under earth and stone before rescuers dug [PAWN_objective] free. Since that day, [PAWN_pronoun] refuses to mine or dig, the memory of suffocation too strong to face again.</description>
+		<workDisables><li>Mining</li></workDisables>
+		<disallowedTraits><li>Undergrounder</li></disallowedTraits>
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_Trooper">
 		<defName>CFAR_Trooper9</defName>
+		<title>pyrophobic trooper</title>
+		<description>Caught in the blast of a fuel fire, [PAWN_nameDef] carried screaming comrades from the inferno. The smell of charred flesh never left [PAWN_possessive] mind. From that day, [PAWN_pronoun] could not enter a kitchen or stand near a galley flame.</description>
+		<workDisables><li>Firefighting</li></workDisables>
+		<disallowedTraits><li>Pyromaniac</li></disallowedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_Trooper">
+		<defName>CFAR_Trooper10</defName>
 		<title>brash trooper</title>
 		<description>[PAWN_nameDef] was a walking storm of curses, filling barracks and battlefields alike with [PAWN_possessive] foul mouth. Officers hated it, squads laughed at it—but when the shooting started, [PAWN_pronoun] fought like hell and always pulled through.</description>
 		<forcedTraits><Abrasive>0</Abrasive></forcedTraits>
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_Trooper">
-		<defName>CFAR_Trooper10</defName>
-		<titleShort>zealot</titleShort>
+		<defName>CFAR_Trooper11</defName>
+		<title>zealous trooper</title>
 		<description>[PAWN_nameDef] fought with ruthless zeal, seeing pirates and traitors as vermin to be exterminated. Protecting citizens came easy—but tending wounds never interested [PAWN_objective]. Some whispered [PAWN_pronoun] enjoyed the killing a little too much.</description>
 		<forcedTraits><Bloodlust>0</Bloodlust></forcedTraits>
+		<disallowedTraits><li>Kind</li></disallowedTraits>
 		<workDisables><li>Caring</li></workDisables>
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_Trooper">
-		<defName>CFAR_Trooper11</defName>
-		<titleShort>bookworm</titleShort>
+		<defName>CFAR_Trooper12</defName>
+		<title>academic trooper</title>
 		<description>[PAWN_nameDef] signed up to fight pirates and rebels, but spent more hours waiting than shooting. Between long guard shifts, [PAWN_pronoun] buried [PAWN_objective]self in novels, finding calm in stories while narrowly avoiding inspections.</description>
 		<possessions><Novel>1</Novel></possessions>
 	</BackstoryDef>
 
 	<!--<BackstoryDef ParentName="CFAR_Trooper">
-		<defName>CFAR_Trooper12</defName>
+		<defName>CFAR_Trooper13</defName>
 		<titleShort>gambler</titleShort>
 		<description>[PAWN_nameDef] signed up to fight pirates and rebels, but spent more hours waiting than shooting. Between long guard shifts, [PAWN_pronoun] buried [PAWN_objective]self in novels, finding calm in stories while narrowly avoiding inspections.</description>
 		<possessions><Novel>1</Novel></possessions>
 	</BackstoryDef>-->
 
 	<BackstoryDef ParentName="CFAR_Trooper">
-		<defName>CFAR_Trooper13</defName>
+		<defName>CFAR_Trooper14</defName>
 		<description>[PAWN_nameDef] thought the navy would be all glory and battle. Instead, most days were long patrols with tense standoffs. [PAWN_pronoun] passed the downtime by sneaking rations of chocolate, a small comfort against the cold of deep space.</description>
 		<possessions><Chocolate>1~4</Chocolate></possessions>
-	</BackstoryDef>
-
-	<BackstoryDef ParentName="CFAR_Trooper">
-		<defName>CFAR_Trooper14</defName>
-		<titleShort>smarty</titleShort>
-		<description>[PAWN_nameDef] stood out not for strength but for quick thinking. While others relied on muscle and drills, [PAWN_pronoun] solved problems on the fly—rewiring a hatch under fire, finding cover where none seemed to exist. Brains kept [PAWN_objective] alive where brawn might not.</description>
-		<requiredWorkTags>
-			<li>Intellectual</li>
-		</requiredWorkTags>
-		<skillGains>
-			<Melee>2</Melee>
-			<Intellectual>2</Intellectual>
-		</skillGains>
 	</BackstoryDef>
 
 <!--======== Trooper - MP ========-->
@@ -235,14 +233,15 @@
 	<BackstoryDef Name="CFAR_MPTrooper" ParentName="CFAR_Enlisted">
 		<defName>CFAR_MPTrooper1</defName>
 		<title>military police</title>
-		<titleShort>navy MP</titleShort>
-		<description>Not every threat to the empire came from pirates or raiders. Some came from within the ranks. [PAWN_nameDef] served as military police, rooting out smugglers, brawlers, and deserters before their actions could endanger the empire.</description>
+		<titleShort>policeman</titleShort>
+		<titleShortFemale>policewoman</titleShortFemale>
+		<description>[PAWN_nameDef] served as an Imperial military policeman attached to barracks patrols. [PAWN_pronoun] broke up fights, quelled drunken disorder, and marched offenders to the cells. Within the company, [PAWN_pronoun] was known as the trooper who kept the peace by force if needed.</description>
 		<requiredWorkTags>
 			<li>Social</li>
 		</requiredWorkTags>
 		<skillGains>
-			<Shooting>4</Shooting>
-			<Melee>6</Melee>
+			<Shooting>2</Shooting>
+			<Melee>4</Melee>
 		</skillGains>
 		<spawnCategories>
 			<li>CFAR_MPTrooper</li>
@@ -251,17 +250,62 @@
 
 	<BackstoryDef ParentName="CFAR_MPTrooper">
 		<defName>CFAR_MPTrooper2</defName>
-		<description>Discipline was a weapon, and [PAWN_nameDef] wielded it with precision. When troopers tested boundaries, [PAWN_pronoun] was there to set them straight. The empire trusted [PAWN_objective] to ensure its soldiers fought the enemy, not each other.</description>
+		<description>During deployments, [PAWN_nameDef] maintained order in crowded camps. [PAWN_pronoun] dispersed gambling circles, seized contraband, and arrested brawlers on the spot. By dusk each day, [PAWN_possessive] reports filled entire ledgers with names and charges.</description>
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_MPTrooper">
 		<defName>CFAR_MPTrooper3</defName>
-		<description>On patrol through the ship’s lower decks, [PAWN_nameDef] kept a watchful eye for contraband and misconduct. A sharp word or firm hand was often enough, but when it wasn’t, [PAWN_pronoun] made sure discipline was restored swiftly.</description>
+		<description>[PAWN_nameDef] walked market patrols in occupied towns, ensuring Imperial law was followed. Traders were checked for permits, curfews enforced, and black markets shut down. Order was maintained under [PAWN_possessive] steady watch.</description>
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_MPTrooper">
 		<defName>CFAR_MPTrooper4</defName>
-		<description>Keeping soldiers in line was no easy task. [PAWN_nameDef] spent countless hours breaking up brawls, confiscating illicit goods, and reminding troopers that the empire’s law didn’t stop at the barracks door. Order came first, no matter the cost.</description>
+		<description>[PAWN_nameDef] was tasked with anti-looting patrols during raids. Shops and homes were secured, offenders seized, and stolen goods returned to storehouses. Civilians knew [PAWN_pronoun] by sight and feared the baton more than the thieves.</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_MPTrooper">
+		<defName>CFAR_MPTrooper5</defName>
+		<description>Posted to checkpoint duty, [PAWN_nameDef] inspected passes and searched cargo at every gate. Smugglers were seized, deserters intercepted, and stolen goods confiscated. No one slipped past [PAWN_possessive] inspection.</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_MPTrooper">
+		<defName>CFAR_MPTrooper6</defName>
+		<description>On campaign, [PAWN_nameDef] walked the perimeter, checking passes and enforcing curfew. Drunkards and loiterers were dragged back to barracks, charges filed before dawn. Few dared test patrols when [PAWN_pronoun] was on watch.</description>
+	</BackstoryDef>
+
+<!--======== Trooper - MP Warden ========-->
+
+	<BackstoryDef Name="CFAR_MPWarden" ParentName="CFAR_Enlisted">
+		<defName>CFAR_MPWarden1</defName>
+		<title>military police warden</title>
+		<titleShort>MP warden</titleShort>
+		<description>Stationed at a frontier brig, [PAWN_nameDef] handled both Imperial offenders and captured raiders. Lockdowns, searches, and transport runs fell under [PAWN_possessive] charge. Every chain was checked twice before it left [PAWN_possessive] hands.</description>
+		<requiredWorkTags>
+			<li>Social</li>
+		</requiredWorkTags>
+		<skillGains>
+			<Shooting>4</Shooting>
+			<Melee>4</Melee>
+			<Social>2</Social>
+		</skillGains>
+		<spawnCategories>
+			<li>CFAR_MPWarden</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_MPWarden">
+		<defName>CFAR_MPWarden2</defName>
+		<description>Assigned to detention blocks, [PAWN_nameDef] maintained strict order among soldiers awaiting trial. Rations were counted, cells inspected, and contraband seized without hesitation. The prisoners learned quickly that no trick escaped [PAWN_possessive] notice.</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_MPWarden">
+		<defName>CFAR_MPWarden3</defName>
+		<description>[PAWN_nameDef] guarded war captives taken during raids. [PAWN_pronoun] kept them bound, accounted for, and delivered to processing without incident. The work was thankless, but order never faltered under [PAWN_possessive] eye.</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_MPWarden">
+		<defName>CFAR_MPWarden4</defName>
+		<description>[PAWN_nameDef] served as a warden over Imperial stockades, keeping thieves and brawlers behind bars. [PAWN_pronoun] oversaw headcounts, enforced silence, and marched prisoners into tribunals as required. Under [PAWN_possessive] watch, escapes were rare.</description>
 	</BackstoryDef>
 
 <!--======== Trooper - Cook ========-->
@@ -270,7 +314,7 @@
 		<defName>CFAR_TrooperCook1</defName>
 		<title>culinary specialist</title>
 		<titleShort>navy cook</titleShort>
-		<description>Life as a navy cook meant long hours in hot galleys, preparing meals for hundreds of hungry troopers. [PAWN_nameDef] learned quickly that good food kept morale higher than any speech, and [PAWN_pronoun] took pride in every tray served.</description>
+		<description>[PAWN_nameDef] worked the galleys aboard an Imperial warship, turning crates of rations into meals for hundreds. Long hours over boiling vats left little time for rest, but [PAWN_pronoun] kept to schedule without fail. The crew knew [PAWN_possessive] ladle as well as they knew their rifles.</description>
 		<requiredWorkTags>
 			<li>Cooking</li>
 		</requiredWorkTags>
@@ -285,25 +329,27 @@
 
 	<BackstoryDef ParentName="CFAR_TrooperCook">
 		<defName>CFAR_TrooperCook2</defName>
-		<description>While others drilled with rifles, [PAWN_nameDef] drilled with knives and ladles. A steady hand in the galley meant steady minds in battle, and [PAWN_pronoun] was determined to keep the imperial navy sharp through [PAWN_possessive] cooking.</description>
+		<description>Stationed in a fleet kitchen, [PAWN_nameDef] served as a cook responsible for rationing every bite. Flour, meat, and spice were weighed to the gram, logged, and stretched to the last day of deployment. Order on the ship began with [PAWN_possessive] meal line.</description>
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_TrooperCook">
 		<defName>CFAR_TrooperCook3</defName>
-		<description>[PAWN_nameDef] always claimed the mess hall was as important as the armory. Hungry troopers grew reckless, but a hot meal after a deployment steadied nerves. The empire needed discipline, and [PAWN_pronoun] served it one plate at a time.</description>
+		<description>[PAWN_nameDef] manned the stoves during campaigns, feeding exhausted sailors between shifts at the guns. Burned pans, empty stores, and foul-smelling galley air were [PAWN_possessive] daily companions. Few thanked [PAWN_objective], but no one fought on an empty stomach.</description>
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_TrooperCook">
 		<defName>CFAR_TrooperCook4</defName>
-		<description>On long voyages, supplies ran thin and tempers grew short. [PAWN_nameDef] became skilled at stretching rations, turning scraps into hearty meals that kept the squad satisfied. It was quiet work, but [PAWN_pronoun] knew it kept the navy running.</description>
+		<description>[PAWN_nameDef] served as a fleet baker, rising before the crew to prepare bread for the day. Mixing, kneading, and firing ovens filled the hours, leaving little time beyond flour and sweat. The smell of fresh loaves drifted through the decks, steady as the tide.</description>
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_TrooperCook">
 		<defName>CFAR_TrooperCook5</defName>
-		<description>The empire needed more than soldiers—it needed someone to feed them. [PAWN_nameDef] served as a navy cook, turning rations into meals that kept morale steady on long deployments. [PAWN_pronoun] loved food in all its forms, and made sure every trooper got a taste of home before marching out again.</description>
-		<forcedTraits><Gourmand>0</Gourmand></forcedTraits>
-		<bodyTypeMale>Fat</bodyTypeMale>
-		<bodyTypeFemale>Fat</bodyTypeFemale>
+		<description>During long patrols, [PAWN_nameDef] turned stale rations into palatable stews that kept spirits from breaking. Improvisation became a second skill, coaxing flavor from salt pork and weeviled grain. The crew ate, grumbled, and carried on — and [PAWN_pronoun] carried the galley.</description>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_TrooperCook">
+		<defName>CFAR_TrooperCook6</defName>
+		<description>Posted aboard a carrier’s galley, [PAWN_nameDef] kept the kettles boiling through storm and battle alike. Steam, grease, and shouting sailors filled the cramped deck, but the meals never stopped. [PAWN_pronoun] measured success not in praise, but in empty plates returned.</description>
 	</BackstoryDef>
 
 <!--======== Trooper - Medic ========-->
@@ -318,7 +364,6 @@
 		</requiredWorkTags>
 		<skillGains>
 			<Shooting>4</Shooting>
-			<Melee>2</Melee>
 			<Medicine>6</Medicine>
 		</skillGains>
 		<spawnCategories>
@@ -328,22 +373,42 @@
 
 	<BackstoryDef ParentName="CFAR_TrooperMedic">
 		<defName>CFAR_TrooperMedic2</defName>
-		<description>As a navy medic, [PAWN_nameDef] often worked in the shadows of the fight. While troopers fired their rifles, [PAWN_pronoun] crawled through smoke and debris to reach the wounded. It wasn’t glorious, but it kept the imperial navy alive and kicking.</description>
+		<description>[PAWN_nameDef] served as a ship’s medic, tending burns and fractures in cramped sickbays. Every raid left a line of wounded at [PAWN_possessive] cot, and every shift ended with blood scrubbed from the deck. The work was ceaseless, but [PAWN_pronoun] kept to it without pause.</description>
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_TrooperMedic">
 		<defName>CFAR_TrooperMedic3</defName>
-		<description>The empire’s battles never paused for the wounded. [PAWN_nameDef] carried a medkit through gunfire, working under pressure that would break most soldiers. [PAWN_pronoun] wasn’t there to fight—[PAWN_pronoun] was there to make sure others could keep fighting.</description>
+		<description>[PAWN_nameDef] was assigned to surgical detail, holding clamps and while surgeons cut and stitched wounds. Hours vanished in blood and gauze, but [PAWN_pronoun] never faltered. The wounded left [PAWN_possessive] table alive more often than not.</description>
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_TrooperMedic">
 		<defName>CFAR_TrooperMedic4</defName>
-		<description>Every squad needed a medic, and [PAWN_nameDef] filled that role with grim efficiency. From sealing plasma burns to stopping blood loss, [PAWN_pronoun] made the difference between survival and a body bag. Troopers trusted [PAWN_possessive] hands more than armor.</description>
+		<description>[PAWN_nameDef] manned aid stations during boarding actions. Smoke and screaming filled the corridors as [PAWN_pronoun] dragged the injured clear, bandaging in the middle of the fight. Survival depended as much on [PAWN_possessive] steadiness as on the rifles ahead.</description>
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_TrooperMedic">
 		<defName>CFAR_TrooperMedic5</defName>
-		<description>[PAWN_nameDef] had seen enough battlefields to stomach blood, but fire was different. The searing stench of burned flesh clung to every memory of plasma strikes and shipboard blazes. From then on, [PAWN_pronoun] treated wounds without hesitation—but [PAWN_pronoun] could never bring [PAWN_objective]self to face the flames.</description>
+		<description>During a boarding action, [PAWN_nameDef] treated dozens of sailors with torn throats and shattered jaws. The cries and choking gasps etched themselves too deep. Since that day, [PAWN_pronoun] speaks little, voice locked down by memory.</description>
+		<skillGains>
+			<Social>-4</Social>
+		</skillGains>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_TrooperMedic">
+		<defName>CFAR_TrooperMedic6</defName>
+		<description>In a carrier infirmary, [PAWN_nameDef] pulled charred bodies from a galley fire and worked to save the survivors. The stench of burning fat clung to [PAWN_possessive] lungs. From then on, [PAWN_pronoun] could not enter a kitchen without retching.</description>
+		<workDisables><li>Cooking</li></workDisables>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_TrooperMedic">
+		<defName>CFAR_TrooperMedic7</defName>
+		<description>[PAWN_nameDef] spent weeks tending the mangled after an engine-room explosion. Flesh and steel twisted together under [PAWN_possessive] hands until [PAWN_pronoun] could not touch a machine again. Even routine maintenance set [PAWN_objective] shaking.</description>
+		<workDisables><li>Crafting</li></workDisables>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_TrooperMedic">
+		<defName>CFAR_TrooperMedic8</defName>
+		<description>[PAWN_nameDef] manned aid stations during boarding actions. Smoke and screaming filled the corridors as [PAWN_pronoun] dragged the injured clear, bandaging in the middle of the fight. Survival depended as much on [PAWN_possessive] steadiness as on the rifles ahead—but [PAWN_pronoun] could never bring [PAWN_objective]self to face the flames.</description>
 		<workDisables><li>Firefighting</li></workDisables>
 	</BackstoryDef>
 
