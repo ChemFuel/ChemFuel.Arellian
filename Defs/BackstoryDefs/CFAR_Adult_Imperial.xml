@@ -96,7 +96,7 @@
 
 	<BackstoryDef Name="CFAR_Recruit" ParentName="CFAR_Enlisted">
 		<defName>CFAR_Recruit1</defName>
-		<title>imperial recruit</title>
+		<title>recruit</title>
 		<titleShort>recruit</titleShort>
 		<description>Freshly graduated from boot camp, [PAWN_nameDef] stepped out of the deployment shuttle with barely contained enthusiasm. People said [PAWN_pronoun]'d see real action around the Rimworlds, and [PAWN_nameDef] was about to find out.</description>
 		<skillGains>
@@ -134,7 +134,7 @@
 
 	<BackstoryDef Name="CFAR_Trooper" ParentName="CFAR_Enlisted">
 		<defName>CFAR_Trooper1</defName>
-		<title>line trooper</title>
+		<title>trooper</title>
 		<titleShort>trooper</titleShort>
 		<description>[PAWN_nameDef] served as a trooper in the imperial navy, eager to see action against the empire’s enemies. After a few dozen close calls on anti-pirate patrols, [PAWN_pronoun] began to hope for uneventful days instead.</description>
 		<skillGains>
