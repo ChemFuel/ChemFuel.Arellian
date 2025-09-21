@@ -22,6 +22,8 @@
 
 <!--================ Enlisted ================-->
 
+<!--======== Deserter ========-->
+
 	<BackstoryDef Name="CFAR_Deserter" ParentName="CFAR_SoldierEnclave" Abstract="True">
 		<skillGains>
 			<Shooting>6</Shooting>
@@ -31,8 +33,6 @@
 			<li>CFAR_EnclaveTrooper</li>
 		</spawnCategories>
 	</BackstoryDef>
-
-<!--======== Trooper - Generic ========-->
 
 	<BackstoryDef ParentName="CFAR_Deserter">
 		<defName>CFAR_Deserter1</defName>
@@ -72,7 +72,7 @@
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_Deserter">
-		<defName>CFAR_Deserter</defName>
+		<defName>CFAR_Deserter8</defName>
 		<description>[PAWN_nameDef] fell in with a circle of troopers who raided villages during night patrols. They moved as a pack, breaking into homes and dividing spoils before dawn. When one of the victims reported the gang, arrests began — and [PAWN_pronoun] deserted before the noose tightened.</description>
 	</BackstoryDef>
 
