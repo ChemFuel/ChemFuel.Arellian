@@ -48,7 +48,7 @@
 
 		<RoyalTitlePermitDef ParentName="CFAR_DropResources" MayRequire="Ludeon.RimWorld.Royalty">
 			<defName>CFAR_DropRefresher</defName>
-			<label>call refresher package</label>
+			<label>call refresher drop</label>
 			<description>Call for a drop of nn WIP.</description>
 			<uiPosition>(2,0)</uiPosition>
 			<royalAid>
@@ -63,7 +63,7 @@
 
 		<RoyalTitlePermitDef ParentName="CFAR_DropResources" MayRequire="Ludeon.RimWorld.Royalty">
 			<defName>CFAR_DropSteel</defName>
-			<label>call medicine</label>
+			<label>call steel drop</label>
 			<description>Call for a drop of 250 steel.</description>
 			<uiPosition>(0,1)</uiPosition>
 			<royalAid>
@@ -77,7 +77,7 @@
 
 		<RoyalTitlePermitDef ParentName="CFAR_DropResources" MayRequire="Ludeon.RimWorld.Royalty">
 			<defName>CFAR_DropComponent</defName>
-			<label>call refresher package</label>
+			<label>call component drop</label>
 			<description>Call for a drop of 15 components.</description>
 			<uiPosition>(1,1)</uiPosition>
 			<royalAid>
@@ -261,3 +261,4 @@
 		</royalAid>
 	</RoyalTitlePermitDef>
 </Defs>
+
