@@ -10,81 +10,53 @@
 		</spawnCategories>
 	</BackstoryDef>
 
-<!--================ Urbworld ================-->
+<!--================================ Civilian ================================-->
+	
+<!--================ Street Cats ================-->
 
-<!--======== Street Kitten ========-->
+<!--======== Dweller ========-->
 
 	<BackstoryDef ParentName="CFAR_Child">
 		<defName>CFAR_StreetKitten1</defName>
-		<title>street kitten</title>
-		<titleShort>street kit</titleShort>
-		<description>WIP</description>
+		<title>street orphan</title>
+		<titleShort>orphan</titleShort>
+		<description>.</description>
 		<skillGains>
-			<Melee>3</Melee>
-			<Social>1</Social>
+			<Melee>6</Melee>
 		</skillGains>
 		<spawnCategories>
 			<li>CFAR_Street</li>
 		</spawnCategories>
 	</BackstoryDef>
 
-<!--======== Working Class ========-->
+	<BackstoryDef ParentName="CFAR_Child">
+		<defName>CFAR_StreetKitten2</defName>
+		<title>street urchin</title>
+		<titleShort>orphan</titleShort>
+		<description>.</description>
+		<skillGains>
+			<Melee>6</Melee>
+		</skillGains>
+		<spawnCategories>
+			<li>CFAR_Street</li>
+		</spawnCategories>
+	</BackstoryDef>
+	
+<!--================ Colony Cats ================-->
+
+<!--======== Farmer ========-->
 
 	<BackstoryDef ParentName="CFAR_Child">
 		<defName>CFAR_FarmKitten1</defName>
 		<title>farm kitten</title>
-		<titleShort>farm kit</titleShort>
-		<description>WIP</description>
+		<titleShort>farmhand</titleShort>
+		<description>.</description>
 		<skillGains>
-			<Animals>4</Animals>
+			<Melee>6</Melee>
 		</skillGains>
 		<spawnCategories>
-			<li>CFAR_WorkingClass</li>
+			<li>CFAR_Colony</li>
 		</spawnCategories>
 	</BackstoryDef>
 
-<!--======== Middle Class ========-->
-
-	<BackstoryDef ParentName="CFAR_Child">
-		<defName>CFAR_ShopKitten1</defName>
-		<title>shop kitten</title>
-		<titleShort>shop kit</titleShort>
-		<description>WIP</description>
-		<skillGains>
-			<Social>4</Social>
-		</skillGains>
-		<spawnCategories>
-			<li>CFAR_MiddleClass</li>
-		</spawnCategories>
-	</BackstoryDef>
-
-	<BackstoryDef ParentName="CFAR_Child">
-		<defName>CFAR_AcademyStudent1</defName>
-		<title>academy student</title>
-		<titleShort>student</titleShort>
-		<description>WIP</description>
-		<skillGains>
-			<Social>1</Social>
-			<Intellectual>2</Intellectual>
-		</skillGains>
-		<spawnCategories>
-			<li>CFAR_MiddleClass</li>
-		</spawnCategories>
-	</BackstoryDef>
-
-	<BackstoryDef ParentName="CFAR_Child">
-		<defName>CFAR_CadetKitten1</defName>
-		<title>cadet kitten</title>
-		<titleShort>cadet</titleShort>
-		<description>WIP</description>
-		<skillGains>
-			<Shooting>3</Shooting>
-			<Intellectual>1</Intellectual>
-		</skillGains>
-		<spawnCategories>
-			<li>CFAR_CadetKitten</li>
-		</spawnCategories>
-	</BackstoryDef>
-
-<!--======== High Class ========-->
 </Defs>
