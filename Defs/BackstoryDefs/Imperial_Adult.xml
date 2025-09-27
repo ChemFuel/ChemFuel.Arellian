@@ -50,13 +50,49 @@
 			<DrugDesire>0</DrugDesire>
 		</disallowedTraits>
 	</BackstoryDef>
-	
-<!--================ Civilian ================-->
 
-<!--======== Miner ========-->
+<!--================================ Civilian ================================-->
+	
+<!--================ Street Cats ================-->
+
+<!--======== Dweller ========-->
 
 	<BackstoryDef ParentName="CFAR_Adult">
-		<defName>CFAR_Miner1</defName>
+		<defName>CFAR_StreetDweller1</defName>
+		<title>street fighter</title>
+		<titleShort>brawler</titleShort>
+		<description>.</description>
+		<skillGains>
+			<Melee>6</Melee>
+		</skillGains>
+		<spawnCategories>
+			<li>CFAR_Street</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+<!--======== Dealer ========-->
+
+	<BackstoryDef ParentName="CFAR_Adult">
+		<defName>CFAR_StreetDealer1</defName>
+		<title>backalley dealer</title>
+		<titleShort>broker</titleShort>
+		<description>.</description>
+		<skillGains>
+			<Shooting>4/Shooting>
+			<Social>2/Social>
+		</skillGains>
+		<spawnCategories>
+			<li>CFAR_Street</li>
+			<li>CFAR_Merchant</li>
+		</spawnCategories>
+	</BackstoryDef>
+	
+<!--================ Colony Cats ================-->
+
+<!--======== Farmer ========-->
+
+	<BackstoryDef ParentName="CFAR_Adult">
+		<defName>CFAR_Farmer1</defName>
 		<title>farmer</title>
 		<titleShort>farmer</titleShort>
 		<description>.</description>
@@ -65,30 +101,63 @@
 			<Melee>2</Melee>
 		</skillGains>
 		<spawnCategories>
-			<li>CFAR_Miner</li>
+			<li>CFAR_Colony</li>
 		</spawnCategories>
 	</BackstoryDef>
 
-<!--======== Farmer ========-->
+<!--======== Miner ========-->
 
-	<BackstoryDef Name="CFAR_Farmer" ParentName="CFAR_Adult">
-		<defName>CFAR_FarmerPlant1</defName>
-		<title>farmer</title>
-		<titleShort>farmer</titleShort>
-		<description>[PAWN_nameDef] lived a simple life, tending to [PAWN_possessive] crops and removing weeds from dawn to dusk. The soil was familiar beneath [PAWN_possessive] hands, steady and honest work. There was pride in knowing that [PAWN_pronoun] helped feed the imperial navy, that every harvest kept the soldiers strong and the fleet running.</description>
+	<BackstoryDef ParentName="CFAR_Adult">
+		<defName>CFAR_Miner1</defName>
+		<title>miner</title>
+		<titleShort>miner</titleShort>
+		<description>.</description>
 		<skillGains>
 			<Shooting>4</Shooting>
 			<Melee>2</Melee>
 		</skillGains>
 		<spawnCategories>
-			<li>CFAR_Farmer</li>
+			<li>CFAR_Colony</li>
+		</spawnCategories>
+	</BackstoryDef>
+	
+<!--================ Industrial Cats ================-->
+
+<!--======== Construction Worker ========-->
+
+	<BackstoryDef ParentName="CFAR_Adult">
+		<defName>CFAR_Construction1</defName>
+		<title>construction worker</title>
+		<titleShort>worker</titleShort>
+		<description>.</description>
+		<skillGains>
+			<Shooting>4</Shooting>
+			<Melee>2</Melee>
+		</skillGains>
+		<spawnCategories>
+			<li>CFAR_Industrial</li>
+		</spawnCategories>
+	</BackstoryDef>
+	
+<!--================ Service Cats ================-->
+
+<!--======== Shopkeeper ========-->
+
+	<BackstoryDef ParentName="CFAR_Adult">
+		<defName>CFAR_Shopkeeper1</defName>
+		<title>shopkeeper</title>
+		<titleShort>shopkeep</titleShort>
+		<description>.</description>
+		<skillGains>
+			<Shooting>4</Shooting>
+			<Melee>2</Melee>
+		</skillGains>
+		<spawnCategories>
+			<li>CFAR_Urban</li>
 		</spawnCategories>
 	</BackstoryDef>
 
-	<BackstoryDef ParentName="CFAR_Farmer">
-		<defName>CFAR_FarmerPlant2</defName>
-		<description>WIP</description>
-	</BackstoryDef>
+<!--================================ Enlisted ================================-->
 
 <!--================ Special ================-->
 
