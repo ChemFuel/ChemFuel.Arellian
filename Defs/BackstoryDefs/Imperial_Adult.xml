@@ -58,7 +58,7 @@
 <!--======== Dweller ========-->
 
 	<BackstoryDef ParentName="CFAR_Adult">
-		<defName>CFAR_StreetDweller1</defName>
+		<defName>CFAR_Bralwer1</defName>
 		<title>street fighter</title>
 		<titleShort>brawler</titleShort>
 		<description>.</description>
