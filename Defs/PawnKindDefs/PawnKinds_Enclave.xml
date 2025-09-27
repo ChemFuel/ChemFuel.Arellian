@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<PawnKindDef Name="CFAR_EnclaveBase" Abstract="True">
+		<race>Human</race>
+		<defaultFactionType>CFAR_Enclave</defaultFactionType>
+		<initialResistanceRange>10~20</initialResistanceRange>
+		<initialWillRange>1~2</initialWillRange>
+		<chemicalAddictionChance>0.15</chemicalAddictionChance>
+		<combatEnhancingDrugsChance>0.15</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>-1~2</combatEnhancingDrugsCount>
+		<backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<xenotypeSet><xenotypeChances>
+			<CFAR_Arellian>999</CFAR_Arellian>
+		</xenotypeChances></xenotypeSet>
+	</PawnKindDef>
+
+<!--================================ Navy ================================-->
+
+	<PawnKindDef Name="CFAR_ConscriptBase" ParentName="CFAR_EnclaveBase" Abstract="True">
+		<combatPower>75</combatPower>
+		<label>conscript</label>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+			<li>IndustrialAdvanced</li>
+			<li>IndustrialMilitaryBasic</li>
+		</apparelTags>
+		<apparelMoney>250~750</apparelMoney>
+		<weaponMoney>150~750</weaponMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+		</techHediffsTags>
+		<techHediffsMoney>50~500</techHediffsMoney>
+		<techHediffsChance>0.12</techHediffsChance>
+		<apparelRequired>
+		</apparelRequired>
+	</PawnKindDef>
+
+	<PawnKindDef Name="CFAR_EnclaveTrooperBase" ParentName="CFAR_EnclaveBase" Abstract="True">
+		<combatPower>150</combatPower>
+		<minApparelQuality>Normal</minApparelQuality>
+		<apparelTags>
+			<li>CFAR_Trooper</li>
+			<li>CFAR_TrooperArmor</li>
+		</apparelTags>
+		<apparelColor>(255,255,255)</apparelColor>
+		<apparelMoney>5000~5000</apparelMoney>
+		<weaponMoney>9999~9999</weaponMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+			<li>ImplantEmpireCommon</li>
+		</techHediffsTags>
+		<techHediffsMoney>50~500</techHediffsMoney>
+		<techHediffsChance>0.06</techHediffsChance>
+		<apparelRequired>
+			<li>Apparel_Pants</li>
+			<li>Apparel_BasicShirt</li>
+			<li>Apparel_CFAR_TrooperHelmet</li>
+			<li>Apparel_CFAR_TrooperArmor</li>
+		</apparelRequired>
+		<techHediffsRequired>
+			<li>CFAR_CombatChip</li>
+		</techHediffsRequired>
+	</PawnKindDef>
+
+<!--======== Conscript ========-->
+
+	<PawnKindDef ParentName="CFAR_ConscriptBase">
+		<defName>CFAR_ConscriptFighter</defName>
+		<weaponTags>
+			<li>MedievalMeleeBasic</li>
+			<li>NeolithicMeleeBasic</li>
+		</weaponTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="CFAR_ConscriptBase">
+		<defName>CFAR_ConscriptGunner</defName>
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+	</PawnKindDef>
+
+<!--======== Regular ========-->
+
+	<PawnKindDef ParentName="CFAR_EnclaveTrooperBase">
+		<defName>CFAR_EnclaveTrooper</defName>
+		<label>trooper</label>
+		<minGenerationAge>21</minGenerationAge>
+		<weaponTags>
+			<li>CFAR_Carbine</li>
+			<li>CFAR_Rifle</li>
+			<li>CFAR_Repeater</li>
+			<li>CFAR_Railgun</li>
+		</weaponTags>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>CFAR_Child</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>CFAR_EnclaveTrooper</li>
+				</categoriesAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+</Defs>
