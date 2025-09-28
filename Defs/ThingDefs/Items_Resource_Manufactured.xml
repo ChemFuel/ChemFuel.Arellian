@@ -5,8 +5,8 @@
 	<ThingDef ParentName="MakeableDrugBase">
 		<techLevel>Industrial</techLevel>
 		<defName>CFAR_Cigar</defName>
-		<label>smokeleaf joint</label>
-		<description>Smokeleaf leaves prepared in small rolls for smoking. The drug improves mood, but also increases appetite, reduces focus and slows movement. Smokeleaf use can produce a dependency.\n\nJoints can be produced at a crafting spot without equipment, and are a fixture in many traditional low-industriousness cultures.</description>
+		<label>victory cigar</label><!--1984-->
+		<description>A luxury smokeleaf product favored by officers of the Imperial Armada. Each cigar is rolled from fermented smokeleaf leaves blended with mild stimulants and aromatic resins, producing a smooth, controlled high. Once a symbol of battlefield triumph, it has become the Empire’s signature indulgence—smoked not from need, but from victory itself.</description>
     <possessionCount>5</possessionCount>
     <descriptionHyperlinks>
       <HediffDef>CFAR_CigarHigh</HediffDef>
@@ -134,8 +134,8 @@
     <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
     <stages>
       <li>
-        <label>high on smokeleaf</label>
-        <description>I'm, like, stoned, man.</description>
+        <label>cigar focus</label>
+        <description>It tastes like smoke and victory—worries fade with every draw.</description>
         <baseMoodEffect>13</baseMoodEffect>
       </li>
     </stages>
@@ -240,3 +240,4 @@
 	</RecipeDef>
 
 </Defs>
+
