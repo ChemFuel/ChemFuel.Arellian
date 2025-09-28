@@ -42,7 +42,7 @@
       <ingestReportString>Drinking {0}.</ingestReportString>
       <outcomeDoers>
         <li Class="IngestionOutcomeDoer_GiveHediff">
-          <hediffDef>PsychiteTeaHigh</hediffDef>
+          <hediffDef>CFAR_EnergyDrinkHigh</hediffDef>
           <severity>0.75</severity>
           <toleranceChemical>Psychite</toleranceChemical>
         </li>
@@ -92,9 +92,9 @@
   
   <HediffDef>
     <defName>CFAR_EnergyDrinkHigh</defName>
-    <label>high on psychite tea</label>
-    <labelNoun>a psychite tea high</labelNoun>
-    <description>Active psychite tea in the bloodstream. Generates a mild euphoric effect.</description>
+    <label>energy drink rush</label>
+    <labelNoun>an energy rush</labelNoun>
+    <description>Active psychite compounds circulating in the bloodstream. Induce controlled euphoria, sharpened awareness, and temporary resistance to fatigue.</description>
     <hediffClass>Hediff_High</hediffClass>
     <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
     <scenarioCanAdd>true</scenarioCanAdd>
@@ -124,12 +124,13 @@
     <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
     <stages>
       <li>
-        <label>psychite tea</label>
-        <description>Drinking that tea made me feel great. I love having this energy!</description>
+        <label>energy drink</label>
+        <description>Heart’s racing, mind’s blazing—gods, I could run to the next continent!</description>
         <baseMoodEffect>12</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>
+	<!-- Also add Energy Crash -->
 
 <!--=============== Cigar ====================-->
 
@@ -235,9 +236,9 @@
 
   <HediffDef>
     <defName>CFAR_CigarHigh</defName>
-    <label>stoned on smokeleaf</label>
-    <labelNoun>a smokeleaf high</labelNoun>
-    <description>Smokeleaf's active chemical in the bloodstream. Generates a soft feeling of fuzzy well-being.</description>
+    <label>stoned on cigar</label>
+    <labelNoun>a cigar high</labelNoun>
+    <description>Active cigar compounds present in the bloodstream. Induces mild euphoria, improved focus, and a calm, steady disposition..</description>
     <hediffClass>Hediff_High</hediffClass>
     <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
     <scenarioCanAdd>true</scenarioCanAdd>
@@ -371,5 +372,6 @@
 	</RecipeDef>
 
 </Defs>
+
 
 
