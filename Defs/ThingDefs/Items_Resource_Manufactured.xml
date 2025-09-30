@@ -2,28 +2,28 @@
 <Defs>
 <!--=============== Energy Drink ====================-->
 	<ThingDef ParentName="MakeableDrugBase">
-    <techLevel>Industrial</techLevel>
-    <defName>CFAR_EnergyDrink</defName>
-    <label>energy drink</label>
-    <description>A regulated stimulant beverage formulated from refined psychite leaves and concentrated fruit extracts. Originally issued as a combat endurance aid, it delivers rapid mental clarity and physical energy with a smoother onset than raw psychite. Its bright flavor and balanced high made it a favorite across the Empire—though habitual consumption has been observed to encourage dependency over time.</description>
-    <descriptionHyperlinks>
-      <HediffDef>CFAR_EnergyDrinkHigh</HediffDef>
-      <HediffDef>PsychiteTolerance</HediffDef>
-      <HediffDef>PsychiteAddiction</HediffDef>
-      <HediffDef>ChemicalDamageSevere</HediffDef>
-    </descriptionHyperlinks>
-    <graphicData>
-      <texPath>Things/Item/Drug/Tea</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
-      <drawSize>0.88</drawSize>
-    </graphicData>
-    <rotatable>false</rotatable>
-    <statBases>
-      <WorkToMake>400</WorkToMake>
-      <MarketValue>10</MarketValue>
-      <Mass>0.05</Mass>
-      <DeteriorationRate>6</DeteriorationRate>
-    </statBases>
+		<techLevel>Industrial</techLevel>
+		<defName>CFAR_EnergyDrink</defName>
+		<label>energy drink</label>
+		<description>A regulated stimulant beverage formulated from refined psychite leaves and concentrated fruit extracts. Originally issued as a combat endurance aid, it delivers rapid mental clarity and physical energy with a smoother onset than raw psychite. Its bright flavor and balanced high made it a favorite across the Empire—though habitual consumption has been observed to encourage dependency over time.</description>
+		<descriptionHyperlinks>
+			<HediffDef>CFAR_EnergyDrinkHigh</HediffDef>
+			<HediffDef>PsychiteTolerance</HediffDef>
+			<HediffDef>PsychiteAddiction</HediffDef>
+			<HediffDef>ChemicalDamageSevere</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Drug/Tea</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>0.88</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<statBases>
+			<WorkToMake>400</WorkToMake>
+			<MarketValue>10</MarketValue>
+			<Mass>0.05</Mass>
+			<DeteriorationRate>2</DeteriorationRate>
+		</statBases>
     <ingestible>
       <foodType>Fluid, Processed</foodType>
       <joyKind>Chemical</joyKind>
@@ -58,37 +58,19 @@
           <divideByBodySize>true</divideByBodySize>
           <multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
         </li>
-      </outcomeDoers>
-    </ingestible>
-    <recipeMaker>
-      <researchPrerequisite>PsychoidBrewing</researchPrerequisite>
-      <recipeUsers>
-        <li>Campfire</li>
-        <li>ElectricStove</li>
-        <li>FueledStove</li>
-      </recipeUsers>
-      <workSpeedStat>DrugCookingSpeed</workSpeedStat>
-      <workSkill>Cooking</workSkill>
-      <skillRequirements>
-        <Cooking>2</Cooking>
-      </skillRequirements>
-      <requiredGiverWorkType>Cooking</requiredGiverWorkType>
-      <displayPriority>1460</displayPriority>
-    </recipeMaker>
-    <costList>
-      <PsychoidLeaves>4</PsychoidLeaves>
-    </costList>
-    <comps>
-      <li Class="CompProperties_Drug">
-        <chemical>Psychite</chemical>
-        <addictiveness>0.02</addictiveness>
-        <minToleranceToAddict>0.10</minToleranceToAddict>
-        <existingAddictionSeverityOffset>0.15</existingAddictionSeverityOffset>
-        <needLevelOffset>0.9</needLevelOffset>
-        <listOrder>110</listOrder>
-      </li>
-    </comps>
-  </ThingDef>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>Psychite</chemical>
+				<addictiveness>0.02</addictiveness>
+				<minToleranceToAddict>0.10</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.15</existingAddictionSeverityOffset>
+				<needLevelOffset>0.9</needLevelOffset>
+				<listOrder>110</listOrder>
+			</li>
+		</comps>
+	</ThingDef>
   
   <HediffDef>
     <defName>CFAR_EnergyDrinkHigh</defName>
@@ -130,7 +112,7 @@
       </li>
     </stages>
   </ThoughtDef>
-	<!-- Also add Energy Crash -->
+	<!-- Also add Energy Crash Hediff -->
 
 <!--=============== Cigar ====================-->
 
@@ -372,6 +354,7 @@
 	</RecipeDef>
 
 </Defs>
+
 
 
 
