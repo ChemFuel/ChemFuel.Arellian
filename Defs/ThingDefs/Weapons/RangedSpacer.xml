@@ -42,20 +42,6 @@
 	</ThingDef>
 
 	<ThingDef ParentName="Base_CFAR_PulseBullet">
-		<defName>Bullet_CFAR_PulseBlaster</defName>
-		<graphicData>
-			<texPath>Things/Projectile/CFAR_Pulse</texPath>
-			<drawSize>0.5</drawSize>
-		</graphicData>
-		<projectile>
-			<damageAmountBase>5</damageAmountBase>
-			<stoppingPower>0.3</stoppingPower>
-			<armorPenetrationBase>0.35</armorPenetrationBase>
-			<speed>75</speed>
-		</projectile>
-	</ThingDef>
-
-	<ThingDef ParentName="Base_CFAR_PulseBullet">
 		<defName>Bullet_CFAR_PulseRifle</defName>
 		<graphicData>
 			<texPath>Things/Projectile/CFAR_Pulse</texPath>
@@ -68,64 +54,97 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef Name="Bullet_CFAR_PulseRailgun" ParentName="Base_CFAR_PulseBullet">
-		<defName>Bullet_CFAR_PulseRailgunS</defName>
-		<label>pulse railgun shot</label>
-		<graphicData>
-			<texPath>Things/Projectile/ChargeLanceShot</texPath>
-		</graphicData>
-		<projectile>
-			<damageAmountBase>25</damageAmountBase>
-			<stoppingPower>1.5</stoppingPower>
-			<armorPenetrationBase>0.75</armorPenetrationBase>
-			<speed>175</speed>
-		</projectile>
+<!--================ Basic Spacer Engineering ================-->
+
+	<ThingDef Name="Base_CFAR_GunIndustrial" ParentName="BaseGunWithQuality" Abstract="True">
+		<possessionCount>1</possessionCount>
+		<techLevel>Industrial</techLevel>
+		<relicChance>0</relicChance>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>FabricationBench</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+			<researchPrerequisites>
+				<li>CFAR_PulseWeaponry</li>
+			</researchPrerequisites>
+		</recipeMaker>
+		<weaponTags>
+			<li>CFAR_GunIndustrial</li>
+		</weaponTags>
+		<tradeTags>
+			<li>WeaponRanged</li>
+		</tradeTags>
 	</ThingDef>
 
-	<ThingDef ParentName="Bullet_CFAR_PulseRailgun">
-		<defName>Bullet_CFAR_PulseRailgunM</defName>
+	<ThingDef ParentName="Base_CFAR_GunIndustrial">
+		<defName>Gun_CFAR_Pistol</defName>
+		<label>DP-9 Pistol</label>
+		<description>The DP-9 is the standard issue pistol of the Reichswehr.</description>
 		<graphicData>
-			<drawSize>2.5</drawSize>
+			<texPath>Things/Item/Equipment/WeaponRanged/CFAR_PulsePistol</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<projectile>
-			<damageAmountBase>35</damageAmountBase>
-			<stoppingPower>2</stoppingPower>
-			<armorPenetrationBase>0.95</armorPenetrationBase>
-			<speed>200</speed>
-		</projectile>
-	</ThingDef>
-
-	<ThingDef ParentName="Bullet_CFAR_PulseRailgun">
-		<defName>Bullet_CFAR_PulseRailgunL</defName>
-		<graphicData>
-			<texPath>Things/Projectile/ChargeLanceShot</texPath>
-			<drawSize>5</drawSize>
-		</graphicData>
-		<projectile>
-			<damageAmountBase>50</damageAmountBase>
-			<stoppingPower>3</stoppingPower>
-			<armorPenetrationBase>1.20</armorPenetrationBase>
-			<speed>250</speed>
-		</projectile>
-	</ThingDef>
-
-	<ThingDef ParentName="Base_CFAR_PulseBullet">
-		<defName>Bullet_CFAR_PulseGunM</defName>
-		<graphicData>
-			<texPath>Things/Projectile/CFAR_Pulse</texPath>
-			<drawSize>3</drawSize>
-		</graphicData>
-		<projectile>
-			<damageAmountBase>20</damageAmountBase>
-			<stoppingPower>1.5</stoppingPower>
-			<armorPenetrationBase>0.60</armorPenetrationBase>
-			<speed>75</speed>
-		</projectile>
+		<uiIconScale>1.25</uiIconScale>
+		<soundInteract>Interact_Autopistol</soundInteract>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+			<displayPriority>1170</displayPriority>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>6250</WorkToMake>
+			<Mass>1.45</Mass>
+			<AccuracyTouch>0.85</AccuracyTouch>
+			<AccuracyShort>0.80</AccuracyShort>
+			<AccuracyMedium>0.35</AccuracyMedium>
+			<AccuracyLong>0.25</AccuracyLong>
+			<RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>CFAR_Pistol</li>
+		</weaponTags>
+		<costList>
+			<Chemfuel>10</Chemfuel>
+			<Plasteel>20</Plasteel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_CFAR_PulsePistol</defaultProjectile>
+				<warmupTime>0.3</warmupTime>
+				<range>23.9</range>
+				<soundCast>Shot_CFAR_PulsePistol</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>8</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<tradeTags>
+			<li>CFAR_WeaponRanged</li>
+		</tradeTags>
 	</ThingDef>
 
 <!--================ Basic Spacer Engineering ================-->
 
-	<ThingDef Name="Base_CFAR_PulseGun" ParentName="BaseGunWithQuality" Abstract="True">
+	<ThingDef Name="Base_CFAR_GunSpacer" ParentName="BaseGunWithQuality" Abstract="True">
 		<possessionCount>1</possessionCount>
 		<techLevel>Spacer</techLevel>
 		<relicChance>0</relicChance>
@@ -143,7 +162,7 @@
 			</researchPrerequisites>
 		</recipeMaker>
 		<weaponTags>
-			<li>CFAR_GunTest</li>
+			<li>CFAR_GunSpacer</li>
 		</weaponTags>
 		<tradeTags>
 			<li>WeaponRanged</li>
@@ -153,7 +172,7 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef ParentName="Base_CFAR_PulseGun">
+	<ThingDef ParentName="Base_CFAR_GunSpacer">
 		<defName>Gun_CFAR_PulsePistol</defName>
 		<label>pulse pistol</label>
 		<description>A light, accurate sidearm issued to Imperial officers and pilots. Lacks range and stopping power but excels in close quarters with punishing pulse blasts.</description>
@@ -214,69 +233,7 @@
 		</tradeTags>
 	</ThingDef>
 
-	<ThingDef ParentName="Base_CFAR_PulseGun">
-		<defName>Gun_CFAR_PulseBlaster</defName>
-		<label>pulse blaster</label>
-		<description>A close-quarter scatter blaster issued to Imperial shock troopers. While it lacks range and anti-armor effectiveness, it excels at shredding targets in close combat.</description>
-		<graphicData>
-			<texPath>Things/Item/Equipment/WeaponRanged/CFAR_PulseBlaster</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<soundInteract>Interact_ChargeRifle</soundInteract>
-		<recipeMaker>
-			<skillRequirements>
-				<Crafting>7</Crafting>
-			</skillRequirements>
-			<displayPriority>1172</displayPriority>
-		</recipeMaker>
-		<statBases>
-			<WorkToMake>45000</WorkToMake>
-			<Mass>4.25</Mass>
-			<AccuracyTouch>0.85</AccuracyTouch>
-			<AccuracyShort>0.95</AccuracyShort>
-			<AccuracyMedium>0.80</AccuracyMedium>
-			<AccuracyLong>0.65</AccuracyLong>
-			<RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
-		</statBases>
-		<weaponTags>
-			<li>CFAR_Blaster</li>
-		</weaponTags>
-		<costList>
-			<Chemfuel>10</Chemfuel>
-			<Plasteel>30</Plasteel>
-			<ComponentIndustrial>1</ComponentIndustrial>
-			<ComponentSpacer>2</ComponentSpacer>
-		</costList>
-		<verbs>
-			<li>
-				<verbClass>Verb_Shoot</verbClass>
-				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_CFAR_PulseBlaster</defaultProjectile>
-				<warmupTime>0.8</warmupTime>
-				<range>17.9</range>
-				<burstShotCount>5</burstShotCount>
-				<ticksBetweenBurstShots>0</ticksBetweenBurstShots>
-				<soundCast>Shot_CFAR_PulsePistol</soundCast>
-				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>12</muzzleFlashScale>
-			</li>
-		</verbs>
-		<tools>
-			<li>
-				<label>barrel</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-		</tools>
-		<tradeTags>
-			<li>CFAR_WeaponRanged</li>
-		</tradeTags>
-	</ThingDef>
-
-	<ThingDef ParentName="Base_CFAR_PulseGun">
+	<ThingDef ParentName="Base_CFAR_GunSpacer">
 		<defName>Gun_CFAR_PulseRifle</defName>
 		<label>pulse rifle</label>
 		<description>The standard-issue Imperial pulse rifle. Reliable and well-balanced, it delivers consistent shots with low recoil at medium ranges, making it effective in a wide range of combat situations.</description>
@@ -316,8 +273,8 @@
 				<defaultProjectile>Bullet_CFAR_PulseRifle</defaultProjectile>
 				<warmupTime>1.0</warmupTime>
 				<range>33.9</range>
-				<burstShotCount>2</burstShotCount>
-				<ticksBetweenBurstShots>9</ticksBetweenBurstShots>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>11</ticksBetweenBurstShots>
 				<soundCast>Shot_CFAR_PulseRifle</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>12</muzzleFlashScale>
@@ -346,69 +303,7 @@
 		</tradeTags>
 	</ThingDef>
 
-	<ThingDef ParentName="Base_CFAR_PulseGun">
-		<defName>Gun_CFAR_PulseCarbine</defName>
-		<label>pulse carbine</label>
-		<description>A compact variant of the pulse rifle, optimized for speed and handling. Fires rapid bursts with minimal recoil, ideal for close-quarters and shipboard operations.</description>
-		<graphicData>
-			<texPath>Things/Item/Equipment/WeaponRanged/CFAR_PulseCarbine</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<soundInteract>Interact_ChargeRifle</soundInteract>
-		<recipeMaker>
-			<skillRequirements>
-				<Crafting>7</Crafting>
-			</skillRequirements>
-			<displayPriority>1173</displayPriority>
-		</recipeMaker>
-		<statBases>
-			<WorkToMake>47500</WorkToMake>
-			<Mass>3.7</Mass>
-			<AccuracyTouch>0.85</AccuracyTouch>
-			<AccuracyShort>0.75</AccuracyShort>
-			<AccuracyMedium>0.45</AccuracyMedium>
-			<AccuracyLong>0.25</AccuracyLong>
-			<RangedWeapon_Cooldown>1.60</RangedWeapon_Cooldown>
-		</statBases>
-		<weaponTags>
-			<li>CFAR_Carbine</li>
-		</weaponTags>
-		<costList>
-			<Chemfuel>15</Chemfuel>
-			<Plasteel>40</Plasteel>
-			<ComponentIndustrial>1</ComponentIndustrial>
-			<ComponentSpacer>2</ComponentSpacer>
-		</costList>
-		<verbs>
-			<li>
-				<verbClass>Verb_Shoot</verbClass>
-				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_CFAR_PulseRifle</defaultProjectile>
-				<warmupTime>0.8</warmupTime>
-				<range>33.9</range>
-				<burstShotCount>3</burstShotCount>
-				<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
-				<soundCast>Shot_CFAR_PulseRifle</soundCast>
-				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>12</muzzleFlashScale>
-			</li>
-		</verbs>
-		<tools>
-			<li>
-				<label>barrel</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-		</tools>
-		<tradeTags>
-			<li>CFAR_WeaponRanged</li>
-		</tradeTags>
-	</ThingDef>
-
-	<ThingDef ParentName="Base_CFAR_PulseGun">
+	<ThingDef ParentName="Base_CFAR_GunSpacer">
 		<defName>Gun_CFAR_PulseRepeater</defName>
 		<label>pulse repeater</label>
 		<description>A pulse squad support weapon designed for sustained suppressive fire. It fires continuous pulse streams using a high-capacity cell and reinforced cooling, making it effective for area denial, though cumbersome to maneuver.</description>
@@ -454,7 +349,7 @@
 				<warmupTime>1.6</warmupTime>
 				<range>33.9</range>
 				<burstShotCount>15</burstShotCount>
-				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+				<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
 				<soundCast>Shot_CFAR_PulseRifle</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>12</muzzleFlashScale>
@@ -474,72 +369,4 @@
 			<li>CFAR_WeaponRangedHeavy</li>
 		</tradeTags>
 	</ThingDef>
-
-	<ThingDef ParentName="Base_CFAR_PulseGun">
-		<defName>Gun_CFAR_PulseRailgun</defName>
-		<label>pulse railgun</label>
-		<description>A sniper variant of the pulse rifle, designed for long-range anti-armor precision. It fires concentrated plasma pulses that effortlessly melt through both armor and flesh. Highly effective at eliminating high-value targets, but cumbersome to maneuver.</description>
-		<graphicData>
-			<texPath>Things/Item/Equipment/WeaponRanged/CFAR_PulseRailgun</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<equippedAngleOffset>45</equippedAngleOffset>
-		<soundInteract>Interact_ChargeRifle</soundInteract>
-		<recipeMaker>
-			<skillRequirements>
-				<Crafting>7</Crafting>
-			</skillRequirements>
-			<displayPriority>1175</displayPriority>
-		</recipeMaker>
-		<statBases>
-			<WorkToMake>75000</WorkToMake>
-			<Mass>5.75</Mass>
-			<AccuracyTouch>0.70</AccuracyTouch>
-			<AccuracyShort>0.85</AccuracyShort>
-			<AccuracyMedium>0.97</AccuracyMedium>
-			<AccuracyLong>0.95</AccuracyLong>
-			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
-		</statBases>
-		<equippedStatOffsets>
-			<MoveSpeed>-0.06</MoveSpeed>
-		</equippedStatOffsets>
-		<weaponTags>
-			<li>CFAR_Railgun</li>
-		</weaponTags>
-		<costList>
-			<Chemfuel>25</Chemfuel>
-			<Plasteel>60</Plasteel>
-			<ComponentIndustrial>4</ComponentIndustrial>
-			<ComponentSpacer>4</ComponentSpacer>
-		</costList>
-		<verbs>
-			<li>
-				<verbClass>Verb_Shoot</verbClass>
-				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_CFAR_PulseRailgunS</defaultProjectile>
-				<warmupTime>2.4</warmupTime>
-				<range>39.9</range>
-				<soundCast>Shot_CFAR_PulseRailgunS</soundCast>
-				<soundCastTail>GunTail_Medium</soundCastTail>
-				<soundAiming>Shot_CFAR_PulseRailgunS_Aiming</soundAiming>
-				<muzzleFlashScale>16</muzzleFlashScale>
-			</li>
-		</verbs>
-		<tools>
-			<li>
-				<label>barrel</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-		</tools>
-		<tradeTags>
-			<li>CFAR_WeaponRangedHeavy</li>
-		</tradeTags>
-	</ThingDef>
 </Defs>
-
-
-
