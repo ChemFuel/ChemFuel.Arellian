@@ -176,15 +176,14 @@
 		<favorCost>1400</favorCost>
 	</RoyalTitleDef>
 
+<!--================ NPC Titles ================-->
+
 	<RoyalTitleDef ParentName="CFAR_FOBase" MayRequire="Ludeon.RimWorld.Royalty">
 		<defName>CFAR_16_Großadmiral</defName>
 		<label>Großadmiral</label>
 		<description>The pinnacle of mortal command. A Großadmiral carries the Empress’s mandate to subjugate the stars themselves. Their word redraws borders; their silence ends civilizations. Beneath them kneel fleets, armies, and worlds awaiting conquest.\n\nEquivalent to Grand Admiral.</description>
 		<seniority>375</seniority>
-		<favorCost>2800</favorCost>
 	</RoyalTitleDef>
-
-<!--================ NPC Titles ================-->
 
 	<RoyalTitleDef ParentName="CFAR_FOBase" MayRequire="Ludeon.RimWorld.Royalty">
 		<defName>CFAR_17_Archgroßadmiral</defName>
@@ -200,3 +199,4 @@
 		<seniority>500</seniority>
 	</RoyalTitleDef>
 </Defs>
+
