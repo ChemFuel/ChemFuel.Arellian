@@ -59,9 +59,9 @@
 
 	<BackstoryDef ParentName="CFAR_Enlisted">
 		<defName>CFAR_RW_Soldat1</defName>
-		<title>reichswehr soldat</title>
-		<titleShort>trooper</titleShort>
-		<description>[PAWN_nameDef]</description>
+		<title>Reichswehr soldat</title>
+		<titleShort>soldat</titleShort>
+		<description>[PAWN_nameDef] was a Reichswehr Soldat. Orbital drop pods were [PAWN_possessive].</description>
 		<skillGains>
 			<Shooting>4</Shooting>
 			<Melee>2</Melee>
