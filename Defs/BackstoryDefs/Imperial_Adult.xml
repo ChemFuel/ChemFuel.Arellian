@@ -14,7 +14,7 @@
 		</disallowedTraits>
 	</BackstoryDef>
 
-	<BackstoryDef Name="CFAR_Mannschaften" ParentName="CFAR_Adult" Abstract="True">
+	<BackstoryDef Name="CFAR_Soldat" ParentName="CFAR_Adult" Abstract="True">
 		<requiredWorkTags>
 			<li>Violent</li>
 			<li>ManualDumb</li>
@@ -33,13 +33,32 @@
 		</requiredWorkTags>
 	</BackstoryDef>
 
-<!--================================ Arellian Reichswehr - 아렐리안 국방군 ================================-->
+<!--================================ Arellian Reichsvolk - 아렐리안 제국민 ================================-->
 
-<!--================ Mannschaften ================-->
+<!--================ Hubworld ================-->
+
+<!--======== Worker ========-->
+
+	<BackstoryDef ParentName="CFAR_Adult">
+		<defName>CFAR_HubworldCourier1</defName>
+		<title>Delivery guy</title>
+		<titleFemale>Delivery gal</titleFemale>
+		<titleShort>courier</titleShort>
+		<description>[PAWN_nameDef] delivered all things edible, from plain ol' pepperoni pizzas to highly questionable anchovy mint-chocolate pasta. Every once in a while, [PAWN_pronoun] had to brawl with the local strays to protect [PAWN_possessive] deliveries.</description>
+		<skillGains>
+			<Melee>2</Melee>
+			<Social>4</Social>
+		</skillGains>
+		<spawnCategories>
+			<li>CFAR_Hubworld</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+<!--================ Reichswehr - 국방군 ================-->
 
 <!--======== Soldat ========-->
 
-	<BackstoryDef ParentName="CFAR_Enlisted">
+	<BackstoryDef ParentName="CFAR_Soldat">
 		<defName>CFAR_RWSoldat1</defName>
 		<title>Reichswehr soldat</title>
 		<titleShort>soldat</titleShort>
@@ -49,60 +68,59 @@
 			<Melee>2</Melee>
 		</skillGains>
 		<spawnCategories>
-			<li>CFAR_Mannschaften</li>
+			<li>CFAR_RWSoldat</li>
 		</spawnCategories>
 	</BackstoryDef>
 
-	<BackstoryDef ParentName="CFAR_Enlisted">
-		<defName>CFAR_ForgeSoldat1</defName>
-		<title>Forgeworld soldat</title>
+<!--======== Leutnant ========-->
+
+	<BackstoryDef ParentName="CFAR_Offizer">
+		<defName>CFAR_RWLeutnant1</defName>
+		<title>Reichswehr Leutnant</title>
 		<titleShort>soldat</titleShort>
-		<description>Growing up on a forge world, [PAWN_nameDef] took pride in every well-engineered equipment—from a humble DP9 pistol to a mighty flagship. Honest, hard-working men and women were building the Reich's future, and [PAWN_pronoun] would protect them at all costs.</description>
+		<description>[PAWN_nameDef] was a Leutnant of the Reichswehr.</description>
 		<skillGains>
-			<Shooting>4</Shooting>
-			<Melee>4</Melee>
-			<Crafting>4</Crafting>
+			<Shooting>5</Shooting>
+			<Melee>2</Melee>
 		</skillGains>
-		<workDisables>
-			<li>Intellectual</li>
-		</workDisables>
 		<spawnCategories>
-			<li>CFAR_Forge_Mannschaften</li>
+			<li>CFAR_RWOffizier</li>
 		</spawnCategories>
 	</BackstoryDef>
 
-	<BackstoryDef ParentName="CFAR_Enlisted">
-		<defName>CFAR_FrontierSoldat1</defName>
-		<title>Frontier volunteer</title>
-		<titleShort>soldat</titleShort>
-		<description>[PAWN_nameDef] joined the Reichswehr to support [PAWN_possessive] family on a frontier colony. The Kaiserinreich favored loyal subjects, and [PAWN_pronoun] hoped [PAWN_possessive] home would be safer under Her Majesty’s protection.\n\nLife on the frontier demanded adaptability, and [PAWN_nameDef] had a knack for knocking some sense into the thick skulls of troublemaking, up-to-no-good knuckleheads.</description>
+<!--================ Reichswehr Kriegspolizei(Wepo) - 국방군 군사경찰 ================-->
+
+<!--======== Leutnant ========-->
+
+	<BackstoryDef ParentName="CFAR_Offizer">
+		<defName>CFAR_WPLeutnant1</defName>
+		<title>Wepo Leutnant</title>
+		<titleShort>Wepo</titleShort>
+		<description>[PAWN_nameDef] was a Leutnant of the Wepo.</description>
 		<skillGains>
-			<Shooting>4</Shooting>
-			<Melee>4</Melee>
-			<Social>2</Social>
-			<Intellectual>-4</Intellectual>
+			<Shooting>5</Shooting>
+			<Melee>2</Melee>
 		</skillGains>
-		<disallowedTraits>
-			<Recluse>0</Recluse>
-			<Psychopath>0</Psychopath>
-		</disallowedTraits>
 		<spawnCategories>
-			<li>CFAR_Frontier_Mannschaften</li>
+			<li>CFAR_RWOffizier</li>
 		</spawnCategories>
 	</BackstoryDef>
 
-	<BackstoryDef ParentName="CFAR_Enlisted">
-		<defName>CFAR_FrontierSoldat2</defName>
-		<title>Frontier veteran</title>
-		<titleShort>soldat</titleShort>
-		<description>Originally part of the frontier garrison, [PAWN_nameDef] requested a transfer to the expedition corps, expecting honor and glory in battle. What [PAWN_pronoun] didn't expect was that life in the Reichswehr offered little variety—unless you were part of the specialist corps.</description>
+<!--================ Kriegsamt für Observation, Regulierung und Disziplin(KORD) - 전쟁성 감찰부 ================-->
+
+<!--======== Leutnant ========-->
+
+	<BackstoryDef ParentName="CFAR_Offizer">
+		<defName>CFAR_KORDLeutnant1</defName>
+		<title>KORD Leutnant</title>
+		<titleShort>KORD</titleShort>
+		<description>[PAWN_nameDef] was a Leutnant of the Reichswehr.</description>
 		<skillGains>
-			<Shooting>6</Shooting>
-			<Melee>6</Melee>
-			<Intellectual>-2</Intellectual>
+			<Shooting>5</Shooting>
+			<Melee>2</Melee>
 		</skillGains>
 		<spawnCategories>
-			<li>CFAR_Frontier_Mannschaften</li>
+			<li>CFAR_RWOffizier</li>
 		</spawnCategories>
 	</BackstoryDef>
 </Defs>
