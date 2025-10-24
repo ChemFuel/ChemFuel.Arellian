@@ -11,7 +11,7 @@
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>12</damageAmountBase>
+			<damageAmountBase>11</damageAmountBase>
 			<stoppingPower>1</stoppingPower>
 			<armorPenetrationBase>0.18</armorPenetrationBase>
 			<speed>75</speed>
@@ -50,6 +50,22 @@
 		</projectile>
 	</ThingDef>
 
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_CFAR_RifleII</defName>
+		<label>bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>12</damageAmountBase>
+			<stoppingPower>1</stoppingPower>
+			<armorPenetrationBase>0.25</armorPenetrationBase>
+			<speed>100</speed>
+		</projectile>
+	</ThingDef>
+
 <!--================ Basic Spacer Engineering ================-->
 
 	<ThingDef Name="Base_CFAR_GunIndustrial" ParentName="BaseGunWithQuality" Abstract="True">
@@ -77,8 +93,8 @@
 
 	<ThingDef ParentName="Base_CFAR_GunIndustrial">
 		<defName>Gun_CFAR_Pistol</defName>
-		<label>DP9 Pistol</label>
-		<description>The DP9 is the standard issue pistol of the Reichswehr.</description>
+		<label>Arellian Pistol</label>
+		<description>WIP</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/Autopistol</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -101,12 +117,12 @@
 			<RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
 		</statBases>
 		<weaponTags>
-			<li>CFAR_Pistol</li>
+			<li>CFAR_HG</li>
 		</weaponTags>
 		<costList>
-			<Chemfuel>10</Chemfuel>
 			<Steel>20</Steel>
-			<ComponentIndustrial>1</ComponentIndustrial>
+			<Chemfuel>10</Chemfuel>
+			<ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
 		<verbs>
 			<li>
@@ -136,9 +152,9 @@
 	</ThingDef>
 
 	<ThingDef ParentName="Base_CFAR_GunIndustrial">
-		<defName>Gun_CFAR_Machinepistol</defName>
-		<label>MP27 Machinepistol</label>
-		<description>The MP27 is the standard issue machinepistol of the Reichswehr.</description>
+		<defName>Gun_CFAR_MPK</defName>
+		<label>Arellian MPK</label>
+		<description>WIP</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/HeavySMG</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -160,12 +176,12 @@
 			<RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
 		</statBases>
 		<weaponTags>
-			<li>CFAR_MachinePistol</li>
+			<li>CFAR_SMG</li>
 		</weaponTags>
 		<costList>
-			<Chemfuel>10</Chemfuel>
-			<Steel>20</Steel>
-			<ComponentIndustrial>1</ComponentIndustrial>
+			<Steel>40</Steel>
+			<Chemfuel>20</Chemfuel>
+			<ComponentIndustrial>4</ComponentIndustrial>
 		</costList>
 		<verbs>
 			<li>
@@ -205,9 +221,9 @@
 	</ThingDef>
 
 	<ThingDef ParentName="Base_CFAR_GunIndustrial">
-		<defName>Gun_CFAR_AssaultRifle</defName>
-		<label>AG-2 Assault Rifle</label>
-		<description>The AG-2 is the standard issue assault rifle of the Reichswehr.</description>
+		<defName>Gun_CFAR_AutoRifle</defName>
+		<label>Arellian Automatic Rifle</label>
+		<description>WIP</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/AssaultRifle</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -223,19 +239,19 @@
 		<statBases>
 			<WorkToMake>40000</WorkToMake>
 			<Mass>4</Mass>
-			<AccuracyTouch>0.75</AccuracyTouch>
-			<AccuracyShort>0.80</AccuracyShort>
-			<AccuracyMedium>0.70</AccuracyMedium>
-			<AccuracyLong>0.60</AccuracyLong>
+			<AccuracyTouch>0.80</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyLong>0.65</AccuracyLong>
 			<RangedWeapon_Cooldown>1.65</RangedWeapon_Cooldown>
 		</statBases>
 		<weaponTags>
-			<li>CFAR_AssaultRifle</li>
+			<li>CFAR_AR</li>
 		</weaponTags>
 		<costList>
-			<Chemfuel>10</Chemfuel>
-			<Steel>20</Steel>
-			<ComponentIndustrial>1</ComponentIndustrial>
+			<Steel>60</Steel>
+			<Chemfuel>25</Chemfuel>
+			<ComponentIndustrial>6</ComponentIndustrial>
 		</costList>
 		<verbs>
 			<li>
@@ -243,7 +259,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_CFAR_RifleI</defaultProjectile>
 				<burstShotCount>3</burstShotCount>
-				<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+				<ticksBetweenBurstShots>9</ticksBetweenBurstShots>
 				<warmupTime>0.95</warmupTime>
 				<range>30.9</range>
 				<soundCast>Shot_AssaultRifle</soundCast>
@@ -276,8 +292,8 @@
 
 	<ThingDef ParentName="Base_CFAR_GunIndustrial">
 		<defName>Gun_CFAR_GPMG</defName>
-		<label>AMG-22 GPMG</label>
-		<description>The AMG-22 is the standard issue general-purpose machine gun of the Reichswehr.</description>
+		<label>Arellian GPMG</label>
+		<description>WIP</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/LMG</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -293,28 +309,28 @@
 		<statBases>
 			<WorkToMake>40000</WorkToMake>
 			<Mass>10</Mass>
-			<AccuracyTouch>0.50</AccuracyTouch>
+			<AccuracyTouch>0.55</AccuracyTouch>
 			<AccuracyShort>0.60</AccuracyShort>
-			<AccuracyMedium>0.40</AccuracyMedium>
-			<AccuracyLong>0.30</AccuracyLong>
+			<AccuracyMedium>0.35</AccuracyMedium>
+			<AccuracyLong>0.25</AccuracyLong>
 			<RangedWeapon_Cooldown>1.70</RangedWeapon_Cooldown>
 		</statBases>
 		<weaponTags>
 			<li>CFAR_GPMG</li>
 		</weaponTags>
 		<costList>
-			<Chemfuel>10</Chemfuel>
-			<Steel>20</Steel>
-			<ComponentIndustrial>1</ComponentIndustrial>
+			<Steel>80</Steel>
+			<Chemfuel>30</Chemfuel>
+			<ComponentIndustrial>8</ComponentIndustrial>
 		</costList>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_CFAR_RifleI</defaultProjectile>
+				<defaultProjectile>Bullet_CFAR_RifleII</defaultProjectile>
 				<burstShotCount>12</burstShotCount>
-				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
-				<warmupTime>1.25</warmupTime>
+				<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+				<warmupTime>1.2</warmupTime>
 				<range>30.9</range>
 				<soundCast>Shot_AssaultRifle</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
@@ -343,4 +359,5 @@
 			<li>CFAR_WeaponRanged</li>
 		</tradeTags>
 	</ThingDef>
+
 </Defs>
