@@ -121,7 +121,7 @@
 		</weaponTags>
 		<costList>
 			<Steel>20</Steel>
-			<Chemfuel>10</Chemfuel>
+			<Plasteel>10</Plasteel>
 			<ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
 		<verbs>
@@ -180,7 +180,7 @@
 		</weaponTags>
 		<costList>
 			<Steel>40</Steel>
-			<Chemfuel>20</Chemfuel>
+			<Plasteel>20</Plasteel>
 			<ComponentIndustrial>4</ComponentIndustrial>
 		</costList>
 		<verbs>
@@ -250,7 +250,7 @@
 		</weaponTags>
 		<costList>
 			<Steel>60</Steel>
-			<Chemfuel>25</Chemfuel>
+			<Plasteel>25</Plasteel>
 			<ComponentIndustrial>6</ComponentIndustrial>
 		</costList>
 		<verbs>
@@ -320,7 +320,7 @@
 		</weaponTags>
 		<costList>
 			<Steel>80</Steel>
-			<Chemfuel>30</Chemfuel>
+			<Plasteel>30</Plasteel>
 			<ComponentIndustrial>8</ComponentIndustrial>
 		</costList>
 		<verbs>
@@ -361,3 +361,4 @@
 	</ThingDef>
 
 </Defs>
+
