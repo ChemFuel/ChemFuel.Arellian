@@ -153,7 +153,7 @@
 		</recipeMaker>
 		<statBases>
 			<WorkToMake>16000</WorkToMake>
-			<Mass>2.2</Mass>
+			<Mass>3</Mass>
 			<AccuracyTouch>0.85</AccuracyTouch>
 			<AccuracyShort>0.90</AccuracyShort>
 			<AccuracyMedium>0.80</AccuracyMedium>
@@ -221,7 +221,7 @@
 		</recipeMaker>
 		<statBases>
 			<WorkToMake>16000</WorkToMake>
-			<Mass>2.2</Mass>
+			<Mass>2.5</Mass>
 			<AccuracyTouch>0.80</AccuracyTouch>
 			<AccuracyShort>0.85</AccuracyShort>
 			<AccuracyMedium>0.55</AccuracyMedium>
@@ -361,7 +361,7 @@
 		</recipeMaker>
 		<statBases>
 			<WorkToMake>60000</WorkToMake>
-			<Mass>10</Mass>
+			<Mass>8.5</Mass>
 			<AccuracyTouch>0.55</AccuracyTouch>
 			<AccuracyShort>0.60</AccuracyShort>
 			<AccuracyMedium>0.35</AccuracyMedium>
@@ -412,5 +412,6 @@
 			<li>CFAR_WeaponRanged</li>
 		</tradeTags>
 	</ThingDef>
+
 
 </Defs>
