@@ -1,24 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-<!--================ ProjectileDefs ================-->
-
-	<ThingDef ParentName="BaseFragGrenadeProjectile">
-		<defName>Proj_CFAR_ThermalDetonator</defName>
-		<label>thermal detonator</label>
-		<graphicData>
-			<texPath>Things/Projectile/Grenade</texPath>
-		</graphicData>
-		<projectile>
-			<damageDef>CFAR_Thermal</damageDef>
-			<explosionRadius>1.9</explosionRadius>
-			<explosionDelay>25</explosionDelay>
-		</projectile>
-	</ThingDef>
-
 <!--================ BulletDefs ================-->
 
 	<ThingDef Name="Base_CFAR_PulseBullet" ParentName="BaseBullet" Abstract="True">
-		<label>pulse shot</label>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
@@ -28,7 +12,8 @@
 	</ThingDef>
 
 	<ThingDef ParentName="Base_CFAR_PulseBullet">
-		<defName>Bullet_CFAR_PulsePistol</defName>
+		<defName>Bullet_CFAR_PulseRifle</defName>
+		<label>pulse</label>
 		<graphicData>
 			<texPath>Things/Projectile/CFAR_Pulse</texPath>
 			<drawSize>0.75</drawSize>
@@ -38,19 +23,6 @@
 			<stoppingPower>0.5</stoppingPower>
 			<armorPenetrationBase>0.35</armorPenetrationBase>
 			<speed>100</speed>
-		</projectile>
-	</ThingDef>
-
-	<ThingDef ParentName="Base_CFAR_PulseBullet">
-		<defName>Bullet_CFAR_PulseRifle</defName>
-		<graphicData>
-			<texPath>Things/Projectile/CFAR_Pulse</texPath>
-		</graphicData>
-		<projectile>
-			<damageAmountBase>16</damageAmountBase>
-			<stoppingPower>0.75</stoppingPower>
-			<armorPenetrationBase>0.40</armorPenetrationBase>
-			<speed>125</speed>
 		</projectile>
 	</ThingDef>
 
@@ -85,70 +57,9 @@
 	</ThingDef>
 
 	<ThingDef ParentName="Base_CFAR_GunSpacer">
-		<defName>Gun_CFAR_PulsePistol</defName>
-		<label>pulse pistol</label>
-		<description>A light, accurate sidearm issued to Imperial officers and pilots. Lacks range and stopping power but excels in close quarters with punishing pulse blasts.</description>
-		<graphicData>
-			<texPath>Things/Item/Equipment/WeaponRanged/CFAR_PulsePistol</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<uiIconScale>1.25</uiIconScale>
-		<soundInteract>Interact_Autopistol</soundInteract>
-		<recipeMaker>
-			<skillRequirements>
-				<Crafting>6</Crafting>
-			</skillRequirements>
-			<displayPriority>1170</displayPriority>
-		</recipeMaker>
-		<statBases>
-			<WorkToMake>6250</WorkToMake>
-			<Mass>1.45</Mass>
-			<AccuracyTouch>0.85</AccuracyTouch>
-			<AccuracyShort>0.80</AccuracyShort>
-			<AccuracyMedium>0.35</AccuracyMedium>
-			<AccuracyLong>0.25</AccuracyLong>
-			<RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
-		</statBases>
-		<weaponTags>
-			<li>CFAR_Pistol</li>
-		</weaponTags>
-		<costList>
-			<Chemfuel>10</Chemfuel>
-			<Plasteel>20</Plasteel>
-			<ComponentIndustrial>1</ComponentIndustrial>
-			<ComponentSpacer>1</ComponentSpacer>
-		</costList>
-		<verbs>
-			<li>
-				<verbClass>Verb_Shoot</verbClass>
-				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_CFAR_PulsePistol</defaultProjectile>
-				<warmupTime>0.3</warmupTime>
-				<range>23.9</range>
-				<soundCast>Shot_CFAR_PulsePistol</soundCast>
-				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>8</muzzleFlashScale>
-			</li>
-		</verbs>
-		<tools>
-			<li>
-				<label>barrel</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-		</tools>
-		<tradeTags>
-			<li>CFAR_WeaponRanged</li>
-		</tradeTags>
-	</ThingDef>
-
-	<ThingDef ParentName="Base_CFAR_GunSpacer">
-		<defName>Gun_CFAR_PulseRifle</defName>
-		<label>pulse rifle</label>
-		<description>The standard-issue Imperial pulse rifle. Reliable and well-balanced, it delivers consistent shots with low recoil at medium ranges, making it effective in a wide range of combat situations.</description>
+		<defName>Gun_CFAR_PulseBlaster</defName>
+		<label>Arellian Pulse Blaster</label>
+		<description>WIP</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/CFAR_PulseRifle</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -217,8 +128,8 @@
 
 	<ThingDef ParentName="Base_CFAR_GunSpacer">
 		<defName>Gun_CFAR_PulseRepeater</defName>
-		<label>pulse repeater</label>
-		<description>A pulse squad support weapon designed for sustained suppressive fire. It fires continuous pulse streams using a high-capacity cell and reinforced cooling, making it effective for area denial, though cumbersome to maneuver.</description>
+		<label>Arellian Pulse Repeater</label>
+		<description>WIP</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/CFAR_PulseRepeater</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -282,4 +193,3 @@
 		</tradeTags>
 	</ThingDef>
 </Defs>
-
