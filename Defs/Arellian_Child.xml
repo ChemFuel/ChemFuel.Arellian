@@ -8,9 +8,24 @@
 		</spawnCategories>
 	</BackstoryDef>
 
-<!--================ Urbworld ================-->
+<!--================ Lowborn ================-->
 
-<!--======== Street Kitten ========-->
+<!--======== Colony ========-->
+
+	<BackstoryDef ParentName="CFAR_Child">
+		<defName>CFAR_SpaceportStray1</defName>
+		<title>spaceport stray</title>
+		<titleShort>space stray</titleShort>
+		<description>WIP</description>
+		<skillGains>
+			<Animals>4</Animals>
+		</skillGains>
+		<spawnCategories>
+			<li>CFAR_Lowborn</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+<!--======== Urban ========-->
 
 	<BackstoryDef ParentName="CFAR_Child">
 		<defName>CFAR_StreetUrchin1</defName>
@@ -44,27 +59,44 @@
 		</spawnCategories>
 	</BackstoryDef>
 
-<!--======== Working Class ========-->
+<!--================ Commoner ================-->
+
+<!--======== Freikorps ========-->
+
+	<BackstoryDef ParentName="CFAR_Child">
+		<defName>CFAR_MercKitten1</defName>
+		<title>Freikorps kitten</title>
+		<titleShort>Freikorps</titleShort>
+		<description>WIP</description>
+		<skillGains>
+			<Shooting>4</Shooting>
+		</skillGains>
+		<spawnCategories>
+			<li>CFAR_FCMercenary</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+<!--======== Colony ========-->
 
 	<BackstoryDef ParentName="CFAR_Child">
 		<defName>CFAR_FarmKitten1</defName>
 		<title>farm kitten</title>
-		<titleShort>farm kit</titleShort>
+		<titleShort>farm cat</titleShort>
 		<description>WIP</description>
 		<skillGains>
 			<Animals>4</Animals>
 		</skillGains>
 		<spawnCategories>
-			<li>CFAR_Lowborn</li>
+			<li>CFAR_Commoner</li>
 		</spawnCategories>
 	</BackstoryDef>
 
-<!--======== Middle Class ========-->
+<!--======== Urban ========-->
 
 	<BackstoryDef ParentName="CFAR_Child">
-		<defName>CFAR_ShopKid1</defName>
-		<title>shop kid</title>
-		<titleShort>shop kid</titleShort>
+		<defName>CFAR_ShopKitten1</defName>
+		<title>shop kitten</title>
+		<titleShort>shop cat</titleShort>
 		<description>WIP</description>
 		<skillGains>
 			<Social>4</Social>
