@@ -158,8 +158,8 @@
 		<titleShort>cadet</titleShort>
 		<description>Despite struggling to keep up with the marches and exams, [PAWN_nameDef] somehow managed to stay above the failing line thanks to [PAWN_possessive] natural talent for shooting and leading [PAWN_possessive] fellow cadets.</description>
 		<skillGains>
-			<Shooting>4</Shooting>
-			<Social>2</Social>
+			<Shooting>3</Shooting>
+			<Social>3</Social>
 			<Intellectual>-1</Intellectual>
 		</skillGains>
 		<spawnCategories>
