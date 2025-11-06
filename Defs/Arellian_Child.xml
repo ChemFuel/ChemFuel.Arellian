@@ -94,6 +94,24 @@
 <!--======== Urban ========-->
 
 	<BackstoryDef ParentName="CFAR_Child">
+		<defName>CFAR_ShyKitten1</defName>
+		<title>shy kitten</title>
+		<titleShort>introvert</titleShort>
+		<description>[PAWN_nameDef] grew up in the nightless megabuildings of a hubworld. City life was always crowded yet lonely, but [PAWN_pronoun] managed to keep [PAWN_possessive] small circle of friends together.</description>
+		<disabledTraits>
+			<Abrasive>0</Abrasive>
+			<Psychopath>0</Psychopath>
+		</disabledTraits>
+		<skillGains>
+			<Social>2</Social>
+			<Artistic>1</Artistic>
+		</skillGains>
+		<spawnCategories>
+			<li>CFAR_Commoner</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_Child">
 		<defName>CFAR_ShopKitten1</defName>
 		<title>shop kitten</title>
 		<titleShort>shop cat</titleShort>
@@ -121,13 +139,28 @@
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_Child">
-		<defName>CFAR_ChildCadet1</defName>
-		<title>child cadet</title>
+		<defName>CFAR_YoungCadet1</defName>
+		<title>young cadet</title>
 		<titleShort>cadet</titleShort>
-		<description>WIP</description>
+		<description>At the youth cadet academy, [PAWN_nameDef] learned how to handle a firearm and make tactical decisions.</description>
 		<skillGains>
-			<Shooting>3</Shooting>
-			<Intellectual>1</Intellectual>
+			<Shooting>2</Shooting>
+			<Intellectual>2</Intellectual>
+		</skillGains>
+		<spawnCategories>
+			<li>CFAR_Cadet</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_Child">
+		<defName>CFAR_YoungCadet2</defName>
+		<title>charismatic cadet</title>
+		<titleShort>cadet</titleShort>
+		<description>Despite struggling to keep up with the marches and exams, [PAWN_nameDef] somehow managed to stay above the failing line thanks to [PAWN_possessive] natural talent for shooting and leading [PAWN_possessive] fellow cadets.</description>
+		<skillGains>
+			<Shooting>4</Shooting>
+			<Social>2</Social>
+			<Intellectual>-1</Intellectual>
 		</skillGains>
 		<spawnCategories>
 			<li>CFAR_Cadet</li>
