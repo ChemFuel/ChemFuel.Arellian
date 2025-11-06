@@ -15,6 +15,21 @@
 
 <!--================ Enlisted ================-->
 
+<!--======== Freikorps ========-->
+
+	<BackstoryDef ParentName="CFAR_AdultMercenary">
+		<defName>CFAR_FCMercenary1</defName>
+		<title>Freikorps mercenary</title>
+		<titleShort>Freikorps</titleShort>
+		<description>WIP</description>
+		<skillGains>
+			<Shooting>6</Shooting>
+		</skillGains>
+		<spawnCategories>
+			<li>CFAR_FCMercenary</li>
+		</spawnCategories>
+	</BackstoryDef>
+
 <!--======== Generic ========-->
 
 	<BackstoryDef ParentName="CFAR_AdultMercenary">
