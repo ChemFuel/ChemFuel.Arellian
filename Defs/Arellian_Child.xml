@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<BackstoryDef Name="CFAR_Child" Abstract="True">
+		<requiresSpawnCategory>true</requiresSpawnCategory>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>CFAR_Child</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+<!--================ Urbworld ================-->
+
+<!--======== Street Kitten ========-->
+
+	<BackstoryDef ParentName="CFAR_Child">
+		<defName>CFAR_StreetUrchin1</defName>
+		<title>street urchin</title>
+		<titleShort>urchin</titleShort>
+		<description>WIP</description>
+		<forcedTraits>
+			<Nimble>0</Nimble>
+		</forcedTraits>
+		<skillGains>
+			<Social>2</Social>
+		</skillGains>
+		<spawnCategories>
+			<li>CFAR_Lowborn</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_Child">
+		<defName>CFAR_StreetFighter1</defName>
+		<title>street fighter</title>
+		<titleShort>fighter</titleShort>
+		<description>WIP</description>
+		<forcedTraits>
+			<Brawler>0</Brawler>
+		</forcedTraits>
+		<skillGains>
+			<Social>-2</Social>
+		</skillGains>
+		<spawnCategories>
+			<li>CFAR_Lowborn</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+<!--======== Working Class ========-->
+
+	<BackstoryDef ParentName="CFAR_Child">
+		<defName>CFAR_FarmKitten1</defName>
+		<title>farm kitten</title>
+		<titleShort>farm kit</titleShort>
+		<description>WIP</description>
+		<skillGains>
+			<Animals>4</Animals>
+		</skillGains>
+		<spawnCategories>
+			<li>CFAR_Lowborn</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+<!--======== Middle Class ========-->
+
+	<BackstoryDef ParentName="CFAR_Child">
+		<defName>CFAR_ShopKid1</defName>
+		<title>shop kid</title>
+		<titleShort>shop kid</titleShort>
+		<description>WIP</description>
+		<skillGains>
+			<Social>4</Social>
+		</skillGains>
+		<spawnCategories>
+			<li>CFAR_Commoner</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_Child">
+		<defName>CFAR_AcademyStudent1</defName>
+		<title>academy student</title>
+		<titleShort>student</titleShort>
+		<description>WIP</description>
+		<skillGains>
+			<Social>1</Social>
+			<Intellectual>2</Intellectual>
+		</skillGains>
+		<spawnCategories>
+			<li>CFAR_Commoner</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_Child">
+		<defName>CFAR_ChildCadet1</defName>
+		<title>child cadet</title>
+		<titleShort>cadet</titleShort>
+		<description>WIP</description>
+		<skillGains>
+			<Shooting>3</Shooting>
+			<Intellectual>1</Intellectual>
+		</skillGains>
+		<spawnCategories>
+			<li>CFAR_Cadet</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+<!--======== High Class ========-->
+</Defs>

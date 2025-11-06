@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<BackstoryDef Name="CFAR_AdultMercenary" Abstract="True">
+		<requiresSpawnCategory>true</requiresSpawnCategory>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<disallowedTraits>
+			<PsychicSensitivity>0</PsychicSensitivity>
+		</disallowedTraits>
+	</BackstoryDef>
+
+<!--================ Enlisted ================-->
+
+<!--======== Generic ========-->
+
+	<BackstoryDef ParentName="CFAR_AdultMercenary">
+		<defName>CFAR_Mercenary1</defName>
+		<title>space mercenary</title>
+		<titleShort>mercenary</titleShort>
+		<description>WIP</description>
+		<skillGains>
+			<Shooting>6</Shooting>
+		</skillGains>
+		<spawnCategories>
+			<li>CFAR_Mercenary</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_AdultMercenary">
+		<defName>CFAR_Mercenary2</defName>
+		<title>space mercenary</title>
+		<titleShort>mercenary</titleShort>
+		<description>WIP</description>
+		<skillGains>
+			<Shooting>6</Shooting>
+		</skillGains>
+		<spawnCategories>
+			<li>CFAR_Mercenary</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+</Defs>

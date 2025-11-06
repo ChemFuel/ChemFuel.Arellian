@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<PawnKindDef ParentName="MercenaryGunnerBase" Name="CFAR_MercenaryBase" Abstract="True">
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<xenotypeSet><xenotypeChances>
+			<CFAR_Arellian>999</CFAR_Arellian>
+		</xenotypeChances></xenotypeSet>
+	</PawnKindDef>
+
+<!--================================ Navy ================================-->
+
+	<PawnKindDef ParentName="CFAR_MercenaryBase">
+		<combatPower>130</combatPower>
+		<maxGenerationAge>45</maxGenerationAge>
+		<defName>CFAR_Mercenary</defName>
+		<apparelTags>
+			<li>CFAR_MilitaryBasic</li>
+			<li>IndustrialAdvanced</li>
+			<li>IndustrialMilitaryBasic</li>
+			<li>IndustrialMilitaryAdvanced</li>
+			<li>SpacerMilitary</li>
+			<li>BeltDefensePop</li>
+		</apparelTags>
+		<apparelMoney>2500~3500</apparelMoney>
+		<weaponTags Inherit="False">
+			<li>CFAR_GunIndustrial</li>
+		</weaponTags>
+		<weaponMoney>660~1300</weaponMoney>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>CFAR_Lowborn</li>
+					<li>CFAR_Commoner</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>CFAR_Mercenary</li>
+				</categoriesAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+		<initialResistanceRange>10~16</initialResistanceRange>
+	</PawnKindDef>
+</Defs>
