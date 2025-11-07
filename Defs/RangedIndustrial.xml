@@ -79,7 +79,7 @@
 	<ThingDef ParentName="Base_CFAR_GunIndustrial">
 		<defName>Gun_CFAR_Pistol</defName>
 		<label>Arellian Pistol</label>
-		<description>WIP</description>
+		<description>An autopistol issued to officers and non-combat personnel for personal defense and command security.</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/CFAR_Pistol</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -142,7 +142,7 @@
 	<ThingDef ParentName="Base_CFAR_GunIndustrial">
 		<defName>Gun_CFAR_MPK</defName>
 		<label>Arellian MPK</label>
-		<description>WIP</description>
+		<description>A compact submachine gun issued to military police and engineers for patrols, close-quarters response, and utility tasks.</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/CFAR_MPK</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -212,7 +212,7 @@
 	<ThingDef ParentName="Base_CFAR_GunIndustrial">
 		<defName>Gun_CFAR_AutoRifle</defName>
 		<label>Arellian Automatic Rifle</label>
-		<description>WIP</description>
+		<description>An automatic service rifle issued to Reichswehr line infantry as the standard squad weapon for general combat and sustained engagement.</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/CFAR_AutoRifle</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -282,7 +282,7 @@
 	<ThingDef ParentName="Base_CFAR_GunIndustrial">
 		<defName>Gun_CFAR_GPMG</defName>
 		<label>Arellian GPMG</label>
-		<description>WIP</description>
+		<description>A magazine-fed general-purpose support gun issued to fire teams for point defence and high-volume suppression during boarding or breach operations.</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/CFAR_GPMG</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -435,4 +435,5 @@
 			<li>CFAR_WeaponRanged</li>
 		</tradeTags>
 	</ThingDef>
+
 </Defs>
