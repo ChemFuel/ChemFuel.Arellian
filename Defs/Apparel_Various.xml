@@ -7,14 +7,20 @@
 	<ThingDef ParentName="HatMakeableBase" Name="CFAR_CapBase" Abstract="True">
 		<techLevel>Industrial</techLevel>
 		<uiIconScale>1.15</uiIconScale>
-		<costStuffCount>20</costStuffCount>
+		<costStuffCount>50</costStuffCount>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
 		<stuffCategories>
 			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>
 		<statBases>
 			<MaxHitPoints>80</MaxHitPoints>
-			<WorkToMake>2000</WorkToMake>
+			<WorkToMake>4000</WorkToMake>
 			<Mass>0.1</Mass>
 			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
@@ -22,7 +28,8 @@
 			<EquipDelay>0.5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.2</SlaveSuppressionOffset>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
+			<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.1</SuppressionPower>
 		</equippedStatOffsets>
 		<apparel>
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
@@ -35,7 +42,6 @@
 				<li>Overhead</li>
 			</layers>
 			<defaultOutfitTags>
-				<li>Worker</li>
 				<li>Soldier</li>
 			</defaultOutfitTags>
 			<tags>
@@ -54,18 +60,18 @@
 		<label>Arellian field cap</label>
 		<description>WIP</description>
 		<recipeMaker>
-			<researchPrerequisite>ComplexClothing</researchPrerequisite>
 			<displayPriority>1170</displayPriority>
-			<skillRequirements>
-				<Crafting>4</Crafting>
-			</skillRequirements>
 		</recipeMaker>
 		<graphicData>
 			<texPath>Things/Pawn/Arellian/Apparel/FieldUniform/FieldCap/Hat</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.80</drawSize>
 		</graphicData>
+		<thingCategories Inherit="False">
+			<li>HeadgearNoble</li>
+		</thingCategories>
 		<equippedStatOffsets>
+			<PainShockThreshold>0.10</PainShockThreshold>
 		</equippedStatOffsets>
 		<apparel>
 			<wornGraphicPath>Things/Pawn/Arellian/Apparel/FieldUniform/FieldCap/Hat</wornGraphicPath>
@@ -80,11 +86,7 @@
 		<label>Arellian field kepi</label>
 		<description>WIP</description>
 		<recipeMaker>
-			<researchPrerequisite>ComplexClothing</researchPrerequisite>
 			<displayPriority>1171</displayPriority>
-			<skillRequirements>
-				<Crafting>4</Crafting>
-			</skillRequirements>
 		</recipeMaker>
 		<graphicData>
 			<texPath>Things/Pawn/Arellian/Apparel/FieldUniform/FieldKepi/Hat</texPath>
@@ -92,6 +94,7 @@
 			<drawSize>0.80</drawSize>
 		</graphicData>
 		<equippedStatOffsets>
+			<SocialImpact>0.20</SocialImpact>
 		</equippedStatOffsets>
 		<apparel>
 			<wornGraphicPath>Things/Pawn/Arellian/Apparel/FieldUniform/FieldKepi/Hat</wornGraphicPath>
@@ -126,17 +129,19 @@
 		</stuffCategories>
 		<thingCategories>
 			<li>ApparelMisc</li>
+			<li>ApparelNoble</li>
 		</thingCategories>
 		<statBases>
 			<WorkToMake>12000</WorkToMake>
 			<MaxHitPoints>200</MaxHitPoints>
 			<Mass>1.5</Mass>
 			<StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.50</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierInsulation_Cold>0.75</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
+			<MentalBreakThreshold>-0.05</MentalBreakThreshold>
 			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
 		</equippedStatOffsets>
 		<apparel>
@@ -157,7 +162,6 @@
 				<li>CFAR_Officer</li>
 			</tags>
 			<defaultOutfitTags>
-				<li>Worker</li>
 				<li>Soldier</li>
 				<li>Spacefarer</li>
 			</defaultOutfitTags>
@@ -169,4 +173,5 @@
 			<li>CFAR_Apparel</li>
 		</tradeTags>
 	</ThingDef>
+
 </Defs>
