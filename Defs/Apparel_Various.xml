@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-<!--================ Industrial Weapons ================-->
+<!--================ Industrial Apparel ================-->
 
-<!--======== BulletDefs ========-->
+<!--======== Field Cap & Field Kepi ========-->
 
 	<ThingDef ParentName="HatMakeableBase" Name="CFAR_CapBase" Abstract="True">
 		<techLevel>Industrial</techLevel>
@@ -104,7 +104,7 @@
 		</apparel>
 	</ThingDef>
 
-<!--======== BulletDefs ========-->
+<!--======== Field Uniform ========-->
 
 	<ThingDef ParentName="ApparelMakeableBase">
 		<techLevel>Industrial</techLevel>
@@ -173,5 +173,8 @@
 			<li>CFAR_Apparel</li>
 		</tradeTags>
 	</ThingDef>
+
+<!--================ Industrial Armor ================-->
+<!--Dev Log: Listen, what if we made Middle layer armor...modular? Chest armor, Shoulder pads, Greaves.-->
 
 </Defs>
