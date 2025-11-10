@@ -136,7 +136,7 @@
 			<MaxHitPoints>200</MaxHitPoints>
 			<Mass>1.5</Mass>
 			<StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.75</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Cold>0.50</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>5</EquipDelay>
 		</statBases>
@@ -178,4 +178,3 @@
 <!--Dev Log: Listen, what if we made Middle layer armor...modular? Chest armor, Shoulder pads, Greaves.-->
 
 </Defs>
-
