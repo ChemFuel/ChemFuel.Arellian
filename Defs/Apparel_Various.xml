@@ -37,7 +37,6 @@
 			<bodyPartGroups>
 				<li>UpperHead</li>
 			</bodyPartGroups>
-			<ideoDesireAllowedFactionCategoryTags><li>CFAR_Empire</li></ideoDesireAllowedFactionCategoryTags>
 			<layers>
 				<li>Overhead</li>
 			</layers>
@@ -75,6 +74,7 @@
 			<tags>
 				<li>CFAR_Soldier</li>
 			</tags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 		</apparel>
 	</ThingDef>
 
@@ -98,6 +98,7 @@
 			<tags>
 				<li>CFAR_Officer</li>
 			</tags>
+			<ideoDesireAllowedFactionCategoryTags><li>CFAR_Empire</li></ideoDesireAllowedFactionCategoryTags>
 		</apparel>
 	</ThingDef>
 
@@ -158,7 +159,7 @@
 			<defaultOutfitTags>
 				<li>Soldier</li>
 			</defaultOutfitTags>
-			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+			<ideoDesireAllowedFactionCategoryTags><li>CFAR_Empire</li></ideoDesireAllowedFactionCategoryTags>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_StandardApparel" />
 		<tradeTags>
@@ -236,7 +237,7 @@
 				<li>Soldier</li>
 				<li>Spacefarer</li>
 			</defaultOutfitTags>
-			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+			<ideoDesireAllowedFactionCategoryTags><li>CFAR_Empire</li></ideoDesireAllowedFactionCategoryTags>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_StandardApparel" />
 		<tradeTags>
@@ -305,6 +306,7 @@
 			<defaultOutfitTags>
 				<li>Soldier</li>
 			</defaultOutfitTags>
+			<ideoDesireAllowedFactionCategoryTags><li>CFAR_Empire</li></ideoDesireAllowedFactionCategoryTags>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_StandardApparel" />
 	    <tradeTags>
