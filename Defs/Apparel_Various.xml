@@ -45,7 +45,7 @@
 				<li>Soldier</li>
 			</defaultOutfitTags>
 			<tags>
-				<li>CFAR_MilitaryBasic</li>
+				<li>CFAR_MilitaryPlanetary</li>
 			</tags>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_StandardApparel" />
@@ -67,9 +67,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.80</drawSize>
 		</graphicData>
-		<thingCategories Inherit="False">
-			<li>HeadgearNoble</li>
-		</thingCategories>
 		<equippedStatOffsets>
 			<PainShockThreshold>0.10</PainShockThreshold>
 		</equippedStatOffsets>
@@ -129,13 +126,12 @@
 		</stuffCategories>
 		<thingCategories>
 			<li>ApparelMisc</li>
-			<li>ApparelNoble</li>
 		</thingCategories>
 		<statBases>
 			<WorkToMake>10000</WorkToMake>
 			<MaxHitPoints>200</MaxHitPoints>
 			<Mass>1.5</Mass>
-			<StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>0.20</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.50</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>5</EquipDelay>
@@ -157,9 +153,7 @@
 				<li>OnSkin</li>
 			</layers>
 			<tags>
-				<li>CFAR_MilitaryBasic</li>
-				<li>CFAR_Soldier</li>
-				<li>CFAR_Officer</li>
+				<li>CFAR_MilitaryPlanetary</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
@@ -186,6 +180,7 @@
 				<li>OrbitalTech</li>
 			</researchPrerequisites>
 			<displayPriority>1171</displayPriority>
+			<useIngredientsForColor>false</useIngredientsForColor>
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
@@ -201,16 +196,15 @@
 		<costStuffCount>80</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
-			<li>Leathery</li>
 		</stuffCategories>
 		<thingCategories>
 			<li>ApparelMisc</li>
-			<li>ApparelNoble</li>
 		</thingCategories>
 		<statBases>
 			<WorkToMake>15000</WorkToMake>
 			<MaxHitPoints>200</MaxHitPoints>
 			<Mass>1.5</Mass>
+			<Flammability>0.6</Flammability>
 			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>1.5</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
@@ -236,9 +230,7 @@
 				<li>OnSkin</li>
 			</layers>
 			<tags>
-				<li>CFAR_MilitaryBasic</li>
-				<li>CFAR_Soldier</li>
-				<li>CFAR_Officer</li>
+				<li>CFAR_MilitaryOrbit</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
@@ -255,5 +247,68 @@
 
 <!--================ Industrial Armor ================-->
 <!--Dev Log: Listen, what if we made Middle layer armor...modular? Chest armor, Shoulder pads, Greaves.-->
-
+	<ThingDef ParentName="ArmorMachineableBase" Abstract="True">
+		<techLevel>Industrial</techLevel>
+		<defName>Apparel_CFAR_RWPlate</defName>
+		<label>Arellian Reichswehr plate</label>
+		<description>WIP</description>
+		<recipeMaker>
+			<researchPrerequisite>FlakArmor</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<skillRequirements>
+			<Crafting>4</Crafting>
+			</skillRequirements>
+			<displayPriority>220</displayPriority>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/FlakVest/FlakVest</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.90</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>9000</WorkToMake>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Mass>4</Mass>
+			<Flammability>0.4</Flammability>
+			<ArmorRating_Sharp>1.00</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.36</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.27</ArmorRating_Heat>
+			<Insulation_Cold>1</Insulation_Cold>
+			<EquipDelay>5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.12</MoveSpeed>
+		</equippedStatOffsets>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<costList>
+			<Cloth>30</Cloth>
+			<Steel>60</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/FlakVest/FlakVest</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>CFAR_MilitaryPlanetary</li>
+				<li>CFAR_MilitaryOrbit</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	    <tradeTags>
+			<li>Armor</li>
+		</tradeTags>
+	</ThingDef>
 </Defs>
