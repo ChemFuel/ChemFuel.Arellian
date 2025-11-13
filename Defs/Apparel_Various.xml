@@ -131,11 +131,11 @@
 		<statBases>
 			<WorkToMake>10000</WorkToMake>
 			<MaxHitPoints>200</MaxHitPoints>
-			<Mass>1.5</Mass>
+			<Mass>1.25</Mass>
 			<StuffEffectMultiplierArmor>0.20</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.50</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
-			<EquipDelay>5</EquipDelay>
+			<EquipDelay>6</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
 			<MentalBreakThreshold>-0.1</MentalBreakThreshold>
@@ -194,7 +194,7 @@
 			<Plasteel>20</Plasteel>
 			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
-		<costStuffCount>80</costStuffCount>
+		<costStuffCount>100</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
 		</stuffCategories>
@@ -204,14 +204,14 @@
 		<statBases>
 			<WorkToMake>16000</WorkToMake>
 			<MaxHitPoints>200</MaxHitPoints>
-			<Mass>1.5</Mass>
+			<Mass>3</Mass>
 			<Flammability>0.6</Flammability>
 			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>1.5</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
 			<Insulation_Cold>15</Insulation_Cold>
 			<Insulation_Heat>3</Insulation_Heat>
-			<EquipDelay>5</EquipDelay>
+			<EquipDelay>9</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>-0.03</MoveSpeed>
@@ -272,11 +272,11 @@
 			<Flammability>0.4</Flammability>
 			<StuffEffectMultiplierArmor>0.8</StuffEffectMultiplierArmor>
 			<Insulation_Cold>3</Insulation_Cold>
-			<EquipDelay>3</EquipDelay>
+			<EquipDelay>5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>-0.06</MoveSpeed>
-			<StaggerDurationFactor>-0.10</StaggerDurationFactor>
+			<StaggerDurationFactor>-0.1</StaggerDurationFactor>
 		</equippedStatOffsets>
 		<thingCategories>
 			<li>ApparelArmor</li>
@@ -294,6 +294,71 @@
 				<li>Torso</li>
 				<li>Neck</li>
 				<li>Arms</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/FlakVest/FlakVest</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>CFAR_MilitaryPlanetary</li>
+				<li>CFAR_MilitaryOrbit</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<ideoDesireAllowedFactionCategoryTags><li>CFAR_Empire</li></ideoDesireAllowedFactionCategoryTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	    <tradeTags>
+			<li>Armor</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="ArmorMachineableBase" Abstract="True">
+		<techLevel>Industrial</techLevel>
+		<defName>Apparel_CFAR_RWGreaves</defName>
+		<label>Arellian Reichswehr greaves</label>
+		<description>WIP</description>
+		<recipeMaker>
+			<researchPrerequisite>FlakArmor</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<skillRequirements>
+			<Crafting>5</Crafting>
+			</skillRequirements>
+			<displayPriority>220</displayPriority>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/FlakVest/FlakVest</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.90</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>8000</WorkToMake>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Mass>3</Mass>
+			<Flammability>0.4</Flammability>
+			<StuffEffectMultiplierArmor>0.8</StuffEffectMultiplierArmor>
+			<Insulation_Cold>3</Insulation_Cold>
+			<EquipDelay>5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.06</MoveSpeed>
+			<StaggerDurationFactor>-0.1</StaggerDurationFactor>
+		</equippedStatOffsets>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<costList>
+			<Plasteel>15</Plasteel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<costStuffCount>45</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<apparel>
+			<bodyPartGroups>
+				<li>Legs</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/FlakVest/FlakVest</wornGraphicPath>
 			<layers>
