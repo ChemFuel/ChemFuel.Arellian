@@ -208,7 +208,7 @@
 			<Flammability>0.6</Flammability>
 			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>1.5</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
 			<Insulation_Cold>15</Insulation_Cold>
 			<Insulation_Heat>3</Insulation_Heat>
 			<EquipDelay>5</EquipDelay>
@@ -247,7 +247,6 @@
 	</ThingDef>
 
 <!--================ Industrial Armor ================-->
-<!--Dev Log: Listen, what if we made Middle layer armor...modular? Chest armor, Shoulder pads, Greaves.-->
 	<ThingDef ParentName="ArmorMachineableBase" Abstract="True">
 		<techLevel>Industrial</techLevel>
 		<defName>Apparel_CFAR_RWPlate</defName>
@@ -269,14 +268,14 @@
 		<statBases>
 			<WorkToMake>12000</WorkToMake>
 			<MaxHitPoints>100</MaxHitPoints>
-			<Mass>4</Mass>
+			<Mass>5</Mass>
 			<Flammability>0.4</Flammability>
 			<StuffEffectMultiplierArmor>0.8</StuffEffectMultiplierArmor>
 			<Insulation_Cold>3</Insulation_Cold>
 			<EquipDelay>3</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.03</MoveSpeed>
+			<MoveSpeed>-0.06</MoveSpeed>
 			<StaggerDurationFactor>-0.10</StaggerDurationFactor>
 		</equippedStatOffsets>
 		<thingCategories>
