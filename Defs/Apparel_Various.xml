@@ -251,7 +251,7 @@
 		<techLevel>Industrial</techLevel>
 		<defName>Apparel_CFAR_RWPlate</defName>
 		<label>Arellian Reichswehr plate</label>
-		<description>WIP</description>
+		<description>A modular torso armor system built on a flexible plasteel frame. Reinforced plates and arm guards protect the upper body while preserving mobility. Standard issue for Reichswehr soldiers, designed as the core component of a tactical plate set that moves seamlessly with the wearer.</description>
 		<recipeMaker>
 			<researchPrerequisite>FlakArmor</researchPrerequisite>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
@@ -320,7 +320,7 @@
 		<techLevel>Industrial</techLevel>
 		<defName>Apparel_CFAR_RWGreaves</defName>
 		<label>Arellian Reichswehr greaves</label>
-		<description>WIP</description>
+		<description>A reinforced leg armor system built on a flexible plasteel frame. Reinforced plates protect the lower body while preserving mobility. Standard issue for Reichswehr soldiers, designed as the lower component of a tactical plate set that moves seamlessly with the wearer.</description>
 		<recipeMaker>
 			<researchPrerequisite>FlakArmor</researchPrerequisite>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
@@ -337,7 +337,7 @@
 		<statBases>
 			<WorkToMake>8000</WorkToMake>
 			<MaxHitPoints>80</MaxHitPoints>
-			<Mass>3</Mass>
+			<Mass>4</Mass>
 			<Flammability>0.4</Flammability>
 			<StuffEffectMultiplierArmor>0.7</StuffEffectMultiplierArmor>
 			<ArmorRating_Sharp>0.30</ArmorRating_Sharp>
@@ -383,4 +383,3 @@
 		</tradeTags>
 	</ThingDef>
 </Defs>
-
