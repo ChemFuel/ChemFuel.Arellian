@@ -284,10 +284,10 @@
 			<li>ApparelArmor</li>
 		</thingCategories>
 		<costList>
-			<Plasteel>10</Plasteel>
+			<Plasteel>15</Plasteel>
 			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
-		<costStuffCount>50</costStuffCount>
+		<costStuffCount>45</costStuffCount>
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
@@ -353,10 +353,10 @@
 			<li>ApparelArmor</li>
 		</thingCategories>
 		<costList>
-			<Plasteel>10</Plasteel>
+			<Plasteel>15</Plasteel>
 			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
-		<costStuffCount>50</costStuffCount>
+		<costStuffCount>45</costStuffCount>
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
@@ -383,3 +383,4 @@
 		</tradeTags>
 	</ThingDef>
 </Defs>
+
