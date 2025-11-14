@@ -268,24 +268,26 @@
 		<statBases>
 			<WorkToMake>12000</WorkToMake>
 			<MaxHitPoints>100</MaxHitPoints>
-			<Mass>5</Mass>
+			<Mass>4</Mass>
 			<Flammability>0.4</Flammability>
-			<StuffEffectMultiplierArmor>0.8</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>0.7</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.15</ArmorRating_Heat>
 			<Insulation_Cold>3</Insulation_Cold>
 			<EquipDelay>5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.06</MoveSpeed>
-			<StaggerDurationFactor>-0.1</StaggerDurationFactor>
+			<StaggerDurationFactor>-0.125</StaggerDurationFactor>
 		</equippedStatOffsets>
 		<thingCategories>
 			<li>ApparelArmor</li>
 		</thingCategories>
 		<costList>
-			<Plasteel>15</Plasteel>
+			<Plasteel>10</Plasteel>
 			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
-		<costStuffCount>60</costStuffCount>
+		<costStuffCount>50</costStuffCount>
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
@@ -337,22 +339,24 @@
 			<MaxHitPoints>80</MaxHitPoints>
 			<Mass>3</Mass>
 			<Flammability>0.4</Flammability>
-			<StuffEffectMultiplierArmor>0.8</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>0.7</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.15</ArmorRating_Heat>
 			<Insulation_Cold>3</Insulation_Cold>
 			<EquipDelay>5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.06</MoveSpeed>
-			<StaggerDurationFactor>-0.1</StaggerDurationFactor>
+			<StaggerDurationFactor>-0.125</StaggerDurationFactor>
 		</equippedStatOffsets>
 		<thingCategories>
 			<li>ApparelArmor</li>
 		</thingCategories>
 		<costList>
-			<Plasteel>15</Plasteel>
+			<Plasteel>10</Plasteel>
 			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
-		<costStuffCount>45</costStuffCount>
+		<costStuffCount>50</costStuffCount>
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
