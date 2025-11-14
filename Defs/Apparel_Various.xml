@@ -271,8 +271,8 @@
 			<Mass>4</Mass>
 			<Flammability>0.4</Flammability>
 			<StuffEffectMultiplierArmor>0.7</StuffEffectMultiplierArmor>
-			<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.30</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.15</ArmorRating_Heat>
 			<Insulation_Cold>3</Insulation_Cold>
 			<EquipDelay>5</EquipDelay>
@@ -340,8 +340,8 @@
 			<Mass>3</Mass>
 			<Flammability>0.4</Flammability>
 			<StuffEffectMultiplierArmor>0.7</StuffEffectMultiplierArmor>
-			<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.30</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.15</ArmorRating_Heat>
 			<Insulation_Cold>3</Insulation_Cold>
 			<EquipDelay>5</EquipDelay>
