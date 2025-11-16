@@ -198,6 +198,77 @@
 		</tradeTags>
 	</ThingDef>
 
+<!--======== Orbit Helmet ========-->
+
+	<ThingDef ParentName="ArmorHelmetMakeableBase">
+		<techLevel>Industrial</techLevel>
+		<defName>Apparel_CFAR_OrbitHelmet</defName>
+		<label>Arellian orbit helmet</label>
+		<description>WIP</description>
+		<uiIconScale>1.15</uiIconScale>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+			<displayPriority>1160</displayPriority>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Arellian/Apparel/FieldUniform/FieldCap/Hat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+		</graphicData>
+		<costList>
+			<Plasteel>20</Plasteel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<costStuffCount>100</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>4000</WorkToMake>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>3</Mass>
+			<Flammability>0.4</Flammability>
+			<StuffEffectMultiplierArmor>0.7</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>0.30</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.15</ArmorRating_Heat>
+			<Insulation_Cold>5</Insulation_Cold>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
+			<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.1</SuppressionPower>
+			<ToxicEnvironmentResistance>0.80</ToxicEnvironmentResistance>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.69</VacuumResistance>
+		</equippedStatOffsets>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+			<wornGraphicPath>Things/Pawn/Arellian/Apparel/FieldUniform/FieldCap/Hat</wornGraphicPath>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<tags>
+				<li>CFAR_MilitaryOrbit</li>
+			</tags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+		<tradeTags>
+			<li>BasicClothing</li>
+			<li>CFAR_Apparel</li>
+		</tradeTags>
+	</ThingDef>
+
 <!--======== Orbit Suit ========-->
 
 	<ThingDef ParentName="ArmorMachineableBase">
@@ -241,11 +312,11 @@
 			<StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
 			<Insulation_Cold>15</Insulation_Cold>
 			<Insulation_Heat>3</Insulation_Heat>
-			<EquipDelay>9</EquipDelay>
+			<EquipDelay>8</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>-0.03</MoveSpeed>
-			<ToxicEnvironmentResistance>0.22</ToxicEnvironmentResistance>
+			<ToxicEnvironmentResistance>0.20</ToxicEnvironmentResistance>
 			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.32</VacuumResistance>
 		</equippedStatOffsets>
 		<apparel>
@@ -335,42 +406,6 @@
 		</tradeTags>
 	</ThingDef>
 
-<!--======== Reichswehr Pauldron ========-->
-
-	<ThingDef ParentName="CFAR_RWSetBase">
-		<defName>Apparel_CFAR_RWPauldrons</defName>
-		<label>Arellian Reichswehr pauldrons</label>
-		<description>A standard shoulder armor built on a flexible plasteel frame. Reinforced plates protect the neck and shoulders while preserving arm mobility. Designed as the shoulder component of a tactical plate set that moves seamlessly with the wearer.</description>
-		<recipeMaker>
-			<displayPriority>220</displayPriority>
-		</recipeMaker>
-		<graphicData>
-			<texPath>Things/Pawn/Humanlike/Apparel/FlakVest/FlakVest</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>0.90</drawSize>
-		</graphicData>
-		<costList Inherit="False">
-			<Plasteel>5</Plasteel>
-		</costList>
-		<costStuffCount>20</costStuffCount>
-		<statBases>
-			<WorkToMake>2500</WorkToMake>
-			<MaxHitPoints>75</MaxHitPoints>
-			<Mass>4</Mass>
-			<EquipDelay>0.5</EquipDelay>
-		</statBases>
-		<equippedStatOffsets>
-			<StaggerDurationFactor>-0.05</StaggerDurationFactor>
-			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.05</SlaveSuppressionOffset>
-		</equippedStatOffsets>
-		<apparel>
-			<bodyPartGroups>
-				<li>Neck</li>
-				<li>Shoulder</li>
-			</bodyPartGroups>
-		</apparel>
-	</ThingDef>
-
 <!--======== Reichswehr Plate ========-->
 
 	<ThingDef ParentName="CFAR_RWSetBase">
@@ -378,7 +413,7 @@
 		<label>Arellian Reichswehr plate</label>
 		<description>A standard torso armor built on a flexible plasteel frame. Reinforced plates protect the upper body while preserving mobility. Designed as the upper component of a tactical plate set that moves seamlessly with the wearer.</description>
 		<recipeMaker>
-			<displayPriority>220</displayPriority>
+			<displayPriority>1163</displayPriority>
 		</recipeMaker>
 		<graphicData>
 			<texPath>Things/Pawn/Humanlike/Apparel/FlakVest/FlakVest</texPath>
@@ -404,7 +439,7 @@
 		<label>Arellian Reichswehr greaves</label>
 		<description>A standard leg armor built on a flexible plasteel frame. Reinforced plates protect the lower body while preserving mobility. Designed as the lower component of a tactical plate set that moves seamlessly with the wearer.</description>
 		<recipeMaker>
-			<displayPriority>220</displayPriority>
+			<displayPriority>1164</displayPriority>
 		</recipeMaker>
 		<graphicData>
 			<texPath>Things/Pawn/Humanlike/Apparel/FlakVest/FlakVest</texPath>
@@ -419,6 +454,42 @@
 				<li>Legs</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/FlakVest/FlakVest</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+
+<!--======== Reichswehr Pauldron ========-->
+
+	<ThingDef ParentName="CFAR_RWSetBase">
+		<defName>Apparel_CFAR_RWPauldrons</defName>
+		<label>Arellian Reichswehr pauldrons</label>
+		<description>A standard shoulder armor built on a flexible plasteel frame. Reinforced plates protect the neck and shoulders while preserving arm mobility. Designed as the shoulder component of a tactical plate set that moves seamlessly with the wearer.</description>
+		<recipeMaker>
+			<displayPriority>1165</displayPriority>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/FlakVest/FlakVest</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.90</drawSize>
+		</graphicData>
+		<costList Inherit="False">
+			<Plasteel>5</Plasteel>
+		</costList>
+		<costStuffCount>20</costStuffCount>
+		<statBases>
+			<WorkToMake>2500</WorkToMake>
+			<MaxHitPoints>75</MaxHitPoints>
+			<Mass>4</Mass>
+			<EquipDelay>0.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<StaggerDurationFactor>-0.05</StaggerDurationFactor>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.05</SlaveSuppressionOffset>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Neck</li>
+				<li>Shoulder</li>
+			</bodyPartGroups>
 		</apparel>
 	</ThingDef>
 </Defs>
