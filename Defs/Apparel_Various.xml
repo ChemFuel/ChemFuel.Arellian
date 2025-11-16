@@ -2,7 +2,7 @@
 <Defs>
 <!--================ Industrial Apparel ================-->
 
-<!--======== Field Cap & Field Kepi & Field Peaked Cap ========-->
+<!--======== Field Headgear(Soft) Base ========-->
 
 	<ThingDef ParentName="HatMakeableBase" Name="CFAR_CapBase" Abstract="True">
 		<techLevel>Industrial</techLevel>
@@ -54,10 +54,12 @@
 		</tradeTags>
 	</ThingDef>
 
+<!--======== Field Cap ========-->
+
 	<ThingDef ParentName="CFAR_CapBase">
 		<defName>Apparel_CFAR_FieldCap</defName>
 		<label>Arellian field cap</label>
-		<description>A lightweight utility cap issued to Reichswehr enlisted personnel for routine field duties. Designed for comfort and practicality during daily operations, and worn as the standard headgear of the imperial rank-and-file.</description>
+		<description>A standard field cap issued to Reichswehr enlisted personnel. Lightweight, brimmed, and built for daily operations, it shields the wearer’s eyes during maneuvers and long marches. Worn universally by the imperial rank-and-file.</description>
 		<recipeMaker>
 			<displayPriority>1160</displayPriority>
 		</recipeMaker>
@@ -77,6 +79,8 @@
 			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 		</apparel>
 	</ThingDef>
+
+<!--======== Field Kepi ========-->
 
 	<ThingDef ParentName="CFAR_CapBase">
 		<defName>Apparel_CFAR_FieldKepi</defName>
@@ -101,6 +105,8 @@
 			<ideoDesireAllowedFactionCategoryTags><li>CFAR_Empire</li></ideoDesireAllowedFactionCategoryTags>
 		</apparel>
 	</ThingDef>
+
+<!--======== Field Peaked Cap ========-->
 
 	<ThingDef ParentName="CFAR_CapBase">
 		<defName>Apparel_CFAR_FieldCrusher</defName>
@@ -272,6 +278,8 @@
 
 <!--================ Industrial Armor ================-->
 
+<!--======== Reichswehr Armor Base ========-->
+
 	<ThingDef Name="CFAR_RWSetBase" ParentName="ArmorMachineableBase" Abstract="True">
 		<techLevel>Industrial</techLevel>
 		<recipeMaker>
@@ -295,7 +303,6 @@
 			<ArmorRating_Sharp>0.30</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.15</ArmorRating_Heat>
-			<Insulation_Cold>3</Insulation_Cold>
 			<EquipDelay>4</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
@@ -311,6 +318,7 @@
 		<apparel>
 			<layers>
 				<li>Middle</li>
+				<li>Shell</li>
 			</layers>
 			<tags>
 				<li>CFAR_MilitaryPlanetary</li>
@@ -327,7 +335,20 @@
 		</tradeTags>
 	</ThingDef>
 
-	<ThingDef Name="CFAR_RWPauldronBase" ParentName="CFAR_RWSetBase" Abstract="True">
+<!--======== Reichswehr Pauldron ========-->
+
+	<ThingDef ParentName="CFAR_RWSetBase">
+		<defName>Apparel_CFAR_RWPauldrons</defName>
+		<label>Arellian Reichswehr pauldrons</label>
+		<description>A standard shoulder armor built on a flexible plasteel frame. Reinforced plates protect the neck and shoulders while preserving arm mobility. Designed as the shoulder component of a tactical plate set that moves seamlessly with the wearer.</description>
+		<recipeMaker>
+			<displayPriority>220</displayPriority>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/FlakVest/FlakVest</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.90</drawSize>
+		</graphicData>
 		<costList Inherit="False">
 			<Plasteel>5</Plasteel>
 		</costList>
@@ -336,24 +357,26 @@
 			<WorkToMake>2500</WorkToMake>
 			<MaxHitPoints>75</MaxHitPoints>
 			<Mass>4</Mass>
-			<Insulation_Cold>3</Insulation_Cold>
-			<EquipDelay>1</EquipDelay>
+			<EquipDelay>0.5</EquipDelay>
 		</statBases>
-		<equippedStatOffsets Inherit="False">
+		<equippedStatOffsets>
 			<StaggerDurationFactor>-0.05</StaggerDurationFactor>
 			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.05</SlaveSuppressionOffset>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
+				<li>Neck</li>
 				<li>Shoulder</li>
 			</bodyPartGroups>
 		</apparel>
 	</ThingDef>
 
+<!--======== Reichswehr Plate ========-->
+
 	<ThingDef ParentName="CFAR_RWSetBase">
 		<defName>Apparel_CFAR_RWPlate</defName>
 		<label>Arellian Reichswehr plate</label>
-		<description>A reinforced torso armor built on a flexible plasteel frame. Segmented plates and arm guards protect the upper body while preserving mobility. Standard issue for Reichswehr soldiers, designed as the core component of a tactical plate set that moves seamlessly with the wearer.</description>
+		<description>A standard torso armor built on a flexible plasteel frame. Reinforced plates protect the upper body while preserving mobility. Designed as the upper component of a tactical plate set that moves seamlessly with the wearer.</description>
 		<recipeMaker>
 			<displayPriority>220</displayPriority>
 		</recipeMaker>
@@ -362,20 +385,24 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.90</drawSize>
 		</graphicData>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.06</MoveSpeed>
+		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
 				<li>Torso</li>
-				<li>Neck</li>
 				<li>Arms</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/FlakVest/FlakVest</wornGraphicPath>
 		</apparel>
 	</ThingDef>
 
+<!--======== Reichswehr Greaves ========-->
+
 	<ThingDef ParentName="CFAR_RWSetBase">
 		<defName>Apparel_CFAR_RWGreaves</defName>
 		<label>Arellian Reichswehr greaves</label>
-		<description>A reinforced leg armor built on a flexible plasteel frame. Segmented plates protect the lower body while preserving mobility. Standard issue for Reichswehr soldiers, designed as the lower component of a tactical plate set that moves seamlessly with the wearer.</description>
+		<description>A standard leg armor built on a flexible plasteel frame. Reinforced plates protect the lower body while preserving mobility. Designed as the lower component of a tactical plate set that moves seamlessly with the wearer.</description>
 		<recipeMaker>
 			<displayPriority>220</displayPriority>
 		</recipeMaker>
@@ -384,6 +411,9 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.90</drawSize>
 		</graphicData>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.06</MoveSpeed>
+		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
 				<li>Legs</li>
