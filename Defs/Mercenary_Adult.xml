@@ -78,8 +78,8 @@
 			<Abrasive>0</Abrasive>
 		</disallowedTraits>
 		<skillGains>
-			<Shooting>4</Shooting>
 			<Melee>6</Melee>
+			<Social>4</Social>
 		</skillGains>
 		<spawnCategories>
 			<li>CFAR_CivilMercenary</li>
@@ -94,8 +94,8 @@
 		<bodyTypeFemale>Thin</bodyTypeFemale>
 		<description>Deck of cards or a starfighter, [PAWN_nameDef] could handle either like an ace. [PAWN_pronoun] picked up the nickname at some backwater bar after winning three hands in a row with four-of-a-kind aces—apparently without cheating.</description>
 		<skillGains>
-			<Shooting>2</Shooting>
-			<Social>8</Social>
+			<Shooting>6</Shooting>
+			<Crafting>4</Crafting>
 		</skillGains>
 		<spawnCategories>
 			<li>CFAR_CivilMercenary</li>
