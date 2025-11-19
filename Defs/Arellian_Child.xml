@@ -82,7 +82,7 @@
 		<defName>CFAR_FarmKitten1</defName>
 		<title>farm kitten</title>
 		<titleShort>farm cat</titleShort>
-		<description>WIP</description>
+		<description>It was no secret that [PAWN_nameDef] loved milk. Whenever [PAWN_possessive] parents were milking the cattle, [PAWN_pronoun] drifted over immediately, bouncing on [PAWN_possessive] heels in excitement. Afterward, [PAWN_pronoun] would sit on an old wooden stool, sipping a fresh cup while watching dust motes dance in the barn’s warm light. Most days ended with [PAWN_nameDef] napping on a hay bale, smelling faintly of grass and sunshine.</description>
 		<skillGains>
 			<Animals>4</Animals>
 		</skillGains>
@@ -111,7 +111,7 @@
 		<defName>CFAR_UrbanKitten1</defName>
 		<title>shy kitten</title>
 		<titleShort>introvert</titleShort>
-		<description>[PAWN_nameDef] grew up in the nightless megabuildings of a hubworld. City life was always crowded yet lonely, but [PAWN_pronoun] managed to keep [PAWN_possessive] small circle of friends together.</description>
+		<description>[PAWN_nameDef] grew up in the nightless megabuildings of a hubworld. City life was always crowded yet lonely, but [PAWN_pronoun] managed to keep [PAWN_possessive] small circle of friends together.\n\nThey were a quiet little group—shy kids who ate lunch on the same stairwell every day and shared whispered jokes between classes. Even in a city packed with billions, they stuck close, walking home together through the streets that never truly went dark.</description>
 		<disabledTraits>
 			<Abrasive>0</Abrasive>
 			<Psychopath>0</Psychopath>
@@ -206,4 +206,5 @@
 
 <!--======== High Class ========-->
 </Defs>
+
 
