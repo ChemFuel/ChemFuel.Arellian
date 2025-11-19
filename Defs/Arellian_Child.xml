@@ -64,7 +64,7 @@
 <!--======== Freikorps ========-->
 
 	<BackstoryDef ParentName="CFAR_Child">
-		<defName>CFAR_MercKitten1</defName>
+		<defName>CFAR_FCKitten1</defName>
 		<title>Freikorps kitten</title>
 		<titleShort>Freikorps</titleShort>
 		<description>WIP</description>
@@ -72,7 +72,7 @@
 			<Shooting>4</Shooting>
 		</skillGains>
 		<spawnCategories>
-			<li>CFAR_FCMercenary</li>
+			<li>CFAR_FCChild</li>
 		</spawnCategories>
 	</BackstoryDef>
 
@@ -94,7 +94,7 @@
 <!--======== Urban ========-->
 
 	<BackstoryDef ParentName="CFAR_Child">
-		<defName>CFAR_ShyKitten1</defName>
+		<defName>CFAR_UrbanKitten1</defName>
 		<title>shy kitten</title>
 		<titleShort>introvert</titleShort>
 		<description>[PAWN_nameDef] grew up in the nightless megabuildings of a hubworld. City life was always crowded yet lonely, but [PAWN_pronoun] managed to keep [PAWN_possessive] small circle of friends together.</description>
@@ -112,12 +112,31 @@
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_Child">
-		<defName>CFAR_ShopKitten1</defName>
+		<defName>CFAR_UrbanKitten1</defName>
 		<title>shop kitten</title>
-		<titleShort>shop cat</titleShort>
+		<titleShort>shop kitten</titleShort>
 		<description>WIP</description>
 		<skillGains>
 			<Social>4</Social>
+		</skillGains>
+		<spawnCategories>
+			<li>CFAR_Commoner</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_Child">
+		<defName>CFAR_UrbanKitten3</defName>
+		<title>laid-back kitten</title>
+		<titleShort>easygoing</titleShort>
+		<description>[PAWN_nameDef] never saw the point of rushing or stressing over minor inconveniences. Things always sorted themselves out eventually…well, usually. [PAWN_pronoun] preferred taking long naps in the local park, sunbathing with a bag of chips resting in [PAWN_possessive] hands.</description>
+		<forcedTraits>
+			<Nerves>1</Nerves>
+		</forcedTraits>
+		<disallowedTraits>
+			<Neurotic>0</Neurotic>
+		</disallowedTraits>
+		<skillGains>
+			<Cooking>2</Cooking>
 		</skillGains>
 		<spawnCategories>
 			<li>CFAR_Commoner</li>
