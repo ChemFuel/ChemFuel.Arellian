@@ -47,8 +47,7 @@
 
 	<BackstoryDef ParentName="CFAR_AdultMercenary">
 		<defName>CFAR_CivilMercenary1</defName>
-		<title>quickdraw man</title>
-		<titleFemale>quickdraw woman</titleFemale>
+		<title>quickdraw</title>
 		<titleShort>quickdraw</titleShort>
 		<description>Words of the law were never absolute to [PAWN_nameDef]. [PAWN_pronoun] earned a reputation for shooting first and asking questions later—a dependable kind of loose cannon. And to be fair, none of [PAWN_possessive] employers ever hired [PAWN_objective] to ask questions first.</description>
 		<forcedTraits>
@@ -59,6 +58,7 @@
 		</disallowedTraits>
 		<skillGains>
 			<Shooting>8</Shooting>
+			<Melee>2</Melee>
 			<Social>-2</Social>
 		</skillGains>
 		<spawnCategories>
@@ -70,11 +70,31 @@
 		<defName>CFAR_CivilMercenary2</defName>
 		<title>captain</title>
 		<titleShort>captain</titleShort>
-		<bodyTypeMale>Hulk</bodyTypeMale>
-		<bodyTypeFemale>Hulk</bodyTypeFemale>
 		<description>Although [PAWN_nameDef] had no military background whatsoever, people ended up calling [PAWN_objective] captain—mostly because [PAWN_pronoun] flew around in a old freighter long enough for the name to stick. With [PAWN_possessive] roguish charm and smooth words, [PAWN_pronoun] made a tidy living bashing in the skulls of [PAWN_possessive] targets and locking down whatever contracts came [PAWN_possessive] way.</description>
+		<forcedTraits>
+			<Beauty>1</Beauty>
+		</forcedTraits>
+		<disallowedTraits>
+			<Abrasive>0</Abrasive>
+		</disallowedTraits>
 		<skillGains>
+			<Shooting>4</Shooting>
 			<Melee>6</Melee>
+		</skillGains>
+		<spawnCategories>
+			<li>CFAR_CivilMercenary</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_AdultMercenary">
+		<defName>CFAR_CivilMercenary3</defName>
+		<title>ace pilot</title>
+		<titleShort>ace</titleShort>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<description>Deck of cards or a starfighter, [PAWN_nameDef] could handle either like an ace. [PAWN_pronoun] picked up the nickname at some backwater bar after winning three hands in a row with four-of-a-kind aces—apparently without cheating.</description>
+		<skillGains>
+			<Shooting>2</Shooting>
 			<Social>8</Social>
 		</skillGains>
 		<spawnCategories>
