@@ -91,6 +91,20 @@
 		</spawnCategories>
 	</BackstoryDef>
 
+	<BackstoryDef ParentName="CFAR_Child">
+		<defName>CFAR_ColonyKitten1</defName>
+		<title>explorer kitten</title>
+		<titleShort>explorer</titleShort>
+		<description>Marching through the plains with a slingshot in one hand and a magnifying glass in the other, [PAWN_nameDef] spent hours chasing shiny beetles or digging up anthills. Whenever [PAWN_pronoun] got hungry, [PAWN_pronoun] simply ate wild berries and kept exploring.</description>
+		<skillGains>
+			<Shooting>2</Shooting>
+			<Plants>2</Plants>
+		</skillGains>
+		<spawnCategories>
+			<li>CFAR_Commoner</li>
+		</spawnCategories>
+	</BackstoryDef>
+
 <!--======== Urban ========-->
 
 	<BackstoryDef ParentName="CFAR_Child">
@@ -112,10 +126,10 @@
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_Child">
-		<defName>CFAR_UrbanKitten1</defName>
+		<defName>CFAR_UrbanKitten2</defName>
 		<title>shop kitten</title>
 		<titleShort>shop kitten</titleShort>
-		<description>WIP</description>
+		<description>Eager to help [PAWN_pronoun] parents’ small shop, [PAWN_nameDef] greeted customers and talked about the wares—even if it mostly came out as childlike rambles. Somehow, that only made customers like [PAWN_objective] more.</description>
 		<skillGains>
 			<Social>4</Social>
 		</skillGains>
@@ -143,6 +157,8 @@
 		</spawnCategories>
 	</BackstoryDef>
 
+<!--======== Academy ========-->
+
 	<BackstoryDef ParentName="CFAR_Child">
 		<defName>CFAR_AcademyStudent1</defName>
 		<title>academy student</title>
@@ -156,6 +172,8 @@
 			<li>CFAR_Commoner</li>
 		</spawnCategories>
 	</BackstoryDef>
+
+<!--======== Cadet ========-->
 
 	<BackstoryDef ParentName="CFAR_Child">
 		<defName>CFAR_YoungCadet1</defName>
@@ -188,3 +206,4 @@
 
 <!--======== High Class ========-->
 </Defs>
+
