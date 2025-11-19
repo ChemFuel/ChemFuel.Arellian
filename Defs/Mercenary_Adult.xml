@@ -93,6 +93,9 @@
 		<bodyTypeMale>Thin</bodyTypeMale>
 		<bodyTypeFemale>Thin</bodyTypeFemale>
 		<description>Deck of cards or a starfighter, [PAWN_nameDef] could handle either like an ace. [PAWN_pronoun] picked up the nickname at some backwater bar after winning three hands in a row with four-of-a-kind aces—apparently without cheating.</description>
+		<disallowedTraits>
+			<SpeedOffset>-1</SpeedOffset>
+		</disallowedTraits>
 		<skillGains>
 			<Shooting>4</Shooting>
 			<Crafting>4</Crafting>
