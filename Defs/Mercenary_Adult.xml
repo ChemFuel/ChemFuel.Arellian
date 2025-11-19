@@ -34,11 +34,19 @@
 
 	<BackstoryDef ParentName="CFAR_AdultMercenary">
 		<defName>CFAR_Mercenary1</defName>
-		<title>space mercenary</title>
-		<titleShort>mercenary</titleShort>
-		<description>WIP</description>
+		<title>quickdraw man</title>
+		<titleFemale>quickdraw woman</titleFemale>
+		<titleShort>quickdraw</titleShort>
+		<description>Words of the law were never absolute to [PAWN_nameDef]. To [PAWN_pronoun], every corner was an opportunity—something to slip through, twist, or exploit for [PAWN_possessive] own advantage.\n\n[PAWN_nameDef] earned a reputation for shooting first and asking questions later—a dependable kind of loose cannon. And to be fair, none of [PAWN_possessive] employers ever hired [PAWN_objective] to ask questions first.</description>
+		<forcedTraits>
+			<ShootingAccuracy>-1</ShootingAccuracy>
+		</forcedTraits>
+		<disallowedTraits>
+			<Kind>0</Kind>
+		</disallowedTraits>
 		<skillGains>
 			<Shooting>6</Shooting>
+			<Social>6</Social>
 		</skillGains>
 		<spawnCategories>
 			<li>CFAR_Mercenary</li>
@@ -46,7 +54,7 @@
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_AdultMercenary">
-		<defName>CFAR_Mercenary2</defName>
+		<defName>CFAR_ExMilMercenary1</defName>
 		<title>space mercenary</title>
 		<titleShort>mercenary</titleShort>
 		<description>WIP</description>
@@ -54,8 +62,33 @@
 			<Shooting>6</Shooting>
 		</skillGains>
 		<spawnCategories>
-			<li>CFAR_Mercenary</li>
+			<li>CFAR_ExMilMercenary</li>
 		</spawnCategories>
 	</BackstoryDef>
 
+	<BackstoryDef ParentName="CFAR_AdultMercenary">
+		<defName>CFAR_CivilMercenary1</defName>
+		<title>space mercenary</title>
+		<titleShort>mercenary</titleShort>
+		<description>WIP</description>
+		<skillGains>
+			<Shooting>6</Shooting>
+		</skillGains>
+		<spawnCategories>
+			<li>CFAR_CivilMercenary</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_AdultMercenary">
+		<defName>CFAR_CriminalMercenary1</defName>
+		<title>space mercenary</title>
+		<titleShort>mercenary</titleShort>
+		<description>WIP</description>
+		<skillGains>
+			<Shooting>6</Shooting>
+		</skillGains>
+		<spawnCategories>
+			<li>CFAR_CriminalMercenary</li>
+		</spawnCategories>
+	</BackstoryDef>
 </Defs>
