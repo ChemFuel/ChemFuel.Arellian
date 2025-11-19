@@ -33,27 +33,6 @@
 <!--======== Generic ========-->
 
 	<BackstoryDef ParentName="CFAR_AdultMercenary">
-		<defName>CFAR_Mercenary1</defName>
-		<title>quickdraw man</title>
-		<titleFemale>quickdraw woman</titleFemale>
-		<titleShort>quickdraw</titleShort>
-		<description>Words of the law were never absolute to [PAWN_nameDef]. To [PAWN_pronoun], every corner was an opportunity—something to slip through, twist, or exploit for [PAWN_possessive] own advantage.\n\n[PAWN_nameDef] earned a reputation for shooting first and asking questions later—a dependable kind of loose cannon. And to be fair, none of [PAWN_possessive] employers ever hired [PAWN_objective] to ask questions first.</description>
-		<forcedTraits>
-			<ShootingAccuracy>-1</ShootingAccuracy>
-		</forcedTraits>
-		<disallowedTraits>
-			<Kind>0</Kind>
-		</disallowedTraits>
-		<skillGains>
-			<Shooting>6</Shooting>
-			<Social>6</Social>
-		</skillGains>
-		<spawnCategories>
-			<li>CFAR_Mercenary</li>
-		</spawnCategories>
-	</BackstoryDef>
-
-	<BackstoryDef ParentName="CFAR_AdultMercenary">
 		<defName>CFAR_ExMilMercenary1</defName>
 		<title>space mercenary</title>
 		<titleShort>mercenary</titleShort>
@@ -68,11 +47,35 @@
 
 	<BackstoryDef ParentName="CFAR_AdultMercenary">
 		<defName>CFAR_CivilMercenary1</defName>
-		<title>space mercenary</title>
-		<titleShort>mercenary</titleShort>
-		<description>WIP</description>
+		<title>quickdraw man</title>
+		<titleFemale>quickdraw woman</titleFemale>
+		<titleShort>quickdraw</titleShort>
+		<description>Words of the law were never absolute to [PAWN_nameDef]. [PAWN_pronoun] earned a reputation for shooting first and asking questions later—a dependable kind of loose cannon. And to be fair, none of [PAWN_possessive] employers ever hired [PAWN_objective] to ask questions first.</description>
+		<forcedTraits>
+			<ShootingAccuracy>-1</ShootingAccuracy>
+		</forcedTraits>
+		<disallowedTraits>
+			<Kind>0</Kind>
+		</disallowedTraits>
 		<skillGains>
-			<Shooting>6</Shooting>
+			<Shooting>8</Shooting>
+			<Social>-2</Social>
+		</skillGains>
+		<spawnCategories>
+			<li>CFAR_CivilMercenary</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_AdultMercenary">
+		<defName>CFAR_CivilMercenary2</defName>
+		<title>captain</title>
+		<titleShort>captain</titleShort>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<description>Although [PAWN_nameDef] had no military background whatsoever, people ended up calling [PAWN_objective] captain—mostly because [PAWN_pronoun] flew around in a old freighter long enough for the name to stick. With [PAWN_possessive] roguish charm and smooth words, [PAWN_pronoun] made a tidy living bashing in the skulls of [PAWN_possessive] targets and locking down whatever contracts came [PAWN_possessive] way.</description>
+		<skillGains>
+			<Melee>6</Melee>
+			<Social>8</Social>
 		</skillGains>
 		<spawnCategories>
 			<li>CFAR_CivilMercenary</li>
