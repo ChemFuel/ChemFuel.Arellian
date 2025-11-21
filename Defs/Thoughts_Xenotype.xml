@@ -43,16 +43,8 @@
 		</nullifyingHediffs>
 		<stages>
 			<li>
-				<label>distant kin</label>
-				<baseOpinionOffset>5</baseOpinionOffset>
-			</li>
-			<li>
-				<label>kin</label>
-				<baseOpinionOffset>10</baseOpinionOffset>
-			</li>
-			<li>
 				<label>xeno</label>
-				<baseOpinionOffset>-10</baseOpinionOffset>
+				<baseOpinionOffset>-5</baseOpinionOffset>
 			</li>
 		</stages>
 	</ThoughtDef>
