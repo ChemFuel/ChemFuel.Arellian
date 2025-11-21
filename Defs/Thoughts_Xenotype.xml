@@ -18,7 +18,7 @@
 		<stages>
 			<li>
 				<label>comrade</label>
-				<baseOpinionOffset>5</baseOpinionOffset>
+				<baseOpinionOffset>10</baseOpinionOffset>
 			</li>
 			<li>
 				<label>outsider</label>
