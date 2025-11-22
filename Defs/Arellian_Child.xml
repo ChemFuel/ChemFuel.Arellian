@@ -112,10 +112,10 @@
 		<title>shy kitten</title>
 		<titleShort>introvert</titleShort>
 		<description>[PAWN_nameDef] grew up in the nightless megabuildings of a hubworld. City life was always crowded yet lonely, but [PAWN_pronoun] managed to keep [PAWN_possessive] small circle of friends together.\n\nThey were a quiet little group—shy kids who ate lunch on the same stairwell every day and shared whispered jokes between classes. Even in a city packed with billions, they stuck close, walking home together through the streets that never truly went dark.</description>
-		<disabledTraits>
+		<disallowedTraits>
 			<Abrasive>0</Abrasive>
 			<Psychopath>0</Psychopath>
-		</disabledTraits>
+		</disallowedTraits>
 		<skillGains>
 			<Social>2</Social>
 			<Artistic>1</Artistic>

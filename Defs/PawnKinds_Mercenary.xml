@@ -33,7 +33,24 @@
 					<li>CFAR_Commoner</li>
 				</categoriesChildhood>
 				<categoriesAdulthood>
-					<li>CFAR_Mercenary</li>
+					<li>CFAR_CivilMercenary</li>
+				</categoriesAdulthood>
+			</li>
+			<li>
+				<categoriesChildhood>
+					<li>CFAR_Commoner</li>
+					<li>CFAR_Cadet</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>CFAR_ExMilMercenary</li>
+				</categoriesAdulthood>
+			</li>
+			<li>
+				<categoriesChildhood>
+					<li>CFAR_FCChild</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>CFAR_FCMercenary</li>
 				</categoriesAdulthood>
 			</li>
 		</backstoryFiltersOverride>
