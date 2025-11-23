@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<PawnKindDef ParentName="MercenaryGunnerBase" Name="CFAR_MercenaryBase" Abstract="True">
+		<maxGenerationAge>45</maxGenerationAge>
 		<useFactionXenotypes>false</useFactionXenotypes>
 		<xenotypeSet><xenotypeChances>
 			<CFAR_Arellian>999</CFAR_Arellian>
@@ -11,13 +12,10 @@
 
 	<PawnKindDef ParentName="CFAR_MercenaryBase">
 		<combatPower>130</combatPower>
-		<maxGenerationAge>45</maxGenerationAge>
 		<defName>CFAR_Mercenary</defName>
 		<apparelTags>
-			<li>CFAR_MilitaryBasic</li>
-			<li>IndustrialAdvanced</li>
-			<li>IndustrialMilitaryBasic</li>
-			<li>IndustrialMilitaryAdvanced</li>
+			<li>CFAR_MilitaryPlanetary</li>
+			<li>CFAR_MilitaryOrbit</li>
 			<li>SpacerMilitary</li>
 			<li>BeltDefensePop</li>
 		</apparelTags>
@@ -45,14 +43,14 @@
 					<li>CFAR_ExMilMercenary</li>
 				</categoriesAdulthood>
 			</li>
-			<li>
+			<!--<li>
 				<categoriesChildhood>
 					<li>CFAR_FCChild</li>
 				</categoriesChildhood>
 				<categoriesAdulthood>
 					<li>CFAR_FCMercenary</li>
 				</categoriesAdulthood>
-			</li>
+			</li>-->
 		</backstoryFiltersOverride>
 		<initialResistanceRange>10~16</initialResistanceRange>
 	</PawnKindDef>
