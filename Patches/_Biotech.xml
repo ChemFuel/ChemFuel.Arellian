@@ -13,7 +13,8 @@
 				<match Class="PatchOperationAdd">
 					<xpath>Defs/FactionDef[defName="OutlanderRoughPig"]/pawnGroupMakers/li[1]/options</xpath>
 					<value>
-						<CFAR_Mercenary>0.01</CFAR_Mercenary>
+						<CFAR_Mercenary>0.005</CFAR_Mercenary>
+						<CFAR_MercPirate>0.005</CFAR_MercPirate>
 					</value>
 				</match>
 			</li>
