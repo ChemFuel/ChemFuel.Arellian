@@ -31,7 +31,7 @@
 					<li>CFAR_Commoner</li>
 				</categoriesChildhood>
 				<categoriesAdulthood>
-					<li>CFAR_CivilMercenary</li>
+					<li>CFAR_MercCivil</li>
 				</categoriesAdulthood>
 			</li>
 			<li>
@@ -40,17 +40,37 @@
 					<li>CFAR_Cadet</li>
 				</categoriesChildhood>
 				<categoriesAdulthood>
-					<li>CFAR_ExMilMercenary</li>
+					<li>CFAR_MercExMil</li>
 				</categoriesAdulthood>
 			</li>
-			<!--<li>
+		</backstoryFiltersOverride>
+		<initialResistanceRange>10~16</initialResistanceRange>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="CFAR_MercenaryBase">
+		<combatPower>130</combatPower>
+		<defName>CFAR_MercPirate</defName>
+		<apparelTags>
+			<li>CFAR_MilitaryPlanetary</li>
+			<li>CFAR_MilitaryOrbit</li>
+			<li>SpacerMilitary</li>
+			<li>BeltDefensePop</li>
+		</apparelTags>
+		<apparelMoney>2500~3500</apparelMoney>
+		<weaponTags Inherit="False">
+			<li>CFAR_GunIndustrial</li>
+		</weaponTags>
+		<weaponMoney>660~1300</weaponMoney>
+		<backstoryFiltersOverride>
+			<li>
 				<categoriesChildhood>
-					<li>CFAR_FCChild</li>
+					<li>CFAR_Lowborn</li>
+					<li>CFAR_Commoner</li>
 				</categoriesChildhood>
 				<categoriesAdulthood>
-					<li>CFAR_FCMercenary</li>
+					<li>CFAR_MercCriminal</li>
 				</categoriesAdulthood>
-			</li>-->
+			</li>
 		</backstoryFiltersOverride>
 		<initialResistanceRange>10~16</initialResistanceRange>
 	</PawnKindDef>
