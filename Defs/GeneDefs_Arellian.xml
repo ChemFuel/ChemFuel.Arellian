@@ -3,7 +3,7 @@
 	<XenotypeDef Name="CFAR_">
 		<defName>CFAR_Arellian</defName>
 		<label>Arellian</label>
-		<description>Forged for conquest and perfected by war, Arellians represent the culmination of the Reich’s military bio-engineering. Their aggression is not a flaw but a design — a relentless drive to dominate, protect, and obey. Accelerated healing make them almost impossible to break, while their dulled psychic sense shields them from manipulation or distraction. Possessing sharp night vision and a mind conditioned for discipline, Arellians thrive both in the chaos of battle and the cold precision of command./n/nOriginating from the Arellia Sector, Arellians are the lifeblood of the Kaiserinreich itself — bred for obedience, refined through war, and bound by unshakable loyalty to the Kaiserin. Every citizen is soldier, every soldier her instrument, and their aggression endures so that the Reich may stand eternal.</description>
+		<description>Forged for conquest and perfected by war, Arellians represent the culmination of the Reich’s military bio-engineering. Their aggression is not a flaw but a design — a relentless drive to dominate, protect, and obey. Accelerated healing and strong immunity make them almost impossible to break, while their dulled psychic sense shields them from manipulation or distraction. Possessing sharp night vision and a mind conditioned for discipline, Arellians thrive both in the chaos of battle and the cold precision of command./n/nOriginating from the Arellia Sector, Arellians are the lifeblood of the Kaiserinreich itself — bred for obedience, refined through war, and bound by unshakable loyalty to the Kaiserin. Every citizen a soldier, every soldier her instrument, and their aggression endures so that the Reich may stand eternal.</description>
 		<descriptionShort>Arellians are aggressive, disciplined, and nearly unbreakable. Their enhanced healing, strong immunity, and sharp night vision make them ideal soldiers and subjects of the Arellian Kaiserinreich.</descriptionShort>
 		<iconPath>UI/Icons/Xenotypes/BaseArellian</iconPath>
 		<inheritable>true</inheritable>
@@ -15,10 +15,11 @@
 			<li>Eyes_Arellian</li>
 			<li>Ears_Arellian</li>
 			<li>Voice_Arellian</li>
-			<li>Aggression_Aggressive</li>
+			<li>Aggression_HyperAggressive</li>
 			<li>DarkVision</li>
 			<li>PsychicAbility_Dull</li>
 			<li>WoundHealing_Fast</li>
+			<li>Immunity_Strong</li>
 		</genes>
 	</XenotypeDef>
 
@@ -122,4 +123,5 @@
 			<TrainAnimalChance>1.25</TrainAnimalChance>
 		</statFactors>
 	</GeneDef>
+
 </Defs>
