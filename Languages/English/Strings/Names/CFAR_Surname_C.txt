@@ -1,6 +1,5 @@
 Balsam
 Beckert
-Bleimann
 Brandt
 Branntig
 Brummer
@@ -51,8 +50,6 @@ Riedel
 Rüstig
 
 Sanftmut
-Schlacht
-Schläfer
 Schneller
 Schramm
 Schrauber
@@ -70,5 +67,4 @@ Wortheim
 Wundgraf
 
 Zahner
-Zentral
 Zimmermann
