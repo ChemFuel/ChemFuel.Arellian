@@ -41,7 +41,7 @@
 			<Shooting>6</Shooting>
 		</skillGains>
 		<spawnCategories>
-			<li>CFAR_ExMilMercenary</li>
+			<li>CFAR_MercExMil</li>
 		</spawnCategories>
 	</BackstoryDef>
 
@@ -62,7 +62,7 @@
 			<Social>-2</Social>
 		</skillGains>
 		<spawnCategories>
-			<li>CFAR_CivilMercenary</li>
+			<li>CFAR_MercCivil</li>
 		</spawnCategories>
 	</BackstoryDef>
 
@@ -82,7 +82,7 @@
 			<Social>8</Social>
 		</skillGains>
 		<spawnCategories>
-			<li>CFAR_CivilMercenary</li>
+			<li>CFAR_MercCivil</li>
 		</spawnCategories>
 	</BackstoryDef>
 
@@ -102,7 +102,7 @@
 			<Social>4</Social>
 		</skillGains>
 		<spawnCategories>
-			<li>CFAR_CivilMercenary</li>
+			<li>CFAR_MercCivil</li>
 		</spawnCategories>
 	</BackstoryDef>
 
@@ -115,7 +115,7 @@
 			<Shooting>6</Shooting>
 		</skillGains>
 		<spawnCategories>
-			<li>CFAR_CriminalMercenary</li>
+			<li>CFAR_MercCriminal</li>
 		</spawnCategories>
 	</BackstoryDef>
 </Defs>
