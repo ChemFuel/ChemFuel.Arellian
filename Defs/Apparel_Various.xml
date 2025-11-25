@@ -2,7 +2,7 @@
 <Defs>
 <!--================ Industrial Apparel ================-->
 
-<!--======== Field Headgear(Soft) Base ========-->
+<!--======== Field Hat Base ========-->
 
 	<ThingDef ParentName="HatMakeableBase" Name="CFAR_CapBase" Abstract="True">
 		<techLevel>Industrial</techLevel>
@@ -196,6 +196,85 @@
 			<li>BasicClothing</li>
 			<li>CFAR_Apparel</li>
 		</tradeTags>
+	</ThingDef>
+
+<!--======== Arellian Visor Base ========-->
+
+	<ThingDef ParentName="ArmorMachineableBase" Name="CFAR_VisorBase" Abstract="True">
+		<techLevel>Industrial</techLevel>
+		<uiIconScale>1.15</uiIconScale>
+		<costStuffCount>50</costStuffCount>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<thingCategories>
+			<li>Headgear</li>
+		</thingCategories>
+		<costList>
+			<Plasteel>20</Plasteel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToMake>4000</WorkToMake>
+			<Mass>0.1</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.40</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>0.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
+			<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.1</SuppressionPower>
+		</equippedStatOffsets>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+			<bodyPartGroups>
+				<li>Eyes</li>
+			</bodyPartGroups>
+			<layers>
+				<li>EyeCover</li>
+			</layers>
+			<tags>
+				<li>CFAR_MilitaryPlanetary</li>
+			</tags>
+			<parentTagDef>ApparelHead</parentTagDef>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+		<tradeTags>
+			<li>BasicClothing</li>
+			<li>CFAR_Apparel</li>
+		</tradeTags>
+	</ThingDef>
+
+<!--======== Combat Visor ========-->
+
+	<ThingDef ParentName="CFAR_CapBase">
+		<defName>Apparel_CFAR_CombatVisor</defName>
+		<label>Arellian combat visor</label>
+		<description>WIP</description>
+		<recipeMaker>
+			<displayPriority>1160</displayPriority>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Arellian/Apparel/FieldUniform/FieldCap/Hat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+		</graphicData>
+		<equippedStatOffsets>
+			<PainShockThreshold>0.10</PainShockThreshold>
+		</equippedStatOffsets>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Arellian/Apparel/FieldUniform/FieldCap/Hat</wornGraphicPath>
+			<tags>
+				<li>CFAR_Soldier</li>
+			</tags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		</apparel>
 	</ThingDef>
 
 <!--======== Orbit Helmet ========-->
@@ -493,3 +572,4 @@
 		</apparel>
 	</ThingDef>
 </Defs>
+
