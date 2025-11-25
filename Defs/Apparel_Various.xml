@@ -253,7 +253,7 @@
 
 <!--======== Combat Visor ========-->
 
-	<ThingDef ParentName="CFAR_CapBase">
+	<ThingDef ParentName="CFAR_VisorBase">
 		<defName>Apparel_CFAR_CombatVisor</defName>
 		<label>Arellian combat visor</label>
 		<description>WIP</description>
@@ -572,4 +572,5 @@
 		</apparel>
 	</ThingDef>
 </Defs>
+
 
