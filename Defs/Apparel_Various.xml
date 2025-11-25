@@ -203,7 +203,6 @@
 	<ThingDef ParentName="ArmorMachineableBase" Name="CFAR_VisorBase" Abstract="True">
 		<techLevel>Industrial</techLevel>
 		<uiIconScale>1.15</uiIconScale>
-		<costStuffCount>50</costStuffCount>
 		<recipeMaker>
 			<researchPrerequisite>ComplexClothing</researchPrerequisite>
 			<skillRequirements>
@@ -214,22 +213,18 @@
 			<li>Headgear</li>
 		</thingCategories>
 		<costList>
-			<Plasteel>20</Plasteel>
-			<ComponentIndustrial>1</ComponentIndustrial>
+			<Plasteel>15</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
 		</costList>
 		<statBases>
 			<MaxHitPoints>80</MaxHitPoints>
 			<WorkToMake>4000</WorkToMake>
 			<Mass>0.1</Mass>
-			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.40</StuffEffectMultiplierInsulation_Heat>
-			<EquipDelay>0.5</EquipDelay>
+			<ArmorRating_Sharp>0.30</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.20</ArmorRating_Heat>
+			<EquipDelay>1</EquipDelay>
 		</statBases>
-		<equippedStatOffsets>
-			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
-			<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.1</SuppressionPower>
-		</equippedStatOffsets>
 		<apparel>
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
@@ -240,7 +235,6 @@
 				<li>EyeCover</li>
 			</layers>
 			<tags>
-				<li>CFAR_MilitaryPlanetary</li>
 			</tags>
 			<parentTagDef>ApparelHead</parentTagDef>
 		</apparel>
@@ -266,13 +260,18 @@
 			<drawSize>0.80</drawSize>
 		</graphicData>
 		<equippedStatOffsets>
-			<PainShockThreshold>0.10</PainShockThreshold>
+			<ShootingAccuracyPawn>2.5</ShootingAccuracyPawn>
+			<MeleeHitChance>2</MeleeHitChance>
+			<AimingDelayFactor>-0.25</AimingDelayFactor>
 		</equippedStatOffsets>
 		<apparel>
 			<wornGraphicPath>Things/Pawn/Arellian/Apparel/FieldUniform/FieldCap/Hat</wornGraphicPath>
 			<tags>
-				<li>CFAR_Soldier</li>
+				<li>CFAR_MilitaryPlanetary</li>
 			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
 			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 		</apparel>
 	</ThingDef>
@@ -312,8 +311,8 @@
 			<Flammability>0.4</Flammability>
 			<StuffEffectMultiplierArmor>0.7</StuffEffectMultiplierArmor>
 			<ArmorRating_Sharp>0.30</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.15</ArmorRating_Heat>
+			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.20</ArmorRating_Heat>
 			<Insulation_Cold>5</Insulation_Cold>
 			<EquipDelay>2</EquipDelay>
 		</statBases>
@@ -572,5 +571,6 @@
 		</apparel>
 	</ThingDef>
 </Defs>
+
 
 
