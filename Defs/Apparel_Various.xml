@@ -159,15 +159,10 @@
 				<Crafting>5</Crafting>
 			</skillRequirements>
 		</recipeMaker>
-		<costList>
-			<Plasteel>15</Plasteel>
-			<ComponentIndustrial>1</ComponentIndustrial>
-		</costList>
-		<costStuffCount>45</costStuffCount>
 		<statBases>
 			<WorkToMake>10000</WorkToMake>
 			<MaxHitPoints>200</MaxHitPoints>
-			<Mass>4</Mass>
+			<Mass>3</Mass>
 			<Flammability>0.4</Flammability>
 			<StuffEffectMultiplierArmor>0.7</StuffEffectMultiplierArmor>
 			<ArmorRating_Sharp>0.30</ArmorRating_Sharp>
@@ -182,9 +177,6 @@
 		<thingCategories>
 			<li>ApparelArmor</li>
 		</thingCategories>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
 		<apparel>
 			<layers>
 				<li>Middle</li>
@@ -214,6 +206,14 @@
 		<recipeMaker>
 			<displayPriority>1163</displayPriority>
 		</recipeMaker>
+		<costList>
+			<Plasteel>15</Plasteel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<costStuffCount>45</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
 		<graphicData>
 			<texPath>Things/Pawn/Humanlike/Apparel/FlakVest/FlakVest</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -240,6 +240,14 @@
 		<recipeMaker>
 			<displayPriority>1164</displayPriority>
 		</recipeMaker>
+		<costList>
+			<Plasteel>15</Plasteel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<costStuffCount>45</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
 		<graphicData>
 			<texPath>Things/Pawn/Humanlike/Apparel/FlakVest/FlakVest</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -270,14 +278,14 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.90</drawSize>
 		</graphicData>
-		<costList Inherit="False">
+		<costList>
 			<Plasteel>5</Plasteel>
 		</costList>
-		<costStuffCount>20</costStuffCount>
+		<costStuffCount>15</costStuffCount>
 		<statBases>
 			<WorkToMake>2500</WorkToMake>
 			<MaxHitPoints>75</MaxHitPoints>
-			<Mass>4</Mass>
+			<Mass>1</Mass>
 			<EquipDelay>0.5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
