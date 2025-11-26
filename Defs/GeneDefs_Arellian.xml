@@ -30,7 +30,6 @@
 		<descriptionShort>Engineered by the Kaiserin and perfected through merit, Erisians are ageless Arellians of the highest order—immune to decay, swift to learn, and bound to serve eternally as the Kaiserin’s strategic advisors.</descriptionShort>
 		<descriptionShort>WIP</descriptionShort>
 		<iconPath>UI/Icons/Xenotypes/BaseArellian</iconPath>
-		<inheritable>true</inheritable>
 		<nameMaker>CFAR_PawnNamer_C</nameMaker>
 		<nameMakerFemale>CFAR_PawnNamerFemale_C</nameMakerFemale>
 		<chanceToUseNameMaker>1</chanceToUseNameMaker>
