@@ -28,7 +28,6 @@
 		<label>Erisian</label>
 		<description>Erisian enhancement is not inherited, nor granted by birthright. It is bestowed solely by the Kaiserin upon Arellians who have proven exceptional merit in service, command, and strategic foresight. Those elevated to Erisian status are removed from the cycle of generational succession and inducted permanently into the imperial admiralty.\n\nFreed from aging and biological decline, Erisians serve indefinitely as advisors, strategists, and architects of conquest. Their augmented intellect and immutable physiology ensure continuity of doctrine across centuries, binding the Kaiserin’s will to an unbroken cadre of perfected minds. To be made Erisian is not a reward, but a final appointment—service without end, in counsel without replacement.</description>
 		<descriptionShort>Engineered by the Kaiserin and perfected through merit, Erisians are ageless Arellians of the highest order—immune to decay, swift to learn, and bound to serve eternally as the Kaiserin’s strategic advisors.</descriptionShort>
-		<descriptionShort>WIP</descriptionShort>
 		<iconPath>UI/Icons/Xenotypes/BaseArellian</iconPath>
 		<nameMaker>CFAR_PawnNamer_C</nameMaker>
 		<nameMakerFemale>CFAR_PawnNamerFemale_C</nameMakerFemale>
@@ -152,3 +151,4 @@
 		</statFactors>
 	</GeneDef>
 </Defs>
+
