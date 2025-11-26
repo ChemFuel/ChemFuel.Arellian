@@ -13,7 +13,7 @@
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>11</damageAmountBase>
+			<damageAmountBase>12</damageAmountBase>
 			<stoppingPower>1</stoppingPower>
 			<armorPenetrationBase>0.16</armorPenetrationBase>
 			<speed>55</speed>
@@ -21,7 +21,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseBullet">
-		<defName>Bullet_CFAR_RifleI</defName>
+		<defName>Bullet_CFAR_Rifle</defName>
 		<label>bullet</label>
 		<graphicData>
 			<texPath>Things/Projectile/Bullet_Small</texPath>
@@ -29,26 +29,10 @@
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>10</damageAmountBase>
-			<stoppingPower>0.5</stoppingPower>
-			<armorPenetrationBase>0.18</armorPenetrationBase>
+			<damageAmountBase>11</damageAmountBase>
+			<stoppingPower>0.75</stoppingPower>
+			<armorPenetrationBase>0.20</armorPenetrationBase>
 			<speed>100</speed>
-		</projectile>
-	</ThingDef>
-
-	<ThingDef ParentName="BaseBullet">
-		<defName>Bullet_CFAR_RifleII</defName>
-		<label>bullet</label>
-		<graphicData>
-			<texPath>Things/Projectile/Bullet_Big</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<projectile>
-			<damageDef>Bullet</damageDef>
-			<damageAmountBase>12</damageAmountBase>
-			<stoppingPower>1</stoppingPower>
-			<armorPenetrationBase>0.22</armorPenetrationBase>
-			<speed>70</speed>
 		</projectile>
 	</ThingDef>
 
@@ -246,7 +230,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_CFAR_RifleI</defaultProjectile>
+				<defaultProjectile>Bullet_CFAR_Rifle</defaultProjectile>
 				<burstShotCount>3</burstShotCount>
 				<ticksBetweenBurstShots>9</ticksBetweenBurstShots>
 				<warmupTime>0.9</warmupTime>
@@ -313,14 +297,14 @@
 		</weaponTags>
 		<costList>
 			<Steel>70</Steel>
-			<Plasteel>25</Plasteel>
-			<ComponentIndustrial>8</ComponentIndustrial>
+			<Plasteel>30</Plasteel>
+			<ComponentIndustrial>7</ComponentIndustrial>
 		</costList>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_CFAR_RifleII</defaultProjectile>
+				<defaultProjectile>Bullet_CFAR_Rifle</defaultProjectile>
 				<burstShotCount>8</burstShotCount>
 				<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
 				<warmupTime>1.6</warmupTime>
@@ -352,88 +336,4 @@
 			<li>CFAR_WeaponRanged</li>
 		</tradeTags>
 	</ThingDef>
-
-<!--================ Special Weapon ================-->
-
-<!--======== BulletDefs ========-->
-
-	<ThingDef ParentName="BaseBullet">
-		<defName>Bullet_CFAR_StunPistol</defName>
-		<label>bullet</label>
-		<graphicData>
-			<texPath>Things/Projectile/Bullet_Small</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<projectile>
-			<damageDef>Bullet</damageDef>
-			<damageAmountBase>11</damageAmountBase>
-			<stoppingPower>1</stoppingPower>
-			<armorPenetrationBase>0.16</armorPenetrationBase>
-			<speed>55</speed>
-		</projectile>
-	</ThingDef>
-
-<!--======== WeaponDefs ========-->
-
-	<ThingDef ParentName="Base_CFAR_GunIndustrial" Abstract="True">
-		<defName>Gun_CFAR_StunPistol</defName>
-		<label>Arellian Stun Pistol</label>
-		<description>WIP</description>
-		<graphicData>
-			<texPath>Things/Item/Equipment/WeaponRanged/Autopistol</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<uiIconScale>1.5</uiIconScale>
-		<soundInteract>Interact_Autopistol</soundInteract>
-		<recipeMaker>
-			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
-			<skillRequirements>
-				<Crafting>4</Crafting>
-			</skillRequirements>
-			<displayPriority>1170</displayPriority>
-		</recipeMaker>
-		<statBases>
-			<WorkToMake>12000</WorkToMake>
-			<Mass>0.75</Mass>
-			<AccuracyTouch>1</AccuracyTouch>
-			<AccuracyShort>0.75</AccuracyShort>
-			<AccuracyMedium>0.50</AccuracyMedium>
-			<AccuracyLong>0.25</AccuracyLong>
-			<RangedWeapon_Cooldown>3.0</RangedWeapon_Cooldown>
-		</statBases>
-		<weaponTags>
-			<li>CFAR_StunPistol</li>
-		</weaponTags>
-		<costList>
-			<Steel>15</Steel>
-			<Plasteel>15</Plasteel>
-			<ComponentIndustrial>3</ComponentIndustrial>
-		</costList>
-		<verbs>
-			<li>
-				<verbClass>Verb_Shoot</verbClass>
-				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_CFAR_StunPistol</defaultProjectile>
-				<warmupTime>0.5</warmupTime>
-				<range>11.9</range>
-				<soundCast>Shot_HeavySMG</soundCast>
-				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>8</muzzleFlashScale>
-			</li>
-		</verbs>
-		<tools>
-			<li>
-				<label>barrel</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-		</tools>
-		<tradeTags>
-			<li>CFAR_WeaponRanged</li>
-		</tradeTags>
-	</ThingDef>
-
 </Defs>
