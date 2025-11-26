@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<XenotypeDef Name="CFAR_">
+	<XenotypeDef>
 		<defName>CFAR_Arellian</defName>
 		<label>Arellian</label>
 		<description>Forged for conquest and perfected by war, Arellians represent the culmination of the Reich’s military bio-engineering. Their aggression is not a flaw but a design — a relentless drive to dominate, protect, and obey. Accelerated healing and strong immunity make them almost impossible to break, while their dulled psychic sense shields them from manipulation or distraction. Possessing sharp night vision and a mind conditioned for discipline, Arellians thrive both in the chaos of battle and the cold precision of command./n/nOriginating from the Arellia Sector, Arellians are the lifeblood of the Kaiserinreich itself — bred for obedience, refined through war, and bound by unshakable loyalty to the Kaiserin. Every citizen a soldier, every soldier her instrument, and their aggression endures so that the Reich may stand eternal.</description>
@@ -23,7 +23,36 @@
 		</genes>
 	</XenotypeDef>
 
-<!--== GENE ==-->
+	<XenotypeDef>
+		<defName>CFAR_Erisian</defName>
+		<label>Erisian</label>
+		<description>Erisian enhancement is not inherited, nor granted by birthright. It is bestowed solely by the Kaiserin upon Arellians who have proven exceptional merit in service, command, and strategic foresight. Those elevated to Erisian status are removed from the cycle of generational succession and inducted permanently into the imperial admiralty.\n\nFreed from aging and biological decline, Erisians serve indefinitely as advisors, strategists, and architects of conquest. Their augmented intellect and immutable physiology ensure continuity of doctrine across centuries, binding the Kaiserin’s will to an unbroken cadre of perfected minds. To be made Erisian is not a reward, but a final appointment—service without end, in counsel without replacement.</description>
+		<descriptionShort>Engineered by the Kaiserin and perfected through merit, Erisians are ageless Arellians of the highest order—immune to decay, swift to learn, and bound to serve eternally as the Kaiserin’s strategic advisors.</descriptionShort>
+		<descriptionShort>WIP</descriptionShort>
+		<iconPath>UI/Icons/Xenotypes/BaseArellian</iconPath>
+		<inheritable>true</inheritable>
+		<nameMaker>CFAR_PawnNamer_C</nameMaker>
+		<nameMakerFemale>CFAR_PawnNamerFemale_C</nameMakerFemale>
+		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<factionlessGenerationWeight>0</factionlessGenerationWeight>
+		<doubleXenotypeChances>
+			<CFAR_Arellian>1</CFAR_Arellian>
+		</doubleXenotypeChances>
+		<genes>
+			<li>Ageless</li>
+			<li>PerfectImmunity</li>
+			<li>DiseaseFree</li>
+			<li>TotalHealing</li>
+			<li>ArchiteMetabolism</li>
+			<li>Superclotting</li>
+			<li>StrongStomach</li>
+			<li>Learning_Fast</li>
+		</genes>
+	</XenotypeDef>
+
+<!--================ Genes ================-->
+
+<!--======== Basic ========-->
 
 	<GeneCategoryDef>
 		<defName>ArellianGene</defName>
@@ -123,5 +152,4 @@
 			<TrainAnimalChance>1.25</TrainAnimalChance>
 		</statFactors>
 	</GeneDef>
-
 </Defs>
