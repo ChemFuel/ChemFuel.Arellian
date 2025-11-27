@@ -7,7 +7,6 @@
 	<ThingDef ParentName="HatMakeableBase" Name="CFAR_CapBase" Abstract="True">
 		<techLevel>Industrial</techLevel>
 		<uiIconScale>1.15</uiIconScale>
-		<costStuffCount>50</costStuffCount>
 		<recipeMaker>
 			<researchPrerequisite>ComplexClothing</researchPrerequisite>
 			<skillRequirements>
@@ -30,6 +29,7 @@
 		<equippedStatOffsets>
 			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
 			<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.1</SuppressionPower>
+			<PainShockThreshold>0.05</PainShockThreshold>
 		</equippedStatOffsets>
 		<apparel>
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
@@ -63,6 +63,7 @@
 		<recipeMaker>
 			<displayPriority>1160</displayPriority>
 		</recipeMaker>
+		<costStuffCount>25</costStuffCount>
 		<graphicData>
 			<texPath>Things/Pawn/Arellian/Apparel/FieldUniform/FieldCap/Hat</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -89,6 +90,7 @@
 		<recipeMaker>
 			<displayPriority>1161</displayPriority>
 		</recipeMaker>
+		<costStuffCount>35</costStuffCount>
 		<graphicData>
 			<texPath>Things/Pawn/Arellian/Apparel/FieldUniform/FieldKepi/Hat</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -115,6 +117,7 @@
 		<recipeMaker>
 			<displayPriority>1162</displayPriority>
 		</recipeMaker>
+		<costStuffCount>50</costStuffCount>
 		<graphicData>
 			<texPath>Things/Pawn/Arellian/Apparel/FieldUniform/FieldCrusher/Hat</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -282,3 +285,4 @@
 		</tradeTags>
 	</ThingDef>
 </Defs>
+
