@@ -54,18 +54,18 @@
 		</tradeTags>
 	</ThingDef>
 
-<!--======== Field Cap ========-->
+<!--======== Cap ========-->
 
 	<ThingDef ParentName="CFAR_CapBase">
-		<defName>Apparel_CFAR_FieldCap</defName>
+		<defName>Apparel_CFAR_Cap</defName>
 		<label>Arellian field cap</label>
-		<description>A standard field cap issued to Reichswehr enlisted personnel. Lightweight, brimmed, and built for daily operations, it shields the wearer’s eyes during maneuvers and long marches. Worn universally by the imperial rank-and-file.</description>
+		<description>A lightweight service cap issued to enlisted personnel for daily field duties. Designed for comfort and practicality, it provides basic protection from the elements while maintaining a uniform Reichswehr appearance.</description>
 		<recipeMaker>
 			<displayPriority>1160</displayPriority>
 		</recipeMaker>
 		<costStuffCount>25</costStuffCount>
 		<graphicData>
-			<texPath>Things/Pawn/Arellian/Apparel/FieldUniform/FieldCap/Hat</texPath>
+			<texPath>Things/Pawn/Arellian/Apparel/FieldUniform/Cap/Hat</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.80</drawSize>
 		</graphicData>
@@ -73,7 +73,7 @@
 			<PainShockThreshold>0.10</PainShockThreshold>
 		</equippedStatOffsets>
 		<apparel>
-			<wornGraphicPath>Things/Pawn/Arellian/Apparel/FieldUniform/FieldCap/Hat</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Arellian/Apparel/FieldUniform/Cap/Hat</wornGraphicPath>
 			<tags>
 				<li>CFAR_Soldier</li>
 			</tags>
@@ -81,18 +81,18 @@
 		</apparel>
 	</ThingDef>
 
-<!--======== Field Kepi ========-->
+<!--======== Kepi ========-->
 
 	<ThingDef ParentName="CFAR_CapBase">
-		<defName>Apparel_CFAR_FieldKepi</defName>
-		<label>Arellian field kepi</label>
-		<description>A structured field cap issued to Reichswehr junior officers. Its rigid profile identifies small-unit commanders during active operations and serves as the formal marker of low-tier leadership within imperial forces.</description>
+		<defName>Apparel_CFAR_Kepi</defName>
+		<label>Arellian officer kepi</label>
+		<description>A structured field cap issued to junior officers. Its restrained, standardized profile distinguishes command personnel without departing from common field uniformity, balancing authority, visibility, and practical wear during operations.</description>
 		<recipeMaker>
 			<displayPriority>1161</displayPriority>
 		</recipeMaker>
 		<costStuffCount>35</costStuffCount>
 		<graphicData>
-			<texPath>Things/Pawn/Arellian/Apparel/FieldUniform/FieldKepi/Hat</texPath>
+			<texPath>Things/Pawn/Arellian/Apparel/FieldUniform/Kepi/Hat</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.80</drawSize>
 		</graphicData>
@@ -100,7 +100,7 @@
 			<SocialImpact>0.10</SocialImpact>
 		</equippedStatOffsets>
 		<apparel>
-			<wornGraphicPath>Things/Pawn/Arellian/Apparel/FieldUniform/FieldKepi/Hat</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Arellian/Apparel/FieldUniform/Kepi/Hat</wornGraphicPath>
 			<tags>
 				<li>CFAR_OfficerLow</li>
 			</tags>
@@ -108,18 +108,18 @@
 		</apparel>
 	</ThingDef>
 
-<!--======== Field Peaked Cap ========-->
+<!--======== Peaked Cap ========-->
 
 	<ThingDef ParentName="CFAR_CapBase">
-		<defName>Apparel_CFAR_FieldCrusher</defName>
-		<label>Arellian field crusher</label>
-		<description>A soft peaked cap once worn by experienced field officers, now worn as a traditional mark of command. Its distinctive profile signals senior authority within Reichswehr units.</description>
+		<defName>Apparel_CFAR_PeakedCap</defName>
+		<label>Arellian command cap</label>
+		<description>A service cap issued to experienced officers. Its formal profile signifies authority and operational oversight, worn by those entrusted with command beyond the front line.</description>
 		<recipeMaker>
 			<displayPriority>1162</displayPriority>
 		</recipeMaker>
 		<costStuffCount>50</costStuffCount>
 		<graphicData>
-			<texPath>Things/Pawn/Arellian/Apparel/FieldUniform/FieldCrusher/Hat</texPath>
+			<texPath>Things/Pawn/Arellian/Apparel/FieldUniform/PeakedCap/Hat</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.80</drawSize>
 		</graphicData>
@@ -127,7 +127,7 @@
 			<SocialImpact>0.20</SocialImpact>
 		</equippedStatOffsets>
 		<apparel>
-			<wornGraphicPath>Things/Pawn/Arellian/Apparel/FieldUniform/FieldCrusher/Hat</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Arellian/Apparel/FieldUniform/PeakedCap/Hat</wornGraphicPath>
 			<tags>
 				<li>CFAR_OfficerHigh</li>
 			</tags>
@@ -285,4 +285,5 @@
 		</tradeTags>
 	</ThingDef>
 </Defs>
+
 
