@@ -170,10 +170,6 @@
 			<ArmorRating_Heat>0.15</ArmorRating_Heat>
 			<EquipDelay>4</EquipDelay>
 		</statBases>
-		<equippedStatOffsets>
-			<StaggerDurationFactor>-0.1</StaggerDurationFactor>
-			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
-		</equippedStatOffsets>
 		<thingCategories>
 			<li>ApparelArmor</li>
 		</thingCategories>
@@ -220,10 +216,13 @@
 			<drawSize>0.90</drawSize>
 		</graphicData>
 		<equippedStatOffsets>
+			<StaggerDurationFactor>-0.1</StaggerDurationFactor>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
 			<MoveSpeed>-0.06</MoveSpeed>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
+				<li>Neck</li>
 				<li>Torso</li>
 				<li>Arms</li>
 			</bodyPartGroups>
@@ -254,6 +253,8 @@
 			<drawSize>0.90</drawSize>
 		</graphicData>
 		<equippedStatOffsets>
+			<StaggerDurationFactor>-0.1</StaggerDurationFactor>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
 			<MoveSpeed>-0.06</MoveSpeed>
 		</equippedStatOffsets>
 		<apparel>
@@ -269,7 +270,7 @@
 	<ThingDef ParentName="CFAR_RWSetBase">
 		<defName>Apparel_CFAR_RWPauldrons</defName>
 		<label>Arellian Reichswehr pauldrons</label>
-		<description>A standard shoulder armor built on a flexible plasteel frame. Reinforced plates protect the neck and shoulders while preserving arm mobility. Designed as the shoulder component of a tactical plate set that moves seamlessly with the wearer.</description>
+		<description>A standard shoulder armor built on a flexible plasteel frame. Reinforced plates protect the shoulders while preserving arm mobility. Designed as the shoulder component of a tactical plate set that moves seamlessly with the wearer.</description>
 		<recipeMaker>
 			<displayPriority>1165</displayPriority>
 		</recipeMaker>
@@ -281,13 +282,13 @@
 		<costList>
 			<Plasteel>5</Plasteel>
 		</costList>
-		<costStuffCount>15</costStuffCount>
+		<costStuffCount>10</costStuffCount>
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
 		<statBases>
 			<WorkToMake>2500</WorkToMake>
-			<MaxHitPoints>75</MaxHitPoints>
+			<MaxHitPoints>50</MaxHitPoints>
 			<Mass>1</Mass>
 			<EquipDelay>0.5</EquipDelay>
 		</statBases>
@@ -297,9 +298,9 @@
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
-				<li>Neck</li>
 				<li>Shoulders</li>
 			</bodyPartGroups>
 		</apparel>
 	</ThingDef>
+
 </Defs>
