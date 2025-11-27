@@ -116,7 +116,7 @@
 			<displayPriority>1162</displayPriority>
 		</recipeMaker>
 		<graphicData>
-			<texPath>Things/Pawn/Arellian/Apparel/FieldUniform/FieldKepi/Hat</texPath>
+			<texPath>Things/Pawn/Arellian/Apparel/FieldUniform/FieldCrusher/Hat</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.80</drawSize>
 		</graphicData>
@@ -124,7 +124,7 @@
 			<SocialImpact>0.20</SocialImpact>
 		</equippedStatOffsets>
 		<apparel>
-			<wornGraphicPath>Things/Pawn/Arellian/Apparel/FieldUniform/FieldKepi/Hat</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Arellian/Apparel/FieldUniform/FieldCrusher/Hat</wornGraphicPath>
 			<tags>
 				<li>CFAR_OfficerHigh</li>
 			</tags>

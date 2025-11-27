@@ -282,6 +282,9 @@
 			<Plasteel>5</Plasteel>
 		</costList>
 		<costStuffCount>15</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
 		<statBases>
 			<WorkToMake>2500</WorkToMake>
 			<MaxHitPoints>75</MaxHitPoints>
