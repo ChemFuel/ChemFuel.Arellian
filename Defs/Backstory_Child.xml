@@ -81,7 +81,7 @@
 	<BackstoryDef ParentName="CFAR_Child">
 		<defName>CFAR_FarmKitten1</defName>
 		<title>farm kitten</title>
-		<titleShort>farm cat</titleShort>
+		<titleShort>farm kitten</titleShort>
 		<description>It was no secret that [PAWN_nameDef] loved milk. Whenever [PAWN_possessive] parents were milking the cattle, [PAWN_pronoun] drifted over immediately, bouncing on [PAWN_possessive] heels in excitement. Afterward, [PAWN_pronoun] would sit on an old wooden stool, sipping a fresh cup while watching dust motes dance in the barn’s warm light. Most days ended with [PAWN_nameDef] napping on a hay bale, smelling faintly of grass and sunshine.</description>
 		<skillGains>
 			<Animals>4</Animals>
@@ -93,12 +93,43 @@
 
 	<BackstoryDef ParentName="CFAR_Child">
 		<defName>CFAR_ColonyKitten1</defName>
-		<title>explorer kitten</title>
-		<titleShort>explorer</titleShort>
-		<description>Marching through the plains with a slingshot in one hand and a magnifying glass in the other, [PAWN_nameDef] spent hours chasing shiny beetles or digging up anthills. Whenever [PAWN_pronoun] got hungry, [PAWN_pronoun] simply ate wild berries and kept exploring.</description>
+		<title>frontier kitten</title>
+		<titleShort>colonist</titleShort>
+		<description>Despite [PAWN_possessive] parents’ best efforts, the frontier colony was simply too harsh a place for [PAWN_nameDef] to enjoy a peaceful childhood. From a young age, [PAWN_pronoun] learned how to handle a gun and tend to the wounds of [PAWN_possessive] neighbors.</description>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Caring</li>
+		</requiredWorkTags>
+		<disallowedTraits>
+			<Neurotic>0</Neurotic>
+		</disallowedTraits>
 		<skillGains>
-			<Shooting>2</Shooting>
-			<Plants>2</Plants>
+			<Shooting>3</Shooting>
+			<Medicine>2</Medicine>
+		</skillGains>
+		<spawnCategories>
+			<li>CFAR_Commoner</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_Child">
+		<defName>CFAR_ColonyKitten2</defName>
+		<title>frontier healer</title>
+		<titleShort>healer</titleShort>
+		<description>After losing [PAWN_possessive] parents in a particularly vicious pirate raid, [PAWN_nameDef] found the very thought of shooting someone unbearable. Haunted by that day, [PAWN_pronoun] turned away from guns and instead learned to keep others alive, tutoring under a seasoned mercenary medic and picking up whatever skills [PAWN_pronoun] could to patch people back together.</description>
+		<requiredWorkTags>
+			<li>Caring</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>Violent</li>
+		</workDisables>
+		<disallowedTraits>
+			<Bloodlust>0</Bloodlust>
+			<Psychopath>0</Psychopath>
+		</disallowedTraits>
+		<skillGains>
+			<Caring>4</Caring>
+			<Social>-2</Social>
 		</skillGains>
 		<spawnCategories>
 			<li>CFAR_Commoner</li>
@@ -143,14 +174,39 @@
 		<title>laid-back kitten</title>
 		<titleShort>easygoing</titleShort>
 		<description>[PAWN_nameDef] never saw the point of rushing or stressing over minor inconveniences. Things always sorted themselves out eventually…well, usually. [PAWN_pronoun] preferred taking long naps in the local park, sunbathing with a bag of chips resting in [PAWN_possessive] hands.</description>
-		<forcedTraits>
-			<Nerves>1</Nerves>
-		</forcedTraits>
 		<disallowedTraits>
 			<Neurotic>0</Neurotic>
 		</disallowedTraits>
 		<skillGains>
-			<Cooking>2</Cooking>
+			<Cooking>1</Cooking>
+		</skillGains>
+		<spawnCategories>
+			<li>CFAR_Commoner</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_Child">
+		<defName>CFAR_UrbanKitten4</defName>
+		<title>collecter kitten</title>
+		<titleShort>collecter</titleShort>
+		<description>[PAWN_nameDef] liked shiny things—pebbles, coins, or a “totally not stolen” medal of honor that [PAWN_possessive] cousin had accidentally dropped from their uniform and then spent weeks searching for. [PAWN_pronoun] kept these treasures hidden away in an old shoebox—right up until [PAWN_pronoun] proudly showed the medal to that same cousin by mistake.</description>
+		<skillGains>
+			<Artistic>3</Artistic>
+		</skillGains>
+		<spawnCategories>
+			<li>CFAR_Commoner</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_Child">
+		<defName>CFAR_UrbanKitten5</defName>
+		<title>explorer kitten</title>
+		<titleShort>explorer</titleShort>
+		<description>Marching through the plains with a slingshot in one hand and a magnifying glass in the other, [PAWN_nameDef] spent hours chasing shiny beetles or digging up anthills. Whenever [PAWN_pronoun] got hungry, [PAWN_pronoun] simply ate wild berries and kept exploring.</description>
+		<skillGains>
+			<Shooting>1</Shooting>
+			<Plants>2</Plants>
+			<Intellectual>1</Intellectual>
 		</skillGains>
 		<spawnCategories>
 			<li>CFAR_Commoner</li>
@@ -206,5 +262,6 @@
 
 <!--======== High Class ========-->
 </Defs>
+
 
 
