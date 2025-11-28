@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+<!--================ Industrial Apparel ================-->
+
+<!--======== Field Hat Base ========-->
+
+	<ThingDef ParentName="HatMakeableBase" Name="CFAR_CapBase" Abstract="True">
+		<techLevel>Industrial</techLevel>
+		<uiIconScale>1.15</uiIconScale>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToMake>4000</WorkToMake>
+			<Mass>0.1</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.40</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>0.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
+			<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.1</SuppressionPower>
+			<PainShockThreshold>0.05</PainShockThreshold>
+		</equippedStatOffsets>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<tags>
+				<li>CFAR_MilitaryPlanetary</li>
+			</tags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+		<tradeTags>
+			<li>BasicClothing</li>
+			<li>CFAR_Apparel</li>
+		</tradeTags>
+	</ThingDef>
+
+<!--======== Cap ========-->
+
+	<ThingDef ParentName="CFAR_CapBase">
+		<defName>Apparel_CFAR_FieldCap</defName>
+		<label>Arellian field cap</label>
+		<description>A lightweight service cap issued to enlisted personnel for daily field duties. Designed for comfort and practicality, it provides basic protection from the elements while maintaining a uniform Reichswehr appearance.</description>
+		<recipeMaker>
+			<displayPriority>1160</displayPriority>
+		</recipeMaker>
+		<costStuffCount>25</costStuffCount>
+		<graphicData>
+			<texPath>Things/Pawn/Arellian/Apparel/FieldUniform/FieldCap/Hat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+		</graphicData>
+		<equippedStatOffsets>
+			<PainShockThreshold>0.10</PainShockThreshold>
+		</equippedStatOffsets>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Arellian/Apparel/FieldUniform/FieldCap/Hat</wornGraphicPath>
+			<tags>
+				<li>CFAR_Soldier</li>
+			</tags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		</apparel>
+	</ThingDef>
+
+<!--======== Kepi ========-->
+
+	<ThingDef ParentName="CFAR_CapBase">
+		<defName>Apparel_CFAR_OfficerKepi</defName>
+		<label>Arellian officer kepi</label>
+		<description>A structured field cap issued to junior officers. Its restrained, standardized profile distinguishes command personnel without departing from common field uniformity, balancing authority, visibility, and practical wear during operations.</description>
+		<recipeMaker>
+			<displayPriority>1161</displayPriority>
+		</recipeMaker>
+		<costStuffCount>35</costStuffCount>
+		<graphicData>
+			<texPath>Things/Pawn/Arellian/Apparel/FieldUniform/OfficerKepi/Hat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+		</graphicData>
+		<equippedStatOffsets>
+			<SocialImpact>0.10</SocialImpact>
+		</equippedStatOffsets>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Arellian/Apparel/FieldUniform/OfficerKepi/Hat</wornGraphicPath>
+			<tags>
+				<li>CFAR_OfficerLow</li>
+			</tags>
+			<ideoDesireAllowedFactionCategoryTags><li>CFAR_Empire</li></ideoDesireAllowedFactionCategoryTags>
+		</apparel>
+	</ThingDef>
+
+<!--======== Peaked Cap ========-->
+
+	<ThingDef ParentName="CFAR_CapBase">
+		<defName>Apparel_CFAR_CommandCap</defName>
+		<label>Arellian command cap</label>
+		<description>A service cap issued to experienced officers. Its formal profile signifies authority and operational oversight, worn by those entrusted with command beyond the front line.</description>
+		<recipeMaker>
+			<displayPriority>1162</displayPriority>
+		</recipeMaker>
+		<costStuffCount>50</costStuffCount>
+		<graphicData>
+			<texPath>Things/Pawn/Arellian/Apparel/FieldUniform/CommandCap/Hat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+		</graphicData>
+		<equippedStatOffsets>
+			<SocialImpact>0.20</SocialImpact>
+		</equippedStatOffsets>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Arellian/Apparel/FieldUniform/CommandCap/Hat</wornGraphicPath>
+			<tags>
+				<li>CFAR_OfficerHigh</li>
+			</tags>
+			<ideoDesireAllowedFactionCategoryTags><li>CFAR_Empire</li></ideoDesireAllowedFactionCategoryTags>
+		</apparel>
+	</ThingDef>
+
+<!--======== Arellian Visor Base ========-->
+
+	<ThingDef ParentName="ArmorMachineableBase" Name="CFAR_VisorBase" Abstract="True">
+		<techLevel>Industrial</techLevel>
+		<uiIconScale>1.15</uiIconScale>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<thingCategories>
+			<li>Headgear</li>
+		</thingCategories>
+		<costList>
+			<Plasteel>15</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToMake>4000</WorkToMake>
+			<Mass>0.1</Mass>
+			<ArmorRating_Sharp>0.30</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.20</ArmorRating_Heat>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+			<bodyPartGroups>
+				<li>Eyes</li>
+			</bodyPartGroups>
+			<layers>
+				<li>EyeCover</li>
+			</layers>
+			<tags>
+			</tags>
+			<parentTagDef>ApparelHead</parentTagDef>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+		<tradeTags>
+			<li>BasicClothing</li>
+			<li>CFAR_Apparel</li>
+		</tradeTags>
+	</ThingDef>
+
+<!--======== Combat Visor ========-->
+
+	<ThingDef ParentName="CFAR_VisorBase">
+		<defName>Apparel_CFAR_VisorCombat</defName>
+		<label>Arellian combat visor</label>
+		<description>WIP</description>
+		<recipeMaker>
+			<displayPriority>1160</displayPriority>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Arellian/Apparel/FieldUniform/FieldCap/Hat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+		</graphicData>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>2.5</ShootingAccuracyPawn>
+			<MeleeHitChance>2</MeleeHitChance>
+			<AimingDelayFactor>-0.25</AimingDelayFactor>
+		</equippedStatOffsets>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Arellian/Apparel/FieldUniform/FieldCap/Hat</wornGraphicPath>
+			<tags>
+				<li>CFAR_MilitaryPlanetary</li>
+				<li>CFAR_MilitaryOrbit</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		</apparel>
+	</ThingDef>
+
+<!--======== Orbit Helmet ========-->
+
+	<ThingDef ParentName="ArmorHelmetMakeableBase">
+		<techLevel>Industrial</techLevel>
+		<defName>Apparel_CFAR_OrbitHelmet</defName>
+		<label>Arellian orbit helmet</label>
+		<description>WIP</description>
+		<uiIconScale>1.15</uiIconScale>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+			<displayPriority>1160</displayPriority>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Arellian/Apparel/FieldUniform/FieldCap/Hat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+		</graphicData>
+		<costList>
+			<Plasteel>20</Plasteel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<costStuffCount>100</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>4000</WorkToMake>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>3</Mass>
+			<Flammability>0.4</Flammability>
+			<StuffEffectMultiplierArmor>0.7</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>0.30</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.20</ArmorRating_Heat>
+			<Insulation_Cold>5</Insulation_Cold>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
+			<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.1</SuppressionPower>
+			<ToxicEnvironmentResistance>0.80</ToxicEnvironmentResistance>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.69</VacuumResistance>
+		</equippedStatOffsets>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+			<wornGraphicPath>Things/Pawn/Arellian/Apparel/FieldUniform/FieldCap/Hat</wornGraphicPath>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<tags>
+				<li>CFAR_MilitaryOrbit</li>
+			</tags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+		<tradeTags>
+			<li>BasicClothing</li>
+			<li>CFAR_Apparel</li>
+		</tradeTags>
+	</ThingDef>
+</Defs>
+
+

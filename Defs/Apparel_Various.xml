@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+<!--================ Industrial Apparel ================-->
+
+<!--======== Field Uniform ========-->
+
+	<ThingDef ParentName="ApparelMakeableBase">
+		<techLevel>Industrial</techLevel>
+		<defName>Apparel_CFAR_FieldUniform</defName>
+		<label>Arellian field uniform</label>
+		<description>WIP</description>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+			<displayPriority>1172</displayPriority>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Arellian/Apparel/FieldUniform/Apparel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>100</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<thingCategories>
+			<li>ApparelMisc</li>
+		</thingCategories>
+		<statBases>
+			<WorkToMake>10000</WorkToMake>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Mass>1.25</Mass>
+			<StuffEffectMultiplierArmor>0.20</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.50</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>6</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MentalBreakThreshold>-0.1</MentalBreakThreshold>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Arellian/Apparel/FieldUniform/Apparel</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>CFAR_MilitaryPlanetary</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<ideoDesireAllowedFactionCategoryTags><li>CFAR_Empire</li></ideoDesireAllowedFactionCategoryTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+		<tradeTags>
+			<li>BasicClothing</li>
+			<li>CFAR_Apparel</li>
+		</tradeTags>
+	</ThingDef>
+
+<!--======== Orbit Suit ========-->
+
+	<ThingDef ParentName="ArmorMachineableBase">
+		<techLevel>Industrial</techLevel>
+		<defName>Apparel_CFAR_OrbitSuit</defName>
+		<label>Arellian orbit suit</label>
+		<description>Designed as an under-armor garment, the orbit suit offers minimal physical defense but effective insulation against extreme temperatures and atmospheric hazards. The plasteel filaments provide vacuum protection, allowing the wearer to operate in depressurized environments.</description>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>ComplexClothing</li>
+				<li>OrbitalTech</li>
+			</researchPrerequisites>
+			<displayPriority>1160</displayPriority>
+			<useIngredientsForColor>false</useIngredientsForColor>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Arellian/Apparel/FieldUniform/Apparel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costList>
+			<Plasteel>20</Plasteel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<costStuffCount>100</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<thingCategories>
+			<li>ApparelMisc</li>
+		</thingCategories>
+		<statBases>
+			<WorkToMake>16000</WorkToMake>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Mass>3</Mass>
+			<Flammability>0.6</Flammability>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>1.5</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
+			<Insulation_Cold>15</Insulation_Cold>
+			<Insulation_Heat>3</Insulation_Heat>
+			<EquipDelay>8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.03</MoveSpeed>
+			<ToxicEnvironmentResistance>0.20</ToxicEnvironmentResistance>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.32</VacuumResistance>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Arellian/Apparel/FieldUniform/Apparel</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>CFAR_MilitaryOrbit</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+				<li>Spacefarer</li>
+			</defaultOutfitTags>
+			<ideoDesireAllowedFactionCategoryTags><li>CFAR_Empire</li></ideoDesireAllowedFactionCategoryTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+		<tradeTags>
+			<li>BasicClothing</li>
+			<li>CFAR_Apparel</li>
+		</tradeTags>
+	</ThingDef>
+
+<!--================ Industrial Armor ================-->
+
+<!--======== Reichswehr Armor Base ========-->
+
+	<ThingDef Name="CFAR_RWSetBase" ParentName="ArmorMachineableBase" Abstract="True">
+		<techLevel>Industrial</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>FlakArmor</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>10000</WorkToMake>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Mass>3</Mass>
+			<Flammability>0.4</Flammability>
+			<StuffEffectMultiplierArmor>0.7</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>0.30</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.15</ArmorRating_Heat>
+			<EquipDelay>4</EquipDelay>
+		</statBases>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<apparel>
+			<layers>
+				<li>Middle</li>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>CFAR_MilitaryPlanetary</li>
+				<li>CFAR_MilitaryOrbit</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<ideoDesireAllowedFactionCategoryTags><li>CFAR_Empire</li></ideoDesireAllowedFactionCategoryTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	    <tradeTags>
+			<li>Armor</li>
+		</tradeTags>
+	</ThingDef>
+
+<!--======== Reichswehr Plate ========-->
+
+	<ThingDef ParentName="CFAR_RWSetBase">
+		<defName>Apparel_CFAR_RWPlate</defName>
+		<label>Arellian Reichswehr plate</label>
+		<description>A standard torso armor built on a flexible plasteel frame. Reinforced plates protect the upper body while preserving mobility. Designed as the upper component of a tactical plate set that moves seamlessly with the wearer.</description>
+		<recipeMaker>
+			<displayPriority>1163</displayPriority>
+		</recipeMaker>
+		<costList>
+			<Plasteel>15</Plasteel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<costStuffCount>45</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/FlakVest/FlakVest</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.90</drawSize>
+		</graphicData>
+		<equippedStatOffsets>
+			<StaggerDurationFactor>-0.1</StaggerDurationFactor>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
+			<MoveSpeed>-0.06</MoveSpeed>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Neck</li>
+				<li>Torso</li>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/FlakVest/FlakVest</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+
+<!--======== Reichswehr Greaves ========-->
+
+	<ThingDef ParentName="CFAR_RWSetBase">
+		<defName>Apparel_CFAR_RWGreaves</defName>
+		<label>Arellian Reichswehr greaves</label>
+		<description>A standard leg armor built on a flexible plasteel frame. Reinforced plates protect the lower body while preserving mobility. Designed as the lower component of a tactical plate set that moves seamlessly with the wearer.</description>
+		<recipeMaker>
+			<displayPriority>1164</displayPriority>
+		</recipeMaker>
+		<costList>
+			<Plasteel>15</Plasteel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<costStuffCount>45</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/FlakVest/FlakVest</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.90</drawSize>
+		</graphicData>
+		<equippedStatOffsets>
+			<StaggerDurationFactor>-0.1</StaggerDurationFactor>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
+			<MoveSpeed>-0.06</MoveSpeed>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/FlakVest/FlakVest</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+
+<!--======== Reichswehr Pauldron ========-->
+
+	<ThingDef ParentName="CFAR_RWSetBase">
+		<defName>Apparel_CFAR_RWPauldrons</defName>
+		<label>Arellian Reichswehr pauldrons</label>
+		<description>A standard shoulder armor built on a flexible plasteel frame. Reinforced plates protect the shoulders while preserving arm mobility. Designed as the shoulder component of a tactical plate set that moves seamlessly with the wearer.</description>
+		<recipeMaker>
+			<displayPriority>1165</displayPriority>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/FlakVest/FlakVest</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.90</drawSize>
+		</graphicData>
+		<costList>
+			<Plasteel>5</Plasteel>
+		</costList>
+		<costStuffCount>10</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>2500</WorkToMake>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Mass>1</Mass>
+			<EquipDelay>0.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<StaggerDurationFactor>-0.05</StaggerDurationFactor>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.05</SlaveSuppressionOffset>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+		</apparel>
+	</ThingDef>
+
+</Defs>
