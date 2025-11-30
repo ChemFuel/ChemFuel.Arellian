@@ -2,12 +2,12 @@
 <Defs>
 <!--================ Industrial Apparel ================-->
 
-<!--======== Field Uniform ========-->
+<!--======== Service Uniform ========-->
 
-	<ThingDef ParentName="ApparelMakeableBase">
+	<ThingDef ParentName="ApparelMakeableBase" Name="CFAR_UniformBase">
 		<techLevel>Industrial</techLevel>
-		<defName>Apparel_CFAR_FieldUniform</defName>
-		<label>Arellian field uniform</label>
+		<defName>Apparel_CFAR_ServiceUniform</defName>
+		<label>Arellian service uniform</label>
 		<description>WIP</description>
 		<recipeMaker>
 			<researchPrerequisite>ComplexClothing</researchPrerequisite>
@@ -17,7 +17,7 @@
 			</skillRequirements>
 		</recipeMaker>
 		<graphicData>
-			<texPath>Things/Pawn/Arellian/Apparel/FieldUniform/Apparel</texPath>
+			<texPath>Things/Pawn/Arellian/Apparel/ServiceUniform/Apparel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<costStuffCount>100</costStuffCount>
@@ -49,7 +49,7 @@
 				<li>Arms</li>
 				<li>Legs</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/Arellian/Apparel/FieldUniform/Apparel</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Arellian/Apparel/ServiceUniform/Apparel</wornGraphicPath>
 			<layers>
 				<li>OnSkin</li>
 			</layers>
@@ -59,7 +59,7 @@
 			<defaultOutfitTags>
 				<li>Soldier</li>
 			</defaultOutfitTags>
-			<ideoDesireAllowedFactionCategoryTags><li>CFAR_Empire</li></ideoDesireAllowedFactionCategoryTags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_StandardApparel" />
 		<tradeTags>
@@ -87,7 +87,7 @@
 			</skillRequirements>
 		</recipeMaker>
 		<graphicData>
-			<texPath>Things/Pawn/Arellian/Apparel/FieldUniform/Apparel</texPath>
+			<texPath>Things/Pawn/Arellian/Apparel/ServiceUniform/Apparel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<costList>
@@ -126,7 +126,7 @@
 				<li>Arms</li>
 				<li>Legs</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/Arellian/Apparel/FieldUniform/Apparel</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Arellian/Apparel/ServiceUniform/Apparel</wornGraphicPath>
 			<layers>
 				<li>OnSkin</li>
 			</layers>
@@ -137,7 +137,7 @@
 				<li>Soldier</li>
 				<li>Spacefarer</li>
 			</defaultOutfitTags>
-			<ideoDesireAllowedFactionCategoryTags><li>CFAR_Empire</li></ideoDesireAllowedFactionCategoryTags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_StandardApparel" />
 		<tradeTags>
@@ -160,15 +160,11 @@
 			</skillRequirements>
 		</recipeMaker>
 		<statBases>
-			<WorkToMake>10000</WorkToMake>
-			<MaxHitPoints>200</MaxHitPoints>
-			<Mass>3</Mass>
 			<Flammability>0.4</Flammability>
 			<StuffEffectMultiplierArmor>0.7</StuffEffectMultiplierArmor>
 			<ArmorRating_Sharp>0.30</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.15</ArmorRating_Heat>
-			<EquipDelay>4</EquipDelay>
 		</statBases>
 		<thingCategories>
 			<li>ApparelArmor</li>
@@ -185,7 +181,7 @@
 			<defaultOutfitTags>
 				<li>Soldier</li>
 			</defaultOutfitTags>
-			<ideoDesireAllowedFactionCategoryTags><li>CFAR_Empire</li></ideoDesireAllowedFactionCategoryTags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_StandardApparel" />
 	    <tradeTags>
@@ -193,20 +189,20 @@
 		</tradeTags>
 	</ThingDef>
 
-<!--======== Reichswehr Plate ========-->
+<!--======== Service Plate ========-->
 
-	<ThingDef ParentName="CFAR_RWSetBase">
-		<defName>Apparel_CFAR_RWPlate</defName>
-		<label>Arellian Reichswehr plate</label>
-		<description>A standard torso armor built on a flexible plasteel frame. Reinforced plates protect the upper body while preserving mobility. Designed as the upper component of a tactical plate set that moves seamlessly with the wearer.</description>
+	<ThingDef ParentName="CFAR_ArmorBase">
+		<defName>Apparel_CFAR_ServiceArmor</defName>
+		<label>Arellian service armor</label>
+		<description>Reinforced by a plasteel exoskeleton, the Arellian service armor is designed to balance protection and mobility, preserving freedom of movement during sustained combat.</description>
 		<recipeMaker>
 			<displayPriority>1163</displayPriority>
 		</recipeMaker>
 		<costList>
-			<Plasteel>15</Plasteel>
-			<ComponentIndustrial>1</ComponentIndustrial>
+			<Plasteel>30</Plasteel>
+			<ComponentIndustrial>3</ComponentIndustrial>
 		</costList>
-		<costStuffCount>45</costStuffCount>
+		<costStuffCount>95</costStuffCount>
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
@@ -215,8 +211,14 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.90</drawSize>
 		</graphicData>
+		<statBases>
+			<WorkToMake>25000</WorkToMake>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Mass>7</Mass>
+			<EquipDelay>8.5</EquipDelay>
+		</statBases>
 		<equippedStatOffsets>
-			<StaggerDurationFactor>-0.1</StaggerDurationFactor>
+			<StaggerDurationFactor>-0.20</StaggerDurationFactor>
 			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
 			<MoveSpeed>-0.06</MoveSpeed>
 		</equippedStatOffsets>
@@ -225,54 +227,20 @@
 				<li>Neck</li>
 				<li>Torso</li>
 				<li>Arms</li>
-			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/FlakVest/FlakVest</wornGraphicPath>
-		</apparel>
-	</ThingDef>
-
-<!--======== Reichswehr Greaves ========-->
-
-	<ThingDef ParentName="CFAR_RWSetBase">
-		<defName>Apparel_CFAR_RWGreaves</defName>
-		<label>Arellian Reichswehr greaves</label>
-		<description>A standard leg armor built on a flexible plasteel frame. Reinforced plates protect the lower body while preserving mobility. Designed as the lower component of a tactical plate set that moves seamlessly with the wearer.</description>
-		<recipeMaker>
-			<displayPriority>1164</displayPriority>
-		</recipeMaker>
-		<costList>
-			<Plasteel>15</Plasteel>
-			<ComponentIndustrial>1</ComponentIndustrial>
-		</costList>
-		<costStuffCount>45</costStuffCount>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
-		<graphicData>
-			<texPath>Things/Pawn/Humanlike/Apparel/FlakVest/FlakVest</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>0.90</drawSize>
-		</graphicData>
-		<equippedStatOffsets>
-			<StaggerDurationFactor>-0.1</StaggerDurationFactor>
-			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
-			<MoveSpeed>-0.06</MoveSpeed>
-		</equippedStatOffsets>
-		<apparel>
-			<bodyPartGroups>
 				<li>Legs</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/FlakVest/FlakVest</wornGraphicPath>
 		</apparel>
 	</ThingDef>
 
-<!--======== Reichswehr Pauldron ========-->
+<!--======== Service Pauldron ========-->
 
-	<ThingDef ParentName="CFAR_RWSetBase">
-		<defName>Apparel_CFAR_RWPauldrons</defName>
-		<label>Arellian Reichswehr pauldrons</label>
-		<description>A standard shoulder armor built on a flexible plasteel frame. Reinforced plates protect the shoulders while preserving arm mobility. Designed as the shoulder component of a tactical plate set that moves seamlessly with the wearer.</description>
+	<ThingDef ParentName="CFAR_ArmorBase">
+		<defName>Apparel_CFAR_ServicePauldrons</defName>
+		<label>Arellian service pauldrons</label>
+		<description>A modular, plasteel-reinforced pauldron designed to integrate with Arellian service armor. It protects the wearer’s shoulders and serves as a recognized indicator of authority in the field.</description>
 		<recipeMaker>
-			<displayPriority>1165</displayPriority>
+			<displayPriority>1164</displayPriority>
 		</recipeMaker>
 		<graphicData>
 			<texPath>Things/Pawn/Humanlike/Apparel/FlakVest/FlakVest</texPath>
@@ -289,8 +257,8 @@
 		<statBases>
 			<WorkToMake>2500</WorkToMake>
 			<MaxHitPoints>50</MaxHitPoints>
-			<Mass>1</Mass>
-			<EquipDelay>0.5</EquipDelay>
+			<Mass>0.5</Mass>
+			<EquipDelay>1</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
 			<StaggerDurationFactor>-0.05</StaggerDurationFactor>
@@ -302,5 +270,4 @@
 			</bodyPartGroups>
 		</apparel>
 	</ThingDef>
-
 </Defs>
