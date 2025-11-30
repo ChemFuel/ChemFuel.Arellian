@@ -2,7 +2,7 @@
 <Defs>
 <!--================ Industrial Apparel ================-->
 
-<!--======== Field Hat Base ========-->
+<!--======== Service Cap Base ========-->
 
 	<ThingDef ParentName="HatMakeableBase" Name="CFAR_CapBase" Abstract="True">
 		<techLevel>Industrial</techLevel>
@@ -29,7 +29,6 @@
 		<equippedStatOffsets>
 			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
 			<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.1</SuppressionPower>
-			<PainShockThreshold>0.05</PainShockThreshold>
 		</equippedStatOffsets>
 		<apparel>
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
@@ -54,72 +53,46 @@
 		</tradeTags>
 	</ThingDef>
 
-<!--======== Cap ========-->
+<!--======== Service Cap ========-->
 
 	<ThingDef ParentName="CFAR_CapBase">
-		<defName>Apparel_CFAR_FieldCap</defName>
-		<label>Arellian field cap</label>
-		<description>A lightweight service cap issued to enlisted personnel for daily field duties. Designed for comfort and practicality, it provides basic protection from the elements while maintaining a uniform Reichswehr appearance.</description>
+		<defName>Apparel_CFAR_Kepi</defName>
+		<label>Arellian service cap</label>
+		<description>A structured service cap for junior officers, intended for daily field use. Practical and comfortable, it protects against the elements while retaining a clear mark of authority.</description>
 		<recipeMaker>
 			<displayPriority>1160</displayPriority>
 		</recipeMaker>
-		<costStuffCount>25</costStuffCount>
+		<costStuffCount>35</costStuffCount>
 		<graphicData>
-			<texPath>Things/Pawn/Arellian/Apparel/FieldUniform/FieldCap/Hat</texPath>
+			<texPath>Things/Pawn/Arellian/Apparel/ServiceUniform/Kepi/Hat</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.80</drawSize>
 		</graphicData>
 		<equippedStatOffsets>
-			<PainShockThreshold>0.10</PainShockThreshold>
+			<PainShockThreshold>0.05</PainShockThreshold>
+			<SocialImpact>0.10</SocialImpact>
 		</equippedStatOffsets>
 		<apparel>
-			<wornGraphicPath>Things/Pawn/Arellian/Apparel/FieldUniform/FieldCap/Hat</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Arellian/Apparel/ServiceUniform/Kepi/Hat</wornGraphicPath>
 			<tags>
-				<li>CFAR_Soldier</li>
+				<li>CFAR_Officer</li>
 			</tags>
 			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 		</apparel>
 	</ThingDef>
 
-<!--======== Kepi ========-->
+<!--======== Commander Cap ========-->
 
 	<ThingDef ParentName="CFAR_CapBase">
-		<defName>Apparel_CFAR_OfficerKepi</defName>
-		<label>Arellian officer kepi</label>
-		<description>A structured field cap issued to junior officers. Its restrained, standardized profile distinguishes command personnel without departing from common field uniformity, balancing authority, visibility, and practical wear during operations.</description>
+		<defName>Apparel_CFAR_PeakedCap</defName>
+		<label>Arellian commander cap</label>
+		<description>A service cap issued to experienced officers. Its formal profile signifies authority and operational oversight, worn by those entrusted with command beyond the front line.</description>
 		<recipeMaker>
 			<displayPriority>1161</displayPriority>
 		</recipeMaker>
-		<costStuffCount>35</costStuffCount>
-		<graphicData>
-			<texPath>Things/Pawn/Arellian/Apparel/FieldUniform/OfficerKepi/Hat</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>0.80</drawSize>
-		</graphicData>
-		<equippedStatOffsets>
-			<SocialImpact>0.10</SocialImpact>
-		</equippedStatOffsets>
-		<apparel>
-			<wornGraphicPath>Things/Pawn/Arellian/Apparel/FieldUniform/OfficerKepi/Hat</wornGraphicPath>
-			<tags>
-				<li>CFAR_OfficerLow</li>
-			</tags>
-			<ideoDesireAllowedFactionCategoryTags><li>CFAR_Empire</li></ideoDesireAllowedFactionCategoryTags>
-		</apparel>
-	</ThingDef>
-
-<!--======== Peaked Cap ========-->
-
-	<ThingDef ParentName="CFAR_CapBase">
-		<defName>Apparel_CFAR_CommandCap</defName>
-		<label>Arellian command cap</label>
-		<description>A service cap issued to experienced officers. Its formal profile signifies authority and operational oversight, worn by those entrusted with command beyond the front line.</description>
-		<recipeMaker>
-			<displayPriority>1162</displayPriority>
-		</recipeMaker>
 		<costStuffCount>50</costStuffCount>
 		<graphicData>
-			<texPath>Things/Pawn/Arellian/Apparel/FieldUniform/CommandCap/Hat</texPath>
+			<texPath>Things/Pawn/Arellian/Apparel/ServiceUniform/PeakedCap/Hat</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.80</drawSize>
 		</graphicData>
@@ -127,11 +100,11 @@
 			<SocialImpact>0.20</SocialImpact>
 		</equippedStatOffsets>
 		<apparel>
-			<wornGraphicPath>Things/Pawn/Arellian/Apparel/FieldUniform/CommandCap/Hat</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Arellian/Apparel/ServiceUniform/PeakedCap/Hat</wornGraphicPath>
 			<tags>
 				<li>CFAR_OfficerHigh</li>
 			</tags>
-			<ideoDesireAllowedFactionCategoryTags><li>CFAR_Empire</li></ideoDesireAllowedFactionCategoryTags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 		</apparel>
 	</ThingDef>
 
@@ -192,7 +165,7 @@
 			<displayPriority>1160</displayPriority>
 		</recipeMaker>
 		<graphicData>
-			<texPath>Things/Pawn/Arellian/Apparel/FieldUniform/FieldCap/Hat</texPath>
+			<texPath>Things/Pawn/Arellian/Apparel/ServiceUniform/PeakedCap/Hat</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.80</drawSize>
 		</graphicData>
@@ -202,7 +175,7 @@
 			<AimingDelayFactor>-0.25</AimingDelayFactor>
 		</equippedStatOffsets>
 		<apparel>
-			<wornGraphicPath>Things/Pawn/Arellian/Apparel/FieldUniform/FieldCap/Hat</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Arellian/Apparel/ServiceUniform/PeakedCap/Hat</wornGraphicPath>
 			<tags>
 				<li>CFAR_MilitaryPlanetary</li>
 				<li>CFAR_MilitaryOrbit</li>
@@ -230,7 +203,7 @@
 			</skillRequirements>
 		</recipeMaker>
 		<graphicData>
-			<texPath>Things/Pawn/Arellian/Apparel/FieldUniform/FieldCap/Hat</texPath>
+			<texPath>Things/Pawn/Arellian/Apparel/ServiceUniform/PeakedCap/Hat</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.80</drawSize>
 		</graphicData>
@@ -259,11 +232,12 @@
 			<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.1</SuppressionPower>
 			<ToxicEnvironmentResistance>0.80</ToxicEnvironmentResistance>
 			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.69</VacuumResistance>
+			<PainShockThreshold>0.05</PainShockThreshold>
 		</equippedStatOffsets>
 		<apparel>
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
-			<wornGraphicPath>Things/Pawn/Arellian/Apparel/FieldUniform/FieldCap/Hat</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Arellian/Apparel/ServiceUniform/PeakedCap/Hat</wornGraphicPath>
 			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 			<bodyPartGroups>
 				<li>UpperHead</li>
@@ -285,5 +259,3 @@
 		</tradeTags>
 	</ThingDef>
 </Defs>
-
-
