@@ -56,7 +56,7 @@
 <!--======== Service Cap ========-->
 
 	<ThingDef ParentName="CFAR_CapBase">
-		<defName>Apparel_CFAR_Kepi</defName>
+		<defName>Apparel_CFAR_ServiceCap</defName>
 		<label>Arellian service cap</label>
 		<description>A structured service cap for junior officers, intended for daily field use. Practical and comfortable, it protects against the elements while retaining a clear mark of authority.</description>
 		<recipeMaker>
@@ -84,7 +84,7 @@
 <!--======== Commander Cap ========-->
 
 	<ThingDef ParentName="CFAR_CapBase">
-		<defName>Apparel_CFAR_PeakedCap</defName>
+		<defName>Apparel_CFAR_CommanderCap</defName>
 		<label>Arellian commander cap</label>
 		<description>A service cap issued to experienced officers. Its formal profile signifies authority and operational oversight, worn by those entrusted with command beyond the front line.</description>
 		<recipeMaker>
