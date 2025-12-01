@@ -150,7 +150,7 @@
 
 <!--======== Reichswehr Armor Base ========-->
 
-	<ThingDef Name="CFAR_RWSetBase" ParentName="ArmorMachineableBase" Abstract="True">
+	<ThingDef Name="CFAR_ServiceArmorBase" ParentName="ArmorMachineableBase" Abstract="True">
 		<techLevel>Industrial</techLevel>
 		<recipeMaker>
 			<researchPrerequisite>FlakArmor</researchPrerequisite>
@@ -191,7 +191,7 @@
 
 <!--======== Service Plate ========-->
 
-	<ThingDef ParentName="CFAR_ArmorBase">
+	<ThingDef ParentName="CFAR_ServiceArmorBase">
 		<defName>Apparel_CFAR_ServiceArmor</defName>
 		<label>Arellian service armor</label>
 		<description>Reinforced by a plasteel exoskeleton, the Arellian service armor is designed to balance protection and mobility, preserving freedom of movement during sustained combat.</description>
@@ -235,7 +235,7 @@
 
 <!--======== Service Pauldron ========-->
 
-	<ThingDef ParentName="CFAR_ArmorBase">
+	<ThingDef ParentName="CFAR_ServiceArmorBase">
 		<defName>Apparel_CFAR_ServicePauldrons</defName>
 		<label>Arellian service pauldrons</label>
 		<description>A modular, plasteel-reinforced pauldron designed to integrate with Arellian service armor. It protects the wearer’s shoulders and serves as a recognized indicator of authority in the field.</description>
@@ -271,3 +271,4 @@
 		</apparel>
 	</ThingDef>
 </Defs>
+
