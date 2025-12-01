@@ -148,9 +148,9 @@
 
 <!--================ Industrial Armor ================-->
 
-<!--======== Reichswehr Armor Base ========-->
+<!--======== Service Armor Base ========-->
 
-	<ThingDef Name="CFAR_ServiceArmorBase" ParentName="ArmorMachineableBase" Abstract="True">
+	<ThingDef Name="CFAR_ArmorBase" ParentName="ArmorMachineableBase" Abstract="True">
 		<techLevel>Industrial</techLevel>
 		<recipeMaker>
 			<researchPrerequisite>FlakArmor</researchPrerequisite>
@@ -174,10 +174,6 @@
 				<li>Middle</li>
 				<li>Shell</li>
 			</layers>
-			<tags>
-				<li>CFAR_MilitaryPlanetary</li>
-				<li>CFAR_MilitaryOrbit</li>
-			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
 			</defaultOutfitTags>
@@ -189,9 +185,9 @@
 		</tradeTags>
 	</ThingDef>
 
-<!--======== Service Plate ========-->
+<!--======== Service Armor - Universal ========-->
 
-	<ThingDef ParentName="CFAR_ServiceArmorBase">
+	<ThingDef ParentName="CFAR_ArmorBase">
 		<defName>Apparel_CFAR_ServiceArmor</defName>
 		<label>Arellian service armor</label>
 		<description>Reinforced by a plasteel exoskeleton, the Arellian service armor is designed to balance protection and mobility, preserving freedom of movement during sustained combat.</description>
@@ -230,22 +226,26 @@
 				<li>Legs</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/FlakVest/FlakVest</wornGraphicPath>
+			<tags>
+				<li>CFAR_Soldier</li>
+				<li>CFAR_Officer</li>
+				<li>CFAR_HighOfficer</li>
+			</tags>
 		</apparel>
 	</ThingDef>
 
-<!--======== Service Pauldron ========-->
+<!--======== Service Pauldrons - Soldier ========-->
 
-	<ThingDef ParentName="CFAR_ServiceArmorBase">
+	<ThingDef ParentName="CFAR_ArmorBase" Name="CFAR_PauldronBase">
 		<defName>Apparel_CFAR_ServicePauldrons</defName>
 		<label>Arellian service pauldrons</label>
-		<description>A modular, plasteel-reinforced pauldron designed to integrate with Arellian service armor. It protects the wearer’s shoulders and serves as a recognized indicator of authority in the field.</description>
+		<description>A plasteel-reinforced soldier's pauldron designed to integrate with Arellian service armor. It protects the wearer’s shoulders while preserving freedom of movement during sustained combat.</description>
 		<recipeMaker>
 			<displayPriority>1164</displayPriority>
 		</recipeMaker>
 		<graphicData>
 			<texPath>Things/Pawn/Humanlike/Apparel/FlakVest/FlakVest</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>0.90</drawSize>
 		</graphicData>
 		<costList>
 			<Plasteel>5</Plasteel>
@@ -262,13 +262,55 @@
 		</statBases>
 		<equippedStatOffsets>
 			<StaggerDurationFactor>-0.05</StaggerDurationFactor>
-			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.05</SlaveSuppressionOffset>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
 				<li>Shoulders</li>
 			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/FlakVest/FlakVest</wornGraphicPath>
+			<tags>
+				<li>CFAR_Soldier</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--======== Officer Pauldrons - Officer(Low) ========-->
+
+	<ThingDef ParentName="CFAR_PauldronBase">
+		<defName>Apparel_CFAR_OfficerPauldrons</defName>
+		<label>Arellian officer pauldrons</label>
+		<description>A plasteel-reinforced officer's pauldron designed to integrate with Arellian service armor. It protects the wearer’s shoulders and serves as an indicator of authority in the field.</description>
+		<recipeMaker>
+			<displayPriority>1165</displayPriority>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/FlakVest/FlakVest</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/FlakVest/FlakVest</wornGraphicPath>
+			<tags Inherit="False">
+				<li>CFAR_Officer</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--======== Commander Pauldrons - Officer(High) ========-->
+
+	<ThingDef ParentName="CFAR_PauldronBase">
+		<defName>Apparel_CFAR_CommanderPauldrons</defName>
+		<label>Arellian commander pauldrons</label>
+		<description>A plasteel-reinforced senior officer’s pauldron designed to integrate with Arellian service armor. It provides focused shoulder protection while serving as an indicator of command authority in the field.</description>
+		<recipeMaker>
+			<displayPriority>1166</displayPriority>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/FlakVest/FlakVest</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/FlakVest/FlakVest</wornGraphicPath>
+			<tags Inherit="False">
+				<li>CFAR_HighOfficer</li>
+			</tags>
 		</apparel>
 	</ThingDef>
 </Defs>
-
