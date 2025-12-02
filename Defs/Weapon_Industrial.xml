@@ -231,7 +231,7 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_CFAR_Rifle</defaultProjectile>
-				<burstShotCount>3</burstShotCount>
+				<burstShotCount>4</burstShotCount>
 				<ticksBetweenBurstShots>9</ticksBetweenBurstShots>
 				<warmupTime>0.9</warmupTime>
 				<range>33.9</range>
@@ -290,7 +290,7 @@
 			<RangedWeapon_Cooldown>1.80</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.12</MoveSpeed>
+			<MoveSpeed>-0.06</MoveSpeed>
 		</equippedStatOffsets>
 		<weaponTags>
 			<li>CFAR_GPMG</li>
@@ -337,3 +337,4 @@
 		</tradeTags>
 	</ThingDef>
 </Defs>
+
