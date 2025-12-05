@@ -108,10 +108,10 @@
 			<Mass>3</Mass>
 			<Flammability>0.6</Flammability>
 			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>1.50</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Cold>1.75</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.75</StuffEffectMultiplierInsulation_Heat>
 			<Insulation_Cold>30</Insulation_Cold>
-			<Insulation_Heat>15</Insulation_Heat>
+			<Insulation_Heat>10</Insulation_Heat>
 			<EquipDelay>8</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
@@ -315,4 +315,5 @@
 		</apparel>
 	</ThingDef>
 </Defs>
+
 
