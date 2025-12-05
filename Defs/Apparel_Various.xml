@@ -33,8 +33,10 @@
 			<MaxHitPoints>200</MaxHitPoints>
 			<Mass>1.25</Mass>
 			<StuffEffectMultiplierArmor>0.20</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.50</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Cold>0.75</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+			<Insulation_Cold>15</Insulation_Cold>
+			<Insulation_Heat>3</Insulation_Heat>
 			<EquipDelay>6</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
@@ -87,7 +89,7 @@
 			</skillRequirements>
 		</recipeMaker>
 		<graphicData>
-			<texPath>Things/Pawn/Arellian/Apparel/ServiceUniform/Apparel</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/ShirtBasic/Apparel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<costList>
@@ -107,10 +109,10 @@
 			<Mass>3</Mass>
 			<Flammability>0.6</Flammability>
 			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>1.5</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
-			<Insulation_Cold>15</Insulation_Cold>
-			<Insulation_Heat>3</Insulation_Heat>
+			<StuffEffectMultiplierInsulation_Cold>1.50</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.75</StuffEffectMultiplierInsulation_Heat>
+			<Insulation_Cold>30</Insulation_Cold>
+			<Insulation_Heat>10</Insulation_Heat>
 			<EquipDelay>8</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
@@ -126,7 +128,7 @@
 				<li>Arms</li>
 				<li>Legs</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/Arellian/Apparel/ServiceUniform/Apparel</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/ShirtBasic/Apparel</wornGraphicPath>
 			<layers>
 				<li>OnSkin</li>
 			</layers>
@@ -314,4 +316,3 @@
 		</apparel>
 	</ThingDef>
 </Defs>
-
