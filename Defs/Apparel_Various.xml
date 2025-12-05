@@ -154,7 +154,7 @@
 		<techLevel>Industrial</techLevel>
 		<recipeMaker>
 			<researchPrerequisite>FlakArmor</researchPrerequisite>
-			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>5</Crafting>
 			</skillRequirements>
@@ -314,3 +314,4 @@
 		</apparel>
 	</ThingDef>
 </Defs>
+
