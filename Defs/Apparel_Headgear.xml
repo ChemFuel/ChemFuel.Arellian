@@ -165,7 +165,7 @@
 			<displayPriority>1160</displayPriority>
 		</recipeMaker>
 		<graphicData>
-			<texPath>Things/Pawn/Arellian/Apparel/ServiceUniform/PeakedCap/Hat</texPath>
+			<texPath>Things/Pawn/Arellian/Apparel/Visor/Combat/Visor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.80</drawSize>
 		</graphicData>
@@ -175,7 +175,7 @@
 			<AimingDelayFactor>-0.25</AimingDelayFactor>
 		</equippedStatOffsets>
 		<apparel>
-			<wornGraphicPath>Things/Pawn/Arellian/Apparel/ServiceUniform/PeakedCap/Hat</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Arellian/Apparel/Visor/Combat/Visor</wornGraphicPath>
 			<tags>
 				<li>CFAR_MilitaryPlanetary</li>
 				<li>CFAR_MilitaryOrbit</li>
@@ -259,3 +259,4 @@
 		</tradeTags>
 	</ThingDef>
 </Defs>
+
