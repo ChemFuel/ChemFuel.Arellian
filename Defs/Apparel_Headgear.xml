@@ -56,8 +56,8 @@
 <!--======== Service Cap ========-->
 
 	<ThingDef ParentName="CFAR_CapBase">
-		<defName>Apparel_CFAR_ServiceCap</defName>
-		<label>Arellian service cap</label>
+		<defName>Apparel_CFAR_OfficerCap</defName>
+		<label>Arellian officer cap</label>
 		<description>A structured service cap for junior officers, intended for daily field use. Practical and comfortable, it protects against the elements while retaining a clear mark of authority.</description>
 		<recipeMaker>
 			<displayPriority>1160</displayPriority>
@@ -259,4 +259,5 @@
 		</tradeTags>
 	</ThingDef>
 </Defs>
+
 
