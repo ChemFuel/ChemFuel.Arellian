@@ -72,7 +72,7 @@
 <!--======== Orbit Suit ========-->
 
 	<ThingDef ParentName="ArmorMachineableBase">
-		<techLevel>Industrial</techLevel>
+		<techLevel>Spacer</techLevel>
 		<defName>Apparel_CFAR_OrbitSuit</defName>
 		<label>Arellian orbit suit</label>
 		<description>Designed as an under-armor garment, the orbit suit offers minimal physical defense but effective insulation against extreme temperatures and atmospheric hazards. The plasteel filaments provide vacuum protection, allowing the wearer to operate in depressurized environments.</description>
@@ -115,7 +115,7 @@
 			<EquipDelay>8</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.03</MoveSpeed>
+			<MoveSpeed>-0.06</MoveSpeed>
 			<ToxicEnvironmentResistance>0.20</ToxicEnvironmentResistance>
 			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.32</VacuumResistance>
 		</equippedStatOffsets>
@@ -152,7 +152,7 @@
 <!--======== Service Armor Base ========-->
 
 	<ThingDef Name="CFAR_ArmorBase" ParentName="ArmorMachineableBase" Abstract="True">
-		<techLevel>Industrial</techLevel>
+		<techLevel>Spacer</techLevel>
 		<recipeMaker>
 			<researchPrerequisite>FlakArmor</researchPrerequisite>
 			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
@@ -162,10 +162,11 @@
 		</recipeMaker>
 		<statBases>
 			<Flammability>0.4</Flammability>
-			<StuffEffectMultiplierArmor>0.7</StuffEffectMultiplierArmor>
-			<ArmorRating_Sharp>0.30</ArmorRating_Sharp>
+			<StuffEffectMultiplierArmor>0.6</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>1.00</StuffEffectMultiplierInsulation_Cold>
+			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.15</ArmorRating_Heat>
+			<ArmorRating_Heat>0.50</ArmorRating_Heat>
 		</statBases>
 		<thingCategories>
 			<li>ApparelArmor</li>
@@ -173,7 +174,6 @@
 		<apparel>
 			<layers>
 				<li>Middle</li>
-				<li>Shell</li>
 			</layers>
 			<defaultOutfitTags>
 				<li>Soldier</li>
@@ -196,10 +196,11 @@
 			<displayPriority>1163</displayPriority>
 		</recipeMaker>
 		<costList>
-			<Plasteel>30</Plasteel>
+			<Plasteel>25</Plasteel>
+			<Uranium>25</Uranium>
 			<ComponentIndustrial>3</ComponentIndustrial>
 		</costList>
-		<costStuffCount>95</costStuffCount>
+		<costStuffCount>90</costStuffCount>
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
@@ -217,7 +218,7 @@
 		<equippedStatOffsets>
 			<StaggerDurationFactor>-0.20</StaggerDurationFactor>
 			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
-			<MoveSpeed>-0.06</MoveSpeed>
+			<MoveSpeed>-0.12</MoveSpeed>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
@@ -315,5 +316,3 @@
 		</apparel>
 	</ThingDef>
 </Defs>
-
-
