@@ -171,7 +171,6 @@
 		</graphicData>
 		<equippedStatOffsets>
 			<ShootingAccuracyPawn>2.5</ShootingAccuracyPawn>
-			<MeleeHitChance>2</MeleeHitChance>
 			<AimingDelayFactor>-0.25</AimingDelayFactor>
 		</equippedStatOffsets>
 		<apparel>
@@ -189,7 +188,7 @@
 
 <!--======== Helmet Base ========-->
 
-	<ThingDef Name="CFAR_HelmetBase" ParentName="ArmorHelmetMakeableBase" Abstract="True">
+	<ThingDef ParentName="ArmorHelmetMakeableBase" Name="CFAR_HelmetBase" Abstract="True">
 		<techLevel>Spacer</techLevel>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
@@ -205,6 +204,16 @@
 			<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.1</SuppressionPower>
 			<PainShockThreshold>0.05</PainShockThreshold>
 		</equippedStatOffsets>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
 		<colorGenerator Class="ColorGenerator_StandardApparel" />
 		<tradeTags>
 			<li>BasicClothing</li>
@@ -242,26 +251,18 @@
 		</stuffCategories>
 		<statBases>
 			<WorkToMake>10000</WorkToMake>
-			<Mass>1.3</Mass>
+			<Mass>1.5</Mass>
 			<Flammability>0.4</Flammability>
 			<EquipDelay>1.5</EquipDelay>
 		</statBases>
 		<apparel>
-			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
 			<wornGraphicPath>Things/Pawn/Arellian/Apparel/ServiceUniform/PeakedCap/Hat</wornGraphicPath>
-			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 			<bodyPartGroups>
 				<li>UpperHead</li>
 			</bodyPartGroups>
-			<layers>
-				<li>Overhead</li>
-			</layers>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-			</defaultOutfitTags>
 			<tags>
-				<li>CFAR_MilitaryOrbit</li>
+				<li>CFAR_MilitaryPlanetary</li>
 			</tags>
 		</apparel>
 	</ThingDef>
@@ -294,8 +295,8 @@
 			<li>Metallic</li>
 		</stuffCategories>
 		<statBases>
-			<WorkToMake>10000</WorkToMake>
-			<Mass>3</Mass>
+			<WorkToMake>18000</WorkToMake>
+			<Mass>2</Mass>
 			<Flammability>0.4</Flammability>
 			<Insulation_Cold>5</Insulation_Cold>
 			<EquipDelay>3</EquipDelay>
@@ -305,19 +306,11 @@
 			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.69</VacuumResistance>
 		</equippedStatOffsets>
 		<apparel>
-			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
 			<wornGraphicPath>Things/Pawn/Arellian/Apparel/ServiceUniform/PeakedCap/Hat</wornGraphicPath>
-			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 			<bodyPartGroups>
 				<li>FullHead</li>
 			</bodyPartGroups>
-			<layers>
-				<li>Overhead</li>
-			</layers>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-			</defaultOutfitTags>
 			<tags>
 				<li>CFAR_MilitaryOrbit</li>
 			</tags>
