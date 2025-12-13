@@ -127,10 +127,10 @@
 			<ComponentSpacer>1</ComponentSpacer>
 		</costList>
 		<statBases>
-			<MaxHitPoints>80</MaxHitPoints>
-			<WorkToMake>4000</WorkToMake>
-			<Mass>0.1</Mass>
-			<ArmorRating_Sharp>0.30</ArmorRating_Sharp>
+			<MaxHitPoints>50</MaxHitPoints>
+			<WorkToMake>5000</WorkToMake>
+			<Mass>0.5</Mass>
+			<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.20</ArmorRating_Heat>
 			<EquipDelay>1</EquipDelay>
@@ -317,3 +317,4 @@
 		</apparel>
 	</ThingDef>
 </Defs>
+
