@@ -162,9 +162,9 @@
 		</recipeMaker>
 		<statBases>
 			<Flammability>0.4</Flammability>
-			<StuffEffectMultiplierArmor>0.6</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>0.7</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>1.00</StuffEffectMultiplierInsulation_Cold>
-			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+			<ArmorRating_Sharp>0.30</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.50</ArmorRating_Heat>
 		</statBases>
@@ -196,11 +196,10 @@
 			<displayPriority>1163</displayPriority>
 		</recipeMaker>
 		<costList>
-			<Plasteel>25</Plasteel>
-			<Uranium>25</Uranium>
+			<Plasteel>20</Plasteel>
 			<ComponentIndustrial>3</ComponentIndustrial>
 		</costList>
-		<costStuffCount>90</costStuffCount>
+		<costStuffCount>80</costStuffCount>
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
@@ -212,7 +211,7 @@
 		<statBases>
 			<WorkToMake>25000</WorkToMake>
 			<MaxHitPoints>300</MaxHitPoints>
-			<Mass>7</Mass>
+			<Mass>7.5</Mass>
 			<EquipDelay>8.5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
@@ -258,7 +257,7 @@
 		</stuffCategories>
 		<statBases>
 			<WorkToMake>2500</WorkToMake>
-			<MaxHitPoints>50</MaxHitPoints>
+			<MaxHitPoints>100</MaxHitPoints>
 			<Mass>0.5</Mass>
 			<EquipDelay>1</EquipDelay>
 		</statBases>
@@ -316,3 +315,4 @@
 		</apparel>
 	</ThingDef>
 </Defs>
+
