@@ -211,13 +211,13 @@
 		<statBases>
 			<WorkToMake>25000</WorkToMake>
 			<MaxHitPoints>300</MaxHitPoints>
-			<Mass>7.5</Mass>
+			<Mass>9.5</Mass>
 			<EquipDelay>8.5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<StaggerDurationFactor>-0.20</StaggerDurationFactor>
+			<StaggerDurationFactor>-0.25</StaggerDurationFactor>
 			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
-			<MoveSpeed>-0.12</MoveSpeed>
+			<MoveSpeed>-0.20</MoveSpeed>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
@@ -261,9 +261,6 @@
 			<Mass>0.5</Mass>
 			<EquipDelay>1</EquipDelay>
 		</statBases>
-		<equippedStatOffsets>
-			<StaggerDurationFactor>-0.05</StaggerDurationFactor>
-		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
 				<li>Shoulders</li>
@@ -315,4 +312,5 @@
 		</apparel>
 	</ThingDef>
 </Defs>
+
 
