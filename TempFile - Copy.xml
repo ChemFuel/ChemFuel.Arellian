@@ -2,16 +2,22 @@
 <Defs>
 	<FactionDef ParentName="FactionBase">
 		<techLevel>Ultra</techLevel>
-		<defName>CFAR_Empire</defName>
-		<label>Arellian empire</label>
-		<fixedName>Arellian grand armada</fixedName>
-		<description>WIP</description>
-		<categoryTag>CFAR_Empire</categoryTag>
-		<pawnSingular>imperial</pawnSingular>
-		<pawnsPlural>imperials</pawnsPlural>
+		<defName>CFAR_Kaiserinreich</defName>
+		<label>Arellian Kaiserinreich</label>
+		<fixedName>Reichswehr Außenflotte</fixedName>
+		<description>Each Reichswehr Außenflotte is placed under the authority of a prince or princess of the Kaiserinreich, appointed personally by the Kaiserin. These deployments serve as proving grounds—testing judgment, restraint, and command aptitude far from the protections of the homeworld. Success brings honor and legitimacy; failure is remembered.
+
+Though the Außenflotte operates under full Reichswehr doctrine and the Reichsmandat, its commander bears personal responsibility for every decision made in the Kaiserin’s name. Civilian colonists, military personnel, and imperial assets alike are entrusted to their leadership. Advisors may guide, and officers may execute, but the burden of command rests solely with the Kaiserin’s child.
+
+In this way, the Außenflotte is not merely an expedition—it is an examination conducted under live fire. Cut off from diplomacy and surrounded by potential enemies, its commander is judged by the ability to impose order, eliminate threats, and complete the mandate without hesitation.
+
+While imperial authority permits the appointment of foreign legions or the establishment of compliant puppet-states, such overtures are almost always met with defiance and declarations of war. The Reich expands, endures, or bleeds according to the resolve and judgment of those sent to prove themselves worthy of succession.</description>
+		<categoryTag>CFAR_Kaiserinreich</categoryTag>
+		<pawnSingular>Arellian</pawnSingular>
+		<pawnsPlural>Arellian</pawnsPlural>
 		<allowedCultures><li>CFAR_Culture</li></allowedCultures>
 		<colorSpectrum><li>(255,212,83)</li></colorSpectrum>
-		<factionIconPath>World/WorldObjects/Expanding/CFAR_Empire</factionIconPath>
+		<factionIconPath>World/WorldObjects/Expanding/CFAR_Kaiserinreich</factionIconPath>
 		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
 		<settlementGenerationWeight>0.25</settlementGenerationWeight>
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
