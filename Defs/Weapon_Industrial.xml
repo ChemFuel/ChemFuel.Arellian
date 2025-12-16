@@ -14,9 +14,9 @@
 		<projectile>
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>12</damageAmountBase>
-			<stoppingPower>1</stoppingPower>
+			<stoppingPower>1.5</stoppingPower>
 			<armorPenetrationBase>0.16</armorPenetrationBase>
-			<speed>55</speed>
+			<speed>75</speed>
 		</projectile>
 	</ThingDef>
 
@@ -29,9 +29,9 @@
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>11</damageAmountBase>
-			<stoppingPower>0.75</stoppingPower>
-			<armorPenetrationBase>0.20</armorPenetrationBase>
+			<damageAmountBase>12</damageAmountBase>
+			<stoppingPower>1</stoppingPower>
+			<armorPenetrationBase>0.22</armorPenetrationBase>
 			<speed>100</speed>
 		</projectile>
 	</ThingDef>
@@ -81,9 +81,9 @@
 			<WorkToMake>8000</WorkToMake>
 			<Mass>1.0</Mass>
 			<AccuracyTouch>0.95</AccuracyTouch>
-			<AccuracyShort>0.75</AccuracyShort>
-			<AccuracyMedium>0.40</AccuracyMedium>
-			<AccuracyLong>0.30</AccuracyLong>
+			<AccuracyShort>0.80</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyLong>0.50</AccuracyLong>
 			<RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
 		</statBases>
 		<weaponTags>
@@ -99,9 +99,8 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_CFAR_Pistol</defaultProjectile>
-				<warmupTime>0.5</warmupTime>
-				<burstShotCount>2</burstShotCount>
-				<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+				<warmupTime>0.25</warmupTime>
+				<burstShotCount>1</burstShotCount>
 				<range>25.9</range>
 				<soundCast>Shot_HeavySMG</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
@@ -283,14 +282,14 @@
 		<statBases>
 			<WorkToMake>60000</WorkToMake>
 			<Mass>8.5</Mass>
-			<AccuracyTouch>0.50</AccuracyTouch>
-			<AccuracyShort>0.65</AccuracyShort>
-			<AccuracyMedium>0.30</AccuracyMedium>
-			<AccuracyLong>0.20</AccuracyLong>
-			<RangedWeapon_Cooldown>1.80</RangedWeapon_Cooldown>
+			<AccuracyTouch>0.60</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.55</AccuracyMedium>
+			<AccuracyLong>0.25</AccuracyLong>
+			<RangedWeapon_Cooldown>2.20</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.06</MoveSpeed>
+			<MoveSpeed>-0.10</MoveSpeed>
 		</equippedStatOffsets>
 		<weaponTags>
 			<li>CFAR_GPMG</li>
@@ -305,7 +304,7 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_CFAR_Rifle</defaultProjectile>
-				<burstShotCount>8</burstShotCount>
+				<burstShotCount>12</burstShotCount>
 				<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
 				<warmupTime>1.6</warmupTime>
 				<range>33.9</range>
@@ -337,4 +336,3 @@
 		</tradeTags>
 	</ThingDef>
 </Defs>
-
