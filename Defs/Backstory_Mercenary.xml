@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<BackstoryDef Name="CFAR_AdultMercenary" Abstract="True">
+	<BackstoryDef Name="CFAR_Mercenary" Abstract="True">
 		<requiresSpawnCategory>true</requiresSpawnCategory>
 		<slot>Adulthood</slot>
 		<bodyTypeMale>Male</bodyTypeMale>
@@ -17,13 +17,13 @@
 
 <!--======== Freikorps ========-->
 
-	<BackstoryDef ParentName="CFAR_AdultMercenary">
+	<BackstoryDef ParentName="CFAR_Mercenary">
 		<defName>CFAR_FCMercenary1</defName>
 		<title>Freikorps mercenary</title>
 		<titleShort>Freikorps</titleShort>
 		<description>WIP</description>
 		<skillGains>
-			<Shooting>6</Shooting>
+			<Shooting>8</Shooting>
 		</skillGains>
 		<spawnCategories>
 			<li>CFAR_FCMercenary</li>
@@ -32,7 +32,7 @@
 
 <!--======== Generic ========-->
 
-	<BackstoryDef ParentName="CFAR_AdultMercenary">
+	<BackstoryDef ParentName="CFAR_Mercenary">
 		<defName>CFAR_ExMilMercenary1</defName>
 		<title>space mercenary</title>
 		<titleShort>mercenary</titleShort>
@@ -45,7 +45,7 @@
 		</spawnCategories>
 	</BackstoryDef>
 
-	<BackstoryDef ParentName="CFAR_AdultMercenary">
+	<BackstoryDef ParentName="CFAR_Mercenary">
 		<defName>CFAR_CivilMercenary1</defName>
 		<title>quickdraw</title>
 		<titleShort>quickdraw</titleShort>
@@ -57,16 +57,16 @@
 			<Kind>0</Kind>
 		</disallowedTraits>
 		<skillGains>
-			<Shooting>8</Shooting>
-			<Melee>2</Melee>
-			<Social>-2</Social>
+			<Shooting>6</Shooting>
+			<Melee>-2</Melee>
+			<Social>-4</Social>
 		</skillGains>
 		<spawnCategories>
 			<li>CFAR_MercCivil</li>
 		</spawnCategories>
 	</BackstoryDef>
 
-	<BackstoryDef ParentName="CFAR_AdultMercenary">
+	<BackstoryDef ParentName="CFAR_Mercenary">
 		<defName>CFAR_CivilMercenary2</defName>
 		<title>captain</title>
 		<titleShort>captain</titleShort>
@@ -78,15 +78,15 @@
 			<Abrasive>0</Abrasive>
 		</disallowedTraits>
 		<skillGains>
-			<Shooting>4</Shooting>
-			<Social>8</Social>
+			<Shooting>3</Shooting>
+			<Social>6</Social>
 		</skillGains>
 		<spawnCategories>
 			<li>CFAR_MercCivil</li>
 		</spawnCategories>
 	</BackstoryDef>
 
-	<BackstoryDef ParentName="CFAR_AdultMercenary">
+	<BackstoryDef ParentName="CFAR_Mercenary">
 		<defName>CFAR_CivilMercenary3</defName>
 		<title>ace pilot</title>
 		<titleShort>ace</titleShort>
@@ -98,7 +98,7 @@
 		</disallowedTraits>
 		<skillGains>
 			<Shooting>4</Shooting>
-			<Crafting>4</Crafting>
+			<Crafting>2</Crafting>
 			<Social>4</Social>
 		</skillGains>
 		<spawnCategories>
@@ -106,16 +106,85 @@
 		</spawnCategories>
 	</BackstoryDef>
 
-	<BackstoryDef ParentName="CFAR_AdultMercenary">
+	<BackstoryDef ParentName="CFAR_Mercenary">
 		<defName>CFAR_CriminalMercenary1</defName>
 		<title>space mercenary</title>
 		<titleShort>mercenary</titleShort>
 		<description>WIP</description>
 		<skillGains>
-			<Shooting>6</Shooting>
+			<Shooting>4</Shooting>
+			<Melee>4</Melee>
 		</skillGains>
 		<spawnCategories>
 			<li>CFAR_MercCriminal</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+<!--================================ Reichswehr ================================-->
+
+	<BackstoryDef Name="CFAR_Reichswehr" Abstract="True">
+		<requiresSpawnCategory>true</requiresSpawnCategory>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<disallowedTraits>
+			<PsychicSensitivity>0</PsychicSensitivity>
+		</disallowedTraits>
+	</BackstoryDef>
+
+<!--================ Enlisted ================-->
+
+<!--======== Soldier / Generic ========-->
+
+	<BackstoryDef ParentName="CFAR_Reichswehr">
+		<defName>CFAR_RW_Soldier1</defName>
+		<title>Reichswehr soldier</title>
+		<titleShort>soldier</titleShort>
+		<description>[PAWN_nameDef] joined the Reichswehr as a career. Service was not a calling, but a certainty—serve the Kaiserin, prove loyalty to the Reich, and advance through the ranks by due process. Orders are followed, duties are fulfilled, as simple as that.</description>
+		<workDisables>
+			<li>Artistic</li>
+		</workDisables>
+		<skillGains>
+			<Shooting>6</Shooting>
+			<Melee>3</Melee>
+			<Medical>2</Medical>
+		</skillGains>
+		<spawnCategories>
+			<li>CFAR_RW_Soldier</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_Reichswehr">
+		<defName>CFAR_RW_Soldier2</defName>
+		<title>Reichswehr soldier</title>
+		<titleShort>soldier</titleShort>
+		<description>Among the many benefits service promised, [PAWN_nameDef] joined the Reichswehr for free healthcare, meals, and lodging. Not the noblest reason in hindsight—but not a bad one either. In the end, [PAWN_pronoun] liked fighting aliens while getting paid for it.</description>
+		<skillGains>
+			<Shooting>7</Shooting>
+			<Melee>4</Melee>
+			<Medical>1</Medical>
+			<Intellectual>-4</Intellectual>
+		</skillGains>
+		<spawnCategories>
+			<li>CFAR_RW_Soldier</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_Reichswehr">
+		<defName>CFAR_RW_Soldier3</defName>
+		<title>Reichswehr soldier</title>
+		<titleShort>soldier</titleShort>
+		<description>When [PAWN_nameDef] was still a kitten, [PAWN_possessive] always looked up to soldiers—they carried themselves with an effortless confidence. After joining the Reichswehr, [PAWN_nameDef] quickly learned the art of “keep calm and bullshit through,” discovering that confidence could be practiced as much as it was worn.</description>
+		<skillGains>
+			<Shooting>6</Shooting>
+			<Melee>2</Melee>
+			<Social>4</Social>
+		</skillGains>
+		<spawnCategories>
+			<li>CFAR_RW_Soldier</li>
 		</spawnCategories>
 	</BackstoryDef>
 </Defs>
