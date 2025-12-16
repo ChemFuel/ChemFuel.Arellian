@@ -114,6 +114,7 @@
 				</categoriesChildhood>
 				<categoriesAdulthood>
 					<li>CFAR_RW_Soldier</li>
+					<li>CFAR_RW_Trooper</li>
 				</categoriesAdulthood>
 			</li>
 		</backstoryFiltersOverride>
