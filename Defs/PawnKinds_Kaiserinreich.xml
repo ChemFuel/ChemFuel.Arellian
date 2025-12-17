@@ -3,6 +3,7 @@
 <!--================================ Reichswehr ================================-->
 
 	<PawnKindDef Name="CFAR_RW_Base" Abstract="True">
+		<combatPower>150</combatPower>
 		<race>Human</race>
 		<defaultFactionType>CFAR_Kaiserinreich</defaultFactionType>
 		<initialResistanceRange>10~20</initialResistanceRange>
@@ -18,7 +19,6 @@
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="CFAR_RW_Base" Name="CFAR_RW_TrooperBase">
-		<combatPower>125</combatPower>
 		<defName>CFAR_RW_Trooper</defName>
 		<label>Reichswehr trooper</label>
 		<forceNormalGearQuality>true</forceNormalGearQuality>
@@ -64,7 +64,6 @@
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="CFAR_RW_Base" Name="CFAR_RW_GunnerBase">
-		<combatPower>125</combatPower>
 		<defName>CFAR_RW_Gunner</defName>
 		<label>Reichswehr gunner</label>
 		<forceNormalGearQuality>true</forceNormalGearQuality>
@@ -110,7 +109,6 @@
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="CFAR_RW_Base">
-		<combatPower>125</combatPower>
 		<defName>CFAR_RW_Grenadier</defName>
 		<label>Reichswehr grenadier</label>
 		<forceNormalGearQuality>true</forceNormalGearQuality>
