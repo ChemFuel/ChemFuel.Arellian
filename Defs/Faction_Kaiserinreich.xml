@@ -9,7 +9,7 @@
 		<categoryTag>CFAR_Kaiserinreich</categoryTag>
 		<pawnSingular>Arellian</pawnSingular>
 		<pawnsPlural>Arellian</pawnsPlural>
-		<allowedCultures><li>CFAR_Culture</li></allowedCultures>
+		<!--<allowedCultures><li>CFAR_Culture</li></allowedCultures>-->
 		<colorSpectrum><li>(255,212,83)</li></colorSpectrum>
 		<factionIconPath>World/WorldObjects/Expanding/CFAR_Kaiserinreich</factionIconPath>
 		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
@@ -83,6 +83,8 @@
 				<kindDef>Combat</kindDef>
 				<options>
 					<CFAR_RW_Trooper>1</CFAR_RW_Trooper>
+					<CFAR_RW_Gunner>1</CFAR_RW_Gunner>
+					<CFAR_RW_Grenadier>1</CFAR_RW_Grenadier>
 				</options>
 			</li>
 			<!--<li>

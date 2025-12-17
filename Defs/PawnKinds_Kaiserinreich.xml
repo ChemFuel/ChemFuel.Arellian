@@ -18,12 +18,16 @@
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="CFAR_RW_Base">
-		<combatPower>150</combatPower>
+		<combatPower>125</combatPower>
 		<defName>CFAR_RW_Trooper</defName>
 		<label>Reichswehr trooper</label>
 		<forceNormalGearQuality>true</forceNormalGearQuality>
 		<minGenerationAge>20</minGenerationAge>
 		<maxGenerationAge>25</maxGenerationAge>
+		<apparelRequired>
+			<li>Apparel_CFAR_ServiceArmor</li>
+			<li>Apparel_CFAR_PauldronsService</li>
+		</apparelRequired>
 		<apparelTags>
 			<li>CFAR_MilitaryPlanetary</li>
 		</apparelTags>
@@ -31,7 +35,7 @@
 		<weaponTags Inherit="False">
 			<li>CFAR_AutoRifle</li>
 		</weaponTags>
-		<weaponMoney>660~1300</weaponMoney>
+		<weaponMoney>9999~9999</weaponMoney>
 		<backstoryFiltersOverride>
 			<li>
 				<categoriesChildhood>
@@ -48,7 +52,75 @@
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="CFAR_RW_Base">
-		<combatPower>150</combatPower>
+		<combatPower>125</combatPower>
+		<defName>CFAR_RW_Gunner</defName>
+		<label>Reichswehr gunner</label>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+		<minGenerationAge>20</minGenerationAge>
+		<maxGenerationAge>25</maxGenerationAge>
+		<apparelRequired>
+			<li>Apparel_CFAR_ServiceArmor</li>
+			<li>Apparel_CFAR_PauldronsService</li>
+		</apparelRequired>
+		<apparelTags>
+			<li>CFAR_MilitaryPlanetary</li>
+		</apparelTags>
+		<apparelMoney>2500~3500</apparelMoney>
+		<weaponTags Inherit="False">
+			<li>CFAR_GPMG</li>
+		</weaponTags>
+		<weaponMoney>9999~9999</weaponMoney>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>CFAR_Child</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>CFAR_RW_Soldier</li>
+					<li>CFAR_RW_Trooper</li>
+				</categoriesAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+		<initialResistanceRange>5~15</initialResistanceRange>
+		<initialWillRange>0.5~1.5</initialWillRange>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="CFAR_RW_Base">
+		<combatPower>125</combatPower>
+		<defName>CFAR_RW_Grenadier</defName>
+		<label>Reichswehr grenadier</label>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+		<minGenerationAge>20</minGenerationAge>
+		<maxGenerationAge>25</maxGenerationAge>
+		<apparelRequired>
+			<li>Apparel_CFAR_ServiceArmor</li>
+			<li>Apparel_CFAR_PauldronsService</li>
+		</apparelRequired>
+		<apparelTags>
+			<li>CFAR_MilitaryPlanetary</li>
+		</apparelTags>
+		<apparelMoney>2500~3500</apparelMoney>
+		<weaponTags Inherit="False">
+			<li>CFAR_MPK</li>
+		</weaponTags>
+		<weaponMoney>9999~9999</weaponMoney>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>CFAR_Child</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>CFAR_RW_Soldier</li>
+					<li>CFAR_RW_Trooper</li>
+				</categoriesAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+		<initialResistanceRange>5~15</initialResistanceRange>
+		<initialWillRange>0.5~1.5</initialWillRange>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="CFAR_RW_Base">
+		<combatPower>50</combatPower>
 		<defName>CFAR_Flottelegat</defName>
 		<label>Flottelegat</label>
 		<labelFemale>Flottelegatin</labelFemale>
