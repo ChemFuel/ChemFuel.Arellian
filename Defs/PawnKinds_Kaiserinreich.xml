@@ -17,7 +17,7 @@
 		</xenotypeChances></xenotypeSet>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="CFAR_RW_Base">
+	<PawnKindDef ParentName="CFAR_RW_Base" Name="CFAR_RW_TrooperBase">
 		<combatPower>125</combatPower>
 		<defName>CFAR_RW_Trooper</defName>
 		<label>Reichswehr trooper</label>
@@ -25,8 +25,10 @@
 		<minGenerationAge>20</minGenerationAge>
 		<maxGenerationAge>25</maxGenerationAge>
 		<apparelRequired>
+			<li>Apparel_CFAR_ServiceUniform</li>
 			<li>Apparel_CFAR_ServiceArmor</li>
 			<li>Apparel_CFAR_PauldronsService</li>
+			<li>Apparel_CFAR_ServiceHelm</li>
 		</apparelRequired>
 		<apparelTags>
 			<li>CFAR_MilitaryPlanetary</li>
@@ -51,7 +53,17 @@
 		<initialWillRange>0.5~1.5</initialWillRange>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="CFAR_RW_Base">
+	<PawnKindDef ParentName="CFAR_RW_TrooperBase">
+		<defName>CFAR_RW_TrooperOrbit</defName>
+		<apparelRequired Inherit="False">
+			<li>Apparel_CFAR_OrbitSuit</li>
+			<li>Apparel_CFAR_ServiceArmor</li>
+			<li>Apparel_CFAR_PauldronsService</li>
+			<li>Apparel_CFAR_OrbitHelmet</li>
+		</apparelRequired>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="CFAR_RW_Base" Name="CFAR_RW_GunnerBase">
 		<combatPower>125</combatPower>
 		<defName>CFAR_RW_Gunner</defName>
 		<label>Reichswehr gunner</label>
@@ -59,8 +71,10 @@
 		<minGenerationAge>20</minGenerationAge>
 		<maxGenerationAge>25</maxGenerationAge>
 		<apparelRequired>
+			<li>Apparel_CFAR_ServiceUniform</li>
 			<li>Apparel_CFAR_ServiceArmor</li>
 			<li>Apparel_CFAR_PauldronsService</li>
+			<li>Apparel_CFAR_ServiceHelm</li>
 		</apparelRequired>
 		<apparelTags>
 			<li>CFAR_MilitaryPlanetary</li>
@@ -83,6 +97,16 @@
 		</backstoryFiltersOverride>
 		<initialResistanceRange>5~15</initialResistanceRange>
 		<initialWillRange>0.5~1.5</initialWillRange>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="CFAR_RW_GunnerBase">
+		<defName>CFAR_RW_GunnerOrbit</defName>
+		<apparelRequired Inherit="False">
+			<li>Apparel_CFAR_OrbitSuit</li>
+			<li>Apparel_CFAR_ServiceArmor</li>
+			<li>Apparel_CFAR_PauldronsService</li>
+			<li>Apparel_CFAR_OrbitHelmet</li>
+		</apparelRequired>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="CFAR_RW_Base">
