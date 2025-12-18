@@ -107,10 +107,10 @@
 		</spawnCategories>
 	</BackstoryDef>
 
-<!--======== Trooper / Specific ========-->
+<!--======== infantry / Specific ========-->
 
 	<BackstoryDef ParentName="CFAR_Reichswehr">
-		<defName>CFAR_RW_Trooper1</defName>
+		<defName>CFAR_RW_Infantry1</defName>
 		<title>Reichswehr line trooper</title>
 		<titleShort>infantry</titleShort>
 		<description>When [PAWN_nameDef] joined the Reichswehr, [PAWN_pronoun] had high hopes of fighting the enemies of the Kaiserin, shoulder to shoulder with capable, confident comrades. To be fair, that part turned out to be true. What no one mentioned was the endless trench digging and encampment work—most of it done with a shovel.</description>
@@ -125,12 +125,12 @@
 			<Mining>2</Mining>
 		</skillGains>
 		<spawnCategories>
-			<li>CFAR_RW_Trooper</li>
+			<li>CFAR_RW_Infantry</li>
 		</spawnCategories>
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_Reichswehr">
-		<defName>CFAR_RW_Trooper2</defName>
+		<defName>CFAR_RW_Infantry2</defName>
 		<title>Reichswehr line trooper</title>
 		<titleShort>trooper</titleShort>
 		<description>In hindsight, [PAWN_nameDef] should have thought twice before applying for infantry. [PAWN_pronoun] had severely underestimated the sworn enemy of all infantry—marches. Now everything ached, and [PAWN_nameDef] had only [PAWN_objective]self to blame while bandaging blistered feet.</description>
@@ -143,7 +143,28 @@
 			<Medicine>2</Medicine>
 		</skillGains>
 		<spawnCategories>
-			<li>CFAR_RW_Trooper</li>
+			<li>CFAR_RW_Infantry</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+<!--======== Artillery / Specific ========-->
+
+	<BackstoryDef ParentName="CFAR_Reichswehr">
+		<defName>CFAR_RW_Artillery1</defName>
+		<title>Reichswehr artillery trooper</title>
+		<titleShort>artillery</titleShort>
+		<description>[PAWN_nameDef] had a simple job—raining shells on enemy bases at faster, more accurate intervals. Suffice it to say, [PAWN_pronoun] was good at it. Trigonometry was no easy task, but it beat fighting giant insects at melee range.</description>
+		<requiredWorkTags>
+			<li>Intellectual</li>
+			<li>Hauling</li>
+		</requiredWorkTags>
+		<skillGains>
+			<Shooting>6</Shooting>
+			<Melee>2</Melee>
+			<Intellectual>6</Intellectual>
+		</skillGains>
+		<spawnCategories>
+			<li>CFAR_RW_Artillery</li>
 		</spawnCategories>
 	</BackstoryDef>
 </Defs>
