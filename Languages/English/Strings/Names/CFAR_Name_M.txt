@@ -21,20 +21,13 @@ Berthold
 Brutus
 
 Cadmus
-Carl
 Charles
-Claus
-Clemens
-Conrad
-Cord
-Curt
 
 Earl
 Edgar
 Edmund
 Edward
 Emil
-Erbert
 Erhard
 Erich
 Erik
@@ -52,7 +45,6 @@ Francis
 Frank
 Franz
 Fred
-Friederike
 Friedrich
 Fritz
 
@@ -64,7 +56,7 @@ Gerold
 Gregor
 Gunther
 Gustav
-Günter
+Günther
 
 Hans
 Harald
@@ -82,7 +74,7 @@ Hugo
 
 Immanuel
 Ingo
-Issac
+Isaac
 Ivan
 
 Jakob
@@ -93,6 +85,14 @@ Johann
 Julian
 Julius
 Justus
+
+Karl
+Kiel
+Klaus
+Klemens
+Konrad
+Kord
+Kunz
 
 Leo
 Leon
@@ -118,10 +118,11 @@ Maxwell
 
 Nate
 Nathan
-Neuman
+Neumann
 Nick
 Nicklas
 
+Oskar
 Oswald
 Otto
 
@@ -139,13 +140,8 @@ Raynor
 Reinhard
 Reinhold
 Reinholm
-Rex
 Richard
 Robert
-Rodolf
-Roger
-Rolan
-Roland
 Rolf
 Rudolf
 Rupert
@@ -159,20 +155,17 @@ Sigmund
 Simon
 Stefan
 
-Theo
 Theodor
 Thomas
-Titus
 Tobias
-Toby
-Tom
-Tony
+Tristan
 
+Valentin
 Valerian
-Victor
+Viktor
 Vincent
-Vladimir
 
 Walter
 Werner
 Wilhelm
+Wolfgang
