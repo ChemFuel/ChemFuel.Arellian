@@ -55,64 +55,30 @@
 
 <!--================ Enlisted ================-->
 
-<!--======== Soldier / Generic ========-->
+<!--======== infantry / Trooper ========-->
 
 	<BackstoryDef ParentName="CFAR_Reichswehr">
-		<defName>CFAR_RW_Soldier1</defName>
-		<title>Reichswehr soldier</title>
-		<titleShort>soldier</titleShort>
-		<description>[PAWN_nameDef] joined the Reichswehr as a career. Service was not a calling, but a certainty—serve the Kaiserin, prove loyalty to the Reich, and advance through the ranks by due process. Orders are followed, duties are fulfilled, as simple as that.</description>
-		<workDisables>
-			<li>Artistic</li>
-		</workDisables>
-		<skillGains>
-			<Shooting>6</Shooting>
-			<Melee>3</Melee>
-		</skillGains>
-		<spawnCategories>
-			<li>CFAR_RW_Soldier</li>
-		</spawnCategories>
-	</BackstoryDef>
-
-	<BackstoryDef ParentName="CFAR_Reichswehr">
-		<defName>CFAR_RW_Soldier2</defName>
-		<title>Reichswehr soldier</title>
-		<titleShort>soldier</titleShort>
-		<description>Among the many benefits service promised, [PAWN_nameDef] joined the Reichswehr for free healthcare, meals, and lodging. Not the noblest reason in hindsight—but not a bad one either. In the end, [PAWN_pronoun] liked fighting aliens while getting paid for it.</description>
-		<workDisables>
-			<li>Caring</li>
-		</workDisables>
-		<skillGains>
-			<Shooting>7</Shooting>
-			<Melee>2</Melee>
-			<Intellectual>-3</Intellectual>
-		</skillGains>
-		<spawnCategories>
-			<li>CFAR_RW_Soldier</li>
-		</spawnCategories>
-	</BackstoryDef>
-
-	<BackstoryDef ParentName="CFAR_Reichswehr">
-		<defName>CFAR_RW_Soldier3</defName>
-		<title>Reichswehr soldier</title>
-		<titleShort>soldier</titleShort>
+		<defName>CFAR_RW_Infantry1</defName>
+		<title>Reichswehr infantry</title>
+		<titleShort>trooper</titleShort>
 		<description>When [PAWN_nameDef] was still a kitten, [PAWN_possessive] always looked up to soldiers—they carried themselves with an effortless confidence. After joining the Reichswehr, [PAWN_nameDef] quickly learned the art of “keep calm and bullshit through,” discovering that confidence could be practiced as much as it was worn.</description>
+		<requiredWorkTags>
+			<li>Social</li>
+		</requiredWorkTags>
 		<skillGains>
 			<Shooting>6</Shooting>
 			<Melee>2</Melee>
 			<Social>4</Social>
 		</skillGains>
 		<spawnCategories>
-			<li>CFAR_RW_Soldier</li>
+			<li>CFAR_RW_Infantry</li>
 		</spawnCategories>
 	</BackstoryDef>
 
-<!--======== infantry / Specific ========-->
-
 	<BackstoryDef ParentName="CFAR_Reichswehr">
-		<defName>CFAR_RW_Infantry1</defName>
-		<title>Reichswehr line trooper</title>
-		<titleShort>infantry</titleShort>
+		<defName>CFAR_RW_Infantry2</defName>
+		<title>Reichswehr infantry</title>
+		<titleShort>trooper</titleShort>
 		<description>When [PAWN_nameDef] joined the Reichswehr, [PAWN_pronoun] had high hopes of fighting the enemies of the Kaiserin, shoulder to shoulder with capable, confident comrades. To be fair, that part turned out to be true. What no one mentioned was the endless trench digging and encampment work—most of it done with a shovel.</description>
 		<requiredWorkTags>
 			<li>Constructing</li>
@@ -130,8 +96,8 @@
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="CFAR_Reichswehr">
-		<defName>CFAR_RW_Infantry2</defName>
-		<title>Reichswehr line trooper</title>
+		<defName>CFAR_RW_Infantry3</defName>
+		<title>Reichswehr infantry</title>
 		<titleShort>trooper</titleShort>
 		<description>In hindsight, [PAWN_nameDef] should have thought twice before applying for infantry. [PAWN_pronoun] had severely underestimated the sworn enemy of all infantry—marches. Now everything ached, and [PAWN_nameDef] had only [PAWN_objective]self to blame while bandaging blistered feet.</description>
 		<requiredWorkTags>
@@ -147,13 +113,32 @@
 		</spawnCategories>
 	</BackstoryDef>
 
-<!--======== Artillery / Specific ========-->
+<!--======== Artillery / Trooper ========-->
 
 	<BackstoryDef ParentName="CFAR_Reichswehr">
 		<defName>CFAR_RW_Artillery1</defName>
 		<title>Reichswehr artillery trooper</title>
-		<titleShort>artillery</titleShort>
+		<titleShort>trooper</titleShort>
 		<description>[PAWN_nameDef] had a simple job—raining shells on enemy bases at faster, more accurate intervals. Suffice it to say, [PAWN_pronoun] was good at it. Trigonometry was no easy task, but it beat fighting giant insects at melee range.</description>
+		<requiredWorkTags>
+			<li>Intellectual</li>
+			<li>Hauling</li>
+		</requiredWorkTags>
+		<skillGains>
+			<Shooting>6</Shooting>
+			<Melee>2</Melee>
+			<Intellectual>6</Intellectual>
+		</skillGains>
+		<spawnCategories>
+			<li>CFAR_RW_Artillery</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_Reichswehr">
+		<defName>CFAR_RW_Artillery2</defName>
+		<title>Reichswehr artillery trooper</title>
+		<titleShort>trooper</titleShort>
+		<description>WIP</description>
 		<requiredWorkTags>
 			<li>Intellectual</li>
 			<li>Hauling</li>
