@@ -2,12 +2,9 @@
 <Defs>
 <!--================================ Reichswehr ================================-->
 
-	<PawnKindDef Name="CFAR_RW_Base" Abstract="True">
-		<combatPower>150</combatPower>
+	<PawnKindDef Name="CFAR_KaiserinreichBase" Abstract="True">
 		<race>Human</race>
 		<defaultFactionType>CFAR_Kaiserinreich</defaultFactionType>
-		<initialResistanceRange>10~20</initialResistanceRange>
-		<initialWillRange>1~2</initialWillRange>
 		<chemicalAddictionChance>0</chemicalAddictionChance>
 		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
 		<combatEnhancingDrugsCount>0~0</combatEnhancingDrugsCount>
@@ -16,125 +13,299 @@
 		<xenotypeSet><xenotypeChances>
 			<CFAR_Arellian>999</CFAR_Arellian>
 		</xenotypeChances></xenotypeSet>
+		<initialResistanceRange>5~10</initialResistanceRange>
+		<initialWillRange>0.5~1</initialWillRange>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="CFAR_RW_Base" Name="CFAR_RW_TrooperBase">
-		<defName>CFAR_RW_Trooper</defName>
-		<label>Reichswehr trooper</label>
-		<forceNormalGearQuality>true</forceNormalGearQuality>
+<!--================================ Reichswehr ================================-->
+
+	<PawnKindDef Name="CFAR_RW_SoldierBase" ParentName="CFAR_KaiserinreichBase" Abstract="True">
 		<minGenerationAge>20</minGenerationAge>
 		<maxGenerationAge>25</maxGenerationAge>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
 		<apparelRequired>
-			<li>Apparel_CFAR_ServiceUniform</li>
 			<li>Apparel_CFAR_ServiceArmor</li>
 			<li>Apparel_CFAR_PauldronsService</li>
+		</apparelRequired>
+		<apparelMoney>9999~9999</apparelMoney>
+		<weaponMoney>9999~9999</weaponMoney>
+		<initialResistanceRange>10~20</initialResistanceRange>
+		<initialWillRange>1~2</initialWillRange>
+	</PawnKindDef>
+
+<!--================ Reichswehr - Trooper ================-->
+
+	<PawnKindDef ParentName="CFAR_RW_SoldierBase">
+		<combatPower>85</combatPower>
+		<defName>CFAR_RW_Trooper</defName>
+		<label>Reichswehr trooper</label>
+		<apparelRequired>
+			<li>Apparel_CFAR_ServiceUniform</li>
 			<li>Apparel_CFAR_ServiceHelm</li>
 		</apparelRequired>
 		<apparelTags>
 			<li>CFAR_MilitaryPlanetary</li>
 		</apparelTags>
-		<apparelMoney>2500~3500</apparelMoney>
-		<weaponTags Inherit="False">
+		<weaponTags>
 			<li>CFAR_AutoRifle</li>
 		</weaponTags>
-		<weaponMoney>9999~9999</weaponMoney>
 		<backstoryFiltersOverride>
 			<li>
 				<categoriesChildhood>
 					<li>CFAR_Child</li>
 				</categoriesChildhood>
 				<categoriesAdulthood>
-					<li>CFAR_RW_Soldier</li>
 					<li>CFAR_RW_Infantry</li>
 				</categoriesAdulthood>
 			</li>
 		</backstoryFiltersOverride>
-		<initialResistanceRange>5~15</initialResistanceRange>
-		<initialWillRange>0.5~1.5</initialWillRange>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="CFAR_RW_Base" Name="CFAR_RW_TrooperOrbitBase">
-		<defName>CFAR_RW_TrooperOrbit</defName>
+	<PawnKindDef ParentName="CFAR_RW_SoldierBase">
+		<combatPower>85</combatPower>
+		<defName>CFAR_RW_OrbitTrooper</defName>
 		<label>Reichswehr trooper</label>
-		<forceNormalGearQuality>true</forceNormalGearQuality>
-		<minGenerationAge>20</minGenerationAge>
-		<maxGenerationAge>25</maxGenerationAge>
 		<apparelRequired>
 			<li>Apparel_CFAR_OrbitSuit</li>
-			<li>Apparel_CFAR_ServiceArmor</li>
-			<li>Apparel_CFAR_PauldronsService</li>
-			<li>Apparel_CFAR_OrbitHelmet</li>
+			<li>Apparel_CFAR_ServiceHemet</li>
 		</apparelRequired>
 		<apparelTags>
-			<li>CFAR_MilitaryPlanetary</li>
+			<li>CFAR_MilitaryOrbit</li>
 		</apparelTags>
-		<apparelMoney>2500~3500</apparelMoney>
-		<weaponTags Inherit="False">
+		<weaponTags>
 			<li>CFAR_AutoRifle</li>
 		</weaponTags>
-		<weaponMoney>9999~9999</weaponMoney>
 		<backstoryFiltersOverride>
 			<li>
 				<categoriesChildhood>
 					<li>CFAR_Child</li>
 				</categoriesChildhood>
 				<categoriesAdulthood>
-					<li>CFAR_RW_Soldier</li>
 					<li>CFAR_RW_Infantry</li>
 				</categoriesAdulthood>
 			</li>
 		</backstoryFiltersOverride>
-		<initialResistanceRange>5~15</initialResistanceRange>
-		<initialWillRange>0.5~1.5</initialWillRange>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="CFAR_RW_TrooperBase">
-		<defName>CFAR_RW_Gunner</defName>
-		<label>Reichswehr gunner</label>
-		<weaponTags Inherit="False">
-			<li>CFAR_GPMG</li>
-		</weaponTags>
-	</PawnKindDef>
+<!--================ Reichswehr - Grenadier ================-->
 
-	<PawnKindDef ParentName="CFAR_RW_TrooperOrbitBase">
-		<defName>CFAR_RW_GunnerOrbit</defName>
-		<label>Reichswehr gunner</label>
-		<weaponTags Inherit="False">
-			<li>CFAR_GPMG</li>
-		</weaponTags>
-	</PawnKindDef>
-
-	<PawnKindDef ParentName="CFAR_RW_Base">
-		<defName>CFAR_RW_Artillery</defName>
-		<label>Reichswehr artillery</label>
-		<forceNormalGearQuality>true</forceNormalGearQuality>
-		<minGenerationAge>20</minGenerationAge>
-		<maxGenerationAge>25</maxGenerationAge>
+	<PawnKindDef ParentName="CFAR_RW_SoldierBase">
+		<combatPower>100</combatPower>
+		<defName>CFAR_RW_Grenadier</defName>
+		<label>Reichswehr grenadier</label>
 		<apparelRequired>
-			<li>Apparel_CFAR_ServiceArmor</li>
-			<li>Apparel_CFAR_PauldronsService</li>
+			<li>Apparel_CFAR_ServiceUniform</li>
+			<li>Apparel_CFAR_ServiceHelm</li>
 		</apparelRequired>
 		<apparelTags>
 			<li>CFAR_MilitaryPlanetary</li>
 		</apparelTags>
-		<apparelMoney>2500~3500</apparelMoney>
-		<weaponTags Inherit="False">
-			<li>CFAR_MPK</li>
+		<weaponTags>
+			<li>CFAR_AutoRifle</li>
 		</weaponTags>
-		<weaponMoney>9999~9999</weaponMoney>
 		<backstoryFiltersOverride>
 			<li>
 				<categoriesChildhood>
 					<li>CFAR_Child</li>
 				</categoriesChildhood>
 				<categoriesAdulthood>
-					<li>CFAR_RW_Artillery</li>
+					<li>CFAR_RW_Infantry</li>
 				</categoriesAdulthood>
 			</li>
 		</backstoryFiltersOverride>
-		<initialResistanceRange>5~15</initialResistanceRange>
-		<initialWillRange>0.5~1.5</initialWillRange>
 	</PawnKindDef>
+
+	<PawnKindDef ParentName="CFAR_RW_SoldierBase">
+		<combatPower>100</combatPower>
+		<defName>CFAR_RW_OrbitTrooper</defName>
+		<label>Reichswehr grenadier</label>
+		<apparelRequired>
+			<li>Apparel_CFAR_OrbitSuit</li>
+			<li>Apparel_CFAR_ServiceHemet</li>
+		</apparelRequired>
+		<apparelTags>
+			<li>CFAR_MilitaryOrbit</li>
+		</apparelTags>
+		<weaponTags>
+			<li>CFAR_AutoRifle</li>
+		</weaponTags>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>CFAR_Child</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>CFAR_RW_Infantry</li>
+				</categoriesAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+<!--================ Reichswehr - Gunner ================-->
+
+	<PawnKindDef ParentName="CFAR_RW_SoldierBase">
+		<combatPower>125</combatPower>
+		<defName>CFAR_RW_Gunner</defName>
+		<label>Reichswehr gunner</label>
+		<apparelRequired>
+			<li>Apparel_CFAR_ServiceUniform</li>
+			<li>Apparel_CFAR_ServiceHelm</li>
+		</apparelRequired>
+		<apparelTags>
+			<li>CFAR_MilitaryPlanetary</li>
+		</apparelTags>
+		<weaponTags>
+			<li>CFAR_GPMG</li>
+		</weaponTags>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>CFAR_Child</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>CFAR_RW_Infantry</li>
+				</categoriesAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="CFAR_RW_SoldierBase">
+		<combatPower>125</combatPower>
+		<defName>CFAR_RW_OrbitGunner</defName>
+		<label>Reichswehr gunner</label>
+		<apparelRequired>
+			<li>Apparel_CFAR_OrbitSuit</li>
+			<li>Apparel_CFAR_ServiceHemet</li>
+		</apparelRequired>
+		<apparelTags>
+			<li>CFAR_MilitaryOrbit</li>
+		</apparelTags>
+		<weaponTags>
+			<li>CFAR_GPMG</li>
+		</weaponTags>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>CFAR_Child</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>CFAR_RW_Infantry</li>
+				</categoriesAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+<!--================ Reichswehr - Shield Gunner ================-->
+
+	<PawnKindDef ParentName="CFAR_RW_SoldierBase">
+		<combatPower>150</combatPower>
+		<defName>CFAR_RW_ShieldGunner</defName>
+		<label>Reichswehr shield gunner</label>
+		<apparelRequired>
+			<li>Apparel_CFAR_ServiceUniform</li>
+			<li>Apparel_CFAR_ServiceHelm</li>
+		</apparelRequired>
+		<apparelTags>
+			<li>CFAR_MilitaryPlanetary</li>
+		</apparelTags>
+		<weaponTags>
+			<li>CFAR_GPMG</li>
+		</weaponTags>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>CFAR_Child</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>CFAR_RW_Infantry</li>
+				</categoriesAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="CFAR_RW_SoldierBase">
+		<combatPower>150</combatPower>
+		<defName>CFAR_RW_OrbitShieldGunner</defName>
+		<label>Reichswehr shield gunner</label>
+		<apparelRequired>
+			<li>Apparel_CFAR_OrbitSuit</li>
+			<li>Apparel_CFAR_ServiceHemet</li>
+		</apparelRequired>
+		<apparelTags>
+			<li>CFAR_MilitaryOrbit</li>
+		</apparelTags>
+		<weaponTags>
+			<li>CFAR_GPMG</li>
+		</weaponTags>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>CFAR_Child</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>CFAR_RW_Infantry</li>
+				</categoriesAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+<!--================ Reichswehr - Railgunner ================-->
+
+	<PawnKindDef ParentName="CFAR_RW_SoldierBase">
+		<combatPower>140</combatPower>
+		<defName>CFAR_RW_Railgunner</defName>
+		<label>Reichswehr railgunner</label>
+		<apparelRequired>
+			<li>Apparel_CFAR_ServiceUniform</li>
+			<li>Apparel_CFAR_ServiceHelm</li>
+			<li>Apparel_CFAR_VisorCombat</li>
+		</apparelRequired>
+		<apparelTags>
+			<li>CFAR_MilitaryPlanetary</li>
+		</apparelTags>
+		<weaponTags>
+			<li>CFAR_AutoRifle</li>
+		</weaponTags>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>CFAR_Child</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>CFAR_RW_Infantry</li>
+				</categoriesAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="CFAR_RW_SoldierBase">
+		<combatPower>140</combatPower>
+		<defName>CFAR_RW_OrbitRailgunner</defName>
+		<label>Reichswehr railgunner</label>
+		<apparelRequired>
+			<li>Apparel_CFAR_OrbitSuit</li>
+			<li>Apparel_CFAR_ServiceHemet</li>
+			<li>Apparel_CFAR_VisorCombat</li>
+		</apparelRequired>
+		<apparelTags>
+			<li>CFAR_MilitaryOrbit</li>
+		</apparelTags>
+		<weaponTags>
+			<li>CFAR_AutoRifle</li>
+		</weaponTags>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>CFAR_Child</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>CFAR_RW_Infantry</li>
+				</categoriesAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+<!--================ Reichswehr - Flottelegat ================-->
 
 	<PawnKindDef ParentName="CFAR_RW_Base">
 		<combatPower>50</combatPower>
@@ -158,7 +329,6 @@
 					<li>CFAR_Child</li>
 				</categoriesChildhood>
 				<categoriesAdulthood>
-					<li>CFAR_RW_Soldier</li>
 					<li>CFAR_RW_Trooper</li>
 				</categoriesAdulthood>
 			</li>
