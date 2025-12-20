@@ -33,6 +33,20 @@
 		<initialWillRange>1~2</initialWillRange>
 	</PawnKindDef>
 
+	<PawnKindDef Name="CFAR_RW_OfficerBase" ParentName="CFAR_KaiserinreichBase" Abstract="True">
+		<minGenerationAge>22</minGenerationAge>
+		<maxGenerationAge>28</maxGenerationAge>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+		<apparelRequired>
+			<li>Apparel_CFAR_ServiceArmor</li>
+			<li>Apparel_CFAR_PauldronsOfficer</li>
+		</apparelRequired>
+		<apparelMoney>9999~9999</apparelMoney>
+		<weaponMoney>9999~9999</weaponMoney>
+		<initialResistanceRange>15~25</initialResistanceRange>
+		<initialWillRange>1.5~2.5</initialWillRange>
+	</PawnKindDef>
+
 <!--================ Reichswehr - Trooper ================-->
 
 	<PawnKindDef ParentName="CFAR_RW_SoldierBase">
@@ -249,9 +263,64 @@
 		</backstoryFiltersOverride>
 	</PawnKindDef>
 
-<!--================ Reichswehr - Railgunner ================-->
+<!--================ Reichswehr - Artillery ================-->
 
 	<PawnKindDef ParentName="CFAR_RW_SoldierBase">
+		<combatPower>140</combatPower>
+		<defName>CFAR_RW_Artillery</defName>
+		<label>Reichswehr artillery</label>
+		<apparelRequired>
+			<li>Apparel_CFAR_ServiceUniform</li>
+			<li>Apparel_CFAR_ServiceHelm</li>
+		</apparelRequired>
+		<apparelTags>
+			<li>CFAR_MilitaryPlanetary</li>
+		</apparelTags>
+		<weaponTags>
+			<li>CFAR_Artillery</li>
+		</weaponTags>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>CFAR_Child</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>CFAR_RW_Artillery</li>
+				</categoriesAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="CFAR_RW_SoldierBase">
+		<combatPower>140</combatPower>
+		<defName>CFAR_RW_OrbitArtillery</defName>
+		<label>Reichswehr artillery</label>
+		<apparelRequired>
+			<li>Apparel_CFAR_OrbitSuit</li>
+			<li>Apparel_CFAR_ServiceHemet</li>
+			<li>Apparel_CFAR_VisorCombat</li>
+		</apparelRequired>
+		<apparelTags>
+			<li>CFAR_MilitaryOrbit</li>
+		</apparelTags>
+		<weaponTags>
+			<li>CFAR_AutoRifle</li>
+		</weaponTags>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>CFAR_Child</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>CFAR_RW_Artillery</li>
+				</categoriesAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+<!--================ Reichswehr - Railgunner ================-->
+
+	<PawnKindDef ParentName="CFAR_RW_OfficerBase">
 		<combatPower>140</combatPower>
 		<defName>CFAR_RW_Railgunner</defName>
 		<label>Reichswehr railgunner</label>
@@ -278,7 +347,7 @@
 		</backstoryFiltersOverride>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="CFAR_RW_SoldierBase">
+	<PawnKindDef ParentName="CFAR_RW_OfficerBase">
 		<combatPower>140</combatPower>
 		<defName>CFAR_RW_OrbitRailgunner</defName>
 		<label>Reichswehr railgunner</label>
