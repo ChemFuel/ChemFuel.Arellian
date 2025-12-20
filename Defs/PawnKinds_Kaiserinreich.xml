@@ -104,7 +104,7 @@
 <!--================ Reichswehr - Grenadier ================-->
 
 	<PawnKindDef ParentName="CFAR_RW_SoldierBase">
-		<combatPower>100</combatPower>
+		<combatPower>110</combatPower>
 		<defName>CFAR_RW_Grenadier</defName>
 		<label>Reichswehr grenadier</label>
 		<apparelRequired>
@@ -130,7 +130,7 @@
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="CFAR_RW_SoldierBase">
-		<combatPower>100</combatPower>
+		<combatPower>110</combatPower>
 		<defName>CFAR_RW_OrbitTrooper</defName>
 		<label>Reichswehr grenadier</label>
 		<apparelRequired>
