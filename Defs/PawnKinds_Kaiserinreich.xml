@@ -333,7 +333,7 @@
 			<li>CFAR_MilitaryPlanetary</li>
 		</apparelTags>
 		<weaponTags>
-			<li>CFAR_AutoRifle</li>
+			<li>CFAR_Railgun</li>
 		</weaponTags>
 		<backstoryFiltersOverride>
 			<li>
@@ -360,7 +360,7 @@
 			<li>CFAR_MilitaryOrbit</li>
 		</apparelTags>
 		<weaponTags>
-			<li>CFAR_AutoRifle</li>
+			<li>CFAR_Railgun</li>
 		</weaponTags>
 		<backstoryFiltersOverride>
 			<li>
