@@ -36,6 +36,22 @@
 		</projectile>
 	</ThingDef>
 
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_CFAR_Railgun</defName>
+		<label>bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>50</damageAmountBase>
+			<stoppingPower>3</stoppingPower>
+			<armorPenetrationBase>0.75</armorPenetrationBase>
+			<speed>100</speed>
+		</projectile>
+	</ThingDef>
+
 <!--======== WeaponDefs ========-->
 
 	<ThingDef Name="Base_CFAR_GunIndustrial" ParentName="BaseGunWithQuality" Abstract="True">
@@ -209,11 +225,11 @@
 			<displayPriority>1173</displayPriority>
 		</recipeMaker>
 		<statBases>
-			<WorkToMake>40000</WorkToMake>
+			<WorkToMake>45000</WorkToMake>
 			<Mass>3.2</Mass>
 			<AccuracyTouch>0.75</AccuracyTouch>
 			<AccuracyShort>0.87</AccuracyShort>
-			<AccuracyMedium>0.85</AccuracyMedium>
+			<AccuracyMedium>0.80</AccuracyMedium>
 			<AccuracyLong>0.65</AccuracyLong>
 			<RangedWeapon_Cooldown>1.60</RangedWeapon_Cooldown>
 		</statBases>
@@ -265,7 +281,7 @@
 	<ThingDef ParentName="Base_CFAR_GunIndustrial">
 		<defName>Gun_CFAR_GPMG</defName>
 		<label>Arellian GPMG</label>
-		<description>A magazine-fed general-purpose support gun issued to fire teams for point defence and high-volume suppression during boarding or breach operations.</description>
+		<description>A belt-fed general-purpose support gun designed for high-volume fire and sustained suppression. Issued to Blitzkommando fire teams for point defense during boarding and breach operations, and adopted by Reichswehr gunners as a reliable platform for lane control and anti-horde engagements.</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/CFAR_GPMG</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -281,7 +297,7 @@
 		</recipeMaker>
 		<statBases>
 			<WorkToMake>60000</WorkToMake>
-			<Mass>8.5</Mass>
+			<Mass>8</Mass>
 			<AccuracyTouch>0.65</AccuracyTouch>
 			<AccuracyShort>0.70</AccuracyShort>
 			<AccuracyMedium>0.65</AccuracyMedium>
@@ -289,11 +305,14 @@
 			<RangedWeapon_Cooldown>2.20</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.10</MoveSpeed>
+			<MoveSpeed>-0.12</MoveSpeed>
 		</equippedStatOffsets>
 		<weaponTags>
 			<li>CFAR_GPMG</li>
 		</weaponTags>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+    	</weaponClasses>
 		<costList>
 			<Steel>70</Steel>
 			<Plasteel>30</Plasteel>
@@ -335,5 +354,78 @@
 			<li>CFAR_WeaponRanged</li>
 		</tradeTags>
 	</ThingDef>
-</Defs>
 
+	<ThingDef ParentName="Base_CFAR_GunIndustrial">
+		<defName>Gun_CFAR_Railgun</defName>
+		<label>Arellian Railgun</label>
+		<description>A high-energy electromagnetic weapon that accelerates magnetized depleted-uranium projectiles to extreme velocities. Typically issued to Arellian Railgunners, it is employed for the deliberate elimination of high-value targets. Its immense stopping power and exceptional armor penetration allow it to reliably destroy heavily armored infantry and mechanized threats, trading rate of fire for decisive impact.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/CFAR_AutoRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<recipeMaker>
+			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+			<displayPriority>1173</displayPriority>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>75000</WorkToMake>
+			<Mass>8</Mass>
+			<AccuracyTouch>0.82</AccuracyTouch>
+			<AccuracyShort>0.90</AccuracyShort>
+			<AccuracyMedium>0.97</AccuracyMedium>
+			<AccuracyLong>0.95</AccuracyLong>
+			<RangedWeapon_Cooldown>2.50</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>CFAR_Railgun</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>LongShots</li>
+			<li>RangedHeavy</li>
+    	</weaponClasses>
+		<costList>
+			<Steel>50</Steel>
+			<Plasteel>25</Plasteel>
+			<Uranium>5</Uranium>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_CFAR_Railgun</defaultProjectile>
+				<warmupTime>4</warmupTime>
+				<range>49.9</range>
+				<soundCast>Shot_SniperRifle</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<tradeTags>
+			<li>CFAR_WeaponRanged</li>
+		</tradeTags>
+	</ThingDef>
+</Defs>
