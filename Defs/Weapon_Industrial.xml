@@ -31,7 +31,7 @@
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>12</damageAmountBase>
 			<stoppingPower>1</stoppingPower>
-			<armorPenetrationBase>0.22</armorPenetrationBase>
+			<armorPenetrationBase>0.20</armorPenetrationBase>
 			<speed>100</speed>
 		</projectile>
 	</ThingDef>
@@ -144,7 +144,7 @@
 			<AccuracyTouch>0.85</AccuracyTouch>
 			<AccuracyShort>0.90</AccuracyShort>
 			<AccuracyMedium>0.50</AccuracyMedium>
-			<AccuracyLong>0.35</AccuracyLong>
+			<AccuracyLong>0.25</AccuracyLong>
 			<RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
 		</statBases>
 		<weaponTags>
@@ -212,9 +212,9 @@
 			<WorkToMake>40000</WorkToMake>
 			<Mass>3.2</Mass>
 			<AccuracyTouch>0.75</AccuracyTouch>
-			<AccuracyShort>0.80</AccuracyShort>
-			<AccuracyMedium>0.70</AccuracyMedium>
-			<AccuracyLong>0.55</AccuracyLong>
+			<AccuracyShort>0.87</AccuracyShort>
+			<AccuracyMedium>0.85</AccuracyMedium>
+			<AccuracyLong>0.65</AccuracyLong>
 			<RangedWeapon_Cooldown>1.60</RangedWeapon_Cooldown>
 		</statBases>
 		<weaponTags>
@@ -230,10 +230,10 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_CFAR_Rifle</defaultProjectile>
-				<burstShotCount>4</burstShotCount>
+				<burstShotCount>3</burstShotCount>
 				<ticksBetweenBurstShots>9</ticksBetweenBurstShots>
 				<warmupTime>0.9</warmupTime>
-				<range>33.9</range>
+				<range>32.9</range>
 				<soundCast>Shot_AssaultRifle</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
@@ -282,10 +282,10 @@
 		<statBases>
 			<WorkToMake>60000</WorkToMake>
 			<Mass>8.5</Mass>
-			<AccuracyTouch>0.60</AccuracyTouch>
+			<AccuracyTouch>0.65</AccuracyTouch>
 			<AccuracyShort>0.70</AccuracyShort>
-			<AccuracyMedium>0.55</AccuracyMedium>
-			<AccuracyLong>0.25</AccuracyLong>
+			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyLong>0.50</AccuracyLong>
 			<RangedWeapon_Cooldown>2.20</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedStatOffsets>
@@ -307,7 +307,7 @@
 				<burstShotCount>12</burstShotCount>
 				<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
 				<warmupTime>1.6</warmupTime>
-				<range>33.9</range>
+				<range>32.9</range>
 				<soundCast>Shot_AssaultRifle</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
@@ -336,3 +336,4 @@
 		</tradeTags>
 	</ThingDef>
 </Defs>
+
