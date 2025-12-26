@@ -55,7 +55,7 @@
 				<li>OnSkin</li>
 			</layers>
 			<tags>
-				<li>CFAR_MilitaryPlanetary</li>
+				<li>CFAR_Uniform</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
@@ -131,7 +131,7 @@
 				<li>OnSkin</li>
 			</layers>
 			<tags>
-				<li>CFAR_MilitaryOrbit</li>
+				<li>CFAR_Uniform_Orbit</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>

@@ -42,9 +42,7 @@
 			<defaultOutfitTags>
 				<li>Soldier</li>
 			</defaultOutfitTags>
-			<tags>
-				<li>CFAR_MilitaryPlanetary</li>
-			</tags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_StandardApparel" />
 		<tradeTags>
@@ -64,7 +62,7 @@
 		</recipeMaker>
 		<costStuffCount>35</costStuffCount>
 		<graphicData>
-			<texPath>Things/Pawn/Arellian/Apparel/ServiceUniform/Kepi/Hat</texPath>
+			<texPath>Things/Pawn/Arellian/Apparel/OfficerCap/Hat</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.80</drawSize>
 		</graphicData>
@@ -73,11 +71,10 @@
 			<SocialImpact>0.10</SocialImpact>
 		</equippedStatOffsets>
 		<apparel>
-			<wornGraphicPath>Things/Pawn/Arellian/Apparel/ServiceUniform/Kepi/Hat</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Arellian/Apparel/OfficerCap/Hat</wornGraphicPath>
 			<tags>
 				<li>CFAR_Officer</li>
 			</tags>
-			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 		</apparel>
 	</ThingDef>
 
@@ -92,7 +89,7 @@
 		</recipeMaker>
 		<costStuffCount>50</costStuffCount>
 		<graphicData>
-			<texPath>Things/Pawn/Arellian/Apparel/ServiceUniform/PeakedCap/Hat</texPath>
+			<texPath>Things/Pawn/Arellian/Apparel/CommanderCap/Hat</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.80</drawSize>
 		</graphicData>
@@ -100,11 +97,10 @@
 			<SocialImpact>0.20</SocialImpact>
 		</equippedStatOffsets>
 		<apparel>
-			<wornGraphicPath>Things/Pawn/Arellian/Apparel/ServiceUniform/PeakedCap/Hat</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Arellian/Apparel/CommanderCap/Hat</wornGraphicPath>
 			<tags>
 				<li>CFAR_OfficerHigh</li>
 			</tags>
-			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 		</apparel>
 	</ThingDef>
 
@@ -144,9 +140,8 @@
 			<layers>
 				<li>EyeCover</li>
 			</layers>
-			<tags>
-			</tags>
 			<parentTagDef>ApparelHead</parentTagDef>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_StandardApparel" />
 		<tradeTags>
@@ -165,7 +160,7 @@
 			<displayPriority>1160</displayPriority>
 		</recipeMaker>
 		<graphicData>
-			<texPath>Things/Pawn/Arellian/Apparel/Visor/Combat/Visor</texPath>
+			<texPath>Things/Pawn/Arellian/Apparel/VisorCombat/Visor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.80</drawSize>
 		</graphicData>
@@ -174,15 +169,13 @@
 			<AimingDelayFactor>-0.25</AimingDelayFactor>
 		</equippedStatOffsets>
 		<apparel>
-			<!--<wornGraphicPath>Things/Pawn/Arellian/Apparel/Visor/Combat/Visor</wornGraphicPath>-->
+			<wornGraphicPath>Things/Pawn/Arellian/Apparel/VisorCombat/Visor</wornGraphicPath>
 			<tags>
-				<li>CFAR_MilitaryPlanetary</li>
-				<li>CFAR_MilitaryOrbit</li>
+				<li>CFAR_VisorCombat</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
 			</defaultOutfitTags>
-			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 		</apparel>
 	</ThingDef>
 
@@ -208,6 +201,7 @@
 			<PainShockThreshold>0.05</PainShockThreshold>
 		</equippedStatOffsets>
 		<apparel>
+			<developmentalStageFilter>Adult</developmentalStageFilter>
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 			<layers>
@@ -216,6 +210,7 @@
 			<defaultOutfitTags>
 				<li>Soldier</li>
 			</defaultOutfitTags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_StandardApparel" />
 		<tradeTags>
@@ -238,7 +233,7 @@
 			</skillRequirements>
 		</recipeMaker>
 		<graphicData>
-			<texPath>Things/Pawn/Arellian/Apparel/ServiceUniform/PeakedCap/Hat</texPath>
+			<texPath>Things/Pawn/Arellian/Apparel/ServiceHelm/Hat</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.80</drawSize>
 		</graphicData>
@@ -257,13 +252,12 @@
 			<EquipDelay>1.5</EquipDelay>
 		</statBases>
 		<apparel>
-			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
-			<wornGraphicPath>Things/Pawn/Arellian/Apparel/ServiceUniform/PeakedCap/Hat</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Arellian/Apparel/ServiceHelm/Hat</wornGraphicPath>
 			<bodyPartGroups>
 				<li>UpperHead</li>
 			</bodyPartGroups>
 			<tags>
-				<li>CFAR_MilitaryPlanetary</li>
+				<li>CFAR_Helmet</li>
 			</tags>
 		</apparel>
 	</ThingDef>
@@ -282,7 +276,7 @@
 			</skillRequirements>
 		</recipeMaker>
 		<graphicData>
-			<texPath>Things/Pawn/Arellian/Apparel/ServiceUniform/PeakedCap/Hat</texPath>
+			<texPath>Things/Pawn/Arellian/Apparel/OrbitHelmet/Hat</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.80</drawSize>
 		</graphicData>
@@ -306,13 +300,12 @@
 			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.69</VacuumResistance>
 		</equippedStatOffsets>
 		<apparel>
-			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
-			<wornGraphicPath>Things/Pawn/Arellian/Apparel/ServiceUniform/PeakedCap/Hat</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Arellian/Apparel/OrbitHelmet/Hat</wornGraphicPath>
 			<bodyPartGroups>
 				<li>FullHead</li>
 			</bodyPartGroups>
 			<tags>
-				<li>CFAR_MilitaryOrbit</li>
+				<li>CFAR_Helmet_Orbit</li>
 			</tags>
 		</apparel>
 	</ThingDef>

@@ -55,7 +55,7 @@
 
 <!--================ Enlisted ================-->
 
-<!--======== infantry / Trooper ========-->
+<!--======== Trooper & Gunner ========-->
 
 	<BackstoryDef ParentName="CFAR_Reichswehr">
 		<defName>CFAR_RW_Infantry1</defName>
@@ -113,7 +113,7 @@
 		</spawnCategories>
 	</BackstoryDef>
 
-<!--======== Artillery / Trooper ========-->
+<!--======== Artillery ========-->
 
 	<BackstoryDef ParentName="CFAR_Reichswehr">
 		<defName>CFAR_RW_Artillery1</defName>
@@ -150,6 +150,50 @@
 		</skillGains>
 		<spawnCategories>
 			<li>CFAR_RW_Artillery</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+<!--================ Officer - Low ================-->
+
+<!--======== Officer ========-->
+
+	<BackstoryDef ParentName="CFAR_Reichswehr">
+		<defName>CFAR_RW_InfantryOfficer1</defName>
+		<title>Reichswehr infantry officer</title>
+		<titleShort>officer</titleShort>
+		<description>WIP</description>
+		<requiredWorkTags>
+			<li>Social</li>
+			<li>Intellectual</li>
+		</requiredWorkTags>
+		<skillGains>
+			<Shooting>6</Shooting>
+			<Melee>4</Melee>
+			<Social>2</Social>
+			<Intellectual>4</Intellectual>
+		</skillGains>
+		<spawnCategories>
+			<li>CFAR_RW_InfantryOfficer</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="CFAR_Reichswehr">
+		<defName>CFAR_RW_InfantryOfficer2</defName>
+		<title>Reichswehr infantry officer</title>
+		<titleShort>officer</titleShort>
+		<description>WIP</description>
+		<requiredWorkTags>
+			<li>Social</li>
+			<li>Intellectual</li>
+		</requiredWorkTags>
+		<skillGains>
+			<Shooting>6</Shooting>
+			<Melee>4</Melee>
+			<Social>2</Social>
+			<Intellectual>4</Intellectual>
+		</skillGains>
+		<spawnCategories>
+			<li>CFAR_RW_InfantryOfficer</li>
 		</spawnCategories>
 	</BackstoryDef>
 </Defs>

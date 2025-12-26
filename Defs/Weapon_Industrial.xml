@@ -16,7 +16,7 @@
 			<damageAmountBase>12</damageAmountBase>
 			<stoppingPower>2</stoppingPower>
 			<armorPenetrationBase>0.16</armorPenetrationBase>
-			<speed>75</speed>
+			<speed>55</speed>
 		</projectile>
 	</ThingDef>
 
@@ -32,7 +32,7 @@
 			<damageAmountBase>12</damageAmountBase>
 			<stoppingPower>1</stoppingPower>
 			<armorPenetrationBase>0.20</armorPenetrationBase>
-			<speed>100</speed>
+			<speed>70</speed>
 		</projectile>
 	</ThingDef>
 
@@ -40,7 +40,7 @@
 		<defName>Bullet_CFAR_Railgun</defName>
 		<label>bullet</label>
 		<graphicData>
-			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<texPath>Things/Projectile/Bullet_big</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile>
@@ -48,7 +48,29 @@
 			<damageAmountBase>50</damageAmountBase>
 			<stoppingPower>3</stoppingPower>
 			<armorPenetrationBase>0.75</armorPenetrationBase>
-			<speed>100</speed>
+			<speed>140</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Shell_CFAR_Mortar</defName>
+		<label>HE shell</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_big</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<damageDef>Bomb</damageDef>
+			<stoppingPower>3</stoppingPower>
+			<speed>41</speed>
+			<explosionRadius>2.9</explosionRadius>
+			<flyOverhead>true</flyOverhead>
+			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+			<soundExplode>MortarBomb_Explode</soundExplode>
+			<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+			<soundAmbient>MortarRound_Ambient</soundAmbient>
+			<preExplosionSpawnSingleThingDef>Filth_BlastMark</preExplosionSpawnSingleThingDef>
 		</projectile>
 	</ThingDef>
 
@@ -380,6 +402,9 @@
 			<AccuracyLong>0.95</AccuracyLong>
 			<RangedWeapon_Cooldown>2.50</RangedWeapon_Cooldown>
 		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.06</MoveSpeed>
+		</equippedStatOffsets>
 		<weaponTags>
 			<li>CFAR_Railgun</li>
 		</weaponTags>
@@ -404,6 +429,93 @@
 				<soundCast>Shot_SniperRifle</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<tradeTags>
+			<li>CFAR_WeaponRanged</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="Base_CFAR_GunIndustrial">
+		<defName>Gun_CFAR_Mortar</defName>
+		<label>Arellian Mortar</label>
+		<description>WIP</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/CFAR_Mortar</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<recipeMaker>
+			<researchPrerequisites>
+			<li>PrecisionRifling</li>
+			<li>Mortars</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+			<displayPriority>1173</displayPriority>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>75000</WorkToMake>
+			<Mass>15</Mass>
+			<AccuracyTouch>0.75</AccuracyTouch>
+			<AccuracyShort>0.75</AccuracyShort>
+			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyLong>0.75</AccuracyLong>
+			<RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.48</MoveSpeed>
+		</equippedStatOffsets>
+		<weaponTags>
+			<li>CFAR_Artillery</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>LongShots</li>
+			<li>RangedHeavy</li>
+    	</weaponClasses>
+		<costList>
+			<Steel>75</Steel>
+			<Plasteel>25</Plasteel>
+			<Chemfuel>75</Chemfuel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Shell_CFAR_Mortar</defaultProjectile>
+				<warmupTime>8</warmupTime>
+				<forcedMissRadius>4.9</forcedMissRadius>
+				<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+				<range>99.9</range>
+				<minRange>7.9</minRange>
+				<requireLineOfSight>false</requireLineOfSight>
+				<soundCast>Mortar_LaunchA</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<muzzleFlashScale>16</muzzleFlashScale>
 			</li>
 		</verbs>
 		<tools>
